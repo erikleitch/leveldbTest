@@ -2,6 +2,8 @@
 # Include Climax-specific variables
 #-----------------------------------------------------------------------
 
+# This is a new comment
+
 SHELL = /bin/sh
 
 include Makefile.defs
