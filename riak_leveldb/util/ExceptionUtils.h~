@@ -1,0 +1,10 @@
+#ifdef ThrowError
+#undef ThrowError
+#endif
+
+#define ThrowError(text) \
+{\
+  std::ostringstream _macroOs; \
+  _macroOs << text;\
+  gcp::util::ErrHandler::throwError(_macroOs, __FILE__, __LINE__, __PRETTY_FUNCTION__, true, false, false, false); \
+}

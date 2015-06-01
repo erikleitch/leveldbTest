@@ -1,0 +1,80 @@
+// $Id: $
+
+#ifndef GCP_UTIL_LEVELDBTEST_H
+#define GCP_UTIL_LEVELDBTEST_H
+
+/**
+ * @file LevelDbTest.h
+ * 
+ * Tagged: Fri May 22 11:16:09 PDT 2015
+ * 
+ * @version: $Revision: $, $Date: $
+ * 
+ * @author /bin/bash: username: command not found
+ */
+#include "leveldb/db.h"
+#include "leveldb/c.h"
+#include "leveldb/perf_count.h"
+
+#define RIAK
+
+namespace gcp {
+  namespace util {
+
+    class LevelDbTest {
+    public:
+
+      /**
+       * Constructor.
+       */
+      LevelDbTest();
+
+      /**
+       * Destructor.
+       */
+      virtual ~LevelDbTest();
+
+      void open();
+      void open2();
+      void close();
+      void free(char** ptr);
+      void verify();
+
+      void processError(char** err);
+
+      void put(std::string keyStr, std::string valStr);
+      void putSync(std::string keyStr, std::string valStr);
+
+      void get(std::string keyStr, std::string& valStr);
+      void CheckGet(leveldb_t* db,const leveldb_readoptions_t* options, const char* key);
+      void testGet();
+
+      std::string get(std::string keyStr);
+      void checkStatus(std::string oper);
+      void checkDb();
+
+      void printAllKeys();
+
+#ifdef RIAK
+      leveldb::PerformanceCounters* getPerfCount();
+#endif
+
+    private:
+
+#ifdef RIAK
+      leveldb_t* db_;
+      leveldb_options_t* options_;
+#else
+      leveldb::DB* db_;
+      leveldb::Options* options_;
+      leveldb::Status status_;
+#endif
+
+    }; // End class LevelDbTest
+
+  } // End namespace util
+} // End namespace gcp
+
+
+
+#endif // End #ifndef GCP_UTIL_LEVELDBTEST_H

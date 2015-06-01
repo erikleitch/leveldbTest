@@ -1,0 +1,4 @@
+<map id="leveldb::SnapshotImpl" name="leveldb::SnapshotImpl">
+<area shape="rect" id="node3" href="$classleveldb_1_1_snapshot_list.html" title="{leveldb::SnapshotList\n||+ SnapshotList()\l+ empty()\l+ oldest()\l+ newest()\l+ New()\l+ Delete()\l}" alt="" coords="8,263,156,403"/>
+<area shape="rect" id="node2" href="$classleveldb_1_1_snapshot.html" title="{leveldb::Snapshot\n||# ~Snapshot()\l}" alt="" coords="18,5,145,79"/>
+</map>

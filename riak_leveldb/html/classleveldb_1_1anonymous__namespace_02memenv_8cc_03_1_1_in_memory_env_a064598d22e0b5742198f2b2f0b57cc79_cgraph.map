@@ -1,0 +1,5 @@
+<map id="leveldb::anonymous_namespace{memenv::cc}::InMemoryEnv::NewWritableFile" name="leveldb::anonymous_namespace{memenv::cc}::InMemoryEnv::NewWritableFile">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state.html#ab92319c7e9a9e36c3237feb7c1bae2b1" title="leveldb::anonymous\l_namespace\{memenv::cc\}\l::FileState::Ref" alt="" coords="269,5,447,57"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#a8e3720d233281c874a53c17e081f51b3" title="leveldb::Status::OK" alt="" coords="290,81,426,107"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="495,81,649,107"/>
+</map>

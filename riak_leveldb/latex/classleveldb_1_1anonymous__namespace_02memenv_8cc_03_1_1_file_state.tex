@@ -1,0 +1,192 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{memenv.\+cc\}\+:\+:File\+State Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{memenv.\+cc\}\+:\+:File\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa9bd1bcb90b9adf0d62e71c4d2859508}{File\+State} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ab92319c7e9a9e36c3237feb7c1bae2b1}{Ref} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a7df8c52dec3eb6d263fa1dc358d23faa}{Unref} ()
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a3e68670ea38eeca29e0d67638e115668}{Size} () const 
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_add3a346d5cdaded237f6decfa1a4b71e}{Read} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} offset, size\+\_\+t n, \hyperlink{classleveldb_1_1_slice}{Slice} $\ast$result, char $\ast$scratch) const 
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa1cb0d3ae6cad3dc73c52eae68e003cd}{Append} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_afd0441590b6ae8f2dbb319ac6c6164a8ae7245af3268158b3af9eb81c3f0f3fee}{k\+Block\+Size} = 8 $\ast$ 1024
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a4871db78ba9e5a8bfa1c645831b8422d}{$\sim$\+File\+State} ()
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ad6c048ca646392bc638d463acb8411a4}{File\+State} (const \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state}{File\+State} \&)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a5b9aa50ab66af03cbad1fc4c935347d0}{operator=} (const \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state}{File\+State} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_mutex}{port\+::\+Mutex} \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a97b5df78d149a3ab3fec8a0cad5ccb6a}{refs\+\_\+mutex\+\_\+}
+\item 
+int \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa55c9704a15e0d97fd6ce1dd6205be3e}{refs\+\_\+}
+\item 
+std\+::vector$<$ char $\ast$ $>$ \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_acf8684c52d7f1182f4688f0238af0e48}{blocks\+\_\+}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a71d1580717585cf6f85862c91c440eb3}{size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_afd0441590b6ae8f2dbb319ac6c6164a8}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_afd0441590b6ae8f2dbb319ac6c6164a8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Block\+Size@{k\+Block\+Size}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!k\+Block\+Size@{k\+Block\+Size}}\item[{\em 
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_afd0441590b6ae8f2dbb319ac6c6164a8ae7245af3268158b3af9eb81c3f0f3fee}{}k\+Block\+Size\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_afd0441590b6ae8f2dbb319ac6c6164a8ae7245af3268158b3af9eb81c3f0f3fee}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa9bd1bcb90b9adf0d62e71c4d2859508}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!File\+State@{File\+State}}
+\index{File\+State@{File\+State}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{File\+State}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+File\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa9bd1bcb90b9adf0d62e71c4d2859508}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a4871db78ba9e5a8bfa1c645831b8422d}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!````~File\+State@{$\sim$\+File\+State}}
+\index{````~File\+State@{$\sim$\+File\+State}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{$\sim$\+File\+State}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::$\sim$\+File\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a4871db78ba9e5a8bfa1c645831b8422d}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ad6c048ca646392bc638d463acb8411a4}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!File\+State@{File\+State}}
+\index{File\+State@{File\+State}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{File\+State}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+File\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+State} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ad6c048ca646392bc638d463acb8411a4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa1cb0d3ae6cad3dc73c52eae68e003cd}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!Append@{Append}}
+\index{Append@{Append}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{Append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+Append (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa1cb0d3ae6cad3dc73c52eae68e003cd}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa1cb0d3ae6cad3dc73c52eae68e003cd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a5b9aa50ab66af03cbad1fc4c935347d0}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+State} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a5b9aa50ab66af03cbad1fc4c935347d0}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_add3a346d5cdaded237f6decfa1a4b71e}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!Read@{Read}}
+\index{Read@{Read}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{offset, }
+\item[{size\+\_\+t}]{n, }
+\item[{{\bf Slice} $\ast$}]{result, }
+\item[{char $\ast$}]{scratch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_add3a346d5cdaded237f6decfa1a4b71e}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_add3a346d5cdaded237f6decfa1a4b71e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ab92319c7e9a9e36c3237feb7c1bae2b1}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!Ref@{Ref}}
+\index{Ref@{Ref}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{Ref}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+Ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ab92319c7e9a9e36c3237feb7c1bae2b1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_ab92319c7e9a9e36c3237feb7c1bae2b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a3e68670ea38eeca29e0d67638e115668}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!Size@{Size}}
+\index{Size@{Size}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a3e68670ea38eeca29e0d67638e115668}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a7df8c52dec3eb6d263fa1dc358d23faa}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!Unref@{Unref}}
+\index{Unref@{Unref}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{Unref}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::\+Unref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a7df8c52dec3eb6d263fa1dc358d23faa}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_acf8684c52d7f1182f4688f0238af0e48}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!blocks\+\_\+@{blocks\+\_\+}}
+\index{blocks\+\_\+@{blocks\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{blocks\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$char$\ast$$>$ leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::blocks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_acf8684c52d7f1182f4688f0238af0e48}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa55c9704a15e0d97fd6ce1dd6205be3e}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!refs\+\_\+@{refs\+\_\+}}
+\index{refs\+\_\+@{refs\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{refs\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::refs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_aa55c9704a15e0d97fd6ce1dd6205be3e}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a97b5df78d149a3ab3fec8a0cad5ccb6a}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!refs\+\_\+mutex\+\_\+@{refs\+\_\+mutex\+\_\+}}
+\index{refs\+\_\+mutex\+\_\+@{refs\+\_\+mutex\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{refs\+\_\+mutex\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Mutex} leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::refs\+\_\+mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a97b5df78d149a3ab3fec8a0cad5ccb6a}
+\hypertarget{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a71d1580717585cf6f85862c91c440eb3}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}memenv.\+cc\rcurly{}\+::\+File\+State}}
+\subsubsection[{size\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::File\+State\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_file_state_a71d1580717585cf6f85862c91c440eb3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+helpers/memenv/\hyperlink{memenv_8cc}{memenv.\+cc}\end{DoxyCompactItemize}

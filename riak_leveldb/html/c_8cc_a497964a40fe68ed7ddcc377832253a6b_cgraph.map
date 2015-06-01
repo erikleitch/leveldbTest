@@ -1,0 +1,5 @@
+<map id="SaveError" name="SaveError">
+<area shape="rect" id="node2" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="152,5,282,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#aa8b56d8fe2cd1873778de5d1e5407866" title="leveldb::Status::ToString" alt="" coords="135,55,300,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_status.html#a7e1c5239636c9e0ffff6df6144f32af3" title="leveldb::Status::code" alt="" coords="348,55,493,80"/>
+</map>

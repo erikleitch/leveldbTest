@@ -1,0 +1,6 @@
+<map id="leveldb::EnvWrapper::target" name="leveldb::EnvWrapper::target">
+<area shape="rect" id="node2" href="$classleveldb_1_1_special_env.html#aa7bdbcf4af2ba94330ada903179692f1" title="leveldb::SpecialEnv\l::NewWritableFile" alt="" coords="416,32,554,71"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_special_env.html#ae04ba2b7b94753d805e316dbda74ec00" title="leveldb::SpecialEnv\l::NewRandomAccessFile" alt="" coords="198,30,368,68"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_special_env.html#afcceb315ff4d8a96805b71a41502da94" title="leveldb::SpecialEnv\l::SleepForMicroseconds" alt="" coords="201,92,366,131"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1test_1_1_error_env.html#a6f1f7633afd96bac9da744bc547e841e" title="leveldb::test::ErrorEnv\l::NewWritableFile" alt="" coords="207,155,360,194"/>
+</map>

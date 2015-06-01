@@ -1,0 +1,5 @@
+<map id="leveldb::VersionSet::CompactRange" name="leveldb::VersionSet::CompactRange">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a74e4c4cea1a0b49b52ba695339772af3" title="leveldb::DBImpl::Background\lCompaction" alt="" coords="189,5,382,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_d_b_impl.html#a8f2d02826606bb1753958fb51182c1ff" title="leveldb::DBImpl::Background\lCall2" alt="" coords="430,5,623,44"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_compaction_task.html#a289decac6d18732d37dfef0584ba4350" title="leveldb::CompactionTask\l::operator()" alt="" coords="671,5,841,44"/>
+</map>

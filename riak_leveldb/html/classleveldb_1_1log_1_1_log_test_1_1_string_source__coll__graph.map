@@ -1,0 +1,4 @@
+<map id="leveldb::log::LogTest::StringSource" name="leveldb::log::LogTest::StringSource">
+<area shape="rect" id="node2" href="$classleveldb_1_1_sequential_file.html" title="{leveldb::SequentialFile\n||+ SequentialFile()\l+ ~SequentialFile()\l+ Read()\l+ Skip()\l}" alt="" coords="5,72,161,185"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html" title="{leveldb::Slice\n|&#45; data_\l&#45; size_\l|+ Slice()\l+ Slice()\l+ Slice()\l+ Slice()\l+ data()\l+ size()\l+ empty()\l+ operator[]()\l+ clear()\l+ remove_prefix()\l+ ToString()\l+ compare()\l+ starts_with()\l}" alt="" coords="185,5,312,252"/>
+</map>

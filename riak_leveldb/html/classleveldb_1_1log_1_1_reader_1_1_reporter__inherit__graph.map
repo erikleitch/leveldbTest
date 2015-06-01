@@ -1,0 +1,4 @@
+<map id="leveldb::log::Reader::Reporter" name="leveldb::log::Reader::Reporter">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_1_1_corruption_reporter.html" title="{leveldb::anonymous\l_namespace\{leveldb_main.cc\}\l::CorruptionReporter\n||+ Corruption()\l}" alt="" coords="5,160,208,260"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1log_1_1_log_test_1_1_report_collector.html" title="{leveldb::log::LogTest\l::ReportCollector\n|+ dropped_bytes_\l+ message_\l|+ ReportCollector()\l+ Corruption()\l}" alt="" coords="231,153,374,267"/>
+</map>

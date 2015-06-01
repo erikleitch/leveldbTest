@@ -1,0 +1,431 @@
+\hypertarget{classleveldb_1_1_hot_thread_pool}{}\section{leveldb\+:\+:Hot\+Thread\+Pool Class Reference}
+\label{classleveldb_1_1_hot_thread_pool}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+
+
+{\ttfamily \#include $<$hot\+\_\+threads.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Hot\+Thread\+Pool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classleveldb_1_1_hot_thread_pool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::deque$<$ \hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} $\ast$ $>$ \hyperlink{classleveldb_1_1_hot_thread_pool_a00b8e7f713908bfc81fb312ec78da744}{Work\+Queue\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{structleveldb_1_1_hot_thread}{Hot\+Thread} $\ast$ $>$ \hyperlink{classleveldb_1_1_hot_thread_pool_a0d8e96c9dc8fc9fc9ec68acd11a6af71}{Thread\+Pool\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_hot_thread_pool_a397962912226c11c3f471718193541b0}{Hot\+Thread\+Pool} (const size\+\_\+t thread\+\_\+pool\+\_\+size, const char $\ast$Name, enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} Direct, enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} Queued, enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} Dequeued, enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} Weighted)
+\item 
+virtual \hyperlink{classleveldb_1_1_hot_thread_pool_a1f944f8bcfc0036bc87c20978f00f1a1}{$\sim$\+Hot\+Thread\+Pool} ()
+\item 
+bool \hyperlink{classleveldb_1_1_hot_thread_pool_ae358dc103ea4873fec2ded1eb8b67eb0}{Find\+Waiting\+Thread} (\hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} $\ast$work, bool Ok\+To\+Queue=true)
+\item 
+bool \hyperlink{classleveldb_1_1_hot_thread_pool_a8b7315ca5cfa2bcb8a11139633d17b55}{Submit} (\hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} $\ast$item, bool Ok\+To\+Queue=true)
+\item 
+size\+\_\+t \hyperlink{classleveldb_1_1_hot_thread_pool_acc7d1479b8e81a4105b0653ca82ca95b}{work\+\_\+queue\+\_\+size} () const 
+\item 
+bool \hyperlink{classleveldb_1_1_hot_thread_pool_aaca48f404522caf977d56264cfc51eb8}{shutdown\+\_\+pending} () const 
+\item 
+\hyperlink{structleveldb_1_1_performance_counters}{leveldb\+::\+Performance\+Counters} $\ast$ \hyperlink{classleveldb_1_1_hot_thread_pool_a16063894f72b1de6c5c556a1b539022b}{perf} () const 
+\item 
+void \hyperlink{classleveldb_1_1_hot_thread_pool_af197444281b36da96279dacf4657bf6e}{Inc\+Work\+Direct} ()
+\item 
+void \hyperlink{classleveldb_1_1_hot_thread_pool_a30ca13128f7acc57db7a098345a98870}{Inc\+Work\+Queued} ()
+\item 
+void \hyperlink{classleveldb_1_1_hot_thread_pool_a04887fa51e30658c5bcae49161ade203}{Inc\+Work\+Dequeued} ()
+\item 
+void \hyperlink{classleveldb_1_1_hot_thread_pool_a329794c6b10f1a95410a8a1f8abb4d50}{Inc\+Work\+Weighted} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} Count)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{classleveldb_1_1_hot_thread_pool_ad002c307f26506b3ee24fdcce111af4b}{Thread\+Start} (void $\ast$args)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classleveldb_1_1_hot_thread_pool_a03b0d2067849f04918927772f5b44770}{m\+\_\+\+Pool\+Name}
+\begin{DoxyCompactList}\small\item\em used to name threads for gdb / core \end{DoxyCompactList}\item 
+volatile bool \hyperlink{classleveldb_1_1_hot_thread_pool_aa0bf6b3ad8b624bc6e41dec5c702f8a8}{m\+\_\+\+Shutdown}
+\begin{DoxyCompactList}\small\item\em should we stop threads and shut down? \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1_hot_thread_pool_a0d8e96c9dc8fc9fc9ec68acd11a6af71}{Thread\+Pool\+\_\+t} \hyperlink{classleveldb_1_1_hot_thread_pool_a79c90db2f251666fd715d79c3fe2c107}{m\+\_\+\+Threads}
+\begin{DoxyCompactList}\small\item\em pool of fast response workers \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1_hot_thread_pool_a00b8e7f713908bfc81fb312ec78da744}{Work\+Queue\+\_\+t} \hyperlink{classleveldb_1_1_hot_thread_pool_a798f6a1fa0e086801bc3a23ad86a4ee1}{m\+\_\+\+Work\+Queue}
+\item 
+\hyperlink{namespaceleveldb_1_1port_a3017c82209c2da44f142ef633e012149}{port\+::\+Spin} \hyperlink{classleveldb_1_1_hot_thread_pool_a37f97bceb4dc661a524433f6c5459cd1}{m\+\_\+\+Queue\+Lock}
+\begin{DoxyCompactList}\small\item\em protects access to work\+\_\+queue \end{DoxyCompactList}\item 
+volatile size\+\_\+t \hyperlink{classleveldb_1_1_hot_thread_pool_a3a0aafc7c581ea064fb79c334d918d57}{m\+\_\+\+Work\+Queue\+Atomic}
+\begin{DoxyCompactList}\small\item\em atomic size to parallel work\+\_\+queue.\+size(). \end{DoxyCompactList}\item 
+\hyperlink{structleveldb_1_1_queue_thread}{Queue\+Thread} \hyperlink{classleveldb_1_1_hot_thread_pool_a061ea39c8e7d9fcab1a331c4955fc181}{m\+\_\+\+Queue\+Thread}
+\begin{DoxyCompactList}\small\item\em one slow response worker to cover edge case \end{DoxyCompactList}\item 
+enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} \hyperlink{classleveldb_1_1_hot_thread_pool_addcf8d7da65f452d5bb0d2e96facd741}{m\+\_\+\+Direct\+Counter}
+\item 
+enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} \hyperlink{classleveldb_1_1_hot_thread_pool_aac7b6600773035c7499721eb42ab2075}{m\+\_\+\+Queued\+Counter}
+\item 
+enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} \hyperlink{classleveldb_1_1_hot_thread_pool_a7e28dd1d6f7607c7840f4b0604a2d43e}{m\+\_\+\+Dequeued\+Counter}
+\item 
+enum \hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637a}{Performance\+Counters\+Enum} \hyperlink{classleveldb_1_1_hot_thread_pool_a2ecf9d61378505a8f43335bc2017078b}{m\+\_\+\+Weighted\+Counter}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_hot_thread_pool_a3688e5840f06f36542ed7ad04ee31289}{Hot\+Thread\+Pool} (const \hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \&)
+\item 
+\hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \& \hyperlink{classleveldb_1_1_hot_thread_pool_a9e28c6948e1bc38fac95bee1fb968e87}{operator=} (const \hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a0d8e96c9dc8fc9fc9ec68acd11a6af71}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Thread\+Pool\+\_\+t@{Thread\+Pool\+\_\+t}}
+\index{Thread\+Pool\+\_\+t@{Thread\+Pool\+\_\+t}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Thread\+Pool\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Hot\+Thread} $\ast$$>$ {\bf leveldb\+::\+Hot\+Thread\+Pool\+::\+Thread\+Pool\+\_\+t}}\label{classleveldb_1_1_hot_thread_pool_a0d8e96c9dc8fc9fc9ec68acd11a6af71}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a00b8e7f713908bfc81fb312ec78da744}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Work\+Queue\+\_\+t@{Work\+Queue\+\_\+t}}
+\index{Work\+Queue\+\_\+t@{Work\+Queue\+\_\+t}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Work\+Queue\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::deque$<${\bf Thread\+Task}$\ast$$>$ {\bf leveldb\+::\+Hot\+Thread\+Pool\+::\+Work\+Queue\+\_\+t}}\label{classleveldb_1_1_hot_thread_pool_a00b8e7f713908bfc81fb312ec78da744}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a397962912226c11c3f471718193541b0}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Hot\+Thread\+Pool@{Hot\+Thread\+Pool}}
+\index{Hot\+Thread\+Pool@{Hot\+Thread\+Pool}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Hot\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Hot\+Thread\+Pool\+::\+Hot\+Thread\+Pool (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{thread\+\_\+pool\+\_\+size, }
+\item[{const char $\ast$}]{Name, }
+\item[{enum {\bf Performance\+Counters\+Enum}}]{Direct, }
+\item[{enum {\bf Performance\+Counters\+Enum}}]{Queued, }
+\item[{enum {\bf Performance\+Counters\+Enum}}]{Dequeued, }
+\item[{enum {\bf Performance\+Counters\+Enum}}]{Weighted}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_hot_thread_pool_a397962912226c11c3f471718193541b0}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a397962912226c11c3f471718193541b0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a1f944f8bcfc0036bc87c20978f00f1a1}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!````~Hot\+Thread\+Pool@{$\sim$\+Hot\+Thread\+Pool}}
+\index{````~Hot\+Thread\+Pool@{$\sim$\+Hot\+Thread\+Pool}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{$\sim$\+Hot\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Hot\+Thread\+Pool\+::$\sim$\+Hot\+Thread\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1_hot_thread_pool_a1f944f8bcfc0036bc87c20978f00f1a1}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a3688e5840f06f36542ed7ad04ee31289}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Hot\+Thread\+Pool@{Hot\+Thread\+Pool}}
+\index{Hot\+Thread\+Pool@{Hot\+Thread\+Pool}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Hot\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Hot\+Thread\+Pool\+::\+Hot\+Thread\+Pool (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hot\+Thread\+Pool} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_hot_thread_pool_a3688e5840f06f36542ed7ad04ee31289}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_hot_thread_pool_ae358dc103ea4873fec2ded1eb8b67eb0}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Find\+Waiting\+Thread@{Find\+Waiting\+Thread}}
+\index{Find\+Waiting\+Thread@{Find\+Waiting\+Thread}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Find\+Waiting\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Hot\+Thread\+Pool\+::\+Find\+Waiting\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf Thread\+Task} $\ast$}]{work, }
+\item[{bool}]{Ok\+To\+Queue = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_hot_thread_pool_ae358dc103ea4873fec2ded1eb8b67eb0}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_ae358dc103ea4873fec2ded1eb8b67eb0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_ae358dc103ea4873fec2ded1eb8b67eb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a04887fa51e30658c5bcae49161ade203}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Inc\+Work\+Dequeued@{Inc\+Work\+Dequeued}}
+\index{Inc\+Work\+Dequeued@{Inc\+Work\+Dequeued}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Inc\+Work\+Dequeued}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Hot\+Thread\+Pool\+::\+Inc\+Work\+Dequeued (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_a04887fa51e30658c5bcae49161ade203}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a04887fa51e30658c5bcae49161ade203_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a04887fa51e30658c5bcae49161ade203_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_af197444281b36da96279dacf4657bf6e}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Inc\+Work\+Direct@{Inc\+Work\+Direct}}
+\index{Inc\+Work\+Direct@{Inc\+Work\+Direct}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Inc\+Work\+Direct}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Hot\+Thread\+Pool\+::\+Inc\+Work\+Direct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_af197444281b36da96279dacf4657bf6e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_af197444281b36da96279dacf4657bf6e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_af197444281b36da96279dacf4657bf6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a30ca13128f7acc57db7a098345a98870}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Inc\+Work\+Queued@{Inc\+Work\+Queued}}
+\index{Inc\+Work\+Queued@{Inc\+Work\+Queued}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Inc\+Work\+Queued}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Hot\+Thread\+Pool\+::\+Inc\+Work\+Queued (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_a30ca13128f7acc57db7a098345a98870}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a30ca13128f7acc57db7a098345a98870_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a30ca13128f7acc57db7a098345a98870_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a329794c6b10f1a95410a8a1f8abb4d50}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Inc\+Work\+Weighted@{Inc\+Work\+Weighted}}
+\index{Inc\+Work\+Weighted@{Inc\+Work\+Weighted}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Inc\+Work\+Weighted}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Hot\+Thread\+Pool\+::\+Inc\+Work\+Weighted (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_a329794c6b10f1a95410a8a1f8abb4d50}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a329794c6b10f1a95410a8a1f8abb4d50_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a329794c6b10f1a95410a8a1f8abb4d50_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a9e28c6948e1bc38fac95bee1fb968e87}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hot\+Thread\+Pool}\& leveldb\+::\+Hot\+Thread\+Pool\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hot\+Thread\+Pool} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_hot_thread_pool_a9e28c6948e1bc38fac95bee1fb968e87}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a16063894f72b1de6c5c556a1b539022b}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!perf@{perf}}
+\index{perf@{perf}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{perf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf leveldb\+::\+Performance\+Counters}$\ast$ leveldb\+::\+Hot\+Thread\+Pool\+::perf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_a16063894f72b1de6c5c556a1b539022b}
+\hypertarget{classleveldb_1_1_hot_thread_pool_aaca48f404522caf977d56264cfc51eb8}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!shutdown\+\_\+pending@{shutdown\+\_\+pending}}
+\index{shutdown\+\_\+pending@{shutdown\+\_\+pending}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{shutdown\+\_\+pending}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Hot\+Thread\+Pool\+::shutdown\+\_\+pending (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_aaca48f404522caf977d56264cfc51eb8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_aaca48f404522caf977d56264cfc51eb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a8b7315ca5cfa2bcb8a11139633d17b55}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Submit@{Submit}}
+\index{Submit@{Submit}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Submit}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Hot\+Thread\+Pool\+::\+Submit (
+\begin{DoxyParamCaption}
+\item[{{\bf Thread\+Task} $\ast$}]{item, }
+\item[{bool}]{Ok\+To\+Queue = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_hot_thread_pool_a8b7315ca5cfa2bcb8a11139633d17b55}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a8b7315ca5cfa2bcb8a11139633d17b55_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_hot_thread_pool_a8b7315ca5cfa2bcb8a11139633d17b55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_ad002c307f26506b3ee24fdcce111af4b}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!Thread\+Start@{Thread\+Start}}
+\index{Thread\+Start@{Thread\+Start}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{Thread\+Start}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ leveldb\+::\+Hot\+Thread\+Pool\+::\+Thread\+Start (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classleveldb_1_1_hot_thread_pool_ad002c307f26506b3ee24fdcce111af4b}
+\hypertarget{classleveldb_1_1_hot_thread_pool_acc7d1479b8e81a4105b0653ca82ca95b}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!work\+\_\+queue\+\_\+size@{work\+\_\+queue\+\_\+size}}
+\index{work\+\_\+queue\+\_\+size@{work\+\_\+queue\+\_\+size}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{work\+\_\+queue\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Hot\+Thread\+Pool\+::work\+\_\+queue\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_hot_thread_pool_acc7d1479b8e81a4105b0653ca82ca95b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a7e28dd1d6f7607c7840f4b0604a2d43e}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Dequeued\+Counter@{m\+\_\+\+Dequeued\+Counter}}
+\index{m\+\_\+\+Dequeued\+Counter@{m\+\_\+\+Dequeued\+Counter}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Dequeued\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Performance\+Counters\+Enum} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Dequeued\+Counter}\label{classleveldb_1_1_hot_thread_pool_a7e28dd1d6f7607c7840f4b0604a2d43e}
+\hypertarget{classleveldb_1_1_hot_thread_pool_addcf8d7da65f452d5bb0d2e96facd741}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Direct\+Counter@{m\+\_\+\+Direct\+Counter}}
+\index{m\+\_\+\+Direct\+Counter@{m\+\_\+\+Direct\+Counter}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Direct\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Performance\+Counters\+Enum} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Direct\+Counter}\label{classleveldb_1_1_hot_thread_pool_addcf8d7da65f452d5bb0d2e96facd741}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a03b0d2067849f04918927772f5b44770}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Pool\+Name@{m\+\_\+\+Pool\+Name}}
+\index{m\+\_\+\+Pool\+Name@{m\+\_\+\+Pool\+Name}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Pool\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Pool\+Name}\label{classleveldb_1_1_hot_thread_pool_a03b0d2067849f04918927772f5b44770}
+
+
+used to name threads for gdb / core 
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_aac7b6600773035c7499721eb42ab2075}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Queued\+Counter@{m\+\_\+\+Queued\+Counter}}
+\index{m\+\_\+\+Queued\+Counter@{m\+\_\+\+Queued\+Counter}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Queued\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Performance\+Counters\+Enum} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Queued\+Counter}\label{classleveldb_1_1_hot_thread_pool_aac7b6600773035c7499721eb42ab2075}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a37f97bceb4dc661a524433f6c5459cd1}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Queue\+Lock@{m\+\_\+\+Queue\+Lock}}
+\index{m\+\_\+\+Queue\+Lock@{m\+\_\+\+Queue\+Lock}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Queue\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Spin} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Queue\+Lock}\label{classleveldb_1_1_hot_thread_pool_a37f97bceb4dc661a524433f6c5459cd1}
+
+
+protects access to work\+\_\+queue 
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a061ea39c8e7d9fcab1a331c4955fc181}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Queue\+Thread@{m\+\_\+\+Queue\+Thread}}
+\index{m\+\_\+\+Queue\+Thread@{m\+\_\+\+Queue\+Thread}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Queue\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue\+Thread} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Queue\+Thread}\label{classleveldb_1_1_hot_thread_pool_a061ea39c8e7d9fcab1a331c4955fc181}
+
+
+one slow response worker to cover edge case 
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_aa0bf6b3ad8b624bc6e41dec5c702f8a8}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Shutdown@{m\+\_\+\+Shutdown}}
+\index{m\+\_\+\+Shutdown@{m\+\_\+\+Shutdown}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Shutdown}]{\setlength{\rightskip}{0pt plus 5cm}volatile bool leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Shutdown}\label{classleveldb_1_1_hot_thread_pool_aa0bf6b3ad8b624bc6e41dec5c702f8a8}
+
+
+should we stop threads and shut down? 
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a79c90db2f251666fd715d79c3fe2c107}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Threads@{m\+\_\+\+Threads}}
+\index{m\+\_\+\+Threads@{m\+\_\+\+Threads}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Threads}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Thread\+Pool\+\_\+t} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Threads}\label{classleveldb_1_1_hot_thread_pool_a79c90db2f251666fd715d79c3fe2c107}
+
+
+pool of fast response workers 
+
+\hypertarget{classleveldb_1_1_hot_thread_pool_a2ecf9d61378505a8f43335bc2017078b}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Weighted\+Counter@{m\+\_\+\+Weighted\+Counter}}
+\index{m\+\_\+\+Weighted\+Counter@{m\+\_\+\+Weighted\+Counter}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Weighted\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Performance\+Counters\+Enum} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Weighted\+Counter}\label{classleveldb_1_1_hot_thread_pool_a2ecf9d61378505a8f43335bc2017078b}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a798f6a1fa0e086801bc3a23ad86a4ee1}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Work\+Queue@{m\+\_\+\+Work\+Queue}}
+\index{m\+\_\+\+Work\+Queue@{m\+\_\+\+Work\+Queue}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Work\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Work\+Queue\+\_\+t} leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Work\+Queue}\label{classleveldb_1_1_hot_thread_pool_a798f6a1fa0e086801bc3a23ad86a4ee1}
+\hypertarget{classleveldb_1_1_hot_thread_pool_a3a0aafc7c581ea064fb79c334d918d57}{}\index{leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}!m\+\_\+\+Work\+Queue\+Atomic@{m\+\_\+\+Work\+Queue\+Atomic}}
+\index{m\+\_\+\+Work\+Queue\+Atomic@{m\+\_\+\+Work\+Queue\+Atomic}!leveldb\+::\+Hot\+Thread\+Pool@{leveldb\+::\+Hot\+Thread\+Pool}}
+\subsubsection[{m\+\_\+\+Work\+Queue\+Atomic}]{\setlength{\rightskip}{0pt plus 5cm}volatile size\+\_\+t leveldb\+::\+Hot\+Thread\+Pool\+::m\+\_\+\+Work\+Queue\+Atomic}\label{classleveldb_1_1_hot_thread_pool_a3a0aafc7c581ea064fb79c334d918d57}
+
+
+atomic size to parallel work\+\_\+queue.\+size(). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{hot__threads_8h}{hot\+\_\+threads.\+h}\item 
+util/\hyperlink{hot__threads_8cc}{hot\+\_\+threads.\+cc}\end{DoxyCompactItemize}

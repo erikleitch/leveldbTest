@@ -1,0 +1,5 @@
+<map id="leveldb::SequentialFile" name="leveldb::SequentialFile">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_sequential_file.html" title="{leveldb::anonymous\l_namespace\{env_posix.cc\}\l::PosixSequentialFile\n|&#45; filename_\l&#45; file_\l|+ PosixSequentialFile()\l+ ~PosixSequentialFile()\l+ Read()\l+ Skip()\l}" alt="" coords="5,167,189,320"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_sequential_file_impl.html" title="{leveldb::anonymous\l_namespace\{memenv.cc\}\l::SequentialFileImpl\n|&#45; file_\l&#45; pos_\l|+ SequentialFileImpl()\l+ ~SequentialFileImpl()\l+ Read()\l+ Skip()\l}" alt="" coords="213,167,387,320"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1log_1_1_log_test_1_1_string_source.html" title="{leveldb::log::LogTest\l::StringSource\n|+ contents_\l+ force_error_\l+ returned_partial_\l|+ StringSource()\l+ Read()\l+ Skip()\l}" alt="" coords="411,173,554,313"/>
+</map>

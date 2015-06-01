@@ -1,0 +1,5 @@
+<map id="leveldb::GetVarint64" name="leveldb::GetVarint64">
+<area shape="rect" id="node2" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="207,5,340,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="208,55,339,80"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#ad4e90442ce919c86fb769bf138670d75" title="leveldb::GetVarint64Ptr" alt="" coords="194,104,353,129"/>
+</map>

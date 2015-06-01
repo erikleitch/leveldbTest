@@ -1,0 +1,4 @@
+<map id="leveldb::DBImpl::GetCacheCapacity" name="leveldb::DBImpl::GetCacheCapacity">
+<area shape="rect" id="node2" href="$classleveldb_1_1_double_cache.html#a42b19bd43e44d932aed9daf7947c5d0f" title="leveldb::DoubleCache\l::GetCapacity" alt="" coords="235,5,387,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_sharded_l_r_u_cache2.html#ad6d0402690ab2d747bcd4e75ecdb44a7" title="leveldb::ShardedLRUCache2\l::GetUsage" alt="" coords="435,5,629,44"/>
+</map>

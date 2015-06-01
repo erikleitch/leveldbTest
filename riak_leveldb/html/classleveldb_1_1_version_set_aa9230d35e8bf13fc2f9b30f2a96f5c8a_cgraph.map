@@ -1,0 +1,29 @@
+<map id="leveldb::VersionSet::SetupOtherInputs" name="leveldb::VersionSet::SetupOtherInputs">
+<area shape="rect" id="node2" href="$classleveldb_1_1_compaction.html#aaf72769cc8dabece3e513399425f91fa" title="leveldb::Compaction\l::level" alt="" coords="191,208,333,247"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_version_set.html#a4bba8e7761e985933a27ad44ec98f70d" title="leveldb::VersionSet\l::GetRange" alt="" coords="424,148,559,187"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_version.html#afd86dffba7ce5229778bddd546517392" title="leveldb::Version::GetOverlapping\lInputs" alt="" coords="383,239,600,277"/>
+<area shape="rect" id="node16" href="$classleveldb_1_1_version_set.html#a558c8e10dd7c19c0354cf2721560840b" title="leveldb::VersionSet\l::GetRange2" alt="" coords="194,323,330,361"/>
+<area shape="rect" id="node17" href="$namespaceleveldb.html#a8d7291b08be6643bcfb46c475f779f9e" title="ULL above needed to compile on OSX 10.7.3. " alt="" coords="189,539,335,564"/>
+<area shape="rect" id="node18" href="$namespaceleveldb.html#aeba9623ceee38be99bed2bc1ae082954" title="leveldb::Log" alt="" coords="215,588,309,613"/>
+<area shape="rect" id="node20" href="$classleveldb_1_1_internal_key.html#a737053e1b02c3eb8361e960f7fe5befb" title="leveldb::InternalKey\l::DebugString" alt="" coords="422,428,561,467"/>
+<area shape="rect" id="node24" href="$classleveldb_1_1_slice.html#a2cdd9fb649105033fde510afc9416732" title="leveldb::Slice::ToString" alt="" coords="935,516,1092,541"/>
+<area shape="rect" id="node27" href="$classleveldb_1_1_internal_key.html#aed986eb7cb360bd6955097235ad267b6" title="leveldb::InternalKey\l::Encode" alt="" coords="193,637,331,676"/>
+<area shape="rect" id="node28" href="$classleveldb_1_1_version_edit.html#ac9b26dfba1188705d7fc4deaf047271c" title="leveldb::VersionEdit\l::SetCompactPointer" alt="" coords="190,700,334,739"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_internal_key.html#ab6e9ebec1bf567de89d8dd34fdc51f86" title="leveldb::InternalKey\l::Clear" alt="" coords="683,5,821,44"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_internal_key_comparator.html#a6469a0d67a9025173d31ec6e1cd5f80e" title="leveldb::InternalKeyComparator\l::Compare" alt="" coords="648,120,857,159"/>
+<area shape="rect" id="node6" href="$structleveldb_1_1_comparator.html#a05dae6edcad3c7db23827c0233d74039" title="leveldb::Comparator\l::Compare" alt="" coords="943,49,1084,88"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="932,164,1095,189"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="1187,365,1318,391"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="1186,164,1319,189"/>
+<area shape="rect" id="node10" href="$namespaceleveldb.html#a239098b0291873752d0be16633652825" title="leveldb::DecodeFixed64" alt="" coords="931,213,1096,239"/>
+<area shape="rect" id="node11" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="1170,213,1335,239"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_internal_key.html#a8eeee76862e806006549784fe21fff61" title="leveldb::InternalKey\l::user_key" alt="" coords="683,295,821,333"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_internal_key_comparator.html#a86ca575a4560bb76e2bcebc0618abd31" title="leveldb::InternalKeyComparator\l::user_comparator" alt="" coords="648,183,857,221"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_slice.html#ab9b6e340e8a483a5cf713f6be17709e3" title="leveldb::Slice::clear" alt="" coords="684,245,820,271"/>
+<area shape="rect" id="node19" href="$classleveldb_1_1_logger.html#a408e238a0028a45e9cc7aec6ad2277c5" title="leveldb::Logger::Logv" alt="" coords="417,588,566,613"/>
+<area shape="rect" id="node21" href="$namespaceleveldb.html#a5a173b622e86c7a2f9beae3ac8818ac3" title="leveldb::ParseInternalKey" alt="" coords="665,357,839,383"/>
+<area shape="rect" id="node22" href="$structleveldb_1_1_parsed_internal_key.html#abda4655ea6857f75dcb8f409873207d5" title="leveldb::ParsedInternalKey\l::DebugString" alt="" coords="662,456,842,495"/>
+<area shape="rect" id="node25" href="$namespaceleveldb.html#a6d50705a37d7459f152f8ad839513a73" title="leveldb::EscapeString" alt="" coords="677,407,827,432"/>
+<area shape="rect" id="node23" href="$namespaceleveldb.html#a7facfadd4abd4352097ff14d5ab83bb2" title="leveldb::HexString" alt="" coords="949,465,1078,491"/>
+<area shape="rect" id="node26" href="$namespaceleveldb.html#aa4dfa82a4c1a31fcb076f2ba59f13b19" title="leveldb::AppendEscapedStringTo" alt="" coords="905,416,1122,441"/>
+</map>

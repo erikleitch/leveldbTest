@@ -1,0 +1,3 @@
+<map id="leveldb::CompactionTask" name="leveldb::CompactionTask">
+<area shape="rect" id="node2" href="$classleveldb_1_1_thread_task.html" title="{leveldb::ThreadTask\n|+ m_QueueStart\l# m_RefCount\l|+ ThreadTask()\l+ ~ThreadTask()\l+ RefInc()\l+ RefDec()\l+ operator()()\l&#45; ThreadTask()\l&#45; operator=()\l}" alt="" coords="20,5,160,172"/>
+</map>

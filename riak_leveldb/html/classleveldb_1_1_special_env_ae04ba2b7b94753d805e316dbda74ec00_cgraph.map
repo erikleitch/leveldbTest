@@ -1,0 +1,6 @@
+<map id="leveldb::SpecialEnv::NewRandomAccessFile" name="leveldb::SpecialEnv::NewRandomAccessFile">
+<area shape="rect" id="node2" href="$classleveldb_1_1_env_wrapper.html#a7b147ba21760b3545e757abcdc6dd9c5" title="leveldb::EnvWrapper\l::target" alt="" coords="273,5,417,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_random_access_file.html#a1a09fadcec904d9791a968acabca98d0" title="leveldb::RandomAccessFile\l::Read" alt="" coords="252,68,438,107"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_env.html#a1df3e0bb2d47ee914448df9bb9ca0734" title="leveldb::Env::NewRandomAccessFile" alt="" coords="224,131,467,156"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="280,180,410,205"/>
+</map>

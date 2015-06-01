@@ -1,0 +1,212 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{cache.\+cc\}\+:\+:Handle\+Table Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{cache.\+cc\}\+:\+:Handle\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ae7c182c5e27c2167a948a0d4c1d079bc}{Handle\+Table} ()
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a446683e919ed881c0dd79cfb39fe3351}{$\sim$\+Handle\+Table} ()
+\item 
+\hyperlink{structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle}{L\+R\+U\+Handle} $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af372b21ccbd716a0ad91b50e7158284d}{Lookup} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} hash)
+\item 
+\hyperlink{structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle}{L\+R\+U\+Handle} $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ab156e299418fe3f56e3bf3689b852dd8}{Insert} (\hyperlink{structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle}{L\+R\+U\+Handle} $\ast$h)
+\item 
+\hyperlink{structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle}{L\+R\+U\+Handle} $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a98fe4a88a0b8063ae5cd0106bbc1a546}{Remove} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} hash)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle}{L\+R\+U\+Handle} $\ast$$\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a1e21b7164bb665d5b6dffa0250dd3917}{Find\+Pointer} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} hash)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a951ac12eb79ba848b384e5853a25a465}{Resize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af00dbaf24e74df0c5ec04dcb6cbcd365}{length\+\_\+}
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ad8737ca32824eacb122b742accac7143}{elems\+\_\+}
+\item 
+\hyperlink{structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle}{L\+R\+U\+Handle} $\ast$$\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a71b99c884ffe8096482f4c327cfefae2}{list\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ae7c182c5e27c2167a948a0d4c1d079bc}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!Handle\+Table@{Handle\+Table}}
+\index{Handle\+Table@{Handle\+Table}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{Handle\+Table}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::\+Handle\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ae7c182c5e27c2167a948a0d4c1d079bc}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ae7c182c5e27c2167a948a0d4c1d079bc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a446683e919ed881c0dd79cfb39fe3351}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!````~Handle\+Table@{$\sim$\+Handle\+Table}}
+\index{````~Handle\+Table@{$\sim$\+Handle\+Table}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{$\sim$\+Handle\+Table}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::$\sim$\+Handle\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a446683e919ed881c0dd79cfb39fe3351}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a1e21b7164bb665d5b6dffa0250dd3917}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!Find\+Pointer@{Find\+Pointer}}
+\index{Find\+Pointer@{Find\+Pointer}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{Find\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+R\+U\+Handle}$\ast$$\ast$ leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::\+Find\+Pointer (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{{\bf uint32\+\_\+t}}]{hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a1e21b7164bb665d5b6dffa0250dd3917}
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ab156e299418fe3f56e3bf3689b852dd8}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+R\+U\+Handle}$\ast$ leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::\+Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+R\+U\+Handle} $\ast$}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ab156e299418fe3f56e3bf3689b852dd8}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ab156e299418fe3f56e3bf3689b852dd8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ab156e299418fe3f56e3bf3689b852dd8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af372b21ccbd716a0ad91b50e7158284d}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{Lookup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+R\+U\+Handle}$\ast$ leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::\+Lookup (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{{\bf uint32\+\_\+t}}]{hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af372b21ccbd716a0ad91b50e7158284d}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af372b21ccbd716a0ad91b50e7158284d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af372b21ccbd716a0ad91b50e7158284d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a98fe4a88a0b8063ae5cd0106bbc1a546}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!Remove@{Remove}}
+\index{Remove@{Remove}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+R\+U\+Handle}$\ast$ leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::\+Remove (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{{\bf uint32\+\_\+t}}]{hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a98fe4a88a0b8063ae5cd0106bbc1a546}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a98fe4a88a0b8063ae5cd0106bbc1a546_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a98fe4a88a0b8063ae5cd0106bbc1a546_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a951ac12eb79ba848b384e5853a25a465}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!Resize@{Resize}}
+\index{Resize@{Resize}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::\+Resize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a951ac12eb79ba848b384e5853a25a465}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a951ac12eb79ba848b384e5853a25a465_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ad8737ca32824eacb122b742accac7143}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!elems\+\_\+@{elems\+\_\+}}
+\index{elems\+\_\+@{elems\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{elems\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::elems\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_ad8737ca32824eacb122b742accac7143}
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af00dbaf24e74df0c5ec04dcb6cbcd365}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{length\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_af00dbaf24e74df0c5ec04dcb6cbcd365}
+\hypertarget{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a71b99c884ffe8096482f4c327cfefae2}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}!list\+\_\+@{list\+\_\+}}
+\index{list\+\_\+@{list\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}cache.\+cc\rcurly{}\+::\+Handle\+Table}}
+\subsubsection[{list\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+R\+U\+Handle}$\ast$$\ast$ leveldb\+::anonymous\+\_\+namespace\{cache.\+cc\}\+::Handle\+Table\+::list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table_a71b99c884ffe8096482f4c327cfefae2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{cache_8cc}{cache.\+cc}\end{DoxyCompactItemize}

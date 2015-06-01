@@ -1,0 +1,6 @@
+<map id="leveldb::Histogram::ToString" name="leveldb::Histogram::ToString">
+<area shape="rect" id="node2" href="$classleveldb_1_1_histogram.html#a72836120dc9000bd63048c2b53f21a64" title="leveldb::Histogram\l::Average" alt="" coords="188,5,320,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_histogram.html#a5eaea641e2c7c95364c98f5314e37d77" title="leveldb::Histogram\l::StandardDeviation" alt="" coords="185,68,324,107"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_histogram.html#acb3844fbaeeed8998843a4314904121a" title="leveldb::Histogram\l::Median" alt="" coords="188,131,320,169"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_histogram.html#a58aaefb11df105f26e9da73148b85a47" title="leveldb::Histogram\l::Percentile" alt="" coords="372,131,503,169"/>
+</map>

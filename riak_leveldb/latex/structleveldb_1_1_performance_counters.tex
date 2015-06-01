@@ -1,0 +1,376 @@
+\hypertarget{structleveldb_1_1_performance_counters}{}\section{leveldb\+:\+:Performance\+Counters Struct Reference}
+\label{structleveldb_1_1_performance_counters}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+
+
+{\ttfamily \#include $<$perf\+\_\+count.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Performance\+Counters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{structleveldb_1_1_performance_counters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_performance_counters_a38fb51ba787a3c9976d42cf51e91d83a}{Performance\+Counters} ()
+\begin{DoxyCompactList}\small\item\em does executable\textquotesingle{}s idea of version match shared object? \end{DoxyCompactList}\item 
+bool \hyperlink{structleveldb_1_1_performance_counters_a6a3f95e126edfc01be7ab96e06cd2efc}{Version\+Test} ()
+\item 
+void \hyperlink{structleveldb_1_1_performance_counters_a172b2fe0e1886103286cec6981760912}{Set\+Version} (\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_version}{Version}, \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} Counter\+Size)
+\begin{DoxyCompactList}\small\item\em mostly for \hyperlink{perf__count__test_8cc}{perf\+\_\+count\+\_\+test.\+cc} \end{DoxyCompactList}\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a6c29cd0f57a2b78edc0cdfdfb0869b21}{Inc} (unsigned Index)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a634b9661d456ef845b5f593a6de55da0}{Dec} (unsigned Index)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a8b209c77780935f91c652db6e6db4b5a}{Add} (unsigned Index, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} Amount)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a54bbb0538a6c972ae6658160e0ee0b25}{Value} (unsigned Index) const 
+\item 
+void \hyperlink{structleveldb_1_1_performance_counters_af4dfb6a50f4d92fdd8dcf9efd2f95586}{Set} (unsigned Index, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t})
+\item 
+volatile const \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$ \hyperlink{structleveldb_1_1_performance_counters_aa9af1436bd4f31acdf9633441c71cff1}{Get\+Ptr} (unsigned Index) const 
+\item 
+int \hyperlink{structleveldb_1_1_performance_counters_af9c0e39cf2512f4ebe1069af8837e073}{Lookup\+Counter} (const char $\ast$Name)
+\item 
+void \hyperlink{structleveldb_1_1_performance_counters_ab80e6cb677761fbc4061d0d9b9d83e80}{Dump} ()
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_af1987ece135c698fde481393ce966d98}{Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structleveldb_1_1_performance_counters}{Performance\+Counters} $\ast$ \hyperlink{structleveldb_1_1_performance_counters_a9189ae5525f22a8c93515edd9f63195e}{Init} (bool Is\+Read\+Only)
+\item 
+static int \hyperlink{structleveldb_1_1_performance_counters_af8d05606f8163c30ea06c7ebc0b95599}{Close} (\hyperlink{structleveldb_1_1_performance_counters}{Performance\+Counters} $\ast$Counts)
+\item 
+static const char $\ast$ \hyperlink{structleveldb_1_1_performance_counters_a60a71f3b2ad54e8c6bc3a783fcc11a86}{Get\+Name\+Ptr} (unsigned Index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{structleveldb_1_1_performance_counters_a75bf05d8a2c27abd2a86af2f9444859f}{m\+\_\+\+Last\+Error} =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a4482b82212c3ce6245d0417f815fa745}{m\+\_\+\+Version}
+\begin{DoxyCompactList}\small\item\em object revision identification \end{DoxyCompactList}\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a5fdfce977509e1db9812982560b90f23}{m\+\_\+\+Counter\+Size}
+\begin{DoxyCompactList}\small\item\em number of objects in m\+\_\+\+Counter \end{DoxyCompactList}\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_a0674c387ef731dc72ceb65c5f6b396b1}{m\+\_\+\+Counter} \mbox{[}\hyperlink{namespaceleveldb_a0ba185501d4b24cf13090cf641fc637aa6649887b8bf40c6d506db355a53cd090}{e\+Perf\+Count\+Enum\+Size}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{structleveldb_1_1_performance_counters_a0d494602f6e67dd9a869e952aad5d927}{m\+\_\+\+Perf\+Counter\+Names} \mbox{[}$\,$\mbox{]}
+\item 
+static int \hyperlink{structleveldb_1_1_performance_counters_a67299bcd8e76cd7c71331423b4bfbc7f}{m\+\_\+\+Perf\+Shared\+Id} =-\/1
+\item 
+static volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_performance_counters_ab503614d92ee897bdbded0c210ef9c14}{m\+\_\+\+Bogus\+Counter} =0
+\begin{DoxyCompactList}\small\item\em for out of range Get\+Ptr calls \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structleveldb_1_1_performance_counters_a38fb51ba787a3c9976d42cf51e91d83a}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Performance\+Counters@{Performance\+Counters}}
+\index{Performance\+Counters@{Performance\+Counters}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Performance\+Counters}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Performance\+Counters\+::\+Performance\+Counters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_a38fb51ba787a3c9976d42cf51e91d83a}
+
+
+does executable\textquotesingle{}s idea of version match shared object? 
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a38fb51ba787a3c9976d42cf51e91d83a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structleveldb_1_1_performance_counters_a8b209c77780935f91c652db6e6db4b5a}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Add@{Add}}
+\index{Add@{Add}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Performance\+Counters\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index, }
+\item[{{\bf uint64\+\_\+t}}]{Amount}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_a8b209c77780935f91c652db6e6db4b5a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a8b209c77780935f91c652db6e6db4b5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_af8d05606f8163c30ea06c7ebc0b95599}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Close@{Close}}
+\index{Close@{Close}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Performance\+Counters\+::\+Close (
+\begin{DoxyParamCaption}
+\item[{{\bf Performance\+Counters} $\ast$}]{Counts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structleveldb_1_1_performance_counters_af8d05606f8163c30ea06c7ebc0b95599}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_af8d05606f8163c30ea06c7ebc0b95599_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_a634b9661d456ef845b5f593a6de55da0}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Dec@{Dec}}
+\index{Dec@{Dec}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Dec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Performance\+Counters\+::\+Dec (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_a634b9661d456ef845b5f593a6de55da0}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a634b9661d456ef845b5f593a6de55da0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_ab80e6cb677761fbc4061d0d9b9d83e80}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Dump@{Dump}}
+\index{Dump@{Dump}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Dump}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Performance\+Counters\+::\+Dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_ab80e6cb677761fbc4061d0d9b9d83e80}
+\hypertarget{structleveldb_1_1_performance_counters_a60a71f3b2ad54e8c6bc3a783fcc11a86}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Get\+Name\+Ptr@{Get\+Name\+Ptr}}
+\index{Get\+Name\+Ptr@{Get\+Name\+Ptr}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Get\+Name\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ leveldb\+::\+Performance\+Counters\+::\+Get\+Name\+Ptr (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structleveldb_1_1_performance_counters_a60a71f3b2ad54e8c6bc3a783fcc11a86}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{structleveldb_1_1_performance_counters_a60a71f3b2ad54e8c6bc3a783fcc11a86_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_aa9af1436bd4f31acdf9633441c71cff1}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Get\+Ptr@{Get\+Ptr}}
+\index{Get\+Ptr@{Get\+Ptr}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Get\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}volatile const {\bf uint64\+\_\+t} $\ast$ leveldb\+::\+Performance\+Counters\+::\+Get\+Ptr (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+) const}\label{structleveldb_1_1_performance_counters_aa9af1436bd4f31acdf9633441c71cff1}
+\hypertarget{structleveldb_1_1_performance_counters_a6c29cd0f57a2b78edc0cdfdfb0869b21}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Inc@{Inc}}
+\index{Inc@{Inc}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Inc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Performance\+Counters\+::\+Inc (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_a6c29cd0f57a2b78edc0cdfdfb0869b21}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a6c29cd0f57a2b78edc0cdfdfb0869b21_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_a9189ae5525f22a8c93515edd9f63195e}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Init@{Init}}
+\index{Init@{Init}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Performance\+Counters} $\ast$ leveldb\+::\+Performance\+Counters\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{bool}]{Is\+Read\+Only}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structleveldb_1_1_performance_counters_a9189ae5525f22a8c93515edd9f63195e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a9189ae5525f22a8c93515edd9f63195e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a9189ae5525f22a8c93515edd9f63195e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_af9c0e39cf2512f4ebe1069af8837e073}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Lookup\+Counter@{Lookup\+Counter}}
+\index{Lookup\+Counter@{Lookup\+Counter}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Lookup\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Performance\+Counters\+::\+Lookup\+Counter (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{Name}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_af9c0e39cf2512f4ebe1069af8837e073}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_af9c0e39cf2512f4ebe1069af8837e073_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_af4dfb6a50f4d92fdd8dcf9efd2f95586}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Set@{Set}}
+\index{Set@{Set}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Performance\+Counters\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index, }
+\item[{{\bf uint64\+\_\+t}}]{Amount}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_performance_counters_af4dfb6a50f4d92fdd8dcf9efd2f95586}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_af4dfb6a50f4d92fdd8dcf9efd2f95586_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_a172b2fe0e1886103286cec6981760912}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Set\+Version@{Set\+Version}}
+\index{Set\+Version@{Set\+Version}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Set\+Version}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Performance\+Counters\+::\+Set\+Version (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32\+\_\+t}}]{Version, }
+\item[{{\bf uint32\+\_\+t}}]{Counter\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_performance_counters_a172b2fe0e1886103286cec6981760912}
+
+
+mostly for \hyperlink{perf__count__test_8cc}{perf\+\_\+count\+\_\+test.\+cc} 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{structleveldb_1_1_performance_counters_a172b2fe0e1886103286cec6981760912_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_af1987ece135c698fde481393ce966d98}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Size@{Size}}
+\index{Size@{Size}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Performance\+Counters\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_performance_counters_af1987ece135c698fde481393ce966d98}
+\hypertarget{structleveldb_1_1_performance_counters_a54bbb0538a6c972ae6658160e0ee0b25}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Value@{Value}}
+\index{Value@{Value}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Performance\+Counters\+::\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+) const}\label{structleveldb_1_1_performance_counters_a54bbb0538a6c972ae6658160e0ee0b25}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_performance_counters_a54bbb0538a6c972ae6658160e0ee0b25_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_performance_counters_a6a3f95e126edfc01be7ab96e06cd2efc}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!Version\+Test@{Version\+Test}}
+\index{Version\+Test@{Version\+Test}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{Version\+Test}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Performance\+Counters\+::\+Version\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_performance_counters_a6a3f95e126edfc01be7ab96e06cd2efc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structleveldb_1_1_performance_counters_ab503614d92ee897bdbded0c210ef9c14}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Bogus\+Counter@{m\+\_\+\+Bogus\+Counter}}
+\index{m\+\_\+\+Bogus\+Counter@{m\+\_\+\+Bogus\+Counter}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Bogus\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Bogus\+Counter =0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{structleveldb_1_1_performance_counters_ab503614d92ee897bdbded0c210ef9c14}
+
+
+for out of range Get\+Ptr calls 
+
+\hypertarget{structleveldb_1_1_performance_counters_a0674c387ef731dc72ceb65c5f6b396b1}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Counter\mbox{[}{\bf e\+Perf\+Count\+Enum\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{structleveldb_1_1_performance_counters_a0674c387ef731dc72ceb65c5f6b396b1}
+\hypertarget{structleveldb_1_1_performance_counters_a5fdfce977509e1db9812982560b90f23}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Counter\+Size@{m\+\_\+\+Counter\+Size}}
+\index{m\+\_\+\+Counter\+Size@{m\+\_\+\+Counter\+Size}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Counter\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Counter\+Size\hspace{0.3cm}{\ttfamily [protected]}}\label{structleveldb_1_1_performance_counters_a5fdfce977509e1db9812982560b90f23}
+
+
+number of objects in m\+\_\+\+Counter 
+
+\hypertarget{structleveldb_1_1_performance_counters_a75bf05d8a2c27abd2a86af2f9444859f}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Last\+Error@{m\+\_\+\+Last\+Error}}
+\index{m\+\_\+\+Last\+Error@{m\+\_\+\+Last\+Error}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Last\+Error}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Last\+Error =0\hspace{0.3cm}{\ttfamily [static]}}\label{structleveldb_1_1_performance_counters_a75bf05d8a2c27abd2a86af2f9444859f}
+\hypertarget{structleveldb_1_1_performance_counters_a0d494602f6e67dd9a869e952aad5d927}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Perf\+Counter\+Names@{m\+\_\+\+Perf\+Counter\+Names}}
+\index{m\+\_\+\+Perf\+Counter\+Names@{m\+\_\+\+Perf\+Counter\+Names}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Perf\+Counter\+Names}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Perf\+Counter\+Names\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{structleveldb_1_1_performance_counters_a0d494602f6e67dd9a869e952aad5d927}
+\hypertarget{structleveldb_1_1_performance_counters_a67299bcd8e76cd7c71331423b4bfbc7f}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Perf\+Shared\+Id@{m\+\_\+\+Perf\+Shared\+Id}}
+\index{m\+\_\+\+Perf\+Shared\+Id@{m\+\_\+\+Perf\+Shared\+Id}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Perf\+Shared\+Id}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Perf\+Shared\+Id =-\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{structleveldb_1_1_performance_counters_a67299bcd8e76cd7c71331423b4bfbc7f}
+\hypertarget{structleveldb_1_1_performance_counters_a4482b82212c3ce6245d0417f815fa745}{}\index{leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}!m\+\_\+\+Version@{m\+\_\+\+Version}}
+\index{m\+\_\+\+Version@{m\+\_\+\+Version}!leveldb\+::\+Performance\+Counters@{leveldb\+::\+Performance\+Counters}}
+\subsubsection[{m\+\_\+\+Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Performance\+Counters\+::m\+\_\+\+Version\hspace{0.3cm}{\ttfamily [protected]}}\label{structleveldb_1_1_performance_counters_a4482b82212c3ce6245d0417f815fa745}
+
+
+object revision identification 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\hyperlink{perf__count_8h}{perf\+\_\+count.\+h}\item 
+util/\hyperlink{perf__count_8cc}{perf\+\_\+count.\+cc}\end{DoxyCompactItemize}

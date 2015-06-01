@@ -1,0 +1,350 @@
+\hypertarget{classleveldb_1_1_cache_test}{}\section{leveldb\+:\+:Cache\+Test Class Reference}
+\label{classleveldb_1_1_cache_test}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+
+
+Collaboration diagram for leveldb\+:\+:Cache\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334}{Cache\+Test} ()
+\item 
+\hyperlink{classleveldb_1_1_cache_test_a2591fd9f81069e507206aef8f4d91660}{$\sim$\+Cache\+Test} ()
+\item 
+void \hyperlink{classleveldb_1_1_cache_test_a6c1a40014395d10702c0509506e4f296}{Reset\+Caches} ()
+\item 
+int \hyperlink{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6}{Lookup} (int key)
+\item 
+void \hyperlink{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286}{Insert} (int key, int value, int charge=1)
+\item 
+void \hyperlink{classleveldb_1_1_cache_test_a826135ab4dce1e11bbb99c60e817eafe}{Insert\+File} (int key, int value, int charge=1)
+\item 
+void \hyperlink{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397}{Erase} (int key)
+\item 
+\hyperlink{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334}{Cache\+Test} ()
+\item 
+\hyperlink{classleveldb_1_1_cache_test_a2591fd9f81069e507206aef8f4d91660}{$\sim$\+Cache\+Test} ()
+\item 
+int \hyperlink{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6}{Lookup} (int key)
+\item 
+void \hyperlink{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286}{Insert} (int key, int value, int charge=1)
+\item 
+void \hyperlink{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397}{Erase} (int key)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab}{Deleter} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, void $\ast$v)
+\item 
+static void \hyperlink{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab}{Deleter} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, void $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classleveldb_1_1_cache_test_a2a2b062e2e77ece15b5ac35bf44a0718}{deleted\+\_\+keys\+\_\+}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classleveldb_1_1_cache_test_aeafe117c5ac50ccb9eecfc31069bb35e}{deleted\+\_\+values\+\_\+}
+\item 
+\hyperlink{structleveldb_1_1_options}{Options} \hyperlink{classleveldb_1_1_cache_test_af0e716deccf8122f37eeffbd7a330971}{options\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} \hyperlink{classleveldb_1_1_cache_test_a587eae8d58dc303aa992e0ed67bdbbc6}{double\+\_\+cache\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_cache}{Cache} $\ast$ \hyperlink{classleveldb_1_1_cache_test_ac53f6c47ee88f43cee01024df1045671}{cache\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_cache}{Cache} $\ast$ \hyperlink{classleveldb_1_1_cache_test_a8dc10cbcdcac090927837546c72e315a}{file\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classleveldb_1_1_cache_test}{Cache\+Test} $\ast$ \hyperlink{classleveldb_1_1_cache_test_a91ef57f644d0531b882caed9547759f6}{current\+\_\+}
+\item 
+static const int \hyperlink{classleveldb_1_1_cache_test_ab9e37a17f7cfcf7397e912af9a263440}{k\+One\+Meg} = 1024$\ast$1024\+L
+\item 
+static const int \hyperlink{classleveldb_1_1_cache_test_a1e4cd6b55746670711d7f57d9432b3d6}{k\+Cache\+Size} = 180
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Cache\+Test@{Cache\+Test}}
+\index{Cache\+Test@{Cache\+Test}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Cache\+Test}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Cache\+Test\+::\+Cache\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_a2591fd9f81069e507206aef8f4d91660}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!````~Cache\+Test@{$\sim$\+Cache\+Test}}
+\index{````~Cache\+Test@{$\sim$\+Cache\+Test}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{$\sim$\+Cache\+Test}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Cache\+Test\+::$\sim$\+Cache\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_a2591fd9f81069e507206aef8f4d91660}
+\hypertarget{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Cache\+Test@{Cache\+Test}}
+\index{Cache\+Test@{Cache\+Test}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Cache\+Test}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Cache\+Test\+::\+Cache\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_abfea0e2ae3ee11b62d1f6b622ef47334}
+\hypertarget{classleveldb_1_1_cache_test_a2591fd9f81069e507206aef8f4d91660}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!````~Cache\+Test@{$\sim$\+Cache\+Test}}
+\index{````~Cache\+Test@{$\sim$\+Cache\+Test}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{$\sim$\+Cache\+Test}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Cache\+Test\+::$\sim$\+Cache\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_a2591fd9f81069e507206aef8f4d91660}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Deleter@{Deleter}}
+\index{Deleter@{Deleter}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Deleter}]{\setlength{\rightskip}{0pt plus 5cm}static void leveldb\+::\+Cache\+Test\+::\+Deleter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{void $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Deleter@{Deleter}}
+\index{Deleter@{Deleter}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Deleter}]{\setlength{\rightskip}{0pt plus 5cm}static void leveldb\+::\+Cache\+Test\+::\+Deleter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{void $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classleveldb_1_1_cache_test_aa8d3ce31a1995da33810f2b5320089ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Erase@{Erase}}
+\index{Erase@{Erase}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Erase}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Cache\+Test\+::\+Erase (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Erase@{Erase}}
+\index{Erase@{Erase}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Erase}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Cache\+Test\+::\+Erase (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_aeaa81bbd9d0fba1fb31b0a8f7aa94397_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Cache\+Test\+::\+Insert (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{value, }
+\item[{int}]{charge = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Cache\+Test\+::\+Insert (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{value, }
+\item[{int}]{charge = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_ad7fc76253a92137e62aede17322c7286_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_a826135ab4dce1e11bbb99c60e817eafe}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Insert\+File@{Insert\+File}}
+\index{Insert\+File@{Insert\+File}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Insert\+File}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Cache\+Test\+::\+Insert\+File (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{value, }
+\item[{int}]{charge = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_a826135ab4dce1e11bbb99c60e817eafe}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_a826135ab4dce1e11bbb99c60e817eafe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Lookup}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Cache\+Test\+::\+Lookup (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Lookup}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Cache\+Test\+::\+Lookup (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_test_a90d19cd6098f10f809f0c3b94e8b3fc6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_cache_test_a6c1a40014395d10702c0509506e4f296}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!Reset\+Caches@{Reset\+Caches}}
+\index{Reset\+Caches@{Reset\+Caches}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{Reset\+Caches}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Cache\+Test\+::\+Reset\+Caches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_cache_test_a6c1a40014395d10702c0509506e4f296}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classleveldb_1_1_cache_test_a6c1a40014395d10702c0509506e4f296_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_cache_test_ac53f6c47ee88f43cee01024df1045671}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!cache\+\_\+@{cache\+\_\+}}
+\index{cache\+\_\+@{cache\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{cache\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache} $\ast$ leveldb\+::\+Cache\+Test\+::cache\+\_\+}\label{classleveldb_1_1_cache_test_ac53f6c47ee88f43cee01024df1045671}
+\hypertarget{classleveldb_1_1_cache_test_a91ef57f644d0531b882caed9547759f6}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!current\+\_\+@{current\+\_\+}}
+\index{current\+\_\+@{current\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{current\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache\+Test} $\ast$ leveldb\+::\+Cache\+Test\+::current\+\_\+\hspace{0.3cm}{\ttfamily [static]}}\label{classleveldb_1_1_cache_test_a91ef57f644d0531b882caed9547759f6}
+\hypertarget{classleveldb_1_1_cache_test_a2a2b062e2e77ece15b5ac35bf44a0718}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!deleted\+\_\+keys\+\_\+@{deleted\+\_\+keys\+\_\+}}
+\index{deleted\+\_\+keys\+\_\+@{deleted\+\_\+keys\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{deleted\+\_\+keys\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ int $>$ leveldb\+::\+Cache\+Test\+::deleted\+\_\+keys\+\_\+}\label{classleveldb_1_1_cache_test_a2a2b062e2e77ece15b5ac35bf44a0718}
+\hypertarget{classleveldb_1_1_cache_test_aeafe117c5ac50ccb9eecfc31069bb35e}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!deleted\+\_\+values\+\_\+@{deleted\+\_\+values\+\_\+}}
+\index{deleted\+\_\+values\+\_\+@{deleted\+\_\+values\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{deleted\+\_\+values\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ int $>$ leveldb\+::\+Cache\+Test\+::deleted\+\_\+values\+\_\+}\label{classleveldb_1_1_cache_test_aeafe117c5ac50ccb9eecfc31069bb35e}
+\hypertarget{classleveldb_1_1_cache_test_a587eae8d58dc303aa992e0ed67bdbbc6}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!double\+\_\+cache\+\_\+@{double\+\_\+cache\+\_\+}}
+\index{double\+\_\+cache\+\_\+@{double\+\_\+cache\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{double\+\_\+cache\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Double\+Cache} leveldb\+::\+Cache\+Test\+::double\+\_\+cache\+\_\+}\label{classleveldb_1_1_cache_test_a587eae8d58dc303aa992e0ed67bdbbc6}
+\hypertarget{classleveldb_1_1_cache_test_a8dc10cbcdcac090927837546c72e315a}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!file\+\_\+@{file\+\_\+}}
+\index{file\+\_\+@{file\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{file\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache}$\ast$ leveldb\+::\+Cache\+Test\+::file\+\_\+}\label{classleveldb_1_1_cache_test_a8dc10cbcdcac090927837546c72e315a}
+\hypertarget{classleveldb_1_1_cache_test_a1e4cd6b55746670711d7f57d9432b3d6}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!k\+Cache\+Size@{k\+Cache\+Size}}
+\index{k\+Cache\+Size@{k\+Cache\+Size}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{k\+Cache\+Size}]{\setlength{\rightskip}{0pt plus 5cm}static const int leveldb\+::\+Cache\+Test\+::k\+Cache\+Size = 180\hspace{0.3cm}{\ttfamily [static]}}\label{classleveldb_1_1_cache_test_a1e4cd6b55746670711d7f57d9432b3d6}
+\hypertarget{classleveldb_1_1_cache_test_ab9e37a17f7cfcf7397e912af9a263440}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!k\+One\+Meg@{k\+One\+Meg}}
+\index{k\+One\+Meg@{k\+One\+Meg}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{k\+One\+Meg}]{\setlength{\rightskip}{0pt plus 5cm}const int leveldb\+::\+Cache\+Test\+::k\+One\+Meg = 1024$\ast$1024\+L\hspace{0.3cm}{\ttfamily [static]}}\label{classleveldb_1_1_cache_test_ab9e37a17f7cfcf7397e912af9a263440}
+\hypertarget{classleveldb_1_1_cache_test_af0e716deccf8122f37eeffbd7a330971}{}\index{leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!leveldb\+::\+Cache\+Test@{leveldb\+::\+Cache\+Test}}
+\subsubsection[{options\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Options} leveldb\+::\+Cache\+Test\+::options\+\_\+}\label{classleveldb_1_1_cache_test_af0e716deccf8122f37eeffbd7a330971}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{cache2__test_8cc}{cache2\+\_\+test.\+cc}\item 
+util/\hyperlink{cache__test_8cc}{cache\+\_\+test.\+cc}\end{DoxyCompactItemize}

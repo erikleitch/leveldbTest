@@ -1,0 +1,204 @@
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex}{}\section{leveldb\+:\+:port\+:\+:R\+W\+Mutex Class Reference}
+\label{classleveldb_1_1port_1_1_r_w_mutex}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+
+
+{\ttfamily \#include $<$port\+\_\+posix.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:port\+:\+:R\+W\+Mutex\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classleveldb_1_1port_1_1_r_w_mutex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_r_w_mutex_a4f36bce013a7083faf5d5b66ab6a3577}{R\+W\+Mutex} ()
+\item 
+\hyperlink{classleveldb_1_1port_1_1_r_w_mutex_a2f57278a8f1ee0934b54879c78a82202}{$\sim$\+R\+W\+Mutex} ()
+\item 
+void \hyperlink{classleveldb_1_1port_1_1_r_w_mutex_a343a2ce5c7051378c945e98c77981dbc}{Read\+Lock} ()
+\item 
+void \hyperlink{classleveldb_1_1port_1_1_r_w_mutex_ad2ef416ac41375c282e378c296a1852e}{Write\+Lock} ()
+\item 
+void \hyperlink{classleveldb_1_1port_1_1_r_w_mutex_ac35f19efd6c082b5437888306aa0d3e7}{Unlock} ()
+\item 
+void \hyperlink{classleveldb_1_1port_1_1_r_w_mutex_ae7d68fe6baa0fa767ad26ff746236571}{Assert\+Held} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_r_w_mutex_a99f5019dbe24c55b96b028689ea9890b}{R\+W\+Mutex} (const \hyperlink{classleveldb_1_1port_1_1_r_w_mutex}{R\+W\+Mutex} \&)
+\item 
+void \hyperlink{classleveldb_1_1port_1_1_r_w_mutex_a7433bc4efca625e2313755da8531f45c}{operator=} (const \hyperlink{classleveldb_1_1port_1_1_r_w_mutex}{R\+W\+Mutex} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+rwlock\+\_\+t \hyperlink{classleveldb_1_1port_1_1_r_w_mutex_a7849927186af9e32d8ac7b3af4c26a5e}{mu\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_a4f36bce013a7083faf5d5b66ab6a3577}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!R\+W\+Mutex@{R\+W\+Mutex}}
+\index{R\+W\+Mutex@{R\+W\+Mutex}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{R\+W\+Mutex}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::port\+::\+R\+W\+Mutex\+::\+R\+W\+Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1port_1_1_r_w_mutex_a4f36bce013a7083faf5d5b66ab6a3577}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1port_1_1_r_w_mutex_a4f36bce013a7083faf5d5b66ab6a3577_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_a2f57278a8f1ee0934b54879c78a82202}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!````~R\+W\+Mutex@{$\sim$\+R\+W\+Mutex}}
+\index{````~R\+W\+Mutex@{$\sim$\+R\+W\+Mutex}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{$\sim$\+R\+W\+Mutex}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::port\+::\+R\+W\+Mutex\+::$\sim$\+R\+W\+Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1port_1_1_r_w_mutex_a2f57278a8f1ee0934b54879c78a82202}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1port_1_1_r_w_mutex_a2f57278a8f1ee0934b54879c78a82202_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_a99f5019dbe24c55b96b028689ea9890b}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!R\+W\+Mutex@{R\+W\+Mutex}}
+\index{R\+W\+Mutex@{R\+W\+Mutex}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{R\+W\+Mutex}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::port\+::\+R\+W\+Mutex\+::\+R\+W\+Mutex (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\+W\+Mutex} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1port_1_1_r_w_mutex_a99f5019dbe24c55b96b028689ea9890b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_ae7d68fe6baa0fa767ad26ff746236571}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!Assert\+Held@{Assert\+Held}}
+\index{Assert\+Held@{Assert\+Held}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{Assert\+Held}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::port\+::\+R\+W\+Mutex\+::\+Assert\+Held (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1port_1_1_r_w_mutex_ae7d68fe6baa0fa767ad26ff746236571}
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_a7433bc4efca625e2313755da8531f45c}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::port\+::\+R\+W\+Mutex\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\+W\+Mutex} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1port_1_1_r_w_mutex_a7433bc4efca625e2313755da8531f45c}
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_a343a2ce5c7051378c945e98c77981dbc}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!Read\+Lock@{Read\+Lock}}
+\index{Read\+Lock@{Read\+Lock}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{Read\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::port\+::\+R\+W\+Mutex\+::\+Read\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1port_1_1_r_w_mutex_a343a2ce5c7051378c945e98c77981dbc}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1port_1_1_r_w_mutex_a343a2ce5c7051378c945e98c77981dbc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classleveldb_1_1port_1_1_r_w_mutex_a343a2ce5c7051378c945e98c77981dbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_ac35f19efd6c082b5437888306aa0d3e7}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{Unlock}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::port\+::\+R\+W\+Mutex\+::\+Unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1port_1_1_r_w_mutex_ac35f19efd6c082b5437888306aa0d3e7}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1port_1_1_r_w_mutex_ac35f19efd6c082b5437888306aa0d3e7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classleveldb_1_1port_1_1_r_w_mutex_ac35f19efd6c082b5437888306aa0d3e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_ad2ef416ac41375c282e378c296a1852e}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!Write\+Lock@{Write\+Lock}}
+\index{Write\+Lock@{Write\+Lock}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{Write\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::port\+::\+R\+W\+Mutex\+::\+Write\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1port_1_1_r_w_mutex_ad2ef416ac41375c282e378c296a1852e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1port_1_1_r_w_mutex_ad2ef416ac41375c282e378c296a1852e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classleveldb_1_1port_1_1_r_w_mutex_ad2ef416ac41375c282e378c296a1852e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1port_1_1_r_w_mutex_a7849927186af9e32d8ac7b3af4c26a5e}{}\index{leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}!mu\+\_\+@{mu\+\_\+}}
+\index{mu\+\_\+@{mu\+\_\+}!leveldb\+::port\+::\+R\+W\+Mutex@{leveldb\+::port\+::\+R\+W\+Mutex}}
+\subsubsection[{mu\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+rwlock\+\_\+t leveldb\+::port\+::\+R\+W\+Mutex\+::mu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1port_1_1_r_w_mutex_a7849927186af9e32d8ac7b3af4c26a5e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+port/\hyperlink{port__posix_8h}{port\+\_\+posix.\+h}\item 
+port/\hyperlink{port__posix_8cc}{port\+\_\+posix.\+cc}\end{DoxyCompactItemize}

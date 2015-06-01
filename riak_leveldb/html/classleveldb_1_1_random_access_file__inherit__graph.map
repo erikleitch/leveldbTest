@@ -1,0 +1,5 @@
+<map id="leveldb::RandomAccessFile" name="leveldb::RandomAccessFile">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file.html" title="{leveldb::anonymous\l_namespace\{env_posix.cc\}\l::PosixRandomAccessFile\n|&#45; filename_\l&#45; fd_\l&#45; is_compaction_\l&#45; file_size_\l|+ PosixRandomAccessFile()\l+ ~PosixRandomAccessFile()\l+ Read()\l+ SetForCompaction()\l+ ObjectSize()\l}" alt="" coords="5,180,202,373"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_random_access_file_impl.html" title="{leveldb::anonymous\l_namespace\{memenv.cc\}\l::RandomAccessFileImpl\n|&#45; file_\l|+ RandomAccessFileImpl()\l+ ~RandomAccessFileImpl()\l+ Read()\l}" alt="" coords="226,213,416,340"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_string_source.html" title="{leveldb::StringSource\n|&#45; contents_\l|+ StringSource()\l+ ~StringSource()\l+ Size()\l+ Read()\l}" alt="" coords="440,220,589,333"/>
+</map>

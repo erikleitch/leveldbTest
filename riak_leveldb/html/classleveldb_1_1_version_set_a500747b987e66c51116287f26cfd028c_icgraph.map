@@ -1,0 +1,37 @@
+<map id="leveldb::VersionSet::current" name="leveldb::VersionSet::current">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#aba537e56669df2c19fc439fd9f4227d5" title="leveldb::DBImpl::Recover" alt="" coords="466,320,638,345"/>
+<area shape="rect" id="node24" href="$classleveldb_1_1_d_b_impl.html#a251b1fb7890cf9ebc377ebfca4462f5a" title="leveldb::DBImpl::Compact\lMemTable" alt="" coords="210,61,386,100"/>
+<area shape="rect" id="node27" href="$classleveldb_1_1_d_b_impl.html#aa6df0739fc0b49380c284347e411b8ed" title="leveldb::DBImpl::Compact\lRange" alt="" coords="210,187,386,225"/>
+<area shape="rect" id="node28" href="$classleveldb_1_1_d_b_impl.html#af4cf17ab446a4797270aad502f1c3f3d" title="leveldb::DBImpl::NewInternal\lIterator" alt="" coords="201,124,395,163"/>
+<area shape="rect" id="node32" href="$classleveldb_1_1_d_b_impl.html#a9bf8bbc86455a00b1d9c75b81254feba" title="leveldb::DBImpl::Get" alt="" coords="226,301,370,327"/>
+<area shape="rect" id="node33" href="$classleveldb_1_1_d_b_impl.html#ad1a2023ce171c8f8476664f5b1cbab4d" title="leveldb::DBImpl::GetProperty" alt="" coords="201,351,395,376"/>
+<area shape="rect" id="node34" href="$classleveldb_1_1_d_b_impl.html#af08e218d92064699942c195ce0f06010" title="leveldb::DBImpl::GetApproximate\lSizes" alt="" coords="189,400,407,439"/>
+<area shape="rect" id="node35" href="$classleveldb_1_1_d_b_impl.html#abde8252536a8f48c36d1dc9a9738a508" title="leveldb::DBImpl::VerifyLevels" alt="" coords="201,463,395,488"/>
+<area shape="rect" id="node36" href="$classleveldb_1_1_version_set.html#a955ff8620ec56742cdc48da0e74ab40b" title="leveldb::VersionSet\l::Recover" alt="" coords="230,512,366,551"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_d_b.html#ac1da2b48e911287d86f3a3bfa0f851fe" title="leveldb::DB::Open" alt="" coords="731,320,860,345"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_corruption_test.html#af9680fa87bfaf020fc47966c1d2467e8" title="leveldb::CorruptionTest\l::TryReopen" alt="" coords="962,144,1119,183"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_benchmark.html#a89a3b0da75e6cd2ffb879358e5dd82a6" title="leveldb::Benchmark\l::Open" alt="" coords="971,232,1110,271"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_d_b_test.html#aee588b2d13db6be2a651a8fabeac5c79" title="leveldb::DBTest::TryReopen" alt="" coords="947,295,1134,320"/>
+<area shape="rect" id="node16" href="$classleveldb_1_1_d_b_test.html#aaf18040f36d28207e2f56c35ebccf360" title="leveldb::DBTest::DoubleOpen" alt="" coords="942,344,1138,369"/>
+<area shape="rect" id="node17" href="$namespaceleveldb.html#a88d6fdcb16ed4edc65da40f383e6f23b" title="leveldb::TEST" alt="" coords="988,393,1093,419"/>
+<area shape="rect" id="node18" href="$namespaceleveldb.html#af9cf6ec167c9b6f25fd050ab6fb67a90" title="leveldb::BM_LogAndApply" alt="" coords="952,519,1129,544"/>
+<area shape="rect" id="node20" href="$classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer.html#abba6586bedbead266d5530109b51ff05" title="leveldb::anonymous\l_namespace\{repair::cc\}\l::Repairer::Run" alt="" coords="960,443,1121,495"/>
+<area shape="rect" id="node21" href="$classleveldb_1_1_d_b_constructor.html#ac48bfe871db8558b57427843465e6c65" title="leveldb::DBConstructor\l::NewDB" alt="" coords="961,68,1120,107"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_corruption_test.html#aab4c6a5ca8757d5e62caaf66e90d8f8f" title="leveldb::CorruptionTest\l::Reopen" alt="" coords="1192,131,1349,169"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_corruption_test.html#a9940767db260b1e4e60b8bcedc50217c" title="leveldb::CorruptionTest\l::CorruptionTest" alt="" coords="1431,131,1588,169"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="1424,224,1595,249"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_benchmark.html#a86876b2882d9015610330e69acfdff0d" title="leveldb::Benchmark\l::Write" alt="" coords="1201,245,1340,284"/>
+<area shape="rect" id="node9" href="$db__bench_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1665,224,1715,249"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_d_b_test.html#a38170a082cbc71fb446408ff5634c797" title="leveldb::DBTest::Reopen" alt="" coords="1186,308,1355,333"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_d_b_test.html#ab798a43e7feab6dddc8fa1eb7a5f61f6" title="leveldb::DBTest::Destroy\lAndReopen" alt="" coords="1187,357,1354,396"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_d_b_test.html#afc6fc9512e900de6ee10c5db15b22930" title="leveldb::DBTest::DBTest" alt="" coords="1427,308,1592,333"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_d_b_test.html#a587534fe403016f15cf1997ef7a40836" title="leveldb::DBTest::ChangeOptions" alt="" coords="1403,364,1617,389"/>
+<area shape="rect" id="node19" href="$db__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1245,519,1296,544"/>
+<area shape="rect" id="node22" href="$classleveldb_1_1_d_b_constructor.html#ae27ecdd7732629b08c25a63f82dfd4a9" title="leveldb::DBConstructor\l::DBConstructor" alt="" coords="1191,5,1350,44"/>
+<area shape="rect" id="node23" href="$classleveldb_1_1_d_b_constructor.html#a554d8e348d9135ff72a43a03c647c261" title="leveldb::DBConstructor\l::FinishImpl" alt="" coords="1191,68,1350,107"/>
+<area shape="rect" id="node25" href="$classleveldb_1_1_d_b_impl.html#ade59d90db532404c3d0e1b2be91dd407" title="leveldb::DBImpl::Background\lImmCompactCall" alt="" coords="455,61,649,100"/>
+<area shape="rect" id="node26" href="$classleveldb_1_1_imm_write_task.html#a7cec4d0a9c768feacded04d654723539" title="leveldb::ImmWriteTask\l::operator()" alt="" coords="718,61,873,100"/>
+<area shape="rect" id="node29" href="$classleveldb_1_1_d_b_impl.html#adba5bf4252bd94f7db50e62921b7ba53" title="leveldb::DBImpl::TEST\l_NewInternalIterator" alt="" coords="474,180,630,219"/>
+<area shape="rect" id="node31" href="$classleveldb_1_1_d_b_impl.html#ae955dc8f2a1c38588723a0882653cb58" title="leveldb::DBImpl::NewIterator" alt="" coords="456,131,647,156"/>
+<area shape="rect" id="node30" href="$classleveldb_1_1_d_b_test.html#adaf171601eaaf2cd24edaa394752f733" title="leveldb::DBTest::AllEntriesFor" alt="" coords="697,187,894,212"/>
+</map>

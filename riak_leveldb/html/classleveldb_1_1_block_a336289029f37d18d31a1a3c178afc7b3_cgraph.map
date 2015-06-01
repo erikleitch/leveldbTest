@@ -1,0 +1,9 @@
+<map id="leveldb::Block::NewIterator" name="leveldb::Block::NewIterator">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#ab2c425a5fcb13b97e50e32c7b93186f5" title="leveldb::NewErrorIterator" alt="" coords="243,5,412,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title="leveldb::Status::Corruption" alt="" coords="470,57,649,83"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_block.html#a50f716365aa5b729943a1c3eb2d06e9d" title="leveldb::Block::NumRestarts" alt="" coords="233,107,422,132"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#a3293c30e4a309a7293598b1db0f3e687" title="leveldb::NewEmptyIterator" alt="" coords="239,156,417,181"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="697,107,851,132"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="477,107,641,132"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_status.html#a8e3720d233281c874a53c17e081f51b3" title="leveldb::Status::OK" alt="" coords="492,156,627,181"/>
+</map>

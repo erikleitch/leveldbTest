@@ -1,0 +1,5 @@
+<map id="leveldb::ReadOptions" name="leveldb::ReadOptions">
+<area shape="rect" id="node2" href="$classleveldb_1_1_logger.html" title="{leveldb::Logger\n||+ Logger()\l+ ~Logger()\l+ Logv()\l+ getStats()\l&#45; Logger()\l&#45; operator=()\l}" alt="" coords="5,65,118,205"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_snapshot.html" title="{leveldb::Snapshot\n||# ~Snapshot()\l}" alt="" coords="142,99,269,172"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_env.html" title="{leveldb::Env\n||+ Env()\l+ ~Env()\l+ NewSequentialFile()\l+ NewRandomAccessFile()\l+ NewWritableFile()\l+ NewAppendableFile()\l+ NewWriteOnlyFile()\l+ FileExists()\l+ GetChildren()\l+ DeleteFile()\land 15 more...\l+ Default()\l+ Shutdown()\l&#45; Env()\l&#45; operator=()\l}" alt="" coords="293,5,476,265"/>
+</map>

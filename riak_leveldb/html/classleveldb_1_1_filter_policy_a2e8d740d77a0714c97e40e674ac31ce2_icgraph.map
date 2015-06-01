@@ -1,0 +1,5 @@
+<map id="leveldb::FilterPolicy::SetNext" name="leveldb::FilterPolicy::SetNext">
+<area shape="rect" id="node2" href="$classleveldb_1_1_filter_inventory.html#a9d4a3fa7a519cf96e86317037aaa799c" title="leveldb::FilterInventory\l::AddFilterToInventory" alt="" coords="190,37,345,76"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1_bloom_inventory_item.html#ae5ebefa54906ee1a490137799b6d1d09" title="leveldb::BloomInventoryItem\l::BloomInventoryItem" alt="" coords="397,5,586,44"/>
+<area shape="rect" id="node4" href="$structleveldb_1_1_bloom_inventory_item2.html#ab6c572ce09606646bec485fe6672a8c1" title="leveldb::BloomInventoryItem2\l::BloomInventoryItem2" alt="" coords="393,68,590,107"/>
+</map>

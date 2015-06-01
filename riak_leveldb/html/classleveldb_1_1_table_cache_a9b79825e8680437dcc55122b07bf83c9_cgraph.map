@@ -1,0 +1,8 @@
+<map id="leveldb::TableCache::GetStatisticValue" name="leveldb::TableCache::GetStatisticValue">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#a725a2c0ebf763116b4ca3fb78564ff70" title="leveldb::EncodeFixed64" alt="" coords="215,5,379,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_cache.html#af90785205182a25cf741dc13a48d76cb" title="leveldb::Cache::Lookup" alt="" coords="217,55,378,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_cache.html#a454920df8e68917adcf011dfb3538661" title="leveldb::Cache::Value" alt="" coords="222,104,372,129"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_table.html#aa79a6b167fe2f5db29df7b48a6534fb2" title="leveldb::Table::GetSstCounters" alt="" coords="195,153,400,179"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_sst_counters.html#a61f7aaec238086d81f0d121cc4517012" title="leveldb::SstCounters\l::Value" alt="" coords="225,203,369,241"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_cache.html#a712618c8bf3bfa48b7bab1fbc23c3002" title="leveldb::Cache::Release" alt="" coords="214,265,380,291"/>
+</map>

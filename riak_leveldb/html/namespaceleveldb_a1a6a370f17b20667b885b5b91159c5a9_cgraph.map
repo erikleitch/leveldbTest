@@ -1,0 +1,12 @@
+<map id="leveldb::SomeFileOverlapsRange" name="leveldb::SomeFileOverlapsRange">
+<area shape="rect" id="node2" href="$classleveldb_1_1_internal_key_comparator.html#a86ca575a4560bb76e2bcebc0618abd31" title="leveldb::InternalKeyComparator\l::user_comparator" alt="" coords="234,5,443,44"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#a7f9c247b8bae634426f95a6a4443ebfc" title="leveldb::AfterFile" alt="" coords="278,117,399,143"/>
+<area shape="rect" id="node9" href="$namespaceleveldb.html#ad320b62435f131ca2217d00425cae151" title="leveldb::BeforeFile" alt="" coords="273,68,404,93"/>
+<area shape="rect" id="node10" href="$namespaceleveldb.html#a812c4c6cf8299e767535a59f2205df0c" title="leveldb::FindFile" alt="" coords="279,167,398,192"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_internal_key.html#aed986eb7cb360bd6955097235ad267b6" title="leveldb::InternalKey\l::Encode" alt="" coords="492,192,631,231"/>
+<area shape="rect" id="node4" href="$structleveldb_1_1_comparator.html#a05dae6edcad3c7db23827c0233d74039" title="leveldb::Comparator\l::Compare" alt="" coords="491,117,632,156"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_internal_key.html#a8eeee76862e806006549784fe21fff61" title="leveldb::InternalKey\l::user_key" alt="" coords="492,55,631,93"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="680,61,844,87"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="893,36,1024,61"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="892,85,1025,111"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="leveldb::LRUCache2::HashSlice" name="leveldb::LRUCache2::HashSlice">
+<area shape="rect" id="node2" href="$classleveldb_1_1_l_r_u_cache2.html#ac10060719542d8fa0687a629717c4f80" title="leveldb::LRUCache2\l::Insert" alt="" coords="197,5,341,44"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_l_r_u_cache2.html#a37f8596ded603ec2cd6a7146ff9193fa" title="leveldb::LRUCache2\l::Lookup" alt="" coords="197,68,341,107"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_l_r_u_cache2.html#aa786830fccda48502c9c5acaf4fa9d4e" title="leveldb::LRUCache2\l::Erase" alt="" coords="197,131,341,169"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_sharded_l_r_u_cache2.html#af038d5d9763066a12ac3b9f50ba366a8" title="leveldb::ShardedLRUCache2\l::Insert" alt="" coords="389,5,583,44"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_sharded_l_r_u_cache2.html#aa4a52c77ea98f905a675ef8ef09814ab" title="leveldb::ShardedLRUCache2\l::Lookup" alt="" coords="389,68,583,107"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_sharded_l_r_u_cache2.html#a296f73883592ca73156c67356051e8b7" title="leveldb::ShardedLRUCache2\l::Erase" alt="" coords="389,131,583,169"/>
+</map>

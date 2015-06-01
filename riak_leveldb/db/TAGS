@@ -1,0 +1,264 @@
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//builder.h,44
+#define STORAGE_LEVELDB_DB_BUILDER_H_6,255
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//c_test.c,691
+const char* phase 14,367
+static char dbname[dbname15,391
+static void StartPhase(17,417
+static const char* GetTempDir(22,521
+#define CheckNoError(29,684
+#define CheckCondition(35,987
+static void CheckEqual(41,1290
+static void Free(57,1729
+static void CheckGet(64,1814
+static void CheckIter(78,2141
+static void CheckPut(89,2465
+static void CheckDel(108,2923
+static void CmpDestroy(115,3090
+static int CmpCompare(117,3129
+static const char* CmpName(128,3406
+static unsigned char fake_filter_result 133,3489
+static void FilterDestroy(134,3534
+static const char* FilterName(135,3575
+static char* FilterCreate(138,3643
+unsigned char FilterKeyMatch(148,3896
+int main(157,4145
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//db_impl.h,658
+#define STORAGE_LEVELDB_DB_DB_IMPL_H_6,255
+class DBImpl 26,609
+  void ResizeCaches(66,2349
+  size_t GetCacheCapacity(67,2403
+  void PurgeExpiredFileCache(68,2474
+  uint32_t RunningCompactionCount(73,2656
+  void MaybeIgnoreError(95,3369
+  struct ManualCompaction DBImpl::ManualCompaction173,6210
+  struct CompactionStats DBImpl::CompactionStats189,6773
+    CompactionStats(DBImpl::CompactionStats::CompactionStats194,6872
+    void Add(DBImpl::CompactionStats::Add196,6944
+  Cache * block_cache(DBImpl::block_cache214,7610
+  Cache * file_cache(DBImpl::file_cache215,7675
+  const Comparator* user_comparator(DBImpl::user_comparator221,7822
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//db_iter.h,44
+#define STORAGE_LEVELDB_DB_DB_ITER_H_6,255
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//dbformat.h,2008
+#define STORAGE_LEVELDB_DB_FORMAT_H_6,254
+enum ValueType 56,1938
+  kTypeDeletion ValueType::kTypeDeletion57,1955
+  kTypeDeletion = 0x0,ValueType::x057,1955
+  kTypeValue ValueType::kTypeValue58,1978
+  kTypeValue = 0x1ValueType::x158,1978
+static const ValueType kValueTypeForSeek 66,2375
+typedef uint64_t SequenceNumber;68,2431
+static const SequenceNumber kMaxSequenceNumber 72,2572
+struct ParsedInternalKey 75,2648
+  ParsedInternalKey(ParsedInternalKey::ParsedInternalKey80,2739
+  ParsedInternalKey(ParsedInternalKey::ParsedInternalKey81,2814
+inline size_t InternalKeyEncodingLength(88,3062
+inline Slice ExtractUserKey(104,3698
+inline ValueType ExtractValueType(109,3856
+class InternalKeyComparator 119,4269
+  explicit InternalKeyComparator(InternalKeyComparator::InternalKeyComparator123,4376
+  const Comparator* user_comparator(InternalKeyComparator::user_comparator131,4710
+class InternalFilterPolicy 137,4924
+  explicit InternalFilterPolicy(InternalFilterPolicy::InternalFilterPolicy141,5038
+class InternalFilterPolicy2 147,5307
+  explicit InternalFilterPolicy2(InternalFilterPolicy2::InternalFilterPolicy2149,5376
+  virtual ~InternalFilterPolicy2(InternalFilterPolicy2::~InternalFilterPolicy2150,5462
+class InternalKey 156,5736
+  InternalKey(InternalKey::InternalKey160,5795
+  InternalKey(InternalKey::InternalKey161,5866
+  void DecodeFrom(InternalKey::DecodeFrom165,6006
+  Slice Encode(InternalKey::Encode166,6077
+  Slice user_key(InternalKey::user_key171,6151
+  void SetFrom(InternalKey::SetFrom173,6210
+  void Clear(InternalKey::Clear178,6311
+inline int InternalKeyComparator::Compare(183,6384
+inline bool ParseInternalKey(188,6528
+class LookupKey 201,7035
+  Slice memtable_key(LookupKey::memtable_key210,7295
+  Slice internal_key(LookupKey::internal_key213,7441
+  Slice user_key(LookupKey::user_key216,7539
+inline LookupKey::~LookupKey(236,8177
+class KeyRetirement243,8419
+    virtual ~KeyRetirement(KeyRetirement::~KeyRetirement262,8928
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//filename.h,221
+#define STORAGE_LEVELDB_DB_FILENAME_H_8,289
+enum FileType 22,523
+  kLogFile,23,539
+  kDBLockFile,24,551
+  kTableFile,25,566
+  kDescriptorFile,26,580
+  kCurrentFile,27,599
+  kTempFile,28,615
+  kInfoLogFile 29,628
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//log_format.h,287
+#define STORAGE_LEVELDB_DB_LOG_FORMAT_H_9,362
+enum RecordType 14,441
+  kZeroType 16,504
+  kFullType 18,522
+  kFirstType 21,559
+  kMiddleType 22,577
+  kLastType 23,596
+static const int kMaxRecordType 25,615
+static const int kBlockSize 27,661
+static const int kHeaderSize 30,765
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//log_reader.h,211
+#define STORAGE_LEVELDB_DB_LOG_READER_H_6,258
+class Reader 20,465
+  class Reporter 23,526
+    kEof 78,2481
+    kEof = kMaxRecordType 78,2481
+    kBadRecord 84,2858
+    kBadRecord = kMaxRecordType 84,2858
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//log_writer.h,89
+#define STORAGE_LEVELDB_DB_LOG_WRITER_H_6,258
+class Writer 18,466
+  void Close(28,736
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//memtable.h,264
+#define STORAGE_LEVELDB_DB_MEMTABLE_H_6,256
+class MemTable 20,501
+  void Ref(27,747
+  void Unref(30,847
+  struct KeyComparator 69,2176
+    explicit KeyComparator(71,2245
+    int operator(72,2324
+  typedef SkipList<const char*, KeyComparator> Table;77,2460
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//skiplist.h,2145
+class SkipList 38,1211
+  bool Contains(53,1748
+  class Iterator 56,1836
+    bool Valid(63,2078
+  enum { kMaxHeight 95,2829
+  inline int GetMaxHeight(SkipList::GetMaxHeight107,3163
+  bool Equal(SkipList::Equal117,3419
+template<typename Key,143,4280
+struct SkipList<Key,Comparator>::Node Node144,4321
+template<typename Key,179,5393
+SkipList<Key,Comparator>::NewNode(NewNode181,5475
+template<typename Key,187,5677
+inline SkipList<Key,Comparator>::Iterator::Iterator(Iterator::Iterator188,5718
+template<typename Key,193,5829
+inline bool SkipList<Key,Comparator>::Iterator::Valid(Iterator::Valid194,5870
+template<typename Key,198,5961
+inline const Key& SkipList<Key,Comparator>::Iterator::key(Iterator::key199,6002
+template<typename Key,204,6113
+inline void SkipList<Key,Comparator>::Iterator::Next(Iterator::Next205,6154
+template<typename Key,210,6259
+inline void SkipList<Key,Comparator>::Iterator::Prev(Iterator::Prev211,6300
+template<typename Key,221,6581
+inline void SkipList<Key,Comparator>::Iterator::Seek(Iterator::Seek222,6622
+template<typename Key,226,6750
+inline void SkipList<Key,Comparator>::Iterator::SeekToFirst(Iterator::SeekToFirst227,6791
+template<typename Key,231,6891
+inline void SkipList<Key,Comparator>::Iterator::SeekToLast(Iterator::SeekToLast232,6932
+template<typename Key,239,7080
+int SkipList<Key,Comparator>::RandomHeight(RandomHeight240,7121
+template<typename Key,252,7445
+bool SkipList<Key,Comparator>::KeyIsAfterNode(KeyIsAfterNode253,7486
+template<typename Key,258,7656
+typename SkipList<Key,Comparator>::Node* SkipList<Key,Comparator>::FindGreaterOrEqual(FindGreaterOrEqual259,7697
+template<typename Key,280,8200
+SkipList<Key,Comparator>::FindLessThan(FindLessThan282,8282
+template<typename Key,301,8713
+typename SkipList<Key,Comparator>::Node* SkipList<Key,Comparator>::FindLast(FindLast302,8754
+template<typename Key,321,9126
+SkipList<Key,Comparator>::SkipList(SkipList322,9167
+template<typename Key,333,9482
+void SkipList<Key,Comparator>::Insert(Insert334,9523
+template<typename Key,369,10911
+bool SkipList<Key,Comparator>::Contains(Contains370,10952
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//snapshot.h,392
+#define STORAGE_LEVELDB_DB_SNAPSHOT_H_6,256
+class SnapshotImpl 16,486
+class SnapshotList 30,801
+  SnapshotList(SnapshotList::SnapshotList32,831
+  bool empty(SnapshotList::empty37,907
+  SnapshotImpl* oldest(SnapshotList::oldest38,962
+  SnapshotImpl* newest(SnapshotList::newest39,1035
+  const SnapshotImpl* New(SnapshotList::New41,1109
+  void Delete(SnapshotList::Delete52,1360
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//table_cache.h,251
+#define STORAGE_LEVELDB_DB_TABLE_CACHE_H_8,313
+class TableCache 22,555
+  Status TEST_FindTable(59,2118
+  Cache* TEST_GetInternalCache(62,2284
+  void Release(64,2337
+struct TableAndFile 77,2660
+   TableAndFile(TableAndFile::TableAndFile82,2754
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//version_edit.h,875
+#define STORAGE_LEVELDB_DB_VERSION_EDIT_H_6,260
+struct FileMetaData 17,422
+  FileMetaData(27,841
+class FileMetaDataPtrCompare34,956
+    explicit FileMetaDataPtrCompare(FileMetaDataPtrCompare::FileMetaDataPtrCompare40,1043
+    bool operator() FileMetaDataPtrCompare::operator()43,1145
+class VersionEdit 49,1375
+  VersionEdit(VersionEdit::VersionEdit51,1404
+  ~VersionEdit(VersionEdit::~VersionEdit52,1433
+  void SetComparatorName(VersionEdit::SetComparatorName56,1472
+  void SetLogNumber(VersionEdit::SetLogNumber60,1585
+  void SetPrevLogNumber(VersionEdit::SetPrevLogNumber64,1676
+  void SetNextFile(VersionEdit::SetNextFile68,1781
+  void SetLastSequence(VersionEdit::SetLastSequence72,1883
+  void SetCompactPointer(VersionEdit::SetCompactPointer76,1989
+  void AddFile(VersionEdit::AddFile83,2320
+  void DeleteFile(VersionEdit::DeleteFile97,2746
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//version_set.h,2279
+#define STORAGE_LEVELDB_DB_VERSION_SET_H_16,690
+class Version 61,2033
+  struct GetStats Version::GetStats71,2473
+  size_t NumFiles(Version::NumFiles107,3902
+  typedef std::vector<FileMetaData*> FileMetaDataVector_t;Version::FileMetaDataVector_t109,3971
+  const std::vector<FileMetaData*> & GetFileList(Version::GetFileList111,4031
+  volatile int WritePenalty(Version::WritePenalty113,4123
+  explicit Version(Version::Version148,5385
+class VersionSet 165,5748
+  Version* current(VersionSet::current184,6441
+  uint64_t ManifestFileNumber(VersionSet::ManifestFileNumber187,6535
+  uint64_t NewFileNumber(VersionSet::NewFileNumber192,6796
+  void ReuseFileNumber(VersionSet::ReuseFileNumber198,7127
+  uint64_t LastSequence(VersionSet::LastSequence216,7690
+  void SetLastSequence(VersionSet::SetLastSequence219,7790
+  uint64_t LogNumber(VersionSet::LogNumber228,8020
+  uint64_t PrevLogNumber(VersionSet::PrevLogNumber232,8201
+  int WriteThrottleUsec(VersionSet::WriteThrottleUsec234,8264
+  bool NeedsCompaction(VersionSet::NeedsCompaction279,9732
+  struct LevelSummaryStorage VersionSet::LevelSummaryStorage294,10311
+  TableCache* GetTableCache(VersionSet::GetTableCache300,10503
+  bool IsCompactionSubmitted(VersionSet::IsCompactionSubmitted302,10559
+  void SetCompactionSubmitted(VersionSet::SetCompactionSubmitted305,10651
+  void SetCompactionRunning(VersionSet::SetCompactionRunning308,10741
+  void SetCompactionDone(VersionSet::SetCompactionDone311,10827
+  struct CompactionStatus_sVersionSet::CompactionStatus_s366,12599
+      CompactionStatus_s(VersionSet::CompactionStatus_s::CompactionStatus_s371,12768
+class Compaction 383,13055
+  int level(Compaction::level389,13240
+  VersionEdit* edit(Compaction::edit393,13372
+  int num_input_files(Compaction::num_input_files396,13449
+  FileMetaData* input(Compaction::input399,13599
+  uint64_t MaxOutputFileSize(Compaction::MaxOutputFileSize402,13736
+  size_t TotalUserDataSize(Compaction::TotalUserDataSize426,14735
+  size_t TotalIndexKeys(Compaction::TotalIndexKeys427,14797
+  size_t AverageValueSize(Compaction::AverageValueSize428,14860
+  size_t AverageKeySize(Compaction::AverageKeySize429,14923
+  size_t AverageBlockSize(Compaction::AverageBlockSize430,14984
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/db//write_batch_internal.h,157
+#define STORAGE_LEVELDB_DB_WRITE_BATCH_INTERNAL_H_6,268
+class WriteBatchInternal 16,526
+  static Slice Contents(31,1043
+  static size_t ByteSize(35,1130

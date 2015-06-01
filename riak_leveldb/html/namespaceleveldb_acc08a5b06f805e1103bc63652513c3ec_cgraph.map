@@ -1,0 +1,7 @@
+<map id="leveldb::TEST" name="leveldb::TEST">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#ab00e282f3fd7058b8a41afcf4b56e685" title="leveldb::PutVarint32" alt="" coords="168,5,307,31"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#addd01473dddfbc70ba64956fe6fac20c" title="leveldb::GetVarint32Ptr" alt="" coords="158,55,317,80"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#ac22b2a69554ed12ecf1bd4650282f307" title="leveldb::VarintLength" alt="" coords="165,104,310,129"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#ac5e7a0e0356b856317349a870e3bfb41" title="leveldb::EncodeVarint32" alt="" coords="386,5,551,31"/>
+<area shape="rect" id="node5" href="$namespaceleveldb.html#abc68f00e57333a27e9ee4fb8d5033905" title="leveldb::GetVarint32PtrFallback" alt="" coords="365,55,572,80"/>
+</map>

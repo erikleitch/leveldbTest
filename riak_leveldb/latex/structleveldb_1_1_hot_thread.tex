@@ -1,0 +1,173 @@
+\hypertarget{structleveldb_1_1_hot_thread}{}\section{leveldb\+:\+:Hot\+Thread Struct Reference}
+\label{structleveldb_1_1_hot_thread}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+
+
+{\ttfamily \#include $<$hot\+\_\+threads.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Hot\+Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_hot_thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_hot_thread_a484540b41eda32cfd16aa42778e0254a}{Hot\+Thread} (class \hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \&Pool)
+\item 
+virtual \hyperlink{structleveldb_1_1_hot_thread_a43bf8c26c255410e21c5c015699e67d9}{$\sim$\+Hot\+Thread} ()
+\item 
+void $\ast$ \hyperlink{structleveldb_1_1_hot_thread_a7c436b64fe276361ead18ec4242e5001}{Thread\+Routine} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+t \hyperlink{structleveldb_1_1_hot_thread_a9c05159cb466d0681f8c068fd92b4cb3}{m\+\_\+\+Thread\+Id}
+\begin{DoxyCompactList}\small\item\em handle for this thread \end{DoxyCompactList}\item 
+volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{structleveldb_1_1_hot_thread_af6a8ce25afa9a8a54ddc453a456cd08e}{m\+\_\+\+Available}
+\begin{DoxyCompactList}\small\item\em 1 if thread waiting, using standard type for atomic operation \end{DoxyCompactList}\item 
+class \hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \& \hyperlink{structleveldb_1_1_hot_thread_ab42a98dcba66173c32c6b47ec3cabb4e}{m\+\_\+\+Pool}
+\begin{DoxyCompactList}\small\item\em parent pool object \end{DoxyCompactList}\item 
+volatile \hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} $\ast$ \hyperlink{structleveldb_1_1_hot_thread_a18e771cb85ee461a0a790ee5a405f1e7}{m\+\_\+\+Direct\+Work}
+\begin{DoxyCompactList}\small\item\em work passed direct to thread \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1port_1_1_mutex}{port\+::\+Mutex} \hyperlink{structleveldb_1_1_hot_thread_a26f6be5d8a8b888eef2ebae5a382c854}{m\+\_\+\+Mutex}
+\begin{DoxyCompactList}\small\item\em mutex for condition variable \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1port_1_1_cond_var}{port\+::\+Cond\+Var} \hyperlink{structleveldb_1_1_hot_thread_a125803d2ca640557d1c7a62eb666fb70}{m\+\_\+\+Condition}
+\begin{DoxyCompactList}\small\item\em condition for thread waiting \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_hot_thread_a0589f0b162df47d7ef7902992a528a62}{Hot\+Thread} ()
+\item 
+\hyperlink{structleveldb_1_1_hot_thread_a951dbe2296cadd34830930d4e0399106}{Hot\+Thread} (const \hyperlink{structleveldb_1_1_hot_thread}{Hot\+Thread} \&)
+\item 
+\hyperlink{structleveldb_1_1_hot_thread}{Hot\+Thread} \& \hyperlink{structleveldb_1_1_hot_thread_aca053c3dd1b986d35fc3e4b2a8316eb6}{operator=} (const \hyperlink{structleveldb_1_1_hot_thread}{Hot\+Thread} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Meta / managment data related to a worker thread. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structleveldb_1_1_hot_thread_a484540b41eda32cfd16aa42778e0254a}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!Hot\+Thread@{Hot\+Thread}}
+\index{Hot\+Thread@{Hot\+Thread}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{Hot\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Hot\+Thread\+::\+Hot\+Thread (
+\begin{DoxyParamCaption}
+\item[{class {\bf Hot\+Thread\+Pool} \&}]{Pool}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_hot_thread_a484540b41eda32cfd16aa42778e0254a}
+\hypertarget{structleveldb_1_1_hot_thread_a43bf8c26c255410e21c5c015699e67d9}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!````~Hot\+Thread@{$\sim$\+Hot\+Thread}}
+\index{````~Hot\+Thread@{$\sim$\+Hot\+Thread}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{$\sim$\+Hot\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::\+Hot\+Thread\+::$\sim$\+Hot\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{structleveldb_1_1_hot_thread_a43bf8c26c255410e21c5c015699e67d9}
+\hypertarget{structleveldb_1_1_hot_thread_a0589f0b162df47d7ef7902992a528a62}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!Hot\+Thread@{Hot\+Thread}}
+\index{Hot\+Thread@{Hot\+Thread}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{Hot\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Hot\+Thread\+::\+Hot\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_hot_thread_a0589f0b162df47d7ef7902992a528a62}
+\hypertarget{structleveldb_1_1_hot_thread_a951dbe2296cadd34830930d4e0399106}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!Hot\+Thread@{Hot\+Thread}}
+\index{Hot\+Thread@{Hot\+Thread}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{Hot\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Hot\+Thread\+::\+Hot\+Thread (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hot\+Thread} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_hot_thread_a951dbe2296cadd34830930d4e0399106}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structleveldb_1_1_hot_thread_aca053c3dd1b986d35fc3e4b2a8316eb6}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hot\+Thread}\& leveldb\+::\+Hot\+Thread\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hot\+Thread} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_hot_thread_aca053c3dd1b986d35fc3e4b2a8316eb6}
+\hypertarget{structleveldb_1_1_hot_thread_a7c436b64fe276361ead18ec4242e5001}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!Thread\+Routine@{Thread\+Routine}}
+\index{Thread\+Routine@{Thread\+Routine}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{Thread\+Routine}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ leveldb\+::\+Hot\+Thread\+::\+Thread\+Routine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_hot_thread_a7c436b64fe276361ead18ec4242e5001}
+Worker threads\+: worker threads have 3 states\+: A. doing nothing, available to be claimed\+: m\+\_\+\+Available=1 B. processing work passed by Erlang thread\+: m\+\_\+\+Available=0, m\+\_\+\+Direct\+Work=$<$non-\/null$>$ C. processing backlog queue of work\+: m\+\_\+\+Available=0, m\+\_\+\+Direct\+Work=N\+U\+L\+L 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_hot_thread_a7c436b64fe276361ead18ec4242e5001_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_hot_thread_a7c436b64fe276361ead18ec4242e5001_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structleveldb_1_1_hot_thread_af6a8ce25afa9a8a54ddc453a456cd08e}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!m\+\_\+\+Available@{m\+\_\+\+Available}}
+\index{m\+\_\+\+Available@{m\+\_\+\+Available}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{m\+\_\+\+Available}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint32\+\_\+t} leveldb\+::\+Hot\+Thread\+::m\+\_\+\+Available}\label{structleveldb_1_1_hot_thread_af6a8ce25afa9a8a54ddc453a456cd08e}
+
+
+1 if thread waiting, using standard type for atomic operation 
+
+\hypertarget{structleveldb_1_1_hot_thread_a125803d2ca640557d1c7a62eb666fb70}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!m\+\_\+\+Condition@{m\+\_\+\+Condition}}
+\index{m\+\_\+\+Condition@{m\+\_\+\+Condition}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{m\+\_\+\+Condition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Cond\+Var} leveldb\+::\+Hot\+Thread\+::m\+\_\+\+Condition}\label{structleveldb_1_1_hot_thread_a125803d2ca640557d1c7a62eb666fb70}
+
+
+condition for thread waiting 
+
+\hypertarget{structleveldb_1_1_hot_thread_a18e771cb85ee461a0a790ee5a405f1e7}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!m\+\_\+\+Direct\+Work@{m\+\_\+\+Direct\+Work}}
+\index{m\+\_\+\+Direct\+Work@{m\+\_\+\+Direct\+Work}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{m\+\_\+\+Direct\+Work}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Thread\+Task}$\ast$ leveldb\+::\+Hot\+Thread\+::m\+\_\+\+Direct\+Work}\label{structleveldb_1_1_hot_thread_a18e771cb85ee461a0a790ee5a405f1e7}
+
+
+work passed direct to thread 
+
+\hypertarget{structleveldb_1_1_hot_thread_a26f6be5d8a8b888eef2ebae5a382c854}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!m\+\_\+\+Mutex@{m\+\_\+\+Mutex}}
+\index{m\+\_\+\+Mutex@{m\+\_\+\+Mutex}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{m\+\_\+\+Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Mutex} leveldb\+::\+Hot\+Thread\+::m\+\_\+\+Mutex}\label{structleveldb_1_1_hot_thread_a26f6be5d8a8b888eef2ebae5a382c854}
+
+
+mutex for condition variable 
+
+\hypertarget{structleveldb_1_1_hot_thread_ab42a98dcba66173c32c6b47ec3cabb4e}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!m\+\_\+\+Pool@{m\+\_\+\+Pool}}
+\index{m\+\_\+\+Pool@{m\+\_\+\+Pool}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{m\+\_\+\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf Hot\+Thread\+Pool}\& leveldb\+::\+Hot\+Thread\+::m\+\_\+\+Pool}\label{structleveldb_1_1_hot_thread_ab42a98dcba66173c32c6b47ec3cabb4e}
+
+
+parent pool object 
+
+\hypertarget{structleveldb_1_1_hot_thread_a9c05159cb466d0681f8c068fd92b4cb3}{}\index{leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}!m\+\_\+\+Thread\+Id@{m\+\_\+\+Thread\+Id}}
+\index{m\+\_\+\+Thread\+Id@{m\+\_\+\+Thread\+Id}!leveldb\+::\+Hot\+Thread@{leveldb\+::\+Hot\+Thread}}
+\subsubsection[{m\+\_\+\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+t leveldb\+::\+Hot\+Thread\+::m\+\_\+\+Thread\+Id}\label{structleveldb_1_1_hot_thread_a9c05159cb466d0681f8c068fd92b4cb3}
+
+
+handle for this thread 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{hot__threads_8h}{hot\+\_\+threads.\+h}\item 
+util/\hyperlink{hot__threads_8cc}{hot\+\_\+threads.\+cc}\end{DoxyCompactItemize}

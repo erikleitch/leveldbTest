@@ -1,0 +1,7 @@
+<map id="leveldb::log::Reader::ReportCorruption" name="leveldb::log::Reader::ReportCorruption">
+<area shape="rect" id="node2" href="$classleveldb_1_1log_1_1_reader.html#afadf9a8b44005fd8e9fc798d35befb50" title="leveldb::log::Reader\l::ReportDrop" alt="" coords="213,55,352,93"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title="leveldb::Status::Corruption" alt="" coords="193,117,372,143"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="431,5,562,31"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1log_1_1_reader_1_1_reporter.html#a2d28d30f9559d5fc9f94af41d239932e" title="leveldb::log::Reader\l::Reporter::Corruption" alt="" coords="422,55,572,93"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="420,117,574,143"/>
+</map>

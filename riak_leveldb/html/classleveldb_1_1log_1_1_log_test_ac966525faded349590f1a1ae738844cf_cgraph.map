@@ -1,0 +1,6 @@
+<map id="leveldb::log::LogTest::FixChecksum" name="leveldb::log::LogTest::FixChecksum">
+<area shape="rect" id="node2" href="$namespaceleveldb_1_1crc32c.html#ac004d1e3d8c75b033c162e5ae0a5cc2c" title="leveldb::crc32c::Value" alt="" coords="203,5,353,31"/>
+<area shape="rect" id="node4" href="$namespaceleveldb_1_1crc32c.html#a3790e1e939714a29609e46383aafd6cf" title="leveldb::crc32c::Mask" alt="" coords="203,55,353,80"/>
+<area shape="rect" id="node5" href="$namespaceleveldb.html#a265d1eea2e5d8e42cf86372ed4904886" title="leveldb::EncodeFixed32" alt="" coords="196,104,360,129"/>
+<area shape="rect" id="node3" href="$namespaceleveldb_1_1crc32c.html#ac42fd0618afe635356d722fd29f5ff10" title="leveldb::crc32c::Extend" alt="" coords="408,5,567,31"/>
+</map>

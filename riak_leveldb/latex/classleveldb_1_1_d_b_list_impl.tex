@@ -1,0 +1,209 @@
+\hypertarget{classleveldb_1_1_d_b_list_impl}{}\section{leveldb\+:\+:D\+B\+List\+Impl Class Reference}
+\label{classleveldb_1_1_d_b_list_impl}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+
+
+{\ttfamily \#include $<$db\+\_\+list.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:D\+B\+List\+Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classleveldb_1_1_d_b_list_impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_d_b_list_impl_a183941e8e5f3cbb13e7077b0f225c56a}{D\+B\+List\+Impl} ()
+\item 
+virtual \hyperlink{classleveldb_1_1_d_b_list_impl_ae0236ffc727854e2be9ceceb5a45a5d7}{$\sim$\+D\+B\+List\+Impl} ()
+\item 
+bool \hyperlink{classleveldb_1_1_d_b_list_impl_a8ec99d0dd1846e7f512410a9f5d01a75}{Add\+D\+B} (\hyperlink{classleveldb_1_1_d_b_impl}{D\+B\+Impl} $\ast$, bool is\+\_\+internal)
+\item 
+void \hyperlink{classleveldb_1_1_d_b_list_impl_aee9747bd8905483dde4a213fad40ac70}{Release\+D\+B} (\hyperlink{classleveldb_1_1_d_b_impl}{D\+B\+Impl} $\ast$, bool is\+\_\+internal)
+\item 
+size\+\_\+t \hyperlink{classleveldb_1_1_d_b_list_impl_a73dd5d51280abb800f1343e491c609b8}{Get\+D\+B\+Count} (bool is\+\_\+internal)
+\item 
+void \hyperlink{classleveldb_1_1_d_b_list_impl_a0903e5cb81750c76b5d58835cf3c30ba}{Scan\+D\+Bs} (bool is\+\_\+internal, void(D\+B\+Impl\+::$\ast$)())
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::set$<$ \hyperlink{classleveldb_1_1_d_b_impl}{D\+B\+Impl} $\ast$ $>$ \hyperlink{classleveldb_1_1_d_b_list_impl_a488f9397e7f20c6625bdc23646e475e9}{db\+\_\+set\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceleveldb_1_1port_a3017c82209c2da44f142ef633e012149}{port\+::\+Spin} \hyperlink{classleveldb_1_1_d_b_list_impl_ad99465e8e924322b5f73588f37525998}{m\+\_\+\+Lock}
+\begin{DoxyCompactList}\small\item\em thread protection for set \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1_d_b_list_impl_a488f9397e7f20c6625bdc23646e475e9}{db\+\_\+set\+\_\+t} \hyperlink{classleveldb_1_1_d_b_list_impl_a22538888b46611bcca4079e73b703027}{m\+\_\+\+User\+D\+Bs}
+\begin{DoxyCompactList}\small\item\em set of pointers for user db \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1_d_b_list_impl_a488f9397e7f20c6625bdc23646e475e9}{db\+\_\+set\+\_\+t} \hyperlink{classleveldb_1_1_d_b_list_impl_a72495cfae3cb9ecf946348fd4c4605ff}{m\+\_\+\+Internal\+D\+Bs}
+\begin{DoxyCompactList}\small\item\em Riak internal dbs. \end{DoxyCompactList}\item 
+volatile size\+\_\+t \hyperlink{classleveldb_1_1_d_b_list_impl_aa56c84401c4f4b7e9f75059355af3b1b}{m\+\_\+\+User\+D\+B\+Count}
+\begin{DoxyCompactList}\small\item\em m\+\_\+\+User\+D\+Bs size() for non-\/blocking retrieval \end{DoxyCompactList}\item 
+volatile size\+\_\+t \hyperlink{classleveldb_1_1_d_b_list_impl_a4a3070e45b25fb23ee58ad4b8f034e85}{m\+\_\+\+Internal\+D\+B\+Count}
+\begin{DoxyCompactList}\small\item\em m\+\_\+\+Internal\+D\+Bs size() for non-\/blocking retrieval \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+B\+List\+: class to provide management access to all open databases (Riak vnodes) 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classleveldb_1_1_d_b_list_impl_a488f9397e7f20c6625bdc23646e475e9}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!db\+\_\+set\+\_\+t@{db\+\_\+set\+\_\+t}}
+\index{db\+\_\+set\+\_\+t@{db\+\_\+set\+\_\+t}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{db\+\_\+set\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::set$<${\bf D\+B\+Impl} $\ast$$>$ {\bf leveldb\+::\+D\+B\+List\+Impl\+::db\+\_\+set\+\_\+t}\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_d_b_list_impl_a488f9397e7f20c6625bdc23646e475e9}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_d_b_list_impl_a183941e8e5f3cbb13e7077b0f225c56a}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!D\+B\+List\+Impl@{D\+B\+List\+Impl}}
+\index{D\+B\+List\+Impl@{D\+B\+List\+Impl}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{D\+B\+List\+Impl}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+D\+B\+List\+Impl\+::\+D\+B\+List\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_d_b_list_impl_a183941e8e5f3cbb13e7077b0f225c56a}
+\hypertarget{classleveldb_1_1_d_b_list_impl_ae0236ffc727854e2be9ceceb5a45a5d7}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!````~D\+B\+List\+Impl@{$\sim$\+D\+B\+List\+Impl}}
+\index{````~D\+B\+List\+Impl@{$\sim$\+D\+B\+List\+Impl}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{$\sim$\+D\+B\+List\+Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::\+D\+B\+List\+Impl\+::$\sim$\+D\+B\+List\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_d_b_list_impl_ae0236ffc727854e2be9ceceb5a45a5d7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_d_b_list_impl_a8ec99d0dd1846e7f512410a9f5d01a75}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!Add\+D\+B@{Add\+D\+B}}
+\index{Add\+D\+B@{Add\+D\+B}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{Add\+D\+B}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+D\+B\+List\+Impl\+::\+Add\+D\+B (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+B\+Impl} $\ast$}]{Dbase, }
+\item[{bool}]{is\+\_\+internal}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_d_b_list_impl_a8ec99d0dd1846e7f512410a9f5d01a75}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classleveldb_1_1_d_b_list_impl_a8ec99d0dd1846e7f512410a9f5d01a75_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_a73dd5d51280abb800f1343e491c609b8}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!Get\+D\+B\+Count@{Get\+D\+B\+Count}}
+\index{Get\+D\+B\+Count@{Get\+D\+B\+Count}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{Get\+D\+B\+Count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+D\+B\+List\+Impl\+::\+Get\+D\+B\+Count (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+\_\+internal}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_d_b_list_impl_a73dd5d51280abb800f1343e491c609b8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_list_impl_a73dd5d51280abb800f1343e491c609b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_aee9747bd8905483dde4a213fad40ac70}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!Release\+D\+B@{Release\+D\+B}}
+\index{Release\+D\+B@{Release\+D\+B}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{Release\+D\+B}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+D\+B\+List\+Impl\+::\+Release\+D\+B (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+B\+Impl} $\ast$}]{Dbase, }
+\item[{bool}]{is\+\_\+internal}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_d_b_list_impl_aee9747bd8905483dde4a213fad40ac70}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classleveldb_1_1_d_b_list_impl_aee9747bd8905483dde4a213fad40ac70_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_a0903e5cb81750c76b5d58835cf3c30ba}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!Scan\+D\+Bs@{Scan\+D\+Bs}}
+\index{Scan\+D\+Bs@{Scan\+D\+Bs}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{Scan\+D\+Bs}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+D\+B\+List\+Impl\+::\+Scan\+D\+Bs (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+\_\+internal, }
+\item[{void(D\+B\+Impl\+::$\ast$)()}]{Function}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_d_b_list_impl_a0903e5cb81750c76b5d58835cf3c30ba}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_list_impl_a0903e5cb81750c76b5d58835cf3c30ba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_list_impl_a0903e5cb81750c76b5d58835cf3c30ba_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_d_b_list_impl_a4a3070e45b25fb23ee58ad4b8f034e85}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!m\+\_\+\+Internal\+D\+B\+Count@{m\+\_\+\+Internal\+D\+B\+Count}}
+\index{m\+\_\+\+Internal\+D\+B\+Count@{m\+\_\+\+Internal\+D\+B\+Count}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{m\+\_\+\+Internal\+D\+B\+Count}]{\setlength{\rightskip}{0pt plus 5cm}volatile size\+\_\+t leveldb\+::\+D\+B\+List\+Impl\+::m\+\_\+\+Internal\+D\+B\+Count\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_d_b_list_impl_a4a3070e45b25fb23ee58ad4b8f034e85}
+
+
+m\+\_\+\+Internal\+D\+Bs size() for non-\/blocking retrieval 
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_a72495cfae3cb9ecf946348fd4c4605ff}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!m\+\_\+\+Internal\+D\+Bs@{m\+\_\+\+Internal\+D\+Bs}}
+\index{m\+\_\+\+Internal\+D\+Bs@{m\+\_\+\+Internal\+D\+Bs}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{m\+\_\+\+Internal\+D\+Bs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf db\+\_\+set\+\_\+t} leveldb\+::\+D\+B\+List\+Impl\+::m\+\_\+\+Internal\+D\+Bs\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_d_b_list_impl_a72495cfae3cb9ecf946348fd4c4605ff}
+
+
+Riak internal dbs. 
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_ad99465e8e924322b5f73588f37525998}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!m\+\_\+\+Lock@{m\+\_\+\+Lock}}
+\index{m\+\_\+\+Lock@{m\+\_\+\+Lock}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{m\+\_\+\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Spin} leveldb\+::\+D\+B\+List\+Impl\+::m\+\_\+\+Lock\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_d_b_list_impl_ad99465e8e924322b5f73588f37525998}
+
+
+thread protection for set 
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_aa56c84401c4f4b7e9f75059355af3b1b}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!m\+\_\+\+User\+D\+B\+Count@{m\+\_\+\+User\+D\+B\+Count}}
+\index{m\+\_\+\+User\+D\+B\+Count@{m\+\_\+\+User\+D\+B\+Count}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{m\+\_\+\+User\+D\+B\+Count}]{\setlength{\rightskip}{0pt plus 5cm}volatile size\+\_\+t leveldb\+::\+D\+B\+List\+Impl\+::m\+\_\+\+User\+D\+B\+Count\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_d_b_list_impl_aa56c84401c4f4b7e9f75059355af3b1b}
+
+
+m\+\_\+\+User\+D\+Bs size() for non-\/blocking retrieval 
+
+\hypertarget{classleveldb_1_1_d_b_list_impl_a22538888b46611bcca4079e73b703027}{}\index{leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}!m\+\_\+\+User\+D\+Bs@{m\+\_\+\+User\+D\+Bs}}
+\index{m\+\_\+\+User\+D\+Bs@{m\+\_\+\+User\+D\+Bs}!leveldb\+::\+D\+B\+List\+Impl@{leveldb\+::\+D\+B\+List\+Impl}}
+\subsubsection[{m\+\_\+\+User\+D\+Bs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf db\+\_\+set\+\_\+t} leveldb\+::\+D\+B\+List\+Impl\+::m\+\_\+\+User\+D\+Bs\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_d_b_list_impl_a22538888b46611bcca4079e73b703027}
+
+
+set of pointers for user db 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{db__list_8h}{db\+\_\+list.\+h}\item 
+util/\hyperlink{db__list_8cc}{db\+\_\+list.\+cc}\end{DoxyCompactItemize}

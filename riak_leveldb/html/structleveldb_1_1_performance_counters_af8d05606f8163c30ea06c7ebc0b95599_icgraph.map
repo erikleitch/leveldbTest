@@ -1,0 +1,7 @@
+<map id="leveldb::PerformanceCounters::Close" name="leveldb::PerformanceCounters::Close">
+<area shape="rect" id="node2" href="$classleveldb_1_1_env.html#acf5de3a96a0e9c2df1199e496990b2ac" title="leveldb::Env::Shutdown" alt="" coords="255,29,415,55"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a01948f8876307e6ba7c9a4482cce0305" title="leveldb::TEST" alt="" coords="283,79,388,104"/>
+<area shape="rect" id="node3" href="$db__bench_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="523,5,574,31"/>
+<area shape="rect" id="node4" href="$namespaceleveldb_1_1test.html#a3329162c54a0bff42d41c2ac86b2580a" title="leveldb::test::RunAllTests" alt="" coords="463,55,634,80"/>
+<area shape="rect" id="node5" href="$corruption__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="682,55,732,80"/>
+</map>

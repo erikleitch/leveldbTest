@@ -1,0 +1,99 @@
+\hypertarget{version__set_8cc}{}\section{db/version\+\_\+set.cc File Reference}
+\label{version__set_8cc}\index{db/version\+\_\+set.\+cc@{db/version\+\_\+set.\+cc}}
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/log\+\_\+reader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/log\+\_\+writer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/memtable.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/table\+\_\+cache.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/table\+\_\+builder.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}table/block.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}table/merger.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}table/two\+\_\+level\+\_\+iterator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/coding.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/hot\+\_\+threads.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/thread\+\_\+tasks.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/perf\+\_\+count.\+h\char`\"{}}\\*
+Include dependency graph for version\+\_\+set.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{version__set_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}
+\item 
+struct \hyperlink{structleveldb_1_1anonymous__namespace_02version__set_8cc_03_1_1_saver}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::\+Saver}
+\item 
+class \hyperlink{classleveldb_1_1_version_set_1_1_builder}{leveldb\+::\+Version\+Set\+::\+Builder}
+\item 
+struct \hyperlink{structleveldb_1_1_version_set_1_1_builder_1_1_by_smallest_key}{leveldb\+::\+Version\+Set\+::\+Builder\+::\+By\+Smallest\+Key}
+\item 
+struct \hyperlink{structleveldb_1_1_version_set_1_1_builder_1_1_level_state}{leveldb\+::\+Version\+Set\+::\+Builder\+::\+Level\+State}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\item 
+ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03_aa77f56e7bee115a7e23642d102c7e9fb}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::\+Saver\+State} \{ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03_aa77f56e7bee115a7e23642d102c7e9fba49b40ce22eb520847aef2355e3b77628}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::k\+Not\+Found}, 
+\hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03_aa77f56e7bee115a7e23642d102c7e9fba88e4461d441a955d3dfc35c1e02e3c3e}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::k\+Found}, 
+\hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03_aa77f56e7bee115a7e23642d102c7e9fbaf112c18b9adc3c99d767d9c79a58b133}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::k\+Deleted}, 
+\hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03_aa77f56e7bee115a7e23642d102c7e9fba42c87fee34163d63d44a446ae292c92a}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::k\+Corrupt}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{stdint_8h_adec1df1b8b51cb32b77e5b86fff46471}{int64\+\_\+t} \hyperlink{namespaceleveldb_a8d7291b08be6643bcfb46c475f779f9e}{leveldb\+::\+Total\+File\+Size} (const std\+::vector$<$ File\+Meta\+Data $\ast$ $>$ \&files)
+\begin{DoxyCompactList}\small\item\em U\+L\+L above needed to compile on O\+S\+X 10.\+7.\+3. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceleveldb_1_1anonymous__namespace_02version__set_8cc_03_a46ad79c264a874d79196cdbd5e014a83}{leveldb\+::anonymous\+\_\+namespace\{version\+\_\+set.\+cc\}\+::\+Int\+Set\+To\+String} (const std\+::set$<$ \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $>$ \&s)
+\item 
+int \hyperlink{namespaceleveldb_a812c4c6cf8299e767535a59f2205df0c}{leveldb\+::\+Find\+File} (const Internal\+Key\+Comparator \&icmp, const std\+::vector$<$ File\+Meta\+Data $\ast$ $>$ \&files, const Slice \&key)
+\item 
+static bool \hyperlink{namespaceleveldb_a7f9c247b8bae634426f95a6a4443ebfc}{leveldb\+::\+After\+File} (const Comparator $\ast$ucmp, const Slice $\ast$user\+\_\+key, const File\+Meta\+Data $\ast$f)
+\item 
+static bool \hyperlink{namespaceleveldb_ad320b62435f131ca2217d00425cae151}{leveldb\+::\+Before\+File} (const Comparator $\ast$ucmp, const Slice $\ast$user\+\_\+key, const File\+Meta\+Data $\ast$f)
+\item 
+bool \hyperlink{namespaceleveldb_a1a6a370f17b20667b885b5b91159c5a9}{leveldb\+::\+Some\+File\+Overlaps\+Range} (const Internal\+Key\+Comparator \&icmp, bool disjoint\+\_\+sorted\+\_\+files, const std\+::vector$<$ File\+Meta\+Data $\ast$ $>$ \&files, const Slice $\ast$smallest\+\_\+user\+\_\+key, const Slice $\ast$largest\+\_\+user\+\_\+key)
+\item 
+static Iterator $\ast$ \hyperlink{namespaceleveldb_a90825bb2cdcea64469b179f6d9c5de00}{leveldb\+::\+Get\+File\+Iterator} (void $\ast$arg, const Read\+Options \&options, const Slice \&file\+\_\+value)
+\item 
+static bool \hyperlink{namespaceleveldb_ab84b248b496c0ec1a77af5910b49100a}{leveldb\+::\+Save\+Value} (void $\ast$arg, const Slice \&ikey, const Slice \&v)
+\item 
+static bool \hyperlink{namespaceleveldb_ab65191269f2a256a310edf82d56ed842}{leveldb\+::\+Newest\+First} (File\+Meta\+Data $\ast$a, File\+Meta\+Data $\ast$b)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\_t} \hyperlink{namespaceleveldb_a6f54381cb4b8cf99f4deebc5a2f91f75}{leveldb::m\_TargetFileSize}\\
+\>\>{\em mostly useless }\\
+\>\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\_t} \hyperlink{namespaceleveldb_a15f0b81fa1f74b097cb3a001124d9ca0}{leveldb::m\_MaxGrandParentOverlapBytes}\\
+\>\hyperlink{stdint_8h_adec1df1b8b51cb32b77e5b86fff46471}{int64\_t} \hyperlink{namespaceleveldb_a1b6fb99eed946ea4c627c53c92422372}{leveldb::m\_ExpandedCompactionByteSizeLimit}\\
+\>\>{\em needs tuning }\\
+\>\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\_t} \hyperlink{namespaceleveldb_ac943033c07b0c2c7dbc7489454809f28}{leveldb::m\_MaxBytesForLevel}\\
+\>\>{\em start write throttle above this }\\
+\>\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\_t} \hyperlink{namespaceleveldb_aca00621293e009e8cf12635c6f6529a0}{leveldb::m\_DesiredBytesForLevel}\\
+\>\>{\em compact into next level until this }\\
+\>\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\_t} \hyperlink{namespaceleveldb_aecf106e2eaa567faeb35408f7382e1a0}{leveldb::m\_MaxFileSizeForLevel}\\
+\>bool \hyperlink{namespaceleveldb_a5e31b908777c34e60340051e3d6b9bda}{leveldb::m\_OverlappedFiles}\\
+\} \hyperlink{namespaceleveldb_a97a8ea9d8174264acb8c1cb5f183d8df}{leveldb::gLevelTraits} \mbox{[}config::kNumLevels\mbox{]}\\
+
+\end{tabbing}\end{DoxyCompactItemize}

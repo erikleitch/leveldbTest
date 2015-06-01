@@ -1,0 +1,5 @@
+<map id="leveldb::DoubleCache::GetBlockCache" name="leveldb::DoubleCache::GetBlockCache">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a01380098624a4a30bbd9ff2429ce6e42" title="leveldb::DBImpl::block\l_cache" alt="" coords="205,5,358,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_cache_test.html#abfea0e2ae3ee11b62d1f6b622ef47334" title="leveldb::CacheTest\l::CacheTest" alt="" coords="215,68,349,107"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_cache_test.html#a6c1a40014395d10702c0509506e4f296" title="leveldb::CacheTest\l::ResetCaches" alt="" coords="215,131,349,169"/>
+</map>

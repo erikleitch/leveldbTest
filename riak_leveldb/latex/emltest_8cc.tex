@@ -1,0 +1,111 @@
+\hypertarget{emltest_8cc}{}\section{db/emltest.cc File Reference}
+\label{emltest_8cc}\index{db/emltest.\+cc@{db/emltest.\+cc}}
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/filter\+\_\+policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/write\+\_\+batch\+\_\+internal.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/cache.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/table.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/hash.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/testharness.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/testutil.\+h\char`\"{}}\\*
+Include dependency graph for emltest.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{emltest_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02emltest_8cc_03_1_1_atomic_counter}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::\+Atomic\+Counter}
+\item 
+class \hyperlink{classleveldb_1_1_special_env}{leveldb\+::\+Special\+Env}
+\item 
+class \hyperlink{classleveldb_1_1_d_b_test}{leveldb\+::\+D\+B\+Test}
+\item 
+struct \hyperlink{structleveldb_1_1anonymous__namespace_02emltest_8cc_03_1_1_m_t_state}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::\+M\+T\+State}
+\item 
+struct \hyperlink{structleveldb_1_1anonymous__namespace_02emltest_8cc_03_1_1_m_t_thread}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::\+M\+T\+Thread}
+\item 
+class \hyperlink{classleveldb_1_1_model_d_b}{leveldb\+::\+Model\+D\+B}
+\item 
+class \hyperlink{classleveldb_1_1_model_d_b_1_1_model_snapshot}{leveldb\+::\+Model\+D\+B\+::\+Model\+Snapshot}
+\item 
+class \hyperlink{classleveldb_1_1_model_d_b_1_1_model_iter}{leveldb\+::\+Model\+D\+B\+::\+Model\+Iter}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\item 
+ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02emltest_8cc_03}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02emltest_8cc_03_adf65c921da5352324e1f8bf65a538a75}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::\+K\+V\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{namespaceleveldb_ab30792c0730ee094943e8242577454af}{leveldb\+::\+Random\+String} (Random $\ast$rnd, int len)
+\item 
+\hyperlink{namespaceleveldb_a5cdb2a977033415260acc09b4b1b7171}{leveldb\+::\+T\+E\+S\+T} (D\+B\+Test, Empty)
+\item 
+static std\+::string \hyperlink{namespaceleveldb_af5ebf23c4f21b4986d6f8fb430739287}{leveldb\+::\+Key} (int i)
+\item 
+static bool \hyperlink{namespaceleveldb_a891b358b4c0a10a44b24b8f473cc73fd}{leveldb\+::\+Between} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} val, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} low, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} high)
+\item 
+static void \hyperlink{namespaceleveldb_1_1anonymous__namespace_02emltest_8cc_03_aa224d0d02af25c4bd7e2d3c550a82c7a}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::\+M\+T\+Thread\+Body} (void $\ast$arg)
+\item 
+static std\+::string \hyperlink{namespaceleveldb_a1c336258072dc26d61cabcda6bc2db75}{leveldb\+::\+Random\+Key} (Random $\ast$rnd)
+\item 
+static bool \hyperlink{namespaceleveldb_a5d2ddf843172352a05569e55d7b84a13}{leveldb\+::\+Compare\+Iterators} (int step, D\+B $\ast$model, D\+B $\ast$db, const Snapshot $\ast$model\+\_\+snap, const Snapshot $\ast$db\+\_\+snap)
+\item 
+std\+::string \hyperlink{namespaceleveldb_a706c78e756ff2dcd2185cdf2265c0b8a}{leveldb\+::\+Make\+Key} (unsigned int num)
+\item 
+void \hyperlink{namespaceleveldb_af9cf6ec167c9b6f25fd050ab6fb67a90}{leveldb\+::\+B\+M\+\_\+\+Log\+And\+Apply} (int iters, int num\+\_\+base\+\_\+files)
+\item 
+\hyperlink{namespaceleveldb_affd937ddc8c138fd0b5d020a396310c8}{leveldb\+::\+T\+E\+S\+T} (D\+B\+Test, Get\+From\+Versions)
+\item 
+int \hyperlink{emltest_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{namespaceleveldb_1_1anonymous__namespace_02emltest_8cc_03_a26fa4b352f376c5bc4b01fdda6123d79}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::k\+Num\+Threads} = 4
+\item 
+static const int \hyperlink{namespaceleveldb_1_1anonymous__namespace_02emltest_8cc_03_a6f62e4c714e736d0315cca1c1e1a3643}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::k\+Test\+Seconds} = 10
+\item 
+static const int \hyperlink{namespaceleveldb_1_1anonymous__namespace_02emltest_8cc_03_abf454747366343aa19b1683189417f28}{leveldb\+::anonymous\+\_\+namespace\{emltest.\+cc\}\+::k\+Num\+Keys} = 1000
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{emltest_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{}\index{emltest.\+cc@{emltest.\+cc}!main@{main}}
+\index{main@{main}!emltest.\+cc@{emltest.\+cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{emltest_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{emltest_8cc_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+

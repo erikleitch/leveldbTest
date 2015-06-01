@@ -1,0 +1,6 @@
+<map id="leveldb::DBImpl::BuildBatchGroup" name="leveldb::DBImpl::BuildBatchGroup">
+<area shape="rect" id="node2" href="$classleveldb_1_1_write_batch_internal.html#adad424f13cc3e3ed4a2eacb88eaa39df" title="leveldb::WriteBatchInternal\l::ByteSize" alt="" coords="239,5,420,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_write_batch_internal.html#a5270ca4567dbae1524005ad14e0698e3" title="leveldb::WriteBatchInternal\l::Count" alt="" coords="239,68,420,107"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_write_batch_internal.html#ac83c9a45a815c16ad8602b99b752b4bc" title="leveldb::WriteBatchInternal\l::Append" alt="" coords="239,131,420,169"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="468,75,632,100"/>
+</map>

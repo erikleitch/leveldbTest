@@ -1,0 +1,8 @@
+<map id="leveldb::Benchmark::FinishedSingleOp" name="leveldb::Benchmark::FinishedSingleOp">
+<area shape="rect" id="node2" href="$classleveldb_1_1_benchmark.html#a86876b2882d9015610330e69acfdff0d" title="leveldb::Benchmark\l::Write" alt="" coords="378,5,517,44"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_benchmark.html#afc9cf258a63488924e172fadc67c12f1" title="leveldb::Benchmark\l::Read" alt="" coords="378,68,517,107"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_benchmark.html#a301897d0609459c5e6072db05da6b737" title="leveldb::Benchmark\l::ReadSequential" alt="" coords="192,125,330,164"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_benchmark.html#ac822394de61c12dd6a8a0e0c64760da5" title="leveldb::Benchmark\l::ReadRandom" alt="" coords="192,188,330,227"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="565,132,735,157"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_benchmark.html#a8373efcda4c0e141343b5ee9182df17e" title="leveldb::Benchmark\l::ReadWhileWriting" alt="" coords="378,233,517,272"/>
+</map>

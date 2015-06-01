@@ -1,0 +1,5 @@
+<map id="leveldb::anonymous_namespace{iterator.cc}::EmptyIterator" name="leveldb::anonymous_namespace{iterator.cc}::EmptyIterator">
+<area shape="rect" id="node2" href="$classleveldb_1_1_iterator.html" title="{leveldb::Iterator\n||+ Iterator()\l+ ~Iterator()\l+ Valid()\l+ SeekToFirst()\l+ SeekToLast()\l+ Seek()\l+ Next()\l+ Prev()\l+ key()\l+ value()\l+ status()\l+ RegisterCleanup()\l&#45; Iterator()\l&#45; operator=()\l}" alt="" coords="5,207,146,453"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1_iterator_1_1_cleanup.html" title="{leveldb::Iterator::\lCleanup\n|+ function\l+ arg1\l+ arg2\l|}" alt="" coords="16,5,136,119"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_status.html" title="{leveldb::Status\n|&#45; state_\l|+ Status()\l+ ~Status()\l+ Status()\l+ operator=()\l+ ok()\l+ IsNotFound()\l+ IsCorruption()\l+ IsIOError()\l+ ToString()\l+ OK()\l+ NotFound()\l+ Corruption()\l+ NotSupported()\l+ InvalidArgument()\l+ IOError()\l&#45; code()\l&#45; Status()\l&#45; CopyState()\l}" alt="" coords="171,180,309,480"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="leveldb::DBImpl::DeleteObsoleteFiles" name="leveldb::DBImpl::DeleteObsoleteFiles">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a1c17fe1e5d5e39ef02e14a8721b407d6" title="leveldb::DBImpl::Running\lCompactionCount" alt="" coords="285,33,457,72"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1port_1_1_mutex.html#a9793393529f59bbb4adaf152bbbab42c" title="leveldb::port::Mutex\l::AssertHeld" alt="" coords="535,32,672,71"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_version_set.html#a3b3c810f0fea88db81b94e604b3dd78f" title="leveldb::VersionSet\l::AddLiveFiles" alt="" coords="303,155,438,193"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_env.html#a53028e3112d7bb3bf6574ddaab18d6f6" title="leveldb::Env::GetChildren" alt="" coords="284,217,457,243"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_d_b_impl.html#a68c4a555a0ee5d779635062a949411b9" title="leveldb::DBImpl::KeepOrDelete" alt="" coords="267,275,474,300"/>
+<area shape="rect" id="node26" href="$namespaceleveldb.html#a56c4c068263c381f638d643c69cf4318" title="leveldb::MakeDirName2" alt="" coords="289,324,452,349"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#af18fdbbcb483d40c35b4aaa4f00d3f6c" title="leveldb::ParseFileName" alt="" coords="522,95,685,120"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_version_set.html#a0ff6a25abcf0b0c7d94bd425b6fb0ef2" title="leveldb::VersionSet\l::LogNumber" alt="" coords="536,144,671,183"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_version_set.html#a0c2a382650ba2b987d8059faacbd0c39" title="leveldb::VersionSet\l::PrevLogNumber" alt="" coords="536,207,671,245"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_version_set.html#a1e0d9925a9d909345ede866b9c504750" title="leveldb::VersionSet\l::ManifestFileNumber" alt="" coords="529,269,677,308"/>
+<area shape="rect" id="node16" href="$classleveldb_1_1_table_cache.html#a2975b40199b435d466150bcb282e889a" title="leveldb::TableCache\l::Evict" alt="" coords="533,332,674,371"/>
+<area shape="rect" id="node21" href="$namespaceleveldb.html#aeba9623ceee38be99bed2bc1ae082954" title="leveldb::Log" alt="" coords="557,395,650,420"/>
+<area shape="rect" id="node23" href="$namespaceleveldb.html#a9e8f4f891750cda3ff583ef557f844b6" title="leveldb::TableFileName" alt="" coords="523,444,683,469"/>
+<area shape="rect" id="node25" href="$classleveldb_1_1_env.html#ac956b984466d5f09309664177687f9af" title="leveldb::Env::DeleteFile" alt="" coords="523,493,684,519"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_slice.html#aac9a3ee9b05567c8c93793e7593a5f13" title="leveldb::Slice::starts_with" alt="" coords="759,5,930,31"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_slice.html#a1be5b22958a115ebecb2b017aad2b3f6" title="leveldb::Slice::remove\l_prefix" alt="" coords="1004,61,1156,100"/>
+<area shape="rect" id="node11" href="$namespaceleveldb.html#a1bda628b65e834063ccc5fcaec8328f8" title="leveldb::ConsumeDecimalNumber" alt="" coords="733,107,956,132"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_slice.html#a7d0b93d5801bff5656068647759dcb8f" title="leveldb::Slice::empty" alt="" coords="1009,135,1152,160"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="1204,68,1335,93"/>
+<area shape="rect" id="node17" href="$namespaceleveldb.html#a725a2c0ebf763116b4ca3fb78564ff70" title="leveldb::EncodeFixed64" alt="" coords="763,219,926,244"/>
+<area shape="rect" id="node18" href="$classleveldb_1_1_cache.html#af90785205182a25cf741dc13a48d76cb" title="leveldb::Cache::Lookup" alt="" coords="764,268,925,293"/>
+<area shape="rect" id="node19" href="$classleveldb_1_1_cache.html#a712618c8bf3bfa48b7bab1fbc23c3002" title="leveldb::Cache::Release" alt="" coords="762,317,928,343"/>
+<area shape="rect" id="node20" href="$classleveldb_1_1_cache.html#af833a38763598253338de37aba079db6" title="leveldb::Cache::Erase" alt="" coords="769,367,921,392"/>
+<area shape="rect" id="node22" href="$classleveldb_1_1_logger.html#a408e238a0028a45e9cc7aec6ad2277c5" title="leveldb::Logger::Logv" alt="" coords="770,416,919,441"/>
+<area shape="rect" id="node24" href="$namespaceleveldb.html#ac3b827d545ffee33dcbe66949a8324b6" title="leveldb::MakeFileName2" alt="" coords="761,465,929,491"/>
+</map>

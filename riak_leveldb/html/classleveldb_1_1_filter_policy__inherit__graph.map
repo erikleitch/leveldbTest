@@ -1,0 +1,8 @@
+<map id="leveldb::FilterPolicy" name="leveldb::FilterPolicy">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy.html" title="{leveldb::anonymous\l_namespace\{bloom.cc\}\l::BloomFilterPolicy\n|&#45; bits_per_key_\l&#45; k_\l|+ BloomFilterPolicy()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="5,213,165,367"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1anonymous__namespace_02bloom2_8cc_03_1_1_bloom_filter_policy2.html" title="{leveldb::anonymous\l_namespace\{bloom2.cc\}\l::BloomFilterPolicy2\n|&#45; bits_per_key_\l&#45; k_\l|+ BloomFilterPolicy2()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="190,213,357,367"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_internal_filter_policy.html" title="{leveldb::InternalFilterPolicy\n|# user_policy_\l|+ InternalFilterPolicy()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="382,233,562,347"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_test_hash_filter.html" title="{leveldb::TestHashFilter\n||+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="586,240,742,340"/>
+<area shape="rect" id="node7" href="$structleveldb__filterpolicy__t.html" title="{leveldb_filterpolicy_t\n|+ state_\l+ destructor_\l+ name_\l+ create_\l+ key_match_\l|+ ~leveldb_filterpolicy_t()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="766,207,935,373"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_internal_filter_policy2.html" title="{leveldb::InternalFilterPolicy2\n||+ InternalFilterPolicy2()\l+ ~InternalFilterPolicy2()\l}" alt="" coords="378,421,566,508"/>
+</map>

@@ -1,0 +1,323 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{repair.\+cc\}\+:\+:Repairer Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{repair.\+cc\}\+:\+:Repairer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_1_1_table_info}{Table\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a40e11b36cb2e900f1d14b0e5b661c23f}{Repairer} (const std\+::string \&\hyperlink{c__test_8c_a75d845559336df6843f3b599960f89d2}{dbname}, const \hyperlink{structleveldb_1_1_options}{Options} \&options)
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a67700fe3d6942f972abc729cb6be70c0}{$\sim$\+Repairer} ()
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abba6586bedbead266d5530109b51ff05}{Run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a71ebd329d59366e73e3e065856f0a24c}{Find\+Files} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a8c1a4d175bef4d9363707810136b9ef9}{Convert\+Log\+Files\+To\+Tables} ()
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab4fcce4f73f7d4a344ee78d1f000da68}{Convert\+Log\+To\+Table} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} log)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4baca5b4b14a672876c8c365be71ea1e}{Extract\+Meta\+Data} ()
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ad6beafa57467a8f4b240b99a5ca9650e}{Scan\+Table} (\hyperlink{structleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_1_1_table_info}{Table\+Info} $\ast$t)
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a5555c41fd84042f25effb2d29ad137d6}{Write\+Descriptor} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a51b1eb997396ce7115340b907cd47d40}{Archive\+File} (const std\+::string \&fname, bool two\+\_\+levels=false)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4168d4cd5e4f9c3712b7a4d0ae616b1b}{double\+\_\+cache\+\_\+}
+\item 
+\hyperlink{structleveldb_1_1_options}{Options} const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a25d420c06b4c5c78f44c695a2177fe3d}{options\+\_\+}
+\item 
+\hyperlink{structleveldb_1_1_options}{Options} const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a28bcb621636141758ea9bb309aa7a5d6}{org\+\_\+options\+\_\+}
+\item 
+std\+::string const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a324748fa1caa071077fa72286f2228b8}{dbname\+\_\+}
+\item 
+std\+::string const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a0a37d077fbe702a75efabee949c1f4d6}{org\+\_\+dbname\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_env}{Env} $\ast$const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a788248f119c3f2ee5335ec267091ad0f}{env\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_internal_key_comparator}{Internal\+Key\+Comparator} const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab173d2efac483ac732d61e14d404246a}{icmp\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_internal_filter_policy}{Internal\+Filter\+Policy} const \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab6b738f7c9f4c7e654ffae7478e7352a}{ipolicy\+\_\+}
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1559673763cf8b49f65edd38c502e683}{owns\+\_\+info\+\_\+log\+\_\+}
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a39e74b8b9e291a6d9963735327b84d6b}{owns\+\_\+cache\+\_\+}
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a48ef06bb60595a00470de51e1ac6f1ba}{has\+\_\+level\+\_\+dirs\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_file_lock}{File\+Lock} $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a6fe6e1a90a4348661a2ba4fbc86165f2}{db\+\_\+lock\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_table_cache}{Table\+Cache} $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1f4b3c1f0496622b0c551603293a7604}{table\+\_\+cache\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_version_edit}{Version\+Edit} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_adbeacef6672c5fd48575175b9efd943f}{edit\+\_\+}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a20f7bba4bcbf1db18256dc20755ec225}{manifests\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $>$ \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1804cc3ae7d3bf5e49c0bdabcc8a9934}{table\+\_\+numbers\+\_\+} \mbox{[}\hyperlink{namespaceleveldb_1_1config_ab6017947ae68898c606643bddc0f5b9c}{config\+::k\+Num\+Levels}\mbox{]}
+\item 
+std\+::vector$<$ \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $>$ \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_afb5e4ff1c21d601ed46fa4bab65de8e9}{logs\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{structleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_1_1_table_info}{Table\+Info} $>$ \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abd7601c6bc61f6ce6a1d90959636fafb}{tables\+\_\+} \mbox{[}\hyperlink{namespaceleveldb_1_1config_ab6017947ae68898c606643bddc0f5b9c}{config\+::k\+Num\+Levels}\mbox{]}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a746dff307c4a30ac6d2ab6011807e83a}{next\+\_\+file\+\_\+number\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a40e11b36cb2e900f1d14b0e5b661c23f}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Repairer@{Repairer}}
+\index{Repairer@{Repairer}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Repairer}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Repairer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{dbname, }
+\item[{const {\bf Options} \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a40e11b36cb2e900f1d14b0e5b661c23f}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a67700fe3d6942f972abc729cb6be70c0}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!````~Repairer@{$\sim$\+Repairer}}
+\index{````~Repairer@{$\sim$\+Repairer}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{$\sim$\+Repairer}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::$\sim$\+Repairer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a67700fe3d6942f972abc729cb6be70c0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a51b1eb997396ce7115340b907cd47d40}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Archive\+File@{Archive\+File}}
+\index{Archive\+File@{Archive\+File}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Archive\+File}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Archive\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{bool}]{two\+\_\+levels = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a51b1eb997396ce7115340b907cd47d40}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a51b1eb997396ce7115340b907cd47d40_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a8c1a4d175bef4d9363707810136b9ef9}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Convert\+Log\+Files\+To\+Tables@{Convert\+Log\+Files\+To\+Tables}}
+\index{Convert\+Log\+Files\+To\+Tables@{Convert\+Log\+Files\+To\+Tables}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Convert\+Log\+Files\+To\+Tables}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Convert\+Log\+Files\+To\+Tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a8c1a4d175bef4d9363707810136b9ef9}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a8c1a4d175bef4d9363707810136b9ef9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab4fcce4f73f7d4a344ee78d1f000da68}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Convert\+Log\+To\+Table@{Convert\+Log\+To\+Table}}
+\index{Convert\+Log\+To\+Table@{Convert\+Log\+To\+Table}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Convert\+Log\+To\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Convert\+Log\+To\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{log}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab4fcce4f73f7d4a344ee78d1f000da68}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab4fcce4f73f7d4a344ee78d1f000da68_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4baca5b4b14a672876c8c365be71ea1e}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Extract\+Meta\+Data@{Extract\+Meta\+Data}}
+\index{Extract\+Meta\+Data@{Extract\+Meta\+Data}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Extract\+Meta\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Extract\+Meta\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4baca5b4b14a672876c8c365be71ea1e}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4baca5b4b14a672876c8c365be71ea1e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a71ebd329d59366e73e3e065856f0a24c}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Find\+Files@{Find\+Files}}
+\index{Find\+Files@{Find\+Files}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Find\+Files}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Find\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a71ebd329d59366e73e3e065856f0a24c}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a71ebd329d59366e73e3e065856f0a24c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abba6586bedbead266d5530109b51ff05}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Run@{Run}}
+\index{Run@{Run}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abba6586bedbead266d5530109b51ff05}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abba6586bedbead266d5530109b51ff05_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ad6beafa57467a8f4b240b99a5ca9650e}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Scan\+Table@{Scan\+Table}}
+\index{Scan\+Table@{Scan\+Table}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Scan\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Scan\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf Table\+Info} $\ast$}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ad6beafa57467a8f4b240b99a5ca9650e}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ad6beafa57467a8f4b240b99a5ca9650e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a5555c41fd84042f25effb2d29ad137d6}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!Write\+Descriptor@{Write\+Descriptor}}
+\index{Write\+Descriptor@{Write\+Descriptor}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{Write\+Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::\+Write\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a5555c41fd84042f25effb2d29ad137d6}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a5555c41fd84042f25effb2d29ad137d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a6fe6e1a90a4348661a2ba4fbc86165f2}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!db\+\_\+lock\+\_\+@{db\+\_\+lock\+\_\+}}
+\index{db\+\_\+lock\+\_\+@{db\+\_\+lock\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{db\+\_\+lock\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Lock}$\ast$ leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::db\+\_\+lock\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a6fe6e1a90a4348661a2ba4fbc86165f2}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a324748fa1caa071077fa72286f2228b8}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!dbname\+\_\+@{dbname\+\_\+}}
+\index{dbname\+\_\+@{dbname\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{dbname\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::dbname\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a324748fa1caa071077fa72286f2228b8}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4168d4cd5e4f9c3712b7a4d0ae616b1b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!double\+\_\+cache\+\_\+@{double\+\_\+cache\+\_\+}}
+\index{double\+\_\+cache\+\_\+@{double\+\_\+cache\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{double\+\_\+cache\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Double\+Cache} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::double\+\_\+cache\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a4168d4cd5e4f9c3712b7a4d0ae616b1b}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_adbeacef6672c5fd48575175b9efd943f}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!edit\+\_\+@{edit\+\_\+}}
+\index{edit\+\_\+@{edit\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{edit\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Version\+Edit} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_adbeacef6672c5fd48575175b9efd943f}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a788248f119c3f2ee5335ec267091ad0f}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!env\+\_\+@{env\+\_\+}}
+\index{env\+\_\+@{env\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{env\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Env}$\ast$ const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::env\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a788248f119c3f2ee5335ec267091ad0f}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a48ef06bb60595a00470de51e1ac6f1ba}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!has\+\_\+level\+\_\+dirs\+\_\+@{has\+\_\+level\+\_\+dirs\+\_\+}}
+\index{has\+\_\+level\+\_\+dirs\+\_\+@{has\+\_\+level\+\_\+dirs\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{has\+\_\+level\+\_\+dirs\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::has\+\_\+level\+\_\+dirs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a48ef06bb60595a00470de51e1ac6f1ba}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab173d2efac483ac732d61e14d404246a}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!icmp\+\_\+@{icmp\+\_\+}}
+\index{icmp\+\_\+@{icmp\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{icmp\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Internal\+Key\+Comparator} const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::icmp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab173d2efac483ac732d61e14d404246a}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab6b738f7c9f4c7e654ffae7478e7352a}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!ipolicy\+\_\+@{ipolicy\+\_\+}}
+\index{ipolicy\+\_\+@{ipolicy\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{ipolicy\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Internal\+Filter\+Policy} const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::ipolicy\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_ab6b738f7c9f4c7e654ffae7478e7352a}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_afb5e4ff1c21d601ed46fa4bab65de8e9}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!logs\+\_\+@{logs\+\_\+}}
+\index{logs\+\_\+@{logs\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{logs\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf uint64\+\_\+t}$>$ leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::logs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_afb5e4ff1c21d601ed46fa4bab65de8e9}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a20f7bba4bcbf1db18256dc20755ec225}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!manifests\+\_\+@{manifests\+\_\+}}
+\index{manifests\+\_\+@{manifests\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{manifests\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::manifests\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a20f7bba4bcbf1db18256dc20755ec225}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a746dff307c4a30ac6d2ab6011807e83a}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!next\+\_\+file\+\_\+number\+\_\+@{next\+\_\+file\+\_\+number\+\_\+}}
+\index{next\+\_\+file\+\_\+number\+\_\+@{next\+\_\+file\+\_\+number\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{next\+\_\+file\+\_\+number\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::next\+\_\+file\+\_\+number\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a746dff307c4a30ac6d2ab6011807e83a}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a25d420c06b4c5c78f44c695a2177fe3d}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{options\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Options} const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a25d420c06b4c5c78f44c695a2177fe3d}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a0a37d077fbe702a75efabee949c1f4d6}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!org\+\_\+dbname\+\_\+@{org\+\_\+dbname\+\_\+}}
+\index{org\+\_\+dbname\+\_\+@{org\+\_\+dbname\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{org\+\_\+dbname\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::org\+\_\+dbname\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a0a37d077fbe702a75efabee949c1f4d6}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a28bcb621636141758ea9bb309aa7a5d6}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!org\+\_\+options\+\_\+@{org\+\_\+options\+\_\+}}
+\index{org\+\_\+options\+\_\+@{org\+\_\+options\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{org\+\_\+options\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Options} const leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::org\+\_\+options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a28bcb621636141758ea9bb309aa7a5d6}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a39e74b8b9e291a6d9963735327b84d6b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!owns\+\_\+cache\+\_\+@{owns\+\_\+cache\+\_\+}}
+\index{owns\+\_\+cache\+\_\+@{owns\+\_\+cache\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{owns\+\_\+cache\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::owns\+\_\+cache\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a39e74b8b9e291a6d9963735327b84d6b}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1559673763cf8b49f65edd38c502e683}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!owns\+\_\+info\+\_\+log\+\_\+@{owns\+\_\+info\+\_\+log\+\_\+}}
+\index{owns\+\_\+info\+\_\+log\+\_\+@{owns\+\_\+info\+\_\+log\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{owns\+\_\+info\+\_\+log\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::owns\+\_\+info\+\_\+log\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1559673763cf8b49f65edd38c502e683}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1f4b3c1f0496622b0c551603293a7604}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!table\+\_\+cache\+\_\+@{table\+\_\+cache\+\_\+}}
+\index{table\+\_\+cache\+\_\+@{table\+\_\+cache\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{table\+\_\+cache\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Table\+Cache}$\ast$ leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::table\+\_\+cache\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1f4b3c1f0496622b0c551603293a7604}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1804cc3ae7d3bf5e49c0bdabcc8a9934}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!table\+\_\+numbers\+\_\+@{table\+\_\+numbers\+\_\+}}
+\index{table\+\_\+numbers\+\_\+@{table\+\_\+numbers\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{table\+\_\+numbers\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf uint64\+\_\+t}$>$ leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::table\+\_\+numbers\+\_\+\mbox{[}{\bf config\+::k\+Num\+Levels}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_a1804cc3ae7d3bf5e49c0bdabcc8a9934}
+\hypertarget{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abd7601c6bc61f6ce6a1d90959636fafb}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}!tables\+\_\+@{tables\+\_\+}}
+\index{tables\+\_\+@{tables\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer@{leveldb\+::anonymous\+\_\+namespace\lcurly{}repair.\+cc\rcurly{}\+::\+Repairer}}
+\subsubsection[{tables\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Table\+Info}$>$ leveldb\+::anonymous\+\_\+namespace\{repair.\+cc\}\+::Repairer\+::tables\+\_\+\mbox{[}{\bf config\+::k\+Num\+Levels}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer_abd7601c6bc61f6ce6a1d90959636fafb}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\hyperlink{repair_8cc}{repair.\+cc}\end{DoxyCompactItemize}

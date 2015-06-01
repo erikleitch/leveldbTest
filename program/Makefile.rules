@@ -1,0 +1,12 @@
+Program.o: Program.cc \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/program/Program.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/Exception.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/ErrHandler.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/Directives.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/IoLock.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/Mutex.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/Logger.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/LogFile.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/TimeVal.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/XtermManip.h \
+  /Users/eml/projects/riak/gittest/leveldbTest/gcp/util/LogStream.h

@@ -1,0 +1,159 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+:\+:Posix\+Random\+Access\+File Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+
+
+Inheritance diagram for leveldb\+:\+:anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+:\+:Posix\+Random\+Access\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+:\+:Posix\+Random\+Access\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a59fbba60d64a0733967e370c0237144a}{Posix\+Random\+Access\+File} (const std\+::string \&fname, int fd)
+\item 
+virtual \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a679f35477f50752a92ed197fab3ca0bf}{$\sim$\+Posix\+Random\+Access\+File} ()
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_aca2f648930eefae81b23140cd69594c2}{Read} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} offset, size\+\_\+t n, \hyperlink{classleveldb_1_1_slice}{Slice} $\ast$result, char $\ast$scratch) const 
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9c28ba81aa49096f0722a78751807afd}{Set\+For\+Compaction} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} file\+\_\+size)
+\item 
+virtual size\+\_\+t \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a513a590d9fd72dc5812ab7dd8121cc5d}{Object\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9e2d89928eddfba0d5935433630a3569}{filename\+\_\+}
+\item 
+int \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a387e96037ab2f4b4a99648a17e8c453b}{fd\+\_\+}
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9a33d399b94f73cdc546e250a9152279}{is\+\_\+compaction\+\_\+}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a0cf03f48463600214d56266251172073}{file\+\_\+size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a59fbba60d64a0733967e370c0237144a}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!Posix\+Random\+Access\+File@{Posix\+Random\+Access\+File}}
+\index{Posix\+Random\+Access\+File@{Posix\+Random\+Access\+File}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{Posix\+Random\+Access\+File}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::\+Posix\+Random\+Access\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a59fbba60d64a0733967e370c0237144a}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a59fbba60d64a0733967e370c0237144a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a679f35477f50752a92ed197fab3ca0bf}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!````~Posix\+Random\+Access\+File@{$\sim$\+Posix\+Random\+Access\+File}}
+\index{````~Posix\+Random\+Access\+File@{$\sim$\+Posix\+Random\+Access\+File}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{$\sim$\+Posix\+Random\+Access\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::$\sim$\+Posix\+Random\+Access\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a679f35477f50752a92ed197fab3ca0bf}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a679f35477f50752a92ed197fab3ca0bf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a513a590d9fd72dc5812ab7dd8121cc5d}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!Object\+Size@{Object\+Size}}
+\index{Object\+Size@{Object\+Size}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{Object\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::\+Object\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a513a590d9fd72dc5812ab7dd8121cc5d}
+
+
+Reimplemented from \hyperlink{classleveldb_1_1_random_access_file_a60d2791d03842712653721ab8fcb1b11}{leveldb\+::\+Random\+Access\+File}.
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_aca2f648930eefae81b23140cd69594c2}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!Read@{Read}}
+\index{Read@{Read}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{offset, }
+\item[{size\+\_\+t}]{n, }
+\item[{{\bf Slice} $\ast$}]{result, }
+\item[{char $\ast$}]{scratch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_aca2f648930eefae81b23140cd69594c2}
+
+
+Implements \hyperlink{classleveldb_1_1_random_access_file_a1a09fadcec904d9791a968acabca98d0}{leveldb\+::\+Random\+Access\+File}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_aca2f648930eefae81b23140cd69594c2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9c28ba81aa49096f0722a78751807afd}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!Set\+For\+Compaction@{Set\+For\+Compaction}}
+\index{Set\+For\+Compaction@{Set\+For\+Compaction}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{Set\+For\+Compaction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::\+Set\+For\+Compaction (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{file\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9c28ba81aa49096f0722a78751807afd}
+
+
+Reimplemented from \hyperlink{classleveldb_1_1_random_access_file_acdaed278bbd98391a9d194070ff22bd1}{leveldb\+::\+Random\+Access\+File}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a387e96037ab2f4b4a99648a17e8c453b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!fd\+\_\+@{fd\+\_\+}}
+\index{fd\+\_\+@{fd\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{fd\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::fd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a387e96037ab2f4b4a99648a17e8c453b}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a0cf03f48463600214d56266251172073}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!file\+\_\+size\+\_\+@{file\+\_\+size\+\_\+}}
+\index{file\+\_\+size\+\_\+@{file\+\_\+size\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{file\+\_\+size\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::file\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a0cf03f48463600214d56266251172073}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9e2d89928eddfba0d5935433630a3569}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!filename\+\_\+@{filename\+\_\+}}
+\index{filename\+\_\+@{filename\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{filename\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::filename\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9e2d89928eddfba0d5935433630a3569}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9a33d399b94f73cdc546e250a9152279}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}!is\+\_\+compaction\+\_\+@{is\+\_\+compaction\+\_\+}}
+\index{is\+\_\+compaction\+\_\+@{is\+\_\+compaction\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Random\+Access\+File}}
+\subsubsection[{is\+\_\+compaction\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Random\+Access\+File\+::is\+\_\+compaction\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file_a9a33d399b94f73cdc546e250a9152279}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{env__posix_8cc}{env\+\_\+posix.\+cc}\end{DoxyCompactItemize}

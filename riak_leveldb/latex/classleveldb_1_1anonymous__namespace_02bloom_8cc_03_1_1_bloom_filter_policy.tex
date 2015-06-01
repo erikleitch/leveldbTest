@@ -1,0 +1,128 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{bloom.\+cc\}\+:\+:Bloom\+Filter\+Policy Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+
+
+Inheritance diagram for leveldb\+:\+:anonymous\+\_\+namespace\{bloom.\+cc\}\+:\+:Bloom\+Filter\+Policy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{bloom.\+cc\}\+:\+:Bloom\+Filter\+Policy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a9fc142e1d54de78c0e15e786ab193b0b}{Bloom\+Filter\+Policy} (int bits\+\_\+per\+\_\+key)
+\item 
+virtual const char $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a87de3b693cf325272fb71470974bfa16}{Name} () const 
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a3d6aa8601d9ade9f9a9947569aef971c}{Create\+Filter} (const \hyperlink{classleveldb_1_1_slice}{Slice} $\ast$keys, int n, std\+::string $\ast$dst) const 
+\item 
+virtual bool \hyperlink{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a275f6feda978ae46af1ea0ffc34a5f}{Key\+May\+Match} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, const \hyperlink{classleveldb_1_1_slice}{Slice} \&bloom\+\_\+filter) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a0f840b2861ff8730b25dcea7fdefeda5}{bits\+\_\+per\+\_\+key\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a7fd2e6ef015c423642e3a7a568a8bf}{k\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a9fc142e1d54de78c0e15e786ab193b0b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}!Bloom\+Filter\+Policy@{Bloom\+Filter\+Policy}}
+\index{Bloom\+Filter\+Policy@{Bloom\+Filter\+Policy}!leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+\subsubsection[{Bloom\+Filter\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{bloom.\+cc\}\+::Bloom\+Filter\+Policy\+::\+Bloom\+Filter\+Policy (
+\begin{DoxyParamCaption}
+\item[{int}]{bits\+\_\+per\+\_\+key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a9fc142e1d54de78c0e15e786ab193b0b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a3d6aa8601d9ade9f9a9947569aef971c}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}!Create\+Filter@{Create\+Filter}}
+\index{Create\+Filter@{Create\+Filter}!leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+\subsubsection[{Create\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::anonymous\+\_\+namespace\{bloom.\+cc\}\+::Bloom\+Filter\+Policy\+::\+Create\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} $\ast$}]{keys, }
+\item[{int}]{n, }
+\item[{std\+::string $\ast$}]{dst}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a3d6aa8601d9ade9f9a9947569aef971c}
+
+
+Implements \hyperlink{classleveldb_1_1_filter_policy_a355e9797e16dd16b93d19056781126b2}{leveldb\+::\+Filter\+Policy}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a3d6aa8601d9ade9f9a9947569aef971c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a275f6feda978ae46af1ea0ffc34a5f}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}!Key\+May\+Match@{Key\+May\+Match}}
+\index{Key\+May\+Match@{Key\+May\+Match}!leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+\subsubsection[{Key\+May\+Match}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool leveldb\+::anonymous\+\_\+namespace\{bloom.\+cc\}\+::Bloom\+Filter\+Policy\+::\+Key\+May\+Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{const {\bf Slice} \&}]{bloom\+\_\+filter}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a275f6feda978ae46af1ea0ffc34a5f}
+
+
+Implements \hyperlink{classleveldb_1_1_filter_policy_a6f8ba10ea25e0b4b8d0a6607c361c718}{leveldb\+::\+Filter\+Policy}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a275f6feda978ae46af1ea0ffc34a5f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a87de3b693cf325272fb71470974bfa16}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}!Name@{Name}}
+\index{Name@{Name}!leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ leveldb\+::anonymous\+\_\+namespace\{bloom.\+cc\}\+::Bloom\+Filter\+Policy\+::\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a87de3b693cf325272fb71470974bfa16}
+
+
+Implements \hyperlink{classleveldb_1_1_filter_policy_afd5e951892a2e740f186c0658913ea1b}{leveldb\+::\+Filter\+Policy}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a0f840b2861ff8730b25dcea7fdefeda5}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}!bits\+\_\+per\+\_\+key\+\_\+@{bits\+\_\+per\+\_\+key\+\_\+}}
+\index{bits\+\_\+per\+\_\+key\+\_\+@{bits\+\_\+per\+\_\+key\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+\subsubsection[{bits\+\_\+per\+\_\+key\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::anonymous\+\_\+namespace\{bloom.\+cc\}\+::Bloom\+Filter\+Policy\+::bits\+\_\+per\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a0f840b2861ff8730b25dcea7fdefeda5}
+\hypertarget{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a7fd2e6ef015c423642e3a7a568a8bf}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}!k\+\_\+@{k\+\_\+}}
+\index{k\+\_\+@{k\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy@{leveldb\+::anonymous\+\_\+namespace\lcurly{}bloom.\+cc\rcurly{}\+::\+Bloom\+Filter\+Policy}}
+\subsubsection[{k\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::anonymous\+\_\+namespace\{bloom.\+cc\}\+::Bloom\+Filter\+Policy\+::k\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02bloom_8cc_03_1_1_bloom_filter_policy_a4a7fd2e6ef015c423642e3a7a568a8bf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{bloom_8cc}{bloom.\+cc}\end{DoxyCompactItemize}

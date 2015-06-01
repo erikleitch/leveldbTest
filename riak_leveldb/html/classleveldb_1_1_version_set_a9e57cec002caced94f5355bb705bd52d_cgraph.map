@@ -1,0 +1,5 @@
+<map id="leveldb::VersionSet::VersionSet" name="leveldb::VersionSet::VersionSet">
+<area shape="rect" id="node2" href="$classleveldb_1_1_version_set.html#aaed50532d8db6fe5941098c3462b24b8" title="leveldb::VersionSet\l::AppendVersion" alt="" coords="189,24,324,63"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_version.html#a3f623697f625d4740d5b273c0bf6223a" title="leveldb::Version::Unref" alt="" coords="372,5,528,31"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_version.html#ad237b446c7f7d9e63c4b7c162d6f0064" title="leveldb::Version::Ref" alt="" coords="378,55,522,80"/>
+</map>

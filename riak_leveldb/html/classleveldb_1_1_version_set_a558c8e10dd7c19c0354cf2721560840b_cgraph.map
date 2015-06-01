@@ -1,0 +1,11 @@
+<map id="leveldb::VersionSet::GetRange2" name="leveldb::VersionSet::GetRange2">
+<area shape="rect" id="node2" href="$classleveldb_1_1_version_set.html#a4bba8e7761e985933a27ad44ec98f70d" title="leveldb::VersionSet\l::GetRange" alt="" coords="189,83,324,121"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_internal_key.html#ab6e9ebec1bf567de89d8dd34fdc51f86" title="leveldb::InternalKey\l::Clear" alt="" coords="408,51,546,89"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_internal_key_comparator.html#a6469a0d67a9025173d31ec6e1cd5f80e" title="leveldb::InternalKeyComparator\l::Compare" alt="" coords="372,113,581,152"/>
+<area shape="rect" id="node5" href="$structleveldb_1_1_comparator.html#a05dae6edcad3c7db23827c0233d74039" title="leveldb::Comparator\l::Compare" alt="" coords="641,5,782,44"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="630,120,793,145"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="858,95,989,120"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="857,157,990,183"/>
+<area shape="rect" id="node9" href="$namespaceleveldb.html#a239098b0291873752d0be16633652825" title="leveldb::DecodeFixed64" alt="" coords="629,221,794,247"/>
+<area shape="rect" id="node10" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="842,221,1006,247"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="leveldb::InternalFilterPolicy::KeyMayMatch" name="leveldb::InternalFilterPolicy::KeyMayMatch">
+<area shape="rect" id="node2" href="$classleveldb_1_1_filter_policy.html#a6f8ba10ea25e0b4b8d0a6607c361c718" title="leveldb::FilterPolicy\l::KeyMayMatch" alt="" coords="248,5,384,44"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="234,68,398,93"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="447,43,578,68"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="446,92,579,117"/>
+</map>

@@ -1,0 +1,81 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+:\+:Posix\+Lock\+Table Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+:\+:Posix\+Lock\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_adc5e0fdccf86474e232e72272873ee85}{Insert} (const std\+::string \&fname)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_aeaa5c7b9b2c37aa167c1a990d1d7c6b8}{Remove} (const std\+::string \&fname)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_mutex}{port\+::\+Mutex} \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_add436c8922d47630043e2e8857673848}{mu\+\_\+}
+\item 
+std\+::set$<$ std\+::string $>$ \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_ac0c613101281444eb216a6c2cd045f9f}{locked\+\_\+files\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_adc5e0fdccf86474e232e72272873ee85}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Lock\+Table\+::\+Insert (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_adc5e0fdccf86474e232e72272873ee85}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_adc5e0fdccf86474e232e72272873ee85_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_aeaa5c7b9b2c37aa167c1a990d1d7c6b8}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}!Remove@{Remove}}
+\index{Remove@{Remove}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}}
+\subsubsection[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Lock\+Table\+::\+Remove (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_aeaa5c7b9b2c37aa167c1a990d1d7c6b8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_aeaa5c7b9b2c37aa167c1a990d1d7c6b8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_ac0c613101281444eb216a6c2cd045f9f}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}!locked\+\_\+files\+\_\+@{locked\+\_\+files\+\_\+}}
+\index{locked\+\_\+files\+\_\+@{locked\+\_\+files\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}}
+\subsubsection[{locked\+\_\+files\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::set$<$std\+::string$>$ leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Lock\+Table\+::locked\+\_\+files\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_ac0c613101281444eb216a6c2cd045f9f}
+\hypertarget{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_add436c8922d47630043e2e8857673848}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}!mu\+\_\+@{mu\+\_\+}}
+\index{mu\+\_\+@{mu\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table@{leveldb\+::anonymous\+\_\+namespace\lcurly{}env\+\_\+posix.\+cc\rcurly{}\+::\+Posix\+Lock\+Table}}
+\subsubsection[{mu\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Mutex} leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::Posix\+Lock\+Table\+::mu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table_add436c8922d47630043e2e8857673848}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{env__posix_8cc}{env\+\_\+posix.\+cc}\end{DoxyCompactItemize}

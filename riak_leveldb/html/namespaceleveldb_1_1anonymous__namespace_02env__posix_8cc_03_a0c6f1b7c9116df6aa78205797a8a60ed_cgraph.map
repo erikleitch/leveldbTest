@@ -1,0 +1,8 @@
+<map id="leveldb::anonymous_namespace{env_posix::cc}::BGFileUnmapper" name="leveldb::anonymous_namespace{env_posix::cc}::BGFileUnmapper">
+<area shape="rect" id="node2" href="$structleveldb_1_1_performance_counters.html#a6c29cd0f57a2b78edc0cdfdfb0869b21" title="leveldb::PerformanceCounters::Inc" alt="" coords="426,15,652,40"/>
+<area shape="rect" id="node3" href="$port__android_8cc.html#a1652179a6e22c7f6e6c7d0246feb43e6" title="fdatasync" alt="" coords="257,30,336,55"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_mmap_file.html#a2a19f6a33c994f7be4df4a185accbeba" title="leveldb::anonymous\l_namespace\{env_posix\l::cc\}::PosixMmapFile\l::ReleaseRef" alt="" coords="216,79,378,144"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_thread_task.html#af2ab24134ff01ad440222c3109dc5db2" title="leveldb::ThreadTask\l::RefDec" alt="" coords="226,168,367,207"/>
+<area shape="rect" id="node5" href="$namespaceleveldb.html#a437024ea38c14ba5841de02d0f38fbb5" title="leveldb::dec_and_fetch" alt="" coords="460,162,618,187"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a67927dd93f0898faf24c57287d80711d" title="leveldb::inc_and_fetch" alt="" coords="462,99,616,124"/>
+</map>

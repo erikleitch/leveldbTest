@@ -1,0 +1,116 @@
+\hypertarget{env__posix_8cc}{}\section{util/env\+\_\+posix.cc File Reference}
+\label{env__posix_8cc}\index{util/env\+\_\+posix.\+cc@{util/env\+\_\+posix.\+cc}}
+{\ttfamily \#include $<$deque$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$dirent.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$syslog.\+h$>$}\\*
+{\ttfamily \#include $<$sys/mman.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$sys/file.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}leveldb/atomics.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/filter\+\_\+policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/slice.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port/port.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/crc32c.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/db\+\_\+list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/hot\+\_\+threads.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/posix\+\_\+logger.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/thread\+\_\+tasks.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/throttle.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/dbformat.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/perf\+\_\+count.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for env\+\_\+posix.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{env__posix_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_b_g_close_info}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+B\+G\+Close\+Info}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_sequential_file}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Sequential\+File}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_random_access_file}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Random\+Access\+File}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_mmap_file}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Mmap\+File}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_file_lock}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+File\+Lock}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_lock_table}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Lock\+Table}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}
+\item 
+struct \hyperlink{structleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_1_1_b_g_item}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env\+::\+B\+G\+Item}
+\item 
+struct \hyperlink{structleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1anonymous__namespace_02env__posix_8cc_03_1_1_start_thread_state}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Start\+Thread\+State}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\item 
+ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}}
+\item 
+ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1anonymous__namespace_02env__posix_8cc_03}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{env__posix_8cc_aa4e0be90730d45542b1fb159c34f9f9b}{T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S}~1
+\begin{DoxyCompactList}\small\item\em for riak, make sure this is an odd number (and especially not 4) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Status \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_a1292cfc7eb1be31555c6d7124519afa1}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+I\+O\+Error} (const std\+::string \&context, int err\+\_\+number)
+\item 
+static void \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_a66f25b0d92f8d29676cd1b8e412237ec}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+B\+G\+File\+Unmapper2} (void $\ast$file\+\_\+info)
+\item 
+static int \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_a956300c4adfcbe5ccbbcef79b0a7d8e5}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Lock\+Or\+Unlock} (int fd, bool lock)
+\item 
+static void $\ast$ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_a65e3f0fe7b0373024902f346f7df1bfe}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Start\+Thread\+Wrapper} (void $\ast$arg)
+\item 
+int \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_a0c6f1b7c9116df6aa78205797a8a60ed}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+B\+G\+File\+Unmapper} (void $\ast$arg)
+\item 
+static bool \hyperlink{namespaceleveldb_accc20b16417497604ade62b282a1b848}{leveldb\+::\+Has\+S\+S\+E4\+\_\+2} ()
+\item 
+static void \hyperlink{namespaceleveldb_a14d29112491310d7a38d7b07fc5084f0}{leveldb\+::\+Init\+Default\+Env} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static Posix\+Lock\+Table \hyperlink{namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03_ae7dd8d96243a5abc6778648e20d1f729}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::g\+File\+Locks}
+\item 
+static pthread\+\_\+once\+\_\+t \hyperlink{namespaceleveldb_ae0ee2b9a8da60ad51918137eba9ffedb}{leveldb\+::once} = P\+T\+H\+R\+E\+A\+D\+\_\+\+O\+N\+C\+E\+\_\+\+I\+N\+I\+T
+\item 
+static Env $\ast$ \hyperlink{namespaceleveldb_a9ade93809ff59d5e6da0adc55c326a84}{leveldb\+::default\+\_\+env}
+\item 
+static volatile bool \hyperlink{namespaceleveldb_a0e7f6672e194b1079b807f4fcf034599}{leveldb\+::started} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{env__posix_8cc_aa4e0be90730d45542b1fb159c34f9f9b}{}\index{env\+\_\+posix.\+cc@{env\+\_\+posix.\+cc}!T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S@{T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S}}
+\index{T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S@{T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S}!env\+\_\+posix.\+cc@{env\+\_\+posix.\+cc}}
+\subsubsection[{T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+K\+S~1}\label{env__posix_8cc_aa4e0be90730d45542b1fb159c34f9f9b}
+
+
+for riak, make sure this is an odd number (and especially not 4) 
+

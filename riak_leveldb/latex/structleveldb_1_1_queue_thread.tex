@@ -1,0 +1,178 @@
+\hypertarget{structleveldb_1_1_queue_thread}{}\section{leveldb\+:\+:Queue\+Thread Struct Reference}
+\label{structleveldb_1_1_queue_thread}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+
+
+{\ttfamily \#include $<$hot\+\_\+threads.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Queue\+Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{structleveldb_1_1_queue_thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_queue_thread_a3aae484a03152cb64bca716cf2f6fa34}{Queue\+Thread} (class \hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \&Pool)
+\item 
+virtual \hyperlink{structleveldb_1_1_queue_thread_affd97f2c367cb4859d2369bd4e696ebd}{$\sim$\+Queue\+Thread} ()
+\item 
+void $\ast$ \hyperlink{structleveldb_1_1_queue_thread_a4ff595ae14d6502e080621be96cd30a9}{Queue\+Thread\+Routine} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structleveldb_1_1_queue_thread_afa80b76fb1ae354d8b1123f7f1c2a171}{m\+\_\+\+Thread\+Good}
+\begin{DoxyCompactList}\small\item\em true if thread and semaphore good \end{DoxyCompactList}\item 
+pthread\+\_\+t \hyperlink{structleveldb_1_1_queue_thread_aea8d3c3f7c5d97e2b72e8500ba02a716}{m\+\_\+\+Thread\+Id}
+\begin{DoxyCompactList}\small\item\em handle for this thread \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structleveldb_1_1_queue_thread_ad232678ff8b15ad8be50cb5a0e68fa07}{m\+\_\+\+Queue\+Name}
+\item 
+class \hyperlink{classleveldb_1_1_hot_thread_pool}{Hot\+Thread\+Pool} \& \hyperlink{structleveldb_1_1_queue_thread_a7e5f6e3e8b24a4698b775dcd9caa9726}{m\+\_\+\+Pool}
+\begin{DoxyCompactList}\small\item\em parent pool object \end{DoxyCompactList}\item 
+sem\+\_\+t \hyperlink{structleveldb_1_1_queue_thread_a697f7c0aaeb5e776cf1de59476ec2005}{m\+\_\+\+Semaphore}
+\begin{DoxyCompactList}\small\item\em counts items inserted to queue \end{DoxyCompactList}\item 
+sem\+\_\+t $\ast$ \hyperlink{structleveldb_1_1_queue_thread_a0dc37975600c8018e85f7d7edfebccd7}{m\+\_\+\+Semaphore\+Ptr}
+\begin{DoxyCompactList}\small\item\em either \&m\+\_\+\+Semaphore or sem\+\_\+open return value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_queue_thread_ad6ed3ce556274868f55a15b47babbb0a}{Queue\+Thread} ()
+\item 
+\hyperlink{structleveldb_1_1_queue_thread_ada31310477614cce1e4e0df77ad9114e}{Queue\+Thread} (const \hyperlink{structleveldb_1_1_queue_thread}{Queue\+Thread} \&)
+\item 
+\hyperlink{structleveldb_1_1_queue_thread}{Queue\+Thread} \& \hyperlink{structleveldb_1_1_queue_thread_a2ad1743316a6f94cd83faafbe2fec466}{operator=} (const \hyperlink{structleveldb_1_1_queue_thread}{Queue\+Thread} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structleveldb_1_1_queue_thread_a3aae484a03152cb64bca716cf2f6fa34}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\index{Queue\+Thread@{Queue\+Thread}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{Queue\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Queue\+Thread\+::\+Queue\+Thread (
+\begin{DoxyParamCaption}
+\item[{class {\bf Hot\+Thread\+Pool} \&}]{Pool}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_queue_thread_a3aae484a03152cb64bca716cf2f6fa34}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_queue_thread_a3aae484a03152cb64bca716cf2f6fa34_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_queue_thread_affd97f2c367cb4859d2369bd4e696ebd}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!````~Queue\+Thread@{$\sim$\+Queue\+Thread}}
+\index{````~Queue\+Thread@{$\sim$\+Queue\+Thread}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{$\sim$\+Queue\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Queue\+Thread\+::$\sim$\+Queue\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{structleveldb_1_1_queue_thread_affd97f2c367cb4859d2369bd4e696ebd}
+\hypertarget{structleveldb_1_1_queue_thread_ad6ed3ce556274868f55a15b47babbb0a}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\index{Queue\+Thread@{Queue\+Thread}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{Queue\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Queue\+Thread\+::\+Queue\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_queue_thread_ad6ed3ce556274868f55a15b47babbb0a}
+\hypertarget{structleveldb_1_1_queue_thread_ada31310477614cce1e4e0df77ad9114e}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\index{Queue\+Thread@{Queue\+Thread}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{Queue\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Queue\+Thread\+::\+Queue\+Thread (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\+Thread} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_queue_thread_ada31310477614cce1e4e0df77ad9114e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structleveldb_1_1_queue_thread_a2ad1743316a6f94cd83faafbe2fec466}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue\+Thread}\& leveldb\+::\+Queue\+Thread\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\+Thread} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_queue_thread_a2ad1743316a6f94cd83faafbe2fec466}
+\hypertarget{structleveldb_1_1_queue_thread_a4ff595ae14d6502e080621be96cd30a9}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!Queue\+Thread\+Routine@{Queue\+Thread\+Routine}}
+\index{Queue\+Thread\+Routine@{Queue\+Thread\+Routine}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{Queue\+Thread\+Routine}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ leveldb\+::\+Queue\+Thread\+::\+Queue\+Thread\+Routine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_queue_thread_a4ff595ae14d6502e080621be96cd30a9}
+Cover highly inprobable race condition with adding a queue and no hot thread sees it. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_queue_thread_a4ff595ae14d6502e080621be96cd30a9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_queue_thread_a4ff595ae14d6502e080621be96cd30a9_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structleveldb_1_1_queue_thread_a7e5f6e3e8b24a4698b775dcd9caa9726}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!m\+\_\+\+Pool@{m\+\_\+\+Pool}}
+\index{m\+\_\+\+Pool@{m\+\_\+\+Pool}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{m\+\_\+\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf Hot\+Thread\+Pool}\& leveldb\+::\+Queue\+Thread\+::m\+\_\+\+Pool}\label{structleveldb_1_1_queue_thread_a7e5f6e3e8b24a4698b775dcd9caa9726}
+
+
+parent pool object 
+
+\hypertarget{structleveldb_1_1_queue_thread_ad232678ff8b15ad8be50cb5a0e68fa07}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!m\+\_\+\+Queue\+Name@{m\+\_\+\+Queue\+Name}}
+\index{m\+\_\+\+Queue\+Name@{m\+\_\+\+Queue\+Name}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{m\+\_\+\+Queue\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::\+Queue\+Thread\+::m\+\_\+\+Queue\+Name}\label{structleveldb_1_1_queue_thread_ad232678ff8b15ad8be50cb5a0e68fa07}
+\hypertarget{structleveldb_1_1_queue_thread_a697f7c0aaeb5e776cf1de59476ec2005}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!m\+\_\+\+Semaphore@{m\+\_\+\+Semaphore}}
+\index{m\+\_\+\+Semaphore@{m\+\_\+\+Semaphore}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{m\+\_\+\+Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}sem\+\_\+t leveldb\+::\+Queue\+Thread\+::m\+\_\+\+Semaphore}\label{structleveldb_1_1_queue_thread_a697f7c0aaeb5e776cf1de59476ec2005}
+
+
+counts items inserted to queue 
+
+\hypertarget{structleveldb_1_1_queue_thread_a0dc37975600c8018e85f7d7edfebccd7}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!m\+\_\+\+Semaphore\+Ptr@{m\+\_\+\+Semaphore\+Ptr}}
+\index{m\+\_\+\+Semaphore\+Ptr@{m\+\_\+\+Semaphore\+Ptr}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{m\+\_\+\+Semaphore\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}sem\+\_\+t$\ast$ leveldb\+::\+Queue\+Thread\+::m\+\_\+\+Semaphore\+Ptr}\label{structleveldb_1_1_queue_thread_a0dc37975600c8018e85f7d7edfebccd7}
+
+
+either \&m\+\_\+\+Semaphore or sem\+\_\+open return value 
+
+\hypertarget{structleveldb_1_1_queue_thread_afa80b76fb1ae354d8b1123f7f1c2a171}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!m\+\_\+\+Thread\+Good@{m\+\_\+\+Thread\+Good}}
+\index{m\+\_\+\+Thread\+Good@{m\+\_\+\+Thread\+Good}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{m\+\_\+\+Thread\+Good}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Queue\+Thread\+::m\+\_\+\+Thread\+Good}\label{structleveldb_1_1_queue_thread_afa80b76fb1ae354d8b1123f7f1c2a171}
+
+
+true if thread and semaphore good 
+
+\hypertarget{structleveldb_1_1_queue_thread_aea8d3c3f7c5d97e2b72e8500ba02a716}{}\index{leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}!m\+\_\+\+Thread\+Id@{m\+\_\+\+Thread\+Id}}
+\index{m\+\_\+\+Thread\+Id@{m\+\_\+\+Thread\+Id}!leveldb\+::\+Queue\+Thread@{leveldb\+::\+Queue\+Thread}}
+\subsubsection[{m\+\_\+\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+t leveldb\+::\+Queue\+Thread\+::m\+\_\+\+Thread\+Id}\label{structleveldb_1_1_queue_thread_aea8d3c3f7c5d97e2b72e8500ba02a716}
+
+
+handle for this thread 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{hot__threads_8h}{hot\+\_\+threads.\+h}\item 
+util/\hyperlink{hot__threads_8cc}{hot\+\_\+threads.\+cc}\end{DoxyCompactItemize}

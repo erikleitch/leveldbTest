@@ -1,0 +1,4 @@
+<map id="leveldb::SetThrottleWriteRate" name="leveldb::SetThrottleWriteRate">
+<area shape="rect" id="node2" href="$structleveldb_1_1_performance_counters.html#a8b209c77780935f91c652db6e6db4b5a" title="leveldb::PerformanceCounters::Add" alt="" coords="249,5,481,31"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1_performance_counters.html#a6c29cd0f57a2b78edc0cdfdfb0869b21" title="leveldb::PerformanceCounters::Inc" alt="" coords="252,55,478,80"/>
+</map>

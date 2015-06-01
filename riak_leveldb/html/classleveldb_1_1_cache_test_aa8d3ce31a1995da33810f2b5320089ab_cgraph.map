@@ -1,0 +1,7 @@
+<map id="leveldb::CacheTest::Deleter" name="leveldb::CacheTest::Deleter">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#a7819fbf4e9f594d28aa16cd6287a0b37" title="leveldb::DecodeKey" alt="" coords="192,55,332,80"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a4a88922ce403100602efb2c6ebaac070" title="leveldb::DecodeValue" alt="" coords="187,104,337,129"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="402,5,533,31"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="385,55,550,80"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="401,104,534,129"/>
+</map>

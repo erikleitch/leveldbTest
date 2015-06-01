@@ -1,0 +1,11 @@
+<map id="leveldb_filterpolicy_create_bloom" name="leveldb_filterpolicy_create_bloom">
+<area shape="rect" id="node2" href="$structleveldb__filterpolicy__t.html#a2d2e4bed02de91075ce921005c851a3e" title="leveldb_filterpolicy\l_t::Name" alt="" coords="219,5,349,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_filter_policy.html#afd5e951892a2e740f186c0658913ea1b" title="leveldb::FilterPolicy\l::Name" alt="" coords="216,68,352,107"/>
+<area shape="rect" id="node4" href="$structleveldb__filterpolicy__t.html#a8b5b77b6a8d1c526905c7eb57d78558b" title="leveldb_filterpolicy\l_t::CreateFilter" alt="" coords="219,193,349,232"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_filter_policy.html#a355e9797e16dd16b93d19056781126b2" title="leveldb::FilterPolicy\l::CreateFilter" alt="" coords="216,256,352,295"/>
+<area shape="rect" id="node8" href="$structleveldb__filterpolicy__t.html#aa3006a26cac563bb5115d27d83b6865f" title="leveldb_filterpolicy\l_t::KeyMayMatch" alt="" coords="219,131,349,169"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_filter_policy.html#a6f8ba10ea25e0b4b8d0a6607c361c718" title="leveldb::FilterPolicy\l::KeyMayMatch" alt="" coords="216,319,352,357"/>
+<area shape="rect" id="node10" href="$namespaceleveldb.html#ae6b34bf2331983721554f284b1eaa1a1" title="leveldb::NewBloomFilterPolicy" alt="" coords="184,381,384,407"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="432,141,566,167"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="433,197,564,223"/>
+</map>

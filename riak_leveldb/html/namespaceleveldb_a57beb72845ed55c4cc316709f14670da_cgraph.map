@@ -1,0 +1,4 @@
+<map id="leveldb::TEST" name="leveldb::TEST">
+<area shape="rect" id="node2" href="$classleveldb_1_1_env.html#ab57a55be37d4d57bf3c0ff83ee689f95" title="leveldb::Env::GetTestDirectory" alt="" coords="158,5,359,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_env.html#aa5448f7abbefdf49f429ca36efbbe450" title="leveldb::Env::NewWritableFile" alt="" coords="160,55,358,80"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="leveldb::log::LogTest::Read" name="leveldb::log::LogTest::Read">
+<area shape="rect" id="node2" href="$classleveldb_1_1log_1_1_reader.html#a84059598c9367cb677a9d70d77993282" title="leveldb::log::Reader\l::ReadRecord" alt="" coords="204,304,344,343"/>
+<area shape="rect" id="node21" href="$classleveldb_1_1_slice.html#a2cdd9fb649105033fde510afc9416732" title="leveldb::Slice::ToString" alt="" coords="196,367,352,392"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1log_1_1_reader.html#ae11273725f413d19be1087f221a48ac7" title="leveldb::log::Reader\l::SkipToInitialBlock" alt="" coords="407,112,547,151"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="1054,284,1185,309"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_slice.html#ab9b6e340e8a483a5cf713f6be17709e3" title="leveldb::Slice::clear" alt="" coords="617,647,753,672"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1log_1_1_reader.html#a001a5d7b4f3cc86c29fc2b0d31a52c27" title="leveldb::log::Reader\l::ReadPhysicalRecord" alt="" coords="400,408,554,447"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1log_1_1_reader.html#a9ac87fa07d90bf350d2bbbacc3265931" title="leveldb::log::Reader\l::ReportCorruption" alt="" coords="615,169,755,208"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="618,696,752,721"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_sequential_file.html#a18c94279fc058cad4d03cdfe04b12179" title="leveldb::SequentialFile\l::Skip" alt="" coords="607,5,763,44"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="620,120,750,145"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1log_1_1_reader.html#afadf9a8b44005fd8e9fc798d35befb50" title="leveldb::log::Reader\l::ReportDrop" alt="" coords="836,169,975,208"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1log_1_1_reader_1_1_reporter.html#a2d28d30f9559d5fc9f94af41d239932e" title="leveldb::log::Reader\l::Reporter::Corruption" alt="" coords="1045,169,1195,208"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_sequential_file.html#a4136bef1546cdb9fbbd477a635460261" title="leveldb::SequentialFile\l::Read" alt="" coords="607,436,763,475"/>
+<area shape="rect" id="node16" href="$namespaceleveldb_1_1crc32c.html#aef7889069ea26dd145509fff4c4e6b66" title="leveldb::crc32c::Unmask" alt="" coords="602,499,768,524"/>
+<area shape="rect" id="node17" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="603,548,767,573"/>
+<area shape="rect" id="node18" href="$namespaceleveldb_1_1crc32c.html#ac004d1e3d8c75b033c162e5ae0a5cc2c" title="leveldb::crc32c::Value" alt="" coords="610,597,760,623"/>
+<area shape="rect" id="node20" href="$classleveldb_1_1_slice.html#a1be5b22958a115ebecb2b017aad2b3f6" title="leveldb::Slice::remove\l_prefix" alt="" coords="830,385,981,424"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title="leveldb::Status::Corruption" alt="" coords="816,120,995,145"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="1043,120,1197,145"/>
+<area shape="rect" id="node19" href="$namespaceleveldb_1_1crc32c.html#ac42fd0618afe635356d722fd29f5ff10" title="leveldb::crc32c::Extend" alt="" coords="826,597,985,623"/>
+</map>

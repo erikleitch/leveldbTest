@@ -1,0 +1,5 @@
+<map id="leveldb::anonymous_namespace{cache.cc}::LRUCache" name="leveldb::anonymous_namespace{cache.cc}::LRUCache">
+<area shape="rect" id="node2" href="$classleveldb_1_1_cache.html" title="{leveldb::Cache\n|&#45; rep_\l|+ Cache()\l+ ~Cache()\l+ Insert()\l+ Lookup()\l+ Release()\l+ Value()\l+ Erase()\l+ NewId()\l+ EntryOverheadSize()\l+ Addref()\l&#45; LRU_Remove()\l&#45; LRU_Append()\l&#45; Unref()\l&#45; Cache()\l&#45; operator=()\l}" alt="" coords="5,247,163,507"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_l_r_u_handle.html" title="{leveldb::anonymous\l_namespace\{cache.cc\}\l::LRUHandle\n|+ value\l+ deleter\l+ charge\l+ key_length\l+ refs\l+ hash\l+ key_data\l|+ key()\l}" alt="" coords="175,5,334,185"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1anonymous__namespace_02cache_8cc_03_1_1_handle_table.html" title="{leveldb::anonymous\l_namespace\{cache.cc\}\l::HandleTable\n|&#45; length_\l&#45; elems_\l|+ HandleTable()\l+ ~HandleTable()\l+ Lookup()\l+ Insert()\l+ Remove()\l&#45; FindPointer()\l&#45; Resize()\l}" alt="" coords="264,280,424,473"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="leveldb::KeyConvertingIterator::status" name="leveldb::KeyConvertingIterator::status">
+<area shape="rect" id="node2" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="254,5,384,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_iterator.html#ac84f34623a031b7eeb23409320f76376" title="leveldb::Iterator::\lstatus" alt="" coords="259,55,379,93"/>
+</map>

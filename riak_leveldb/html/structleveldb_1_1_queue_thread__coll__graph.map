@@ -1,0 +1,3 @@
+<map id="leveldb::QueueThread" name="leveldb::QueueThread">
+<area shape="rect" id="node2" href="$classleveldb_1_1_hot_thread_pool.html" title="{leveldb::HotThreadPool\n|+ m_PoolName\l+ m_Shutdown\l+ m_Threads\l+ m_WorkQueue\l+ m_QueueLock\l+ m_WorkQueueAtomic\l+ m_DirectCounter\l+ m_QueuedCounter\l+ m_DequeuedCounter\l+ m_WeightedCounter\l|+ HotThreadPool()\l+ ~HotThreadPool()\l+ FindWaitingThread()\l+ Submit()\l+ work_queue_size()\l+ shutdown_pending()\l+ perf()\l+ IncWorkDirect()\l+ IncWorkQueued()\l+ IncWorkDequeued()\l+ IncWorkWeighted()\l+ ThreadStart()\l&#45; HotThreadPool()\l&#45; operator=()\l}" alt="" coords="9,260,172,627"/>
+</map>

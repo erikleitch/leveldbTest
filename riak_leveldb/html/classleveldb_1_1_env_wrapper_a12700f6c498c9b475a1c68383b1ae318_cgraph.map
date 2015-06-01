@@ -1,0 +1,4 @@
+<map id="leveldb::EnvWrapper::NewWriteOnlyFile" name="leveldb::EnvWrapper::NewWriteOnlyFile">
+<area shape="rect" id="node2" href="$classleveldb_1_1_env.html#ae50ecac51fb2b2a77bc8c18478a49096" title="leveldb::Env::NewWriteOnlyFile" alt="" coords="198,12,406,37"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_env.html#aa5448f7abbefdf49f429ca36efbbe450" title="leveldb::Env::NewWritableFile" alt="" coords="454,12,652,37"/>
+</map>

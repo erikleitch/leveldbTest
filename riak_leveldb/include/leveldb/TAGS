@@ -1,0 +1,327 @@
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//atomics.h,647
+ #define LEVELDB_ATOMIC_H 26,999
+ #define LEVELDB_IS_SOLARIS 33,1212
+ #undef LEVELDB_IS_SOLARIS35,1248
+template <typename PtrT,66,1931
+inline bool compare_and_swap(67,1973
+inline uint64_t inc_and_fetch(85,2374
+inline uint32_t inc_and_fetch(95,2556
+inline size_t inc_and_fetch(106,2831
+inline uint64_t dec_and_fetch(121,3055
+inline uint32_t dec_and_fetch(131,3237
+inline size_t dec_and_fetch(142,3512
+inline uint64_t add_and_fetch(158,3743
+inline uint32_t add_and_fetch(168,3946
+inline size_t add_and_fetch(179,4242
+inline uint64_t sub_and_fetch(194,4491
+inline uint32_t sub_and_fetch(205,4764
+inline size_t sub_and_fetch(217,5130
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//c.h,1191
+#define STORAGE_LEVELDB_INCLUDE_C_H_41,1543
+typedef struct leveldb_t               leveldb_t;53,1704
+typedef struct leveldb_cache_t         leveldb_cache_t;54,1754
+typedef struct leveldb_comparator_t    leveldb_comparator_t;55,1810
+typedef struct leveldb_env_t           leveldb_env_t;56,1871
+typedef struct leveldb_filelock_t      leveldb_filelock_t;57,1925
+typedef struct leveldb_filterpolicy_t  leveldb_filterpolicy_t;58,1984
+typedef struct leveldb_iterator_t      leveldb_iterator_t;59,2047
+typedef struct leveldb_logger_t        leveldb_logger_t;60,2106
+typedef struct leveldb_options_t       leveldb_options_t;61,2163
+typedef struct leveldb_randomfile_t    leveldb_randomfile_t;62,2221
+typedef struct leveldb_readoptions_t   leveldb_readoptions_t;63,2282
+typedef struct leveldb_seqfile_t       leveldb_seqfile_t;64,2344
+typedef struct leveldb_snapshot_t      leveldb_snapshot_t;65,2402
+typedef struct leveldb_writablefile_t  leveldb_writablefile_t;66,2461
+typedef struct leveldb_writebatch_t    leveldb_writebatch_t;67,2524
+typedef struct leveldb_writeoptions_t  leveldb_writeoptions_t;68,2585
+  leveldb_no_compression 207,7362
+  leveldb_snappy_compression 208,7392
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//cache.h,155
+#define STORAGE_LEVELDB_INCLUDE_CACHE_H_19,950
+class Cache 37,1416
+  Cache(39,1439
+  struct Handle 46,1637
+  virtual size_t EntryOverheadSize(91,3576
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//comparator.h,107
+#define STORAGE_LEVELDB_INCLUDE_COMPARATOR_H_6,263
+class Comparator 18,606
+  virtual int Compare(26,782
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//db.h,180
+#define STORAGE_LEVELDB_INCLUDE_DB_H_6,255
+class Snapshot 27,787
+struct Range 33,862
+  Range(37,980
+  Range(38,994
+class Value 44,1213
+class DB 55,1491
+  DB(DB::DB66,1907
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//env.h,2311
+#define STORAGE_LEVELDB_INCLUDE_ENV_H_14,662
+class Env 34,1006
+  Env(36,1027
+  virtual Status NewWriteOnlyFile(99,3900
+  virtual int GetBackgroundBacklog(181,7444
+  virtual PerformanceCounters * GetPerformanceCounters(184,7577
+  virtual size_t RecoveryMmapSize(188,7817
+class SequentialFile 197,8056
+  SequentialFile(SequentialFile::SequentialFile199,8088
+class RandomAccessFile 223,9029
+  RandomAccessFile(RandomAccessFile::RandomAccessFile225,9063
+  virtual void SetForCompaction(RandomAccessFile::SetForCompaction241,9761
+  virtual size_t ObjectSize(RandomAccessFile::ObjectSize244,9871
+class WritableFile 250,10101
+  WritableFile(WritableFile::WritableFile252,10131
+  virtual void SetMetadataOffset(WritableFile::SetMetadataOffset263,10431
+class AppendableFile:AppendableFile272,10663
+  AppendableFile(AppendableFile::AppendableFile274,10716
+class Logger 284,10931
+  Logger(Logger::Logger286,10955
+class FileLock 300,11239
+  FileLock(FileLock::FileLock302,11265
+class EnvWrapper 328,12167
+  explicit EnvWrapper(EnvWrapper::EnvWrapper331,12269
+  Env* target(EnvWrapper::target335,12402
+  Status NewSequentialFile(EnvWrapper::NewSequentialFile338,12522
+  Status NewRandomAccessFile(EnvWrapper::NewRandomAccessFile341,12642
+  Status NewWritableFile(EnvWrapper::NewWritableFile344,12768
+  Status NewAppendableFile(EnvWrapper::NewAppendableFile347,12897
+  Status NewWriteOnlyFile(EnvWrapper::NewWriteOnlyFile350,13032
+  bool FileExists(EnvWrapper::FileExists353,13163
+  Status GetChildren(EnvWrapper::GetChildren354,13238
+  Status DeleteFile(EnvWrapper::DeleteFile357,13359
+  Status CreateDir(EnvWrapper::CreateDir358,13436
+  Status DeleteDir(EnvWrapper::DeleteDir359,13511
+  Status GetFileSize(EnvWrapper::GetFileSize360,13586
+  Status RenameFile(EnvWrapper::RenameFile363,13687
+  Status LockFile(EnvWrapper::LockFile366,13795
+  Status UnlockFile(EnvWrapper::UnlockFile369,13891
+  void Schedule(EnvWrapper::Schedule370,13959
+  pthread_t StartThread(EnvWrapper::StartThread373,14046
+  virtual Status GetTestDirectory(EnvWrapper::GetTestDirectory376,14142
+  virtual Status NewLogger(EnvWrapper::NewLogger379,14245
+  uint64_t NowMicros(EnvWrapper::NowMicros382,14367
+  void SleepForMicroseconds(EnvWrapper::SleepForMicroseconds385,14429
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//filter_policy.h,321
+#define STORAGE_LEVELDB_INCLUDE_FILTER_POLICY_H_17,796
+class FilterPolicy 25,900
+  FilterPolicy(30,1012
+  const FilterPolicy * GetNext(37,1113
+  void SetNext(38,1171
+  virtual const char* Name(45,1481
+class FilterInventory83,3219
+    static void AddFilterToInventory(FilterInventory::AddFilterToInventory92,3528
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//iterator.h,188
+#define STORAGE_LEVELDB_INCLUDE_ITERATOR_H_16,757
+class Iterator 23,879
+  virtual bool Valid(30,1074
+  typedef void (*CleanupFunction)CleanupFunction75,2871
+  struct Cleanup 79,3015
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//options.h,615
+#define STORAGE_LEVELDB_INCLUDE_OPTIONS_H_6,260
+enum CompressionType 29,789
+  kNoCompression 32,926
+  kNoCompression     = 0x0,x032,926
+  kSnappyCompression 33,954
+  kSnappyCompression = 0x1x133,954
+struct Options 37,1055
+struct ReadOptions 230,8443
+  ReadOptions(ReadOptions::ReadOptions255,9386
+  bool IsCompaction(ReadOptions::IsCompaction268,9618
+  Logger * GetInfoLog(ReadOptions::GetInfoLog270,9673
+  const std::string & GetDBName(ReadOptions::GetDBName272,9725
+  Env * GetEnv(ReadOptions::GetEnv274,9785
+struct WriteOptions 297,10403
+  WriteOptions(WriteOptions::WriteOptions316,11148
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//perf_count.h,7911
+#define STORAGE_LEVELDB_INCLUDE_PERF_COUNT_H_24,902
+enum SstCountEnum32,1037
+    eSstCountKeys=37,1103
+    eSstCountBlocks=38,1165
+    eSstCountCompressAborted=39,1229
+    eSstCountKeySize=40,1319
+    eSstCountValueSize=41,1378
+    eSstCountBlockSize=42,1439
+    eSstCountBlockWriteSize=43,1518
+    eSstCountIndexKeys=44,1608
+    eSstCountKeyLargest=45,1677
+    eSstCountKeySmallest=46,1732
+    eSstCountValueLargest=47,1788
+    eSstCountValueSmallest=48,1845
+    eSstCountDeleteKey=49,1903
+    eSstCountBlockSizeUsed=50,1955
+    eSstCountUserDataSize=51,2031
+    eSstCountEnumSize,54,2202
+    eSstCountVersion=56,2287
+class SstCounters61,2338
+    uint32_t Size(SstCounters::Size93,3168
+enum PerformanceCountersEnum104,3350
+    ePerfROFileOpen=PerformanceCountersEnum::ePerfROFileOpen110,3502
+    ePerfROFileClose=PerformanceCountersEnum::ePerfROFileClose111,3562
+    ePerfROFileUnmap=PerformanceCountersEnum::ePerfROFileUnmap112,3603
+    ePerfRWFileOpen=PerformanceCountersEnum::ePerfRWFileOpen114,3658
+    ePerfRWFileClose=PerformanceCountersEnum::ePerfRWFileClose115,3710
+    ePerfRWFileUnmap=PerformanceCountersEnum::ePerfRWFileUnmap116,3751
+    ePerfApiOpen=PerformanceCountersEnum::ePerfApiOpen118,3806
+    ePerfApiGet=PerformanceCountersEnum::ePerfApiGet119,3869
+    ePerfApiWrite=PerformanceCountersEnum::ePerfApiWrite120,3935
+    ePerfWriteSleep=PerformanceCountersEnum::ePerfWriteSleep122,4002
+    ePerfWriteWaitImm=PerformanceCountersEnum::ePerfWriteWaitImm123,4073
+    ePerfWriteWaitLevel0=PerformanceCountersEnum::ePerfWriteWaitLevel0124,4158
+    ePerfWriteNewMem=PerformanceCountersEnum::ePerfWriteNewMem125,4246
+    ePerfWriteError=PerformanceCountersEnum::ePerfWriteError126,4327
+    ePerfWriteNoWait=PerformanceCountersEnum::ePerfWriteNoWait127,4399
+    ePerfGetMem=PerformanceCountersEnum::ePerfGetMem129,4473
+    ePerfGetImm=PerformanceCountersEnum::ePerfGetImm130,4539
+    ePerfGetVersion=PerformanceCountersEnum::ePerfGetVersion131,4614
+    ePerfSearchLevel0=PerformanceCountersEnum::ePerfSearchLevel0135,4784
+    ePerfSearchLevel1=PerformanceCountersEnum::ePerfSearchLevel1136,4867
+    ePerfSearchLevel2=PerformanceCountersEnum::ePerfSearchLevel2137,4950
+    ePerfSearchLevel3=PerformanceCountersEnum::ePerfSearchLevel3138,5033
+    ePerfSearchLevel4=PerformanceCountersEnum::ePerfSearchLevel4139,5116
+    ePerfSearchLevel5=PerformanceCountersEnum::ePerfSearchLevel5140,5199
+    ePerfSearchLevel6=PerformanceCountersEnum::ePerfSearchLevel6141,5282
+    ePerfTableCached=PerformanceCountersEnum::ePerfTableCached143,5366
+    ePerfTableOpened=PerformanceCountersEnum::ePerfTableOpened144,5442
+    ePerfTableGet=PerformanceCountersEnum::ePerfTableGet145,5520
+    ePerfBGCloseUnmap=PerformanceCountersEnum::ePerfBGCloseUnmap147,5593
+    ePerfBGCompactImm=PerformanceCountersEnum::ePerfBGCompactImm148,5670
+    ePerfBGNormal=PerformanceCountersEnum::ePerfBGNormal149,5749
+    ePerfBGCompactLevel0=PerformanceCountersEnum::ePerfBGCompactLevel0150,5832
+    ePerfBlockFiltered=PerformanceCountersEnum::ePerfBlockFiltered152,5915
+    ePerfBlockFilterFalse=PerformanceCountersEnum::ePerfBlockFilterFalse153,5996
+    ePerfBlockCached=PerformanceCountersEnum::ePerfBlockCached154,6081
+    ePerfBlockRead=PerformanceCountersEnum::ePerfBlockRead155,6154
+    ePerfBlockFilterRead=PerformanceCountersEnum::ePerfBlockFilterRead156,6227
+    ePerfBlockValidGet=PerformanceCountersEnum::ePerfBlockValidGet157,6300
+    ePerfDebug0=PerformanceCountersEnum::ePerfDebug0159,6372
+    ePerfDebug1=PerformanceCountersEnum::ePerfDebug1160,6440
+    ePerfDebug2=PerformanceCountersEnum::ePerfDebug2161,6508
+    ePerfDebug3=PerformanceCountersEnum::ePerfDebug3162,6576
+    ePerfDebug4=PerformanceCountersEnum::ePerfDebug4163,6644
+    ePerfReadBlockError=PerformanceCountersEnum::ePerfReadBlockError165,6713
+    ePerfIterNew=PerformanceCountersEnum::ePerfIterNew167,6797
+    ePerfIterNext=PerformanceCountersEnum::ePerfIterNext168,6867
+    ePerfIterPrev=PerformanceCountersEnum::ePerfIterPrev169,6928
+    ePerfIterSeek=PerformanceCountersEnum::ePerfIterSeek170,6989
+    ePerfIterSeekFirst=PerformanceCountersEnum::ePerfIterSeekFirst171,7050
+    ePerfIterSeekLast=PerformanceCountersEnum::ePerfIterSeekLast172,7116
+    ePerfIterDelete=PerformanceCountersEnum::ePerfIterDelete173,7181
+    ePerfElevelDirect=PerformanceCountersEnum::ePerfElevelDirect175,7240
+    ePerfElevelQueued=PerformanceCountersEnum::ePerfElevelQueued176,7324
+    ePerfElevelDequeued=PerformanceCountersEnum::ePerfElevelDequeued177,7403
+    ePerfElevelRefCreate=PerformanceCountersEnum::ePerfElevelRefCreate179,7484
+    ePerfElevelRefDelete=PerformanceCountersEnum::ePerfElevelRefDelete180,7548
+    ePerfThrottleGauge=PerformanceCountersEnum::ePerfThrottleGauge182,7612
+    ePerfThrottleCounter=PerformanceCountersEnum::ePerfThrottleCounter183,7668
+    ePerfThrottleMicros0=PerformanceCountersEnum::ePerfThrottleMicros0185,7730
+    ePerfThrottleKeys0=PerformanceCountersEnum::ePerfThrottleKeys0186,7795
+    ePerfThrottleBacklog0=PerformanceCountersEnum::ePerfThrottleBacklog0187,7851
+    ePerfThrottleCompacts0=PerformanceCountersEnum::ePerfThrottleCompacts0188,7921
+    ePerfThrottleMicros1=PerformanceCountersEnum::ePerfThrottleMicros1190,7987
+    ePerfThrottleKeys1=PerformanceCountersEnum::ePerfThrottleKeys1191,8053
+    ePerfThrottleBacklog1=PerformanceCountersEnum::ePerfThrottleBacklog1192,8110
+    ePerfThrottleCompacts1=PerformanceCountersEnum::ePerfThrottleCompacts1193,8181
+    ePerfBGWriteError=PerformanceCountersEnum::ePerfBGWriteError195,8248
+    ePerfThrottleWait=PerformanceCountersEnum::ePerfThrottleWait197,8315
+    ePerfThreadError=PerformanceCountersEnum::ePerfThreadError198,8378
+    ePerfBGImmDirect=PerformanceCountersEnum::ePerfBGImmDirect200,8463
+    ePerfBGImmQueued=PerformanceCountersEnum::ePerfBGImmQueued201,8536
+    ePerfBGImmDequeued=PerformanceCountersEnum::ePerfBGImmDequeued202,8607
+    ePerfBGImmWeighted=PerformanceCountersEnum::ePerfBGImmWeighted203,8681
+    ePerfBGUnmapDirect=PerformanceCountersEnum::ePerfBGUnmapDirect205,8754
+    ePerfBGUnmapQueued=PerformanceCountersEnum::ePerfBGUnmapQueued206,8828
+    ePerfBGUnmapDequeued=PerformanceCountersEnum::ePerfBGUnmapDequeued207,8900
+    ePerfBGUnmapWeighted=PerformanceCountersEnum::ePerfBGUnmapWeighted208,8975
+    ePerfBGLevel0Direct=PerformanceCountersEnum::ePerfBGLevel0Direct210,9048
+    ePerfBGLevel0Queued=PerformanceCountersEnum::ePerfBGLevel0Queued211,9125
+    ePerfBGLevel0Dequeued=PerformanceCountersEnum::ePerfBGLevel0Dequeued212,9200
+    ePerfBGLevel0Weighted=PerformanceCountersEnum::ePerfBGLevel0Weighted213,9278
+    ePerfBGCompactDirect=PerformanceCountersEnum::ePerfBGCompactDirect215,9352
+    ePerfBGCompactQueued=PerformanceCountersEnum::ePerfBGCompactQueued216,9431
+    ePerfBGCompactDequeued=PerformanceCountersEnum::ePerfBGCompactDequeued217,9508
+    ePerfBGCompactWeighted=PerformanceCountersEnum::ePerfBGCompactWeighted218,9588
+    ePerfFileCacheInsert=PerformanceCountersEnum::ePerfFileCacheInsert220,9663
+    ePerfFileCacheRemove=PerformanceCountersEnum::ePerfFileCacheRemove221,9735
+    ePerfBlockCacheInsert=PerformanceCountersEnum::ePerfBlockCacheInsert223,9807
+    ePerfBlockCacheRemove=PerformanceCountersEnum::ePerfBlockCacheRemove224,9880
+    ePerfApiDelete=PerformanceCountersEnum::ePerfApiDelete226,9953
+    ePerfCountEnumSize,PerformanceCountersEnum::ePerfCountEnumSize230,10120
+    ePerfVersion=PerformanceCountersEnum::ePerfVersion232,10201
+    ePerfKey=PerformanceCountersEnum::ePerfKey233,10255
+struct PerformanceCounters240,10490
+    bool VersionTest(PerformanceCounters::VersionTest260,11074
+    void SetVersion(PerformanceCounters::SetVersion264,11218
+    uint32_t Size(PerformanceCounters::Size291,11938
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//slice.h,509
+#define STORAGE_LEVELDB_INCLUDE_SLICE_H_16,713
+class Slice 25,855
+  Slice(28,906
+  Slice(31,988
+  Slice(34,1102
+  Slice(37,1224
+  const char* data(40,1343
+  size_t size(43,1446
+  bool empty(46,1550
+  char operator[operator50,1670
+  void clear(56,1806
+  void remove_prefix(59,1896
+  std::string ToString(Slice::ToString66,2059
+  bool starts_with(Slice::starts_with75,2353
+inline bool operator==(operator==87,2568
+inline bool operator!=(operator!=92,2720
+inline int Slice::compare(96,2800
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//status.h,865
+#define STORAGE_LEVELDB_INCLUDE_STATUS_H_14,637
+class Status 21,747
+  Status(24,801
+  ~Status(25,831
+  static Status OK(32,990
+  static Status NotFound(35,1082
+  static Status Corruption(38,1201
+  static Status NotSupported(41,1324
+  static Status InvalidArgument(44,1451
+  static Status IOError(47,1584
+  bool ok(52,1754
+  bool IsNotFound(55,1863
+  bool IsCorruption(58,1985
+  bool IsIOError(61,2103
+  enum Code Status::Code75,2543
+    kOk Status::Code::kOk76,2557
+    kNotFound Status::Code::kNotFound77,2570
+    kCorruption Status::Code::kCorruption78,2589
+    kNotSupported Status::Code::kNotSupported79,2610
+    kInvalidArgument Status::Code::kInvalidArgument80,2633
+    kIOError Status::Code::kIOError81,2659
+  Code code(Status::code84,2682
+inline Status::Status(92,2884
+inline void Status::operator=(Status::operator=95,2987
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//table.h,171
+#define STORAGE_LEVELDB_INCLUDE_TABLE_H_6,258
+class Table 25,713
+  Iterator* NewIterator(49,1750
+  static Iterator* TEST_BlockReader(73,2719
+  explicit Table(80,2916
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//table_builder.h,108
+#define STORAGE_LEVELDB_INCLUDE_TABLE_BUILDER_H_14,627
+class TableBuilder 26,836
+  Status status(56,2202
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb/include/leveldb//write_batch.h,131
+#define STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_22,875
+class WriteBatch 31,1005
+  class Handler 46,1405
+  Status Iterate(52,1574

@@ -1,0 +1,101 @@
+\hypertarget{classleveldb_1_1_write_lock}{}\section{leveldb\+:\+:Write\+Lock Class Reference}
+\label{classleveldb_1_1_write_lock}\index{leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}}
+
+
+{\ttfamily \#include $<$mutexlock.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Write\+Lock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classleveldb_1_1_write_lock__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_write_lock_a11fc79d58e89802b45e287c1bf2982b3}{Write\+Lock} (\hyperlink{classleveldb_1_1port_1_1_r_w_mutex}{port\+::\+R\+W\+Mutex} $\ast$mu)
+\item 
+\hyperlink{classleveldb_1_1_write_lock_aa9399545839425975d28a1692b5daaed}{$\sim$\+Write\+Lock} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_write_lock_a3ec920f7fccb155be1a6a5f4d75e14ef}{Write\+Lock} (const \hyperlink{classleveldb_1_1_write_lock}{Write\+Lock} \&)
+\item 
+void \hyperlink{classleveldb_1_1_write_lock_a4733a0822cdd6541af59187d77742a53}{operator=} (const \hyperlink{classleveldb_1_1_write_lock}{Write\+Lock} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_r_w_mutex}{port\+::\+R\+W\+Mutex} $\ast$const \hyperlink{classleveldb_1_1_write_lock_ae1adc0996d3c2bc3df595cbe1724e22b}{mu\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_write_lock_a11fc79d58e89802b45e287c1bf2982b3}{}\index{leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}!Write\+Lock@{Write\+Lock}}
+\index{Write\+Lock@{Write\+Lock}!leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}}
+\subsubsection[{Write\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Write\+Lock\+::\+Write\+Lock (
+\begin{DoxyParamCaption}
+\item[{{\bf port\+::\+R\+W\+Mutex} $\ast$}]{mu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classleveldb_1_1_write_lock_a11fc79d58e89802b45e287c1bf2982b3}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_lock_a11fc79d58e89802b45e287c1bf2982b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_write_lock_aa9399545839425975d28a1692b5daaed}{}\index{leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}!````~Write\+Lock@{$\sim$\+Write\+Lock}}
+\index{````~Write\+Lock@{$\sim$\+Write\+Lock}!leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}}
+\subsubsection[{$\sim$\+Write\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Write\+Lock\+::$\sim$\+Write\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_write_lock_aa9399545839425975d28a1692b5daaed}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_lock_aa9399545839425975d28a1692b5daaed_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_write_lock_a3ec920f7fccb155be1a6a5f4d75e14ef}{}\index{leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}!Write\+Lock@{Write\+Lock}}
+\index{Write\+Lock@{Write\+Lock}!leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}}
+\subsubsection[{Write\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Write\+Lock\+::\+Write\+Lock (
+\begin{DoxyParamCaption}
+\item[{const {\bf Write\+Lock} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_write_lock_a3ec920f7fccb155be1a6a5f4d75e14ef}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_write_lock_a4733a0822cdd6541af59187d77742a53}{}\index{leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Write\+Lock\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Write\+Lock} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_write_lock_a4733a0822cdd6541af59187d77742a53}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_write_lock_ae1adc0996d3c2bc3df595cbe1724e22b}{}\index{leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}!mu\+\_\+@{mu\+\_\+}}
+\index{mu\+\_\+@{mu\+\_\+}!leveldb\+::\+Write\+Lock@{leveldb\+::\+Write\+Lock}}
+\subsubsection[{mu\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+R\+W\+Mutex}$\ast$ const leveldb\+::\+Write\+Lock\+::mu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_write_lock_ae1adc0996d3c2bc3df595cbe1724e22b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{mutexlock_8h}{mutexlock.\+h}\end{DoxyCompactItemize}

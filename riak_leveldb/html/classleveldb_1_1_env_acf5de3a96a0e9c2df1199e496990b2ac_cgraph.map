@@ -1,0 +1,10 @@
+<map id="leveldb::Env::Shutdown" name="leveldb::Env::Shutdown">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#af37c64d9a570244c29a0c11b51fb8968" title="leveldb::ThrottleShutdown" alt="" coords="227,5,402,31"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#a89fbf93a824aba139ae235a4c63227cc" title="leveldb::DBListShutdown" alt="" coords="230,55,400,80"/>
+<area shape="rect" id="node8" href="$namespaceleveldb.html#abd757092673aec375d685d40689031a0" title="leveldb::ComparatorShutdown" alt="" coords="214,104,415,129"/>
+<area shape="rect" id="node9" href="$structleveldb_1_1_performance_counters.html#af8d05606f8163c30ea06c7ebc0b95599" title="leveldb::PerformanceCounters\l::Close" alt="" coords="214,153,415,192"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#a9519176c753c5356b4d10d73ee3a3e51" title="leveldb::DBList" alt="" coords="463,55,574,80"/>
+<area shape="rect" id="node5" href="$namespaceleveldb_1_1port.html#a1493e91d494e6f0ea086a743a562e983" title="leveldb::port::InitOnce" alt="" coords="622,29,773,55"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#ab67c3d9849bf8b0c50bce72dea7dc16b" title="leveldb::InitModule" alt="" coords="631,79,763,104"/>
+<area shape="rect" id="node6" href="$namespaceleveldb_1_1port.html#a614e0b6f0b21d697fe4001dbe3d8798b" title="leveldb::port::PthreadCall" alt="" coords="821,29,992,55"/>
+</map>

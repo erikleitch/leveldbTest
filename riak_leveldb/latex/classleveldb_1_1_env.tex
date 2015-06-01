@@ -1,0 +1,727 @@
+\hypertarget{classleveldb_1_1_env}{}\section{leveldb\+:\+:Env Class Reference}
+\label{classleveldb_1_1_env}\index{leveldb\+::\+Env@{leveldb\+::\+Env}}
+
+
+{\ttfamily \#include $<$env.\+h$>$}
+
+
+
+Inheritance diagram for leveldb\+:\+:Env\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:Env\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classleveldb_1_1_env__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_env_a90f3648c740e3f5901f5843cd0dd07c4}{Env} ()
+\item 
+virtual \hyperlink{classleveldb_1_1_env_a2b9321c6176f8824b3ba65f0a36453fe}{$\sim$\+Env} ()
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_ad73810059f48c1d7b91125d357e7d351}{New\+Sequential\+File} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_sequential_file}{Sequential\+File} $\ast$$\ast$result)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a1df3e0bb2d47ee914448df9bb9ca0734}{New\+Random\+Access\+File} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File} $\ast$$\ast$result)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_aa5448f7abbefdf49f429ca36efbbe450}{New\+Writable\+File} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_writable_file}{Writable\+File} $\ast$$\ast$result, size\+\_\+t map\+\_\+size)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a7eb05528f915257ced149a8ddf7d249b}{New\+Appendable\+File} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_writable_file}{Writable\+File} $\ast$$\ast$result, size\+\_\+t map\+\_\+size)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_ae50ecac51fb2b2a77bc8c18478a49096}{New\+Write\+Only\+File} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_writable_file}{Writable\+File} $\ast$$\ast$result, size\+\_\+t map\+\_\+size)
+\item 
+virtual bool \hyperlink{classleveldb_1_1_env_acbb85047fdf7bf441bd365cfb09f9ecb}{File\+Exists} (const std\+::string \&fname)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a53028e3112d7bb3bf6574ddaab18d6f6}{Get\+Children} (const std\+::string \&dir, std\+::vector$<$ std\+::string $>$ $\ast$result)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_ac956b984466d5f09309664177687f9af}{Delete\+File} (const std\+::string \&fname)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_ae6b7c8122df5a8020b2a3439ac39646e}{Create\+Dir} (const std\+::string \&dirname)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a4e1a1c4495541e426b146cba56c59627}{Delete\+Dir} (const std\+::string \&dirname)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_aacb66541dcb3bd586e6cc5a87489690c}{Get\+File\+Size} (const std\+::string \&fname, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$file\+\_\+size)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_abd743b3d4751ada1ab307427827ed5b0}{Rename\+File} (const std\+::string \&src, const std\+::string \&target)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a9b7266f0444f832e428328ff19b7b54c}{Lock\+File} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_file_lock}{File\+Lock} $\ast$$\ast$lock)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a194a2ee3c21bc0b204ad0e5bc3b81d4b}{Unlock\+File} (\hyperlink{classleveldb_1_1_file_lock}{File\+Lock} $\ast$lock)=0
+\item 
+virtual void \hyperlink{classleveldb_1_1_env_a6b5fc50322d8404f5b13fad0e03d8724}{Schedule} (void($\ast$function)(void $\ast$arg), void $\ast$arg)=0
+\item 
+virtual pthread\+\_\+t \hyperlink{classleveldb_1_1_env_af1f1ce77fcacd8ca8f0ae0b4a203fb9d}{Start\+Thread} (void($\ast$function)(void $\ast$arg), void $\ast$arg)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_ab57a55be37d4d57bf3c0ff83ee689f95}{Get\+Test\+Directory} (std\+::string $\ast$path)=0
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_env_a53a4c41d294fe619f13ec5b697ffc933}{New\+Logger} (const std\+::string \&fname, \hyperlink{classleveldb_1_1_logger}{Logger} $\ast$$\ast$result)=0
+\item 
+virtual \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_env_a988062bcd558ac02c62522ac2c8aa39f}{Now\+Micros} ()=0
+\item 
+virtual void \hyperlink{classleveldb_1_1_env_a43ad838cfb08db3d9e2197800cd33312}{Sleep\+For\+Microseconds} (int micros)=0
+\item 
+virtual int \hyperlink{classleveldb_1_1_env_a9ebb9b6c65c0d1354528ba5a30445fd8}{Get\+Background\+Backlog} () const 
+\item 
+virtual \hyperlink{structleveldb_1_1_performance_counters}{Performance\+Counters} $\ast$ \hyperlink{classleveldb_1_1_env_a5218e488eb891ccda047d28fc996c869}{Get\+Performance\+Counters} ()
+\item 
+virtual size\+\_\+t \hyperlink{classleveldb_1_1_env_a207a55ea7a8107da72c4cd224e7fc94b}{Recovery\+Mmap\+Size} (const struct \hyperlink{structleveldb_1_1_options}{Options} $\ast$) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classleveldb_1_1_env}{Env} $\ast$ \hyperlink{classleveldb_1_1_env_ae15b67e650ff6790059745fd1b3bf3e7}{Default} ()
+\item 
+static void \hyperlink{classleveldb_1_1_env_acf5de3a96a0e9c2df1199e496990b2ac}{Shutdown} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_env_a1a9edfb174a3553c8144612f5da6353e}{Env} (const \hyperlink{classleveldb_1_1_env}{Env} \&)
+\item 
+void \hyperlink{classleveldb_1_1_env_a0b99df952aed4c5630945b68ce0e011e}{operator=} (const \hyperlink{classleveldb_1_1_env}{Env} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_env_a90f3648c740e3f5901f5843cd0dd07c4}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Env@{Env}}
+\index{Env@{Env}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Env}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Env\+::\+Env (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_env_a90f3648c740e3f5901f5843cd0dd07c4}
+\hypertarget{classleveldb_1_1_env_a2b9321c6176f8824b3ba65f0a36453fe}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!````~Env@{$\sim$\+Env}}
+\index{````~Env@{$\sim$\+Env}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{$\sim$\+Env}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Env\+::$\sim$\+Env (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1_env_a2b9321c6176f8824b3ba65f0a36453fe}
+\hypertarget{classleveldb_1_1_env_a1a9edfb174a3553c8144612f5da6353e}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Env@{Env}}
+\index{Env@{Env}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Env}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Env\+::\+Env (
+\begin{DoxyParamCaption}
+\item[{const {\bf Env} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_env_a1a9edfb174a3553c8144612f5da6353e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_env_ae6b7c8122df5a8020b2a3439ac39646e}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Create\+Dir@{Create\+Dir}}
+\index{Create\+Dir@{Create\+Dir}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Create\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Create\+Dir (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{dirname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_ae6b7c8122df5a8020b2a3439ac39646e}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a4cfcd01624ca873365fb66655ae8ecde}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_af8c26728d198a44627e08bb557ab4730}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a72a8664e24174805afd21bbcf25dcce7}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ae6b7c8122df5a8020b2a3439ac39646e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_ae15b67e650ff6790059745fd1b3bf3e7}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Default@{Default}}
+\index{Default@{Default}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Default}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Env} $\ast$ leveldb\+::\+Env\+::\+Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classleveldb_1_1_env_ae15b67e650ff6790059745fd1b3bf3e7}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ae15b67e650ff6790059745fd1b3bf3e7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ae15b67e650ff6790059745fd1b3bf3e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a4e1a1c4495541e426b146cba56c59627}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Delete\+Dir@{Delete\+Dir}}
+\index{Delete\+Dir@{Delete\+Dir}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Delete\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Delete\+Dir (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{dirname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a4e1a1c4495541e426b146cba56c59627}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_ac6e015a0da6a5f8af29957208a7a8386}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_adedc51823cd8e4bdd55e4f10068f5d22}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a5994151cddb0814202d49e2b57c03198}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a4e1a1c4495541e426b146cba56c59627_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_ac956b984466d5f09309664177687f9af}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Delete\+File@{Delete\+File}}
+\index{Delete\+File@{Delete\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Delete\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Delete\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_ac956b984466d5f09309664177687f9af}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a3c5a4f5ba1693fb6dc0ff05d17c2b650}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_af99d37829c3806a0e05979f5a7eb35af}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_afd8ee72e7e2644ea25fecbceced1740b}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ac956b984466d5f09309664177687f9af_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_acbb85047fdf7bf441bd365cfb09f9ecb}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!File\+Exists@{File\+Exists}}
+\index{File\+Exists@{File\+Exists}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{File\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool leveldb\+::\+Env\+::\+File\+Exists (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_acbb85047fdf7bf441bd365cfb09f9ecb}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a3470ccaa29a6ddabb42e07c0f6aac27e}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_ac72ceac6f4e2a6140e2835b2fa15f4df}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_ac9cd8379c08285bb2f8a63deff2b8a6d}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_acbb85047fdf7bf441bd365cfb09f9ecb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a9ebb9b6c65c0d1354528ba5a30445fd8}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Get\+Background\+Backlog@{Get\+Background\+Backlog}}
+\index{Get\+Background\+Backlog@{Get\+Background\+Backlog}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Get\+Background\+Backlog}]{\setlength{\rightskip}{0pt plus 5cm}virtual int leveldb\+::\+Env\+::\+Get\+Background\+Backlog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_env_a9ebb9b6c65c0d1354528ba5a30445fd8}
+
+
+Reimplemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a3777b122c3e1ae74d31b4c4d87a3ea7f}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a9ebb9b6c65c0d1354528ba5a30445fd8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a53028e3112d7bb3bf6574ddaab18d6f6}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Get\+Children@{Get\+Children}}
+\index{Get\+Children@{Get\+Children}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Get\+Children}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Get\+Children (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{dir, }
+\item[{std\+::vector$<$ std\+::string $>$ $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a53028e3112d7bb3bf6574ddaab18d6f6}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a10b17403937d46784c1835001c03a486}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_abb7c1fd7d91c80b6efcf9967154a18f3}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a32426b01216711ad37b316364e9183cc}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a53028e3112d7bb3bf6574ddaab18d6f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_aacb66541dcb3bd586e6cc5a87489690c}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Get\+File\+Size@{Get\+File\+Size}}
+\index{Get\+File\+Size@{Get\+File\+Size}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Get\+File\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Get\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf uint64\+\_\+t} $\ast$}]{file\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_aacb66541dcb3bd586e6cc5a87489690c}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_ae7b38380a124ac026bab6f1732ffc110}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_af6caee1ccef32332c9f26f97944f2afe}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_ac61585497672341372270221a7f8acdd}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_aacb66541dcb3bd586e6cc5a87489690c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a5218e488eb891ccda047d28fc996c869}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Get\+Performance\+Counters@{Get\+Performance\+Counters}}
+\index{Get\+Performance\+Counters@{Get\+Performance\+Counters}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Get\+Performance\+Counters}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Performance\+Counters}$\ast$ leveldb\+::\+Env\+::\+Get\+Performance\+Counters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_env_a5218e488eb891ccda047d28fc996c869}
+\hypertarget{classleveldb_1_1_env_ab57a55be37d4d57bf3c0ff83ee689f95}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Get\+Test\+Directory@{Get\+Test\+Directory}}
+\index{Get\+Test\+Directory@{Get\+Test\+Directory}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Get\+Test\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Get\+Test\+Directory (
+\begin{DoxyParamCaption}
+\item[{std\+::string $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_ab57a55be37d4d57bf3c0ff83ee689f95}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a882de2201480d5d6f98c007a77b36334}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_a62fdf74a9991e4226091bfdc58e97f16}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a83978d6ddba65c13a274394aa0e15db6}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ab57a55be37d4d57bf3c0ff83ee689f95_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a9b7266f0444f832e428328ff19b7b54c}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Lock\+File@{Lock\+File}}
+\index{Lock\+File@{Lock\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Lock\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Lock\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf File\+Lock} $\ast$$\ast$}]{lock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a9b7266f0444f832e428328ff19b7b54c}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_ae18a86771ff2b5c05d75abe52bdddbf1}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_a5cfd04849bbfc67ad60259dcbb2e0ec0}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a27c443b79fdfc03ff8a99a624ee662bc}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a9b7266f0444f832e428328ff19b7b54c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a7eb05528f915257ced149a8ddf7d249b}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!New\+Appendable\+File@{New\+Appendable\+File}}
+\index{New\+Appendable\+File@{New\+Appendable\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{New\+Appendable\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+New\+Appendable\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Writable\+File} $\ast$$\ast$}]{result, }
+\item[{size\+\_\+t}]{map\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a7eb05528f915257ced149a8ddf7d249b}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a6021b08acd9d80543fa40b5e659f766d}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, and \hyperlink{classleveldb_1_1_env_wrapper_a497520a246da303b7b8ff5d83779ce80}{leveldb\+::\+Env\+Wrapper}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a7eb05528f915257ced149a8ddf7d249b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a53a4c41d294fe619f13ec5b697ffc933}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!New\+Logger@{New\+Logger}}
+\index{New\+Logger@{New\+Logger}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{New\+Logger}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+New\+Logger (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Logger} $\ast$$\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a53a4c41d294fe619f13ec5b697ffc933}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a74acc573ab20ad7994fc3c96a462553b}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, and \hyperlink{classleveldb_1_1_env_wrapper_af065b31ff6876780896be1c8f197e556}{leveldb\+::\+Env\+Wrapper}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a53a4c41d294fe619f13ec5b697ffc933_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a1df3e0bb2d47ee914448df9bb9ca0734}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!New\+Random\+Access\+File@{New\+Random\+Access\+File}}
+\index{New\+Random\+Access\+File@{New\+Random\+Access\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{New\+Random\+Access\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+New\+Random\+Access\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Random\+Access\+File} $\ast$$\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a1df3e0bb2d47ee914448df9bb9ca0734}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_ad056dfc415f95dcda99d022412954437}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_ab8c78959e0d52f3c1beeeffc11ca0a34}{leveldb\+::\+Env\+Wrapper}, \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a437d247890961e077ebb98ac9b628ad7}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}, \hyperlink{classleveldb_1_1_special_env_ae04ba2b7b94753d805e316dbda74ec00}{leveldb\+::\+Special\+Env}, and \hyperlink{classleveldb_1_1_special_env_ae04ba2b7b94753d805e316dbda74ec00}{leveldb\+::\+Special\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a1df3e0bb2d47ee914448df9bb9ca0734_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_ad73810059f48c1d7b91125d357e7d351}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!New\+Sequential\+File@{New\+Sequential\+File}}
+\index{New\+Sequential\+File@{New\+Sequential\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{New\+Sequential\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+New\+Sequential\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Sequential\+File} $\ast$$\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_ad73810059f48c1d7b91125d357e7d351}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a0b81c86cd47fa8b91f9171833d6610e1}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_acd23f5803f7841cfcee9a29ffc1c5b04}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_affec236fcf049f0453f0f0a369e29bbe}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ad73810059f48c1d7b91125d357e7d351_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_aa5448f7abbefdf49f429ca36efbbe450}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!New\+Writable\+File@{New\+Writable\+File}}
+\index{New\+Writable\+File@{New\+Writable\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{New\+Writable\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+New\+Writable\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Writable\+File} $\ast$$\ast$}]{result, }
+\item[{size\+\_\+t}]{map\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_aa5448f7abbefdf49f429ca36efbbe450}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_aaffa3c917c8ea66a09a3518ec8480c0f}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_a6ef642aa39f18a56ba6ed56e0ec5301f}{leveldb\+::\+Env\+Wrapper}, \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a064598d22e0b5742198f2b2f0b57cc79}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}, \hyperlink{classleveldb_1_1_special_env_aa7bdbcf4af2ba94330ada903179692f1}{leveldb\+::\+Special\+Env}, \hyperlink{classleveldb_1_1_special_env_aa7bdbcf4af2ba94330ada903179692f1}{leveldb\+::\+Special\+Env}, and \hyperlink{classleveldb_1_1test_1_1_error_env_a6f1f7633afd96bac9da744bc547e841e}{leveldb\+::test\+::\+Error\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_aa5448f7abbefdf49f429ca36efbbe450_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_ae50ecac51fb2b2a77bc8c18478a49096}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!New\+Write\+Only\+File@{New\+Write\+Only\+File}}
+\index{New\+Write\+Only\+File@{New\+Write\+Only\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{New\+Write\+Only\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+New\+Write\+Only\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Writable\+File} $\ast$$\ast$}]{result, }
+\item[{size\+\_\+t}]{map\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_env_ae50ecac51fb2b2a77bc8c18478a49096}
+
+
+Reimplemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_addf1baff0cca8c772d4866e89f448a33}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, and \hyperlink{classleveldb_1_1_env_wrapper_a12700f6c498c9b475a1c68383b1ae318}{leveldb\+::\+Env\+Wrapper}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ae50ecac51fb2b2a77bc8c18478a49096_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_ae50ecac51fb2b2a77bc8c18478a49096_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a988062bcd558ac02c62522ac2c8aa39f}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Now\+Micros@{Now\+Micros}}
+\index{Now\+Micros@{Now\+Micros}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Now\+Micros}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf uint64\+\_\+t} leveldb\+::\+Env\+::\+Now\+Micros (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a988062bcd558ac02c62522ac2c8aa39f}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a01909b63859454be697b26ca0759e705}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, and \hyperlink{classleveldb_1_1_env_wrapper_ad3a36da82ba4ca10a34b45f3b9edfeaf}{leveldb\+::\+Env\+Wrapper}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a988062bcd558ac02c62522ac2c8aa39f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a0b99df952aed4c5630945b68ce0e011e}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Env\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Env} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_env_a0b99df952aed4c5630945b68ce0e011e}
+\hypertarget{classleveldb_1_1_env_a207a55ea7a8107da72c4cd224e7fc94b}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Recovery\+Mmap\+Size@{Recovery\+Mmap\+Size}}
+\index{Recovery\+Mmap\+Size@{Recovery\+Mmap\+Size}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Recovery\+Mmap\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t leveldb\+::\+Env\+::\+Recovery\+Mmap\+Size (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf Options} $\ast$}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_env_a207a55ea7a8107da72c4cd224e7fc94b}
+
+
+Reimplemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a5f6d71a99846671144913b0043ed954e}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a207a55ea7a8107da72c4cd224e7fc94b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_abd743b3d4751ada1ab307427827ed5b0}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Rename\+File@{Rename\+File}}
+\index{Rename\+File@{Rename\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Rename\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Rename\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{src, }
+\item[{const std\+::string \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_abd743b3d4751ada1ab307427827ed5b0}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a27a6503ef93f5eba85b1af2461e8cfa8}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_afbd271f58ef0f0db8f2973f0c947fdec}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_ae05393a15e5b1f39a9310b7b6f8bbbd4}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_abd743b3d4751ada1ab307427827ed5b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a6b5fc50322d8404f5b13fad0e03d8724}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Schedule}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::\+Env\+::\+Schedule (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void $\ast$arg)}]{function, }
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a6b5fc50322d8404f5b13fad0e03d8724}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a6b5fc50322d8404f5b13fad0e03d8724_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_acf5de3a96a0e9c2df1199e496990b2ac}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Shutdown}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Env\+::\+Shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classleveldb_1_1_env_acf5de3a96a0e9c2df1199e496990b2ac}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_acf5de3a96a0e9c2df1199e496990b2ac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_acf5de3a96a0e9c2df1199e496990b2ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a43ad838cfb08db3d9e2197800cd33312}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Sleep\+For\+Microseconds@{Sleep\+For\+Microseconds}}
+\index{Sleep\+For\+Microseconds@{Sleep\+For\+Microseconds}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Sleep\+For\+Microseconds}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::\+Env\+::\+Sleep\+For\+Microseconds (
+\begin{DoxyParamCaption}
+\item[{int}]{micros}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a43ad838cfb08db3d9e2197800cd33312}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a674235663d8253fc77021bd5de189742}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_a6e05455e32edd8cd4657fc22f4e422e9}{leveldb\+::\+Env\+Wrapper}, \hyperlink{classleveldb_1_1_special_env_afcceb315ff4d8a96805b71a41502da94}{leveldb\+::\+Special\+Env}, and \hyperlink{classleveldb_1_1_special_env_afcceb315ff4d8a96805b71a41502da94}{leveldb\+::\+Special\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a43ad838cfb08db3d9e2197800cd33312_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_af1f1ce77fcacd8ca8f0ae0b4a203fb9d}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Start\+Thread@{Start\+Thread}}
+\index{Start\+Thread@{Start\+Thread}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Start\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual pthread\+\_\+t leveldb\+::\+Env\+::\+Start\+Thread (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void $\ast$arg)}]{function, }
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_af1f1ce77fcacd8ca8f0ae0b4a203fb9d}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a989962b97dee560f3d370f150fb3282f}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_af1f1ce77fcacd8ca8f0ae0b4a203fb9d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_env_a194a2ee3c21bc0b204ad0e5bc3b81d4b}{}\index{leveldb\+::\+Env@{leveldb\+::\+Env}!Unlock\+File@{Unlock\+File}}
+\index{Unlock\+File@{Unlock\+File}!leveldb\+::\+Env@{leveldb\+::\+Env}}
+\subsubsection[{Unlock\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::\+Env\+::\+Unlock\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf File\+Lock} $\ast$}]{lock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_env_a194a2ee3c21bc0b204ad0e5bc3b81d4b}
+
+
+Implemented in \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_env_a88a87e5b79db50c5d2d0dedd2b37f088}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+Posix\+Env}, \hyperlink{classleveldb_1_1_env_wrapper_ab1779dda39167eaa38e660bcc69988c4}{leveldb\+::\+Env\+Wrapper}, and \hyperlink{classleveldb_1_1anonymous__namespace_02memenv_8cc_03_1_1_in_memory_env_a21674a1916bdbfc999ccf26fbf43574e}{leveldb\+::anonymous\+\_\+namespace\{memenv.\+cc\}\+::\+In\+Memory\+Env}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_env_a194a2ee3c21bc0b204ad0e5bc3b81d4b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\hyperlink{env_8h}{env.\+h}\item 
+util/\hyperlink{env_8cc}{env.\+cc}\item 
+util/\hyperlink{env__posix_8cc}{env\+\_\+posix.\+cc}\end{DoxyCompactItemize}

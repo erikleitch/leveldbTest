@@ -1,0 +1,6 @@
+<map id="leveldb::Comparator" name="leveldb::Comparator">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02comparator_8cc_03_1_1_bytewise_comparator_impl.html" title="{leveldb::anonymous\l_namespace\{comparator.cc\}\l::BytewiseComparatorImpl\n||+ BytewiseComparatorImpl()\l+ Name()\l+ Compare()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l}" alt="" coords="5,200,196,353"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1anonymous__namespace_02table__test_8cc_03_1_1_reverse_key_comparator.html" title="{leveldb::anonymous\l_namespace\{table_test.cc\}\l::ReverseKeyComparator\n||+ Name()\l+ Compare()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l}" alt="" coords="221,207,402,347"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_internal_key_comparator.html" title="{leveldb::InternalKeyComparator\n|&#45; user_comparator_\l|+ InternalKeyComparator()\l+ Name()\l+ Compare()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l+ user_comparator()\l+ Compare()\l}" alt="" coords="426,200,634,353"/>
+<area shape="rect" id="node5" href="$structleveldb__comparator__t.html" title="{leveldb_comparator_t\n|+ state_\l+ destructor_\l+ compare_\l+ name_\l|+ ~leveldb_comparator_t()\l+ Compare()\l+ Name()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l}" alt="" coords="658,193,836,360"/>
+</map>

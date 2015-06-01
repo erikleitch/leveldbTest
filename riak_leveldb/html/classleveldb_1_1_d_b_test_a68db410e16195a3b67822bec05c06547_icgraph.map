@@ -1,0 +1,8 @@
+<map id="leveldb::DBTest::CurrentOptions" name="leveldb::DBTest::CurrentOptions">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_test.html#aee588b2d13db6be2a651a8fabeac5c79" title="leveldb::DBTest::TryReopen" alt="" coords="224,33,411,59"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_d_b_test.html#aaf18040f36d28207e2f56c35ebccf360" title="leveldb::DBTest::DoubleOpen" alt="" coords="219,83,415,108"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_d_b_test.html#a38170a082cbc71fb446408ff5634c797" title="leveldb::DBTest::Reopen" alt="" coords="463,5,632,31"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_d_b_test.html#ab798a43e7feab6dddc8fa1eb7a5f61f6" title="leveldb::DBTest::Destroy\lAndReopen" alt="" coords="464,55,631,93"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_d_b_test.html#afc6fc9512e900de6ee10c5db15b22930" title="leveldb::DBTest::DBTest" alt="" coords="704,5,869,31"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_d_b_test.html#a587534fe403016f15cf1997ef7a40836" title="leveldb::DBTest::ChangeOptions" alt="" coords="680,61,894,87"/>
+</map>

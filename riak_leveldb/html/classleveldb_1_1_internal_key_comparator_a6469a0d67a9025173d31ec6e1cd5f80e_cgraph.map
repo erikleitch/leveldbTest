@@ -1,0 +1,8 @@
+<map id="leveldb::InternalKeyComparator::Compare" name="leveldb::InternalKeyComparator::Compare">
+<area shape="rect" id="node2" href="$structleveldb_1_1_comparator.html#a05dae6edcad3c7db23827c0233d74039" title="leveldb::Comparator\l::Compare" alt="" coords="274,5,415,44"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="263,120,426,145"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="491,95,622,120"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="490,157,623,183"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a239098b0291873752d0be16633652825" title="leveldb::DecodeFixed64" alt="" coords="262,221,427,247"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="475,221,639,247"/>
+</map>

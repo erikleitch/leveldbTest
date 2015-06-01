@@ -1,0 +1,41 @@
+\hypertarget{hot__threads_8cc}{}\section{util/hot\+\_\+threads.cc File Reference}
+\label{hot__threads_8cc}\index{util/hot\+\_\+threads.\+cc@{util/hot\+\_\+threads.\+cc}}
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$syslog.\+h$>$}\\*
+{\ttfamily \#include $<$sys/fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}leveldb/atomics.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/hot\+\_\+threads.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/thread\+\_\+tasks.\+h\char`\"{}}\\*
+Include dependency graph for hot\+\_\+threads.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hot__threads_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{namespaceleveldb_a70c03e41dde8e2486127ba7cc5d042e0}{leveldb\+::\+Thread\+Static\+Entry} (void $\ast$args)
+\item 
+void $\ast$ \hyperlink{namespaceleveldb_a25f9546c5175faf3232236661363df9e}{leveldb\+::\+Queue\+Thread\+Static\+Entry} (void $\ast$args)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Hot\+Thread\+Pool $\ast$ \hyperlink{namespaceleveldb_a1f4ec1a2203290cdf5dc08089e6ab3aa}{leveldb\+::g\+Imm\+Threads} =N\+U\+L\+L
+\item 
+Hot\+Thread\+Pool $\ast$ \hyperlink{namespaceleveldb_af1ea4d410a9bc7416f346ba434c62e20}{leveldb\+::g\+Write\+Threads} =N\+U\+L\+L
+\item 
+Hot\+Thread\+Pool $\ast$ \hyperlink{namespaceleveldb_a80755b49a8aa35a9951c865b65c2d77a}{leveldb\+::g\+Level0\+Threads} =N\+U\+L\+L
+\item 
+Hot\+Thread\+Pool $\ast$ \hyperlink{namespaceleveldb_ae13159afb5d5c5b0554477e51cf992fd}{leveldb\+::g\+Compaction\+Threads} =N\+U\+L\+L
+\end{DoxyCompactItemize}

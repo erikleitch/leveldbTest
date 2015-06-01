@@ -1,0 +1,19 @@
+<map id="leveldb::DoubleCache::ResizeCaches" name="leveldb::DoubleCache::ResizeCaches">
+<area shape="rect" id="node2" href="$classleveldb_1_1_flex_cache.html#a093372082dcb96d2568fa9899cae92b1" title="leveldb::FlexCache\l::GetDBCacheCapacity" alt="" coords="223,87,382,125"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_sharded_l_r_u_cache2.html#a11bb95b7b34980262cb8956e7d360c0d" title="leveldb::ShardedLRUCache2\l::Resize" alt="" coords="205,149,399,188"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#a9519176c753c5356b4d10d73ee3a3e51" title="leveldb::DBList" alt="" coords="464,39,574,64"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_d_b_list_impl.html#a73dd5d51280abb800f1343e491c609b8" title="leveldb::DBListImpl\l::GetDBCount" alt="" coords="451,88,587,127"/>
+<area shape="rect" id="node4" href="$namespaceleveldb_1_1port.html#a1493e91d494e6f0ea086a743a562e983" title="leveldb::port::InitOnce" alt="" coords="639,5,790,31"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#ab67c3d9849bf8b0c50bce72dea7dc16b" title="leveldb::InitModule" alt="" coords="648,55,781,80"/>
+<area shape="rect" id="node5" href="$namespaceleveldb_1_1port.html#a614e0b6f0b21d697fe4001dbe3d8798b" title="leveldb::port::PthreadCall" alt="" coords="869,5,1040,31"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_double_cache.html#a42b19bd43e44d932aed9daf7947c5d0f" title="leveldb::DoubleCache\l::GetCapacity" alt="" coords="639,132,791,171"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_l_r_u_cache2.html#a43fb9c4585a4ba1ac11e3b210149a0a5" title="leveldb::LRUCache2\l::ReleaseOne" alt="" coords="447,232,591,271"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_sharded_l_r_u_cache2.html#ad6d0402690ab2d747bcd4e75ecdb44a7" title="leveldb::ShardedLRUCache2\l::GetUsage" alt="" coords="858,132,1052,171"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_l_r_u_cache2.html#a79480e4ed22f1712cfd4a54773ee5a5a" title="leveldb::LRUCache2\l::LRU_Remove" alt="" coords="643,195,786,233"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_handle_table.html#abcb78349c142e3928ecfccac52d91b3c" title="leveldb::HandleTable\l::Remove" alt="" coords="642,257,787,296"/>
+<area shape="rect" id="node15" href="$structleveldb_1_1_l_r_u_handle2.html#ab68a98fe5a6319cac01b266da1cf2e6a" title="leveldb::LRUHandle2::key" alt="" coords="867,325,1043,351"/>
+<area shape="rect" id="node16" href="$classleveldb_1_1_l_r_u_cache2.html#a7e5e8435a60fb70639bca79f60c7c31c" title="leveldb::LRUCache2\l::Unref" alt="" coords="643,372,786,411"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_handle_table.html#aaeb2ac2b37fadd75cc5db3064a26b831" title="leveldb::HandleTable\l::FindPointer" alt="" coords="882,257,1027,296"/>
+<area shape="rect" id="node17" href="$namespaceleveldb.html#ae691d90ebc34252c3f5be20f6d904c92" title="leveldb::sub_and_fetch" alt="" coords="876,376,1034,401"/>
+<area shape="rect" id="node18" href="$structleveldb_1_1_performance_counters.html#a8b209c77780935f91c652db6e6db4b5a" title="leveldb::PerformanceCounters::Add" alt="" coords="839,425,1071,451"/>
+</map>

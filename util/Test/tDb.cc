@@ -1,0 +1,79 @@
+#include <iostream>
+#include <iomanip>
+
+#include <cmath>
+
+#include "gcp/program/Program.h"
+#include "gcp/util/Exception.h"
+#include "gcp/util/Timer.h"
+#include "gcp/util/LevelDbTest.h"
+
+#include "leveldb/db.h"
+
+using namespace gcp::util;
+using namespace gcp::program;
+
+KeyTabEntry Program::keywords[] = {
+  { "n",        "10000", "i", "Iterations of gets"},
+  { END_OF_KEYWORDS}
+};
+
+void Program::initializeUsage() {};
+
+int Program::main()
+{
+  unsigned n = Program::getIntegerParameter("n");
+
+  LevelDbTest testDb;
+  std::ostringstream keyOs;
+  std::ostringstream valOs;
+
+  try {
+    testDb.open();
+    testDb.dumpPerfCount();
+
+    Timer timer;
+    timer.start();
+
+    for(unsigned i=0; i < n; i++) {
+      testDb.put("erik", "author");
+      testDb.get("erik");
+    }
+
+    timer.stop();
+
+    double delta1 = timer.deltaInSeconds();
+
+    timer.start();
+
+    for(unsigned i=0; i < n; i++) {
+
+      keyOs.str("");
+      keyOs << "erik" << i;
+
+      valOs.str("");
+      valOs << "attempt " << i;
+
+      testDb.putSync(keyOs.str(), valOs.str());
+      testDb.get(keyOs.str());
+    }
+
+    timer.stop();
+    COUT("Elapsed time = " << timer.deltaInSeconds());
+    double delta2 = timer.deltaInSeconds();
+
+    COUT("ratio = " << delta2/delta1);
+
+    //    testDb.printAllKeys();
+
+    testDb.testGet();
+
+    //    testDb.dumpPerfCount();
+    testDb.close();
+
+  } catch(Exception& err) {
+    COUT("Caught an error: " << err.what());
+  }
+
+  return 0;
+}

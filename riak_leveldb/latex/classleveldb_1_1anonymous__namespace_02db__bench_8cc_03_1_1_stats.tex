@@ -1,0 +1,221 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+:\+:Stats Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+:\+:Stats\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a97e33b0731a00dac19e12406bd40729b}{Stats} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a8447537fddbcd678128bd23b4a0dc114}{Start} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a17951c3d50df14358b6960083900d232}{Merge} (const \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats}{Stats} \&other)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a78667a4e3ce2fae5575b3454157d63a5}{Stop} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ad15c1814c2c76a3ee89e4f2b0b5ad9ba}{Add\+Message} (\hyperlink{classleveldb_1_1_slice}{Slice} msg)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a46ebdd6415bc2274ca01939f6665228b}{Finished\+Single\+Op} ()
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3b6bd65add269ffdbc043661c7ee17f5}{Add\+Bytes} (\hyperlink{stdint_8h_adec1df1b8b51cb32b77e5b86fff46471}{int64\+\_\+t} n)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3001cadbb916e3ba7752d1ff21733228}{Report} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ab917bded97f65cd70987a93308aad419}{start\+\_\+}
+\item 
+double \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_abba31c0cee55cac76dd115a68dc9c212}{finish\+\_\+}
+\item 
+double \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a04e24c3d4e71615bcd50843db027e174}{seconds\+\_\+}
+\item 
+int \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ae255b1fad7367533e27728a5fd938bc3}{done\+\_\+}
+\item 
+int \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a994cced0fcac1ec8e9973fd3cc055ade}{next\+\_\+report\+\_\+}
+\item 
+\hyperlink{stdint_8h_adec1df1b8b51cb32b77e5b86fff46471}{int64\+\_\+t} \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a6592f3c9da4384d8b0df1136c49b8315}{bytes\+\_\+}
+\item 
+double \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_af400563ad546a5d7c6210b2a822be55d}{last\+\_\+op\+\_\+finish\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_histogram}{Histogram} \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a6c1dd789977dc7d55b63b2e9b4f9a499}{hist\+\_\+}
+\item 
+std\+::string \hyperlink{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a20a87ebb0459044716aa623ecd7a25e3}{message\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a97e33b0731a00dac19e12406bd40729b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Stats@{Stats}}
+\index{Stats@{Stats}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Stats}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a97e33b0731a00dac19e12406bd40729b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3b6bd65add269ffdbc043661c7ee17f5}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Add\+Bytes@{Add\+Bytes}}
+\index{Add\+Bytes@{Add\+Bytes}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Add\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Add\+Bytes (
+\begin{DoxyParamCaption}
+\item[{{\bf int64\+\_\+t}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3b6bd65add269ffdbc043661c7ee17f5}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ad15c1814c2c76a3ee89e4f2b0b5ad9ba}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Add\+Message@{Add\+Message}}
+\index{Add\+Message@{Add\+Message}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Add\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Add\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Slice}}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ad15c1814c2c76a3ee89e4f2b0b5ad9ba}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ad15c1814c2c76a3ee89e4f2b0b5ad9ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a46ebdd6415bc2274ca01939f6665228b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Finished\+Single\+Op@{Finished\+Single\+Op}}
+\index{Finished\+Single\+Op@{Finished\+Single\+Op}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Finished\+Single\+Op}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Finished\+Single\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a46ebdd6415bc2274ca01939f6665228b}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a46ebdd6415bc2274ca01939f6665228b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a17951c3d50df14358b6960083900d232}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Merge@{Merge}}
+\index{Merge@{Merge}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Merge}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Merge (
+\begin{DoxyParamCaption}
+\item[{const {\bf Stats} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a17951c3d50df14358b6960083900d232}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a17951c3d50df14358b6960083900d232_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3001cadbb916e3ba7752d1ff21733228}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Report@{Report}}
+\index{Report@{Report}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Report}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Report (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3001cadbb916e3ba7752d1ff21733228}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a3001cadbb916e3ba7752d1ff21733228_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a8447537fddbcd678128bd23b4a0dc114}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Start@{Start}}
+\index{Start@{Start}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a8447537fddbcd678128bd23b4a0dc114}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a8447537fddbcd678128bd23b4a0dc114_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a78667a4e3ce2fae5575b3454157d63a5}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!Stop@{Stop}}
+\index{Stop@{Stop}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::\+Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a78667a4e3ce2fae5575b3454157d63a5}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a78667a4e3ce2fae5575b3454157d63a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a6592f3c9da4384d8b0df1136c49b8315}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!bytes\+\_\+@{bytes\+\_\+}}
+\index{bytes\+\_\+@{bytes\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{bytes\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int64\+\_\+t} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::bytes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a6592f3c9da4384d8b0df1136c49b8315}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ae255b1fad7367533e27728a5fd938bc3}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!done\+\_\+@{done\+\_\+}}
+\index{done\+\_\+@{done\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{done\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::done\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ae255b1fad7367533e27728a5fd938bc3}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_abba31c0cee55cac76dd115a68dc9c212}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!finish\+\_\+@{finish\+\_\+}}
+\index{finish\+\_\+@{finish\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{finish\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::finish\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_abba31c0cee55cac76dd115a68dc9c212}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a6c1dd789977dc7d55b63b2e9b4f9a499}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!hist\+\_\+@{hist\+\_\+}}
+\index{hist\+\_\+@{hist\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{hist\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Histogram} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::hist\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a6c1dd789977dc7d55b63b2e9b4f9a499}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_af400563ad546a5d7c6210b2a822be55d}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!last\+\_\+op\+\_\+finish\+\_\+@{last\+\_\+op\+\_\+finish\+\_\+}}
+\index{last\+\_\+op\+\_\+finish\+\_\+@{last\+\_\+op\+\_\+finish\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{last\+\_\+op\+\_\+finish\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::last\+\_\+op\+\_\+finish\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_af400563ad546a5d7c6210b2a822be55d}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a20a87ebb0459044716aa623ecd7a25e3}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!message\+\_\+@{message\+\_\+}}
+\index{message\+\_\+@{message\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{message\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::message\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a20a87ebb0459044716aa623ecd7a25e3}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a994cced0fcac1ec8e9973fd3cc055ade}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!next\+\_\+report\+\_\+@{next\+\_\+report\+\_\+}}
+\index{next\+\_\+report\+\_\+@{next\+\_\+report\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{next\+\_\+report\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::next\+\_\+report\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a994cced0fcac1ec8e9973fd3cc055ade}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a04e24c3d4e71615bcd50843db027e174}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!seconds\+\_\+@{seconds\+\_\+}}
+\index{seconds\+\_\+@{seconds\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{seconds\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::seconds\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_a04e24c3d4e71615bcd50843db027e174}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ab917bded97f65cd70987a93308aad419}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}!start\+\_\+@{start\+\_\+}}
+\index{start\+\_\+@{start\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Stats}}
+\subsubsection[{start\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Stats\+::start\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats_ab917bded97f65cd70987a93308aad419}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\hyperlink{db__bench_8cc}{db\+\_\+bench.\+cc}\end{DoxyCompactItemize}

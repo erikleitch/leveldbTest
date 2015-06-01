@@ -1,0 +1,11 @@
+<map id="leveldb::TEST" name="leveldb::TEST">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#a98eaeea7300aa4f9b56303ffa27581af" title="leveldb::PutLengthPrefixed\lSlice" alt="" coords="159,65,340,104"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#afe94b0b5eec2b0272aed6f45042a70c8" title="leveldb::GetLengthPrefixed\lSlice" alt="" coords="158,137,341,176"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_slice.html#a2cdd9fb649105033fde510afc9416732" title="leveldb::Slice::ToString" alt="" coords="171,200,328,225"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#ab00e282f3fd7058b8a41afcf4b56e685" title="leveldb::PutVarint32" alt="" coords="398,5,538,31"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="402,55,533,80"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="401,104,534,129"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#ac5e7a0e0356b856317349a870e3bfb41" title="leveldb::EncodeVarint32" alt="" coords="616,5,781,31"/>
+<area shape="rect" id="node8" href="$namespaceleveldb.html#addd01473dddfbc70ba64956fe6fac20c" title="leveldb::GetVarint32Ptr" alt="" coords="389,153,547,179"/>
+<area shape="rect" id="node9" href="$namespaceleveldb.html#abc68f00e57333a27e9ee4fb8d5033905" title="leveldb::GetVarint32PtrFallback" alt="" coords="595,153,803,179"/>
+</map>

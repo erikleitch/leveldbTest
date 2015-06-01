@@ -1,0 +1,92 @@
+\hypertarget{port__android_8cc}{}\section{port/port\+\_\+android.cc File Reference}
+\label{port__android_8cc}\index{port/port\+\_\+android.\+cc@{port/port\+\_\+android.\+cc}}
+{\ttfamily \#include \char`\"{}port/port\+\_\+android.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+Include dependency graph for port\+\_\+android.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{port__android_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\item 
+ \hyperlink{namespaceleveldb_1_1port}{leveldb\+::port}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{port__android_8cc_a927c05051823e77c9517323211fc0019}{fread\+\_\+unlocked} (void $\ast$a, size\+\_\+t b, size\+\_\+t c, F\+I\+L\+E $\ast$d)
+\item 
+size\+\_\+t \hyperlink{port__android_8cc_abf4b4d02224e4d22e84bf9637f888ae1}{fwrite\+\_\+unlocked} (const void $\ast$a, size\+\_\+t b, size\+\_\+t c, F\+I\+L\+E $\ast$d)
+\item 
+int \hyperlink{port__android_8cc_a90ceb92382cee4b8985dc2e72124a0f8}{fflush\+\_\+unlocked} (F\+I\+L\+E $\ast$f)
+\item 
+int \hyperlink{port__android_8cc_a1652179a6e22c7f6e6c7d0246feb43e6}{fdatasync} (int fd)
+\item 
+static void \hyperlink{namespaceleveldb_1_1port_a614e0b6f0b21d697fe4001dbe3d8798b}{leveldb\+::port\+::\+Pthread\+Call} (const char $\ast$label, int result)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{port__android_8cc_a1652179a6e22c7f6e6c7d0246feb43e6}{}\index{port\+\_\+android.\+cc@{port\+\_\+android.\+cc}!fdatasync@{fdatasync}}
+\index{fdatasync@{fdatasync}!port\+\_\+android.\+cc@{port\+\_\+android.\+cc}}
+\subsubsection[{fdatasync}]{\setlength{\rightskip}{0pt plus 5cm}int fdatasync (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\label{port__android_8cc_a1652179a6e22c7f6e6c7d0246feb43e6}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{port__android_8cc_a1652179a6e22c7f6e6c7d0246feb43e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{port__android_8cc_a90ceb92382cee4b8985dc2e72124a0f8}{}\index{port\+\_\+android.\+cc@{port\+\_\+android.\+cc}!fflush\+\_\+unlocked@{fflush\+\_\+unlocked}}
+\index{fflush\+\_\+unlocked@{fflush\+\_\+unlocked}!port\+\_\+android.\+cc@{port\+\_\+android.\+cc}}
+\subsubsection[{fflush\+\_\+unlocked}]{\setlength{\rightskip}{0pt plus 5cm}int fflush\+\_\+unlocked (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{port__android_8cc_a90ceb92382cee4b8985dc2e72124a0f8}
+\hypertarget{port__android_8cc_a927c05051823e77c9517323211fc0019}{}\index{port\+\_\+android.\+cc@{port\+\_\+android.\+cc}!fread\+\_\+unlocked@{fread\+\_\+unlocked}}
+\index{fread\+\_\+unlocked@{fread\+\_\+unlocked}!port\+\_\+android.\+cc@{port\+\_\+android.\+cc}}
+\subsubsection[{fread\+\_\+unlocked}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t fread\+\_\+unlocked (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{a, }
+\item[{size\+\_\+t}]{b, }
+\item[{size\+\_\+t}]{c, }
+\item[{F\+I\+L\+E $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\label{port__android_8cc_a927c05051823e77c9517323211fc0019}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{port__android_8cc_a927c05051823e77c9517323211fc0019_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{port__android_8cc_abf4b4d02224e4d22e84bf9637f888ae1}{}\index{port\+\_\+android.\+cc@{port\+\_\+android.\+cc}!fwrite\+\_\+unlocked@{fwrite\+\_\+unlocked}}
+\index{fwrite\+\_\+unlocked@{fwrite\+\_\+unlocked}!port\+\_\+android.\+cc@{port\+\_\+android.\+cc}}
+\subsubsection[{fwrite\+\_\+unlocked}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t fwrite\+\_\+unlocked (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{size\+\_\+t}]{b, }
+\item[{size\+\_\+t}]{c, }
+\item[{F\+I\+L\+E $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\label{port__android_8cc_abf4b4d02224e4d22e84bf9637f888ae1}

@@ -1,0 +1,7 @@
+<map id="leveldb::log::Reader::SkipToInitialBlock" name="leveldb::log::Reader::SkipToInitialBlock">
+<area shape="rect" id="node2" href="$classleveldb_1_1_sequential_file.html#a18c94279fc058cad4d03cdfe04b12179" title="leveldb::SequentialFile\l::Skip" alt="" coords="193,5,349,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="206,68,336,93"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1log_1_1_reader.html#afadf9a8b44005fd8e9fc798d35befb50" title="leveldb::log::Reader\l::ReportDrop" alt="" coords="201,117,341,156"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="406,96,537,121"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1log_1_1_reader_1_1_reporter.html#a2d28d30f9559d5fc9f94af41d239932e" title="leveldb::log::Reader\l::Reporter::Corruption" alt="" coords="397,145,547,184"/>
+</map>

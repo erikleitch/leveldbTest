@@ -1,0 +1,183 @@
+\hypertarget{structleveldb_1_1_read_options}{}\section{leveldb\+:\+:Read\+Options Struct Reference}
+\label{structleveldb_1_1_read_options}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+
+
+{\ttfamily \#include $<$options.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Read\+Options\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_read_options__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_read_options_a6bf119f5a33b0d0a70fb60d8114351ef}{Read\+Options} ()
+\item 
+bool \hyperlink{structleveldb_1_1_read_options_a924feccae37fd1e4635875c243dc46cf}{Is\+Compaction} () const 
+\item 
+\hyperlink{classleveldb_1_1_logger}{Logger} $\ast$ \hyperlink{structleveldb_1_1_read_options_ac67da0bed402e390a2c58fb8216bf85f}{Get\+Info\+Log} () const 
+\item 
+const std\+::string \& \hyperlink{structleveldb_1_1_read_options_a04ac03549d9191c2b8d3d71d8aff5caf}{Get\+D\+B\+Name} () const 
+\item 
+\hyperlink{classleveldb_1_1_env}{Env} $\ast$ \hyperlink{structleveldb_1_1_read_options_ab8e38306b4d1a0725d3f5b7e92498aef}{Get\+Env} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structleveldb_1_1_read_options_a43731d67b707995e20571ad33c1f53f2}{verify\+\_\+checksums}
+\item 
+bool \hyperlink{structleveldb_1_1_read_options_a49f3754f8838596148ed5cbf9bbf8664}{fill\+\_\+cache}
+\item 
+const \hyperlink{classleveldb_1_1_snapshot}{Snapshot} $\ast$ \hyperlink{structleveldb_1_1_read_options_a1fa3fffc267dff89fce7c39d7c7b5b50}{snapshot}
+\item 
+bool \hyperlink{structleveldb_1_1_read_options_a965fa3fa49e0b637a7925cf644c3d01f}{iterator\+\_\+refresh}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structleveldb_1_1_read_options_a7b49e4ea8d594b49ba3ae1a122f9ad66}{is\+\_\+compaction}
+\item 
+std\+::string \hyperlink{structleveldb_1_1_read_options_a97dd1e8864784d5bff4bb8cb82ec07cc}{dbname}
+\item 
+\hyperlink{classleveldb_1_1_env}{Env} $\ast$ \hyperlink{structleveldb_1_1_read_options_af4abfe04693f5813c8178c21bb20eca9}{env}
+\item 
+\hyperlink{classleveldb_1_1_logger}{Logger} $\ast$ \hyperlink{structleveldb_1_1_read_options_a8365a77bbd2f624c13b9af869cc6a3c2}{info\+\_\+log}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{structleveldb_1_1_read_options_a1827cd1b4d6e9e3c378ce37ca3cce635}{Version\+Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structleveldb_1_1_read_options_a6bf119f5a33b0d0a70fb60d8114351ef}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!Read\+Options@{Read\+Options}}
+\index{Read\+Options@{Read\+Options}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{Read\+Options}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Read\+Options\+::\+Read\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_read_options_a6bf119f5a33b0d0a70fb60d8114351ef}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structleveldb_1_1_read_options_a04ac03549d9191c2b8d3d71d8aff5caf}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!Get\+D\+B\+Name@{Get\+D\+B\+Name}}
+\index{Get\+D\+B\+Name@{Get\+D\+B\+Name}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{Get\+D\+B\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& leveldb\+::\+Read\+Options\+::\+Get\+D\+B\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_read_options_a04ac03549d9191c2b8d3d71d8aff5caf}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_read_options_a04ac03549d9191c2b8d3d71d8aff5caf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_read_options_ab8e38306b4d1a0725d3f5b7e92498aef}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!Get\+Env@{Get\+Env}}
+\index{Get\+Env@{Get\+Env}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{Get\+Env}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Env}$\ast$ leveldb\+::\+Read\+Options\+::\+Get\+Env (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_read_options_ab8e38306b4d1a0725d3f5b7e92498aef}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_read_options_ab8e38306b4d1a0725d3f5b7e92498aef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_read_options_ac67da0bed402e390a2c58fb8216bf85f}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!Get\+Info\+Log@{Get\+Info\+Log}}
+\index{Get\+Info\+Log@{Get\+Info\+Log}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{Get\+Info\+Log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logger}$\ast$ leveldb\+::\+Read\+Options\+::\+Get\+Info\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_read_options_ac67da0bed402e390a2c58fb8216bf85f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_read_options_ac67da0bed402e390a2c58fb8216bf85f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structleveldb_1_1_read_options_a924feccae37fd1e4635875c243dc46cf}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!Is\+Compaction@{Is\+Compaction}}
+\index{Is\+Compaction@{Is\+Compaction}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{Is\+Compaction}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Read\+Options\+::\+Is\+Compaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1_read_options_a924feccae37fd1e4635875c243dc46cf}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_read_options_a924feccae37fd1e4635875c243dc46cf_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structleveldb_1_1_read_options_a1827cd1b4d6e9e3c378ce37ca3cce635}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!Version\+Set@{Version\+Set}}
+\index{Version\+Set@{Version\+Set}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{Version\+Set}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Version\+Set}\hspace{0.3cm}{\ttfamily [friend]}}\label{structleveldb_1_1_read_options_a1827cd1b4d6e9e3c378ce37ca3cce635}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structleveldb_1_1_read_options_a97dd1e8864784d5bff4bb8cb82ec07cc}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!dbname@{dbname}}
+\index{dbname@{dbname}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{dbname}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::\+Read\+Options\+::dbname\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_read_options_a97dd1e8864784d5bff4bb8cb82ec07cc}
+\hypertarget{structleveldb_1_1_read_options_af4abfe04693f5813c8178c21bb20eca9}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!env@{env}}
+\index{env@{env}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{env}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Env}$\ast$ leveldb\+::\+Read\+Options\+::env\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_read_options_af4abfe04693f5813c8178c21bb20eca9}
+\hypertarget{structleveldb_1_1_read_options_a49f3754f8838596148ed5cbf9bbf8664}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!fill\+\_\+cache@{fill\+\_\+cache}}
+\index{fill\+\_\+cache@{fill\+\_\+cache}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{fill\+\_\+cache}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Read\+Options\+::fill\+\_\+cache}\label{structleveldb_1_1_read_options_a49f3754f8838596148ed5cbf9bbf8664}
+\hypertarget{structleveldb_1_1_read_options_a8365a77bbd2f624c13b9af869cc6a3c2}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!info\+\_\+log@{info\+\_\+log}}
+\index{info\+\_\+log@{info\+\_\+log}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{info\+\_\+log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logger}$\ast$ leveldb\+::\+Read\+Options\+::info\+\_\+log\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_read_options_a8365a77bbd2f624c13b9af869cc6a3c2}
+\hypertarget{structleveldb_1_1_read_options_a7b49e4ea8d594b49ba3ae1a122f9ad66}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!is\+\_\+compaction@{is\+\_\+compaction}}
+\index{is\+\_\+compaction@{is\+\_\+compaction}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{is\+\_\+compaction}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Read\+Options\+::is\+\_\+compaction\hspace{0.3cm}{\ttfamily [private]}}\label{structleveldb_1_1_read_options_a7b49e4ea8d594b49ba3ae1a122f9ad66}
+\hypertarget{structleveldb_1_1_read_options_a965fa3fa49e0b637a7925cf644c3d01f}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!iterator\+\_\+refresh@{iterator\+\_\+refresh}}
+\index{iterator\+\_\+refresh@{iterator\+\_\+refresh}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{iterator\+\_\+refresh}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Read\+Options\+::iterator\+\_\+refresh}\label{structleveldb_1_1_read_options_a965fa3fa49e0b637a7925cf644c3d01f}
+\hypertarget{structleveldb_1_1_read_options_a1fa3fffc267dff89fce7c39d7c7b5b50}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!snapshot@{snapshot}}
+\index{snapshot@{snapshot}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{snapshot}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Snapshot}$\ast$ leveldb\+::\+Read\+Options\+::snapshot}\label{structleveldb_1_1_read_options_a1fa3fffc267dff89fce7c39d7c7b5b50}
+\hypertarget{structleveldb_1_1_read_options_a43731d67b707995e20571ad33c1f53f2}{}\index{leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}!verify\+\_\+checksums@{verify\+\_\+checksums}}
+\index{verify\+\_\+checksums@{verify\+\_\+checksums}!leveldb\+::\+Read\+Options@{leveldb\+::\+Read\+Options}}
+\subsubsection[{verify\+\_\+checksums}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Read\+Options\+::verify\+\_\+checksums}\label{structleveldb_1_1_read_options_a43731d67b707995e20571ad33c1f53f2}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\hyperlink{options_8h}{options.\+h}\end{DoxyCompactItemize}

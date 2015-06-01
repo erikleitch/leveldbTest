@@ -1,0 +1,36 @@
+<map id="leveldb::VersionSet::NumLevelFiles" name="leveldb::VersionSet::NumLevelFiles">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a0b176cdad75907cedd869139a3342ff0" title="leveldb::DBImpl::CheckCompaction\lState" alt="" coords="194,369,425,408"/>
+<area shape="rect" id="node24" href="$classleveldb_1_1_d_b_impl.html#a9b86cb14563a0e4b780d167f3c0623ac" title="leveldb::DBImpl::DoCompactionWork" alt="" coords="189,525,430,551"/>
+<area shape="rect" id="node28" href="$classleveldb_1_1_d_b_impl.html#af0d16a6725c9509a39b20671783b3590" title="leveldb::DBImpl::MakeRoom\lForWrite" alt="" coords="214,575,405,613"/>
+<area shape="rect" id="node35" href="$classleveldb_1_1_d_b_impl.html#ad1a2023ce171c8f8476664f5b1cbab4d" title="leveldb::DBImpl::GetProperty" alt="" coords="212,637,406,663"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_d_b.html#ac1da2b48e911287d86f3a3bfa0f851fe" title="leveldb::DB::Open" alt="" coords="510,281,639,307"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_corruption_test.html#af9680fa87bfaf020fc47966c1d2467e8" title="leveldb::CorruptionTest\l::TryReopen" alt="" coords="739,32,896,71"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_benchmark.html#a89a3b0da75e6cd2ffb879358e5dd82a6" title="leveldb::Benchmark\l::Open" alt="" coords="748,120,887,159"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_d_b_test.html#aee588b2d13db6be2a651a8fabeac5c79" title="leveldb::DBTest::TryReopen" alt="" coords="724,183,911,208"/>
+<area shape="rect" id="node16" href="$classleveldb_1_1_d_b_test.html#aaf18040f36d28207e2f56c35ebccf360" title="leveldb::DBTest::DoubleOpen" alt="" coords="719,232,916,257"/>
+<area shape="rect" id="node17" href="$namespaceleveldb.html#a88d6fdcb16ed4edc65da40f383e6f23b" title="leveldb::TEST" alt="" coords="765,281,870,307"/>
+<area shape="rect" id="node18" href="$namespaceleveldb.html#af9cf6ec167c9b6f25fd050ab6fb67a90" title="leveldb::BM_LogAndApply" alt="" coords="729,331,906,356"/>
+<area shape="rect" id="node20" href="$classleveldb_1_1anonymous__namespace_02repair_8cc_03_1_1_repairer.html#abba6586bedbead266d5530109b51ff05" title="leveldb::anonymous\l_namespace\{repair::cc\}\l::Repairer::Run" alt="" coords="737,380,898,432"/>
+<area shape="rect" id="node21" href="$classleveldb_1_1_d_b_constructor.html#ac48bfe871db8558b57427843465e6c65" title="leveldb::DBConstructor\l::NewDB" alt="" coords="738,456,897,495"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_corruption_test.html#aab4c6a5ca8757d5e62caaf66e90d8f8f" title="leveldb::CorruptionTest\l::Reopen" alt="" coords="981,5,1139,44"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_corruption_test.html#a9940767db260b1e4e60b8bcedc50217c" title="leveldb::CorruptionTest\l::CorruptionTest" alt="" coords="1232,5,1390,44"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="1226,99,1396,124"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_benchmark.html#a86876b2882d9015610330e69acfdff0d" title="leveldb::Benchmark\l::Write" alt="" coords="991,120,1129,159"/>
+<area shape="rect" id="node9" href="$db__bench_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1466,99,1516,124"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_d_b_test.html#a38170a082cbc71fb446408ff5634c797" title="leveldb::DBTest::Reopen" alt="" coords="976,183,1144,208"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_d_b_test.html#ab798a43e7feab6dddc8fa1eb7a5f61f6" title="leveldb::DBTest::Destroy\lAndReopen" alt="" coords="976,232,1143,271"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_d_b_test.html#afc6fc9512e900de6ee10c5db15b22930" title="leveldb::DBTest::DBTest" alt="" coords="1229,183,1393,208"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_d_b_test.html#a587534fe403016f15cf1997ef7a40836" title="leveldb::DBTest::ChangeOptions" alt="" coords="1204,239,1418,264"/>
+<area shape="rect" id="node19" href="$db__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1035,331,1085,356"/>
+<area shape="rect" id="node22" href="$classleveldb_1_1_d_b_constructor.html#ae27ecdd7732629b08c25a63f82dfd4a9" title="leveldb::DBConstructor\l::DBConstructor" alt="" coords="981,393,1139,432"/>
+<area shape="rect" id="node23" href="$classleveldb_1_1_d_b_constructor.html#a554d8e348d9135ff72a43a03c647c261" title="leveldb::DBConstructor\l::FinishImpl" alt="" coords="981,456,1139,495"/>
+<area shape="rect" id="node25" href="$classleveldb_1_1_d_b_impl.html#a74e4c4cea1a0b49b52ba695339772af3" title="leveldb::DBImpl::Background\lCompaction" alt="" coords="478,519,671,557"/>
+<area shape="rect" id="node26" href="$classleveldb_1_1_d_b_impl.html#a8f2d02826606bb1753958fb51182c1ff" title="leveldb::DBImpl::Background\lCall2" alt="" coords="721,519,914,557"/>
+<area shape="rect" id="node27" href="$classleveldb_1_1_compaction_task.html#a289decac6d18732d37dfef0584ba4350" title="leveldb::CompactionTask\l::operator()" alt="" coords="975,519,1145,557"/>
+<area shape="rect" id="node29" href="$classleveldb_1_1_d_b_impl.html#ac0d0b472717099d6a02ad9dace4e8ef4" title="leveldb::DBImpl::Write" alt="" coords="498,609,651,635"/>
+<area shape="rect" id="node30" href="$classleveldb_1_1_d_b_impl.html#a8642703fd1398cd8e3f5f24ee0b9da23" title="leveldb::DBImpl::TEST\l_CompactMemTable" alt="" coords="739,617,895,656"/>
+<area shape="rect" id="node31" href="$namespaceleveldb.html#a1da99cee14629599882010198aabfa2a" title="leveldb::TEST" alt="" coords="1007,581,1112,607"/>
+<area shape="rect" id="node32" href="$classleveldb_1_1_d_b_impl.html#aa6df0739fc0b49380c284347e411b8ed" title="leveldb::DBImpl::Compact\lRange" alt="" coords="972,631,1148,669"/>
+<area shape="rect" id="node33" href="$classleveldb_1_1_d_b_test.html#ace931478fa5ad2c48a8aa95a344e19fd" title="leveldb::DBTest::MakeTables" alt="" coords="964,693,1156,719"/>
+<area shape="rect" id="node34" href="$classleveldb_1_1_d_b_test.html#ac291d06db907f5fee7caf04f44f65493" title="leveldb::DBTest::FillLevels" alt="" coords="1223,693,1400,719"/>
+</map>

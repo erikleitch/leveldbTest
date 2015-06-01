@@ -1,0 +1,6 @@
+<map id="leveldb::PosixLogger" name="leveldb::PosixLogger">
+<area shape="rect" id="node2" href="$classleveldb_1_1_logger.html" title="{leveldb::Logger\n||+ Logger()\l+ ~Logger()\l+ Logv()\l+ getStats()\l&#45; Logger()\l&#45; operator=()\l}" alt="" coords="5,247,118,387"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1_posix_logger_1_1_stats.html" title="{leveldb::PosixLogger\l::Stats\n||+ wrote()\l}" alt="" coords="142,273,287,360"/>
+<area shape="rect" id="node4" href="$structleveldb_1_1_logger_1_1_stats.html" title="{leveldb::Logger::Stats\n|+ nWrites_\l+ nBytesWritten_\l+ nMicroSeconds_\l|+ Stats()\l}" alt="" coords="50,45,201,145"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_timer.html" title="{leveldb::Timer\n|&#45; startMs_\l&#45; stopMs_\l&#45; diffMs_\l&#45; integratedMs_\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ deltaMicroSeconds()\l+ currentMs()\l}" alt="" coords="225,5,380,185"/>
+</map>

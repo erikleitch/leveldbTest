@@ -1,0 +1,8 @@
+<map id="leveldb::log::LogTest::StringSource::Read" name="leveldb::log::LogTest::StringSource::Read">
+<area shape="rect" id="node2" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title="leveldb::Status::Corruption" alt="" coords="198,55,377,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="436,183,567,208"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="221,104,354,129"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a1be5b22958a115ebecb2b017aad2b3f6" title="leveldb::Slice::remove\l_prefix" alt="" coords="212,205,364,244"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_status.html#a8e3720d233281c874a53c17e081f51b3" title="leveldb::Status::OK" alt="" coords="220,5,355,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="425,31,579,56"/>
+</map>

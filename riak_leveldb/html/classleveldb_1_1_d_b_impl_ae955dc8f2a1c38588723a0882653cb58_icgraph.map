@@ -1,0 +1,5 @@
+<map id="leveldb::DBImpl::NewIterator" name="leveldb::DBImpl::NewIterator">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#af4cf17ab446a4797270aad502f1c3f3d" title="leveldb::DBImpl::NewInternal\lIterator" alt="" coords="244,5,438,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_d_b_impl.html#adba5bf4252bd94f7db50e62921b7ba53" title="leveldb::DBImpl::TEST\l_NewInternalIterator" alt="" coords="486,5,642,44"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_d_b_test.html#adaf171601eaaf2cd24edaa394752f733" title="leveldb::DBTest::AllEntriesFor" alt="" coords="690,12,888,37"/>
+</map>

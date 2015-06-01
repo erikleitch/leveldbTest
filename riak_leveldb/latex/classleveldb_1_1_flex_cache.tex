@@ -1,0 +1,184 @@
+\hypertarget{classleveldb_1_1_flex_cache}{}\section{leveldb\+:\+:Flex\+Cache Class Reference}
+\label{classleveldb_1_1_flex_cache}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+
+
+{\ttfamily \#include $<$flexcache.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Flex\+Cache\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classleveldb_1_1_flex_cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_flex_cache_a79b713f2185b2ff2dc68f677331efd50}{Flex\+Cache} ()
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_flex_cache_a093372082dcb96d2568fa9899cae92b1}{Get\+D\+B\+Cache\+Capacity} (bool Is\+Internal\+D\+B)
+\item 
+void \hyperlink{classleveldb_1_1_flex_cache_a4863498e73e13779c6dc5fadb519b067}{Set\+Total\+Memory} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} Total)
+\item 
+void \hyperlink{classleveldb_1_1_flex_cache_ab867dd878b70d9e9694eb57ddd137327}{Recalculate\+Allocations} ()
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_flex_cache_a9bbcdcde3c9b1247bc6f4ccd0d748928}{Get\+Total\+Memory} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_flex_cache_a991245a40de629f6e0061a34e0c1dd84}{m\+\_\+\+Total\+Memory}
+\begin{DoxyCompactList}\small\item\em complete memory assigned to all \hyperlink{classleveldb_1_1_flex_cache}{Flex\+Cache} clients \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classleveldb_1_1_flex_cache}{Flex\+Cache} tunes file cache versus block cache versus number of open databases 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_flex_cache_a79b713f2185b2ff2dc68f677331efd50}{}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}!Flex\+Cache@{Flex\+Cache}}
+\index{Flex\+Cache@{Flex\+Cache}!leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+\subsubsection[{Flex\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Flex\+Cache\+::\+Flex\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_flex_cache_a79b713f2185b2ff2dc68f677331efd50}
+Initialize object 
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_flex_cache_a093372082dcb96d2568fa9899cae92b1}{}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}!Get\+D\+B\+Cache\+Capacity@{Get\+D\+B\+Cache\+Capacity}}
+\index{Get\+D\+B\+Cache\+Capacity@{Get\+D\+B\+Cache\+Capacity}!leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+\subsubsection[{Get\+D\+B\+Cache\+Capacity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Flex\+Cache\+::\+Get\+D\+B\+Cache\+Capacity (
+\begin{DoxyParamCaption}
+\item[{bool}]{Is\+Internal}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_flex_cache_a093372082dcb96d2568fa9899cae92b1}
+Return current capacity limit for cache flavor indicated, default is zero if unknown flavor. 
+\begin{DoxyParams}{Parameters}
+{\em Is\+Internal} & value describing cache attributes of caller \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_a093372082dcb96d2568fa9899cae92b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_a093372082dcb96d2568fa9899cae92b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_flex_cache_a9bbcdcde3c9b1247bc6f4ccd0d748928}{}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}!Get\+Total\+Memory@{Get\+Total\+Memory}}
+\index{Get\+Total\+Memory@{Get\+Total\+Memory}!leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+\subsubsection[{Get\+Total\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Flex\+Cache\+::\+Get\+Total\+Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_flex_cache_a9bbcdcde3c9b1247bc6f4ccd0d748928}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_a9bbcdcde3c9b1247bc6f4ccd0d748928_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_flex_cache_ab867dd878b70d9e9694eb57ddd137327}{}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}!Recalculate\+Allocations@{Recalculate\+Allocations}}
+\index{Recalculate\+Allocations@{Recalculate\+Allocations}!leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+\subsubsection[{Recalculate\+Allocations}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Flex\+Cache\+::\+Recalculate\+Allocations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_flex_cache_ab867dd878b70d9e9694eb57ddd137327}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_ab867dd878b70d9e9694eb57ddd137327_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_ab867dd878b70d9e9694eb57ddd137327_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_flex_cache_a4863498e73e13779c6dc5fadb519b067}{}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}!Set\+Total\+Memory@{Set\+Total\+Memory}}
+\index{Set\+Total\+Memory@{Set\+Total\+Memory}!leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+\subsubsection[{Set\+Total\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Flex\+Cache\+::\+Set\+Total\+Memory (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{Total}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_flex_cache_a4863498e73e13779c6dc5fadb519b067}
+Change the memory allocated to all caches, and actively resize existing caches 
+\begin{DoxyParams}{Parameters}
+{\em Total} & new memory allocated to all caches \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_a4863498e73e13779c6dc5fadb519b067_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_flex_cache_a4863498e73e13779c6dc5fadb519b067_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_flex_cache_a991245a40de629f6e0061a34e0c1dd84}{}\index{leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}!m\+\_\+\+Total\+Memory@{m\+\_\+\+Total\+Memory}}
+\index{m\+\_\+\+Total\+Memory@{m\+\_\+\+Total\+Memory}!leveldb\+::\+Flex\+Cache@{leveldb\+::\+Flex\+Cache}}
+\subsubsection[{m\+\_\+\+Total\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Flex\+Cache\+::m\+\_\+\+Total\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_flex_cache_a991245a40de629f6e0061a34e0c1dd84}
+
+
+complete memory assigned to all \hyperlink{classleveldb_1_1_flex_cache}{Flex\+Cache} clients 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{flexcache_8h}{flexcache.\+h}\item 
+util/\hyperlink{flexcache_8cc}{flexcache.\+cc}\end{DoxyCompactItemize}

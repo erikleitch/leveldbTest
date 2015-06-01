@@ -1,0 +1,40 @@
+\hypertarget{builder_8cc}{}\section{db/builder.cc File Reference}
+\label{builder_8cc}\index{db/builder.\+cc@{db/builder.\+cc}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}db/builder.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/dbformat.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/table\+\_\+cache.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/version\+\_\+edit.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/iterator.\+h\char`\"{}}\\*
+Include dependency graph for builder.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builder_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{builder_8cc_aacbb9e1f38be71e22df1584a37c56693}{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Status \hyperlink{namespaceleveldb_adadee87d30bdf48c72bcba5fa59102e2}{leveldb\+::\+Build\+Table} (const std\+::string \&\hyperlink{c__test_8c_a75d845559336df6843f3b599960f89d2}{dbname}, Env $\ast$env, const Options \&options, const Comparator $\ast$user\+\_\+comparator, Table\+Cache $\ast$table\+\_\+cache, Iterator $\ast$iter, File\+Meta\+Data $\ast$meta, Sequence\+Number smallest\+\_\+snapshot)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{builder_8cc_aacbb9e1f38be71e22df1584a37c56693}{}\index{builder.\+cc@{builder.\+cc}!\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S@{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}}
+\index{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S@{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}!builder.\+cc@{builder.\+cc}}
+\subsubsection[{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}\label{builder_8cc_aacbb9e1f38be71e22df1584a37c56693}

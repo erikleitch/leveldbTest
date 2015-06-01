@@ -1,0 +1,5 @@
+<map id="leveldb::Status::Status" name="leveldb::Status::Status">
+<area shape="rect" id="node2" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="214,5,345,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#a7e1c5239636c9e0ffff6df6144f32af3" title="leveldb::Status::code" alt="" coords="207,55,352,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="213,104,347,129"/>
+</map>

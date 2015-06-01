@@ -1,0 +1,8 @@
+<map id="leveldb::ReadFileToString" name="leveldb::ReadFileToString">
+<area shape="rect" id="node2" href="$classleveldb_1_1_env.html#ad73810059f48c1d7b91125d357e7d351" title="leveldb::Env::NewSequentialFile" alt="" coords="227,5,439,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="268,55,398,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_sequential_file.html#a4136bef1546cdb9fbbd477a635460261" title="leveldb::SequentialFile\l::Read" alt="" coords="255,104,411,143"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="266,167,400,192"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="267,216,398,241"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_slice.html#a7d0b93d5801bff5656068647759dcb8f" title="leveldb::Slice::empty" alt="" coords="261,265,405,291"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="leveldb::FilterBlockTest" name="leveldb::FilterBlockTest">
+<area shape="rect" id="node2" href="$classleveldb_1_1_test_hash_filter.html" title="{leveldb::TestHashFilter\n||+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="6,208,162,308"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_filter_policy.html" title="{leveldb::FilterPolicy\n||+ FilterPolicy()\l+ ~FilterPolicy()\l+ GetNext()\l+ SetNext()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="16,5,152,159"/>
+</map>

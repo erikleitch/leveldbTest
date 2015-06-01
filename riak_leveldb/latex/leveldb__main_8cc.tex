@@ -1,0 +1,103 @@
+\hypertarget{leveldb__main_8cc}{}\section{tools/leveldb\+\_\+main.cc File Reference}
+\label{leveldb__main_8cc}\index{tools/leveldb\+\_\+main.\+cc@{tools/leveldb\+\_\+main.\+cc}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}db/dbformat.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/log\+\_\+reader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/version\+\_\+edit.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/write\+\_\+batch\+\_\+internal.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/iterator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/options.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/status.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/table.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/write\+\_\+batch.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\\*
+Include dependency graph for leveldb\+\_\+main.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{leveldb__main_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_1_1_corruption_reporter}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Corruption\+Reporter}
+\item 
+class \hyperlink{classleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_1_1_write_batch_item_printer}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Write\+Batch\+Item\+Printer}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\item 
+ \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_a42d54d4e0eb590df4bba459131b6c8d3}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Guess\+Type} (const std\+::string \&fname, File\+Type $\ast$type)
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_a9212c400679f75d9fb1ed7fd08611404}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Print\+Log\+Contents} (Env $\ast$env, const std\+::string \&fname, void($\ast$func)(Slice))
+\item 
+static void \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_ae7c55c4d94311c47efaab97c711bfa1b}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Write\+Batch\+Printer} (Slice record)
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_aeadd7872fff20a9f13b2c81377307bb6}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Dump\+Log} (Env $\ast$env, const std\+::string \&fname)
+\item 
+static void \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_a92c0c5c59ff201b0480664cdd732f171}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Version\+Edit\+Printer} (Slice record)
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_aac1f891b5b8cff7826dea82d6fd4975a}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Dump\+Descriptor} (Env $\ast$env, const std\+::string \&fname)
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_a5c0bfecd020ea984aab01c6aa9a8816a}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Dump\+Table} (Env $\ast$env, const std\+::string \&fname)
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_a502a762eb4167f987a355281002f591b}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Dump\+File} (Env $\ast$env, const std\+::string \&fname)
+\item 
+bool \hyperlink{namespaceleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_afe5479ed1336c698fdce3f73115a6b33}{leveldb\+::anonymous\+\_\+namespace\{leveldb\+\_\+main.\+cc\}\+::\+Handle\+Dump\+Command} (Env $\ast$env, char $\ast$$\ast$files, int num)
+\item 
+static void \hyperlink{leveldb__main_8cc_ae28fba57a1edfa47dfb0ed05fb38131c}{Usage} ()
+\item 
+int \hyperlink{leveldb__main_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{leveldb__main_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{}\index{leveldb\+\_\+main.\+cc@{leveldb\+\_\+main.\+cc}!main@{main}}
+\index{main@{main}!leveldb\+\_\+main.\+cc@{leveldb\+\_\+main.\+cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{leveldb__main_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{leveldb__main_8cc_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{leveldb__main_8cc_ae28fba57a1edfa47dfb0ed05fb38131c}{}\index{leveldb\+\_\+main.\+cc@{leveldb\+\_\+main.\+cc}!Usage@{Usage}}
+\index{Usage@{Usage}!leveldb\+\_\+main.\+cc@{leveldb\+\_\+main.\+cc}}
+\subsubsection[{Usage}]{\setlength{\rightskip}{0pt plus 5cm}static void Usage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{leveldb__main_8cc_ae28fba57a1edfa47dfb0ed05fb38131c}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{leveldb__main_8cc_ae28fba57a1edfa47dfb0ed05fb38131c_icgraph}
+\end{center}
+\end{figure}
+
+

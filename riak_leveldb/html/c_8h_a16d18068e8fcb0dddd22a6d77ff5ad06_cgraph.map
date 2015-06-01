@@ -1,0 +1,5 @@
+<map id="leveldb_iter_value" name="leveldb_iter_value">
+<area shape="rect" id="node2" href="$classleveldb_1_1_iterator.html#a613ac2e965518aad7a064c64c72bcf7c" title="leveldb::Iterator::\lvalue" alt="" coords="188,5,309,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="183,68,314,93"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="182,117,315,143"/>
+</map>

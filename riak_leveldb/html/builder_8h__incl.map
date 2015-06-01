@@ -1,0 +1,15 @@
+<map id="db/builder.h" name="db/builder.h">
+<area shape="rect" id="node2" href="$status_8h.html" title="leveldb/status.h" alt="" coords="392,299,506,324"/>
+<area shape="rect" id="node8" href="$dbformat_8h.html" title="db/dbformat.h" alt="" coords="392,79,495,104"/>
+<area shape="rect" id="node4" href="$slice_8h.html" title="leveldb/slice.h" alt="" coords="84,372,189,397"/>
+<area shape="rect" id="node10" href="$comparator_8h.html" title="leveldb/comparator.h" alt="" coords="889,372,1035,397"/>
+<area shape="rect" id="node11" href="$db_8h.html" title="leveldb/db.h" alt="" coords="557,152,650,177"/>
+<area shape="rect" id="node16" href="$filter__policy_8h.html" title="leveldb/filter_policy.h" alt="" coords="781,152,925,177"/>
+<area shape="rect" id="node17" href="$table__builder_8h.html" title="leveldb/table_builder.h" alt="" coords="366,225,520,251"/>
+<area shape="rect" id="node18" href="$coding_8h.html" title="util/coding.h" alt="" coords="28,225,120,251"/>
+<area shape="rect" id="node20" href="$logging_8h.html" title="util/logging.h" alt="" coords="145,225,241,251"/>
+<area shape="rect" id="node12" href="$stdint_8h.html" title="stdint.h" alt="" coords="303,299,368,324"/>
+<area shape="rect" id="node13" href="$iterator_8h.html" title="leveldb/iterator.h" alt="" coords="544,225,663,251"/>
+<area shape="rect" id="node14" href="$options_8h.html" title="leveldb/options.h" alt="" coords="581,299,703,324"/>
+<area shape="rect" id="node19" href="$port_8h.html" title="port/port.h" alt="" coords="146,299,228,324"/>
+</map>

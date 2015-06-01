@@ -1,0 +1,100 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+:\+:Mem\+Table\+Inserter Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}}
+
+
+Inheritance diagram for leveldb\+:\+:anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+:\+:Mem\+Table\+Inserter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+:\+:Mem\+Table\+Inserter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a2646adc17ca9d4faf8c1fbec0ca2b7ed}{Put} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, const \hyperlink{classleveldb_1_1_slice}{Slice} \&value)
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a97ff94d96a388e0736e7766e765678d3}{Delete} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number} \hyperlink{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a47d59e30dde4a6f569e1bdd173b66ed0}{sequence\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_mem_table}{Mem\+Table} $\ast$ \hyperlink{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_aa215718ace989dbbcd013495386a7331}{mem\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a97ff94d96a388e0736e7766e765678d3}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}!Delete@{Delete}}
+\index{Delete@{Delete}!leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+::Mem\+Table\+Inserter\+::\+Delete (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a97ff94d96a388e0736e7766e765678d3}
+
+
+Implements \hyperlink{classleveldb_1_1_write_batch_1_1_handler_aeab6526b87bf5b50fb64216b69b34b17}{leveldb\+::\+Write\+Batch\+::\+Handler}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a97ff94d96a388e0736e7766e765678d3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a2646adc17ca9d4faf8c1fbec0ca2b7ed}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}!Put@{Put}}
+\index{Put@{Put}!leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}}
+\subsubsection[{Put}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+::Mem\+Table\+Inserter\+::\+Put (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{const {\bf Slice} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a2646adc17ca9d4faf8c1fbec0ca2b7ed}
+
+
+Implements \hyperlink{classleveldb_1_1_write_batch_1_1_handler_ad41d4985db289b94e29921167d206d4b}{leveldb\+::\+Write\+Batch\+::\+Handler}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a2646adc17ca9d4faf8c1fbec0ca2b7ed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_aa215718ace989dbbcd013495386a7331}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}!mem\+\_\+@{mem\+\_\+}}
+\index{mem\+\_\+@{mem\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}}
+\subsubsection[{mem\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mem\+Table}$\ast$ leveldb\+::anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+::Mem\+Table\+Inserter\+::mem\+\_\+}\label{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_aa215718ace989dbbcd013495386a7331}
+\hypertarget{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a47d59e30dde4a6f569e1bdd173b66ed0}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}!sequence\+\_\+@{sequence\+\_\+}}
+\index{sequence\+\_\+@{sequence\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}write\+\_\+batch.\+cc\rcurly{}\+::\+Mem\+Table\+Inserter}}
+\subsubsection[{sequence\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sequence\+Number} leveldb\+::anonymous\+\_\+namespace\{write\+\_\+batch.\+cc\}\+::Mem\+Table\+Inserter\+::sequence\+\_\+}\label{classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter_a47d59e30dde4a6f569e1bdd173b66ed0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\hyperlink{write__batch_8cc}{write\+\_\+batch.\+cc}\end{DoxyCompactItemize}

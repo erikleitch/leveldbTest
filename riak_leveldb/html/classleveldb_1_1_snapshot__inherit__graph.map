@@ -1,0 +1,4 @@
+<map id="leveldb::Snapshot" name="leveldb::Snapshot">
+<area shape="rect" id="node2" href="$classleveldb_1_1_model_d_b_1_1_model_snapshot.html" title="{leveldb::ModelDB::ModelSnapshot\n|+ map_\l|}" alt="" coords="5,147,231,220"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_snapshot_impl.html" title="{leveldb::SnapshotImpl\n|+ number_\l&#45; prev_\l&#45; next_\l&#45; list_\l|}" alt="" coords="255,127,408,240"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="leveldb::Benchmark::SnappyCompress" name="leveldb::Benchmark::SnappyCompress">
+<area shape="rect" id="node2" href="$namespaceleveldb_1_1port.html#ae6e60ac8eb298c7eef3bb70ded8c809f" title="leveldb::port::Snappy\l_Compress" alt="" coords="192,5,338,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="198,68,332,93"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="200,117,331,143"/>
+</map>

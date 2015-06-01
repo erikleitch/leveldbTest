@@ -1,0 +1,441 @@
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+:\+:D\+B\+Iter Class Reference}
+\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+
+
+Inheritance diagram for leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+:\+:D\+B\+Iter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+:\+:D\+B\+Iter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7}{Direction} \{ \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7a00e595847b7f445de598cfca013010b8}{k\+Forward}, 
+\hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7ae3d7d5f1515d5d6dfa768ad0438049dc}{k\+Reverse}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a428dc7bcad22ac9a6e61855215a28e40}{D\+B\+Iter} (const std\+::string $\ast$\hyperlink{c__test_8c_a75d845559336df6843f3b599960f89d2}{dbname}, \hyperlink{classleveldb_1_1_env}{Env} $\ast$env, const \hyperlink{structleveldb_1_1_comparator}{Comparator} $\ast$cmp, \hyperlink{classleveldb_1_1_iterator}{Iterator} $\ast$iter, \hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number} s)
+\item 
+virtual \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a5c2dfcfef34b3d43a2329c4a0b224ff5}{$\sim$\+D\+B\+Iter} ()
+\item 
+virtual bool \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_afb59f11fbf9feb083f5144023e598991}{Valid} () const 
+\item 
+virtual \hyperlink{classleveldb_1_1_slice}{Slice} \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a3553118d800278eb9ab467c64de063a6}{key} () const 
+\item 
+virtual \hyperlink{classleveldb_1_1_slice}{Slice} \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a1ec1d37cc4efbfcd0ecc2dfd9d1881c4}{value} () const 
+\item 
+virtual \hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaf4ed1cad19fb5fe6cc20ca80fbbced1}{status} () const 
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af75033acd508d52aaf43987fa9ffe194}{Next} ()
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a57bffd756f2824a053e9c95d793e815e}{Prev} ()
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af213fc2538e3b6002704e465bf0b74a2}{Seek} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&target)
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7960f352be2648eb7822201b4594baf5}{Seek\+To\+First} ()
+\item 
+virtual void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9357ea6d3c8d3c12b11306a154fbf1bb}{Seek\+To\+Last} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9e2646a8b351b7138e76931b520980a1}{Find\+Next\+User\+Entry} (bool skipping, std\+::string $\ast$skip)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaeee72c9de1fd48a427a9172bc6ec02b}{Find\+Prev\+User\+Entry} ()
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_acbf3dbf6311908fbee425b26a38985bb}{Parse\+Key} (\hyperlink{structleveldb_1_1_parsed_internal_key}{Parsed\+Internal\+Key} $\ast$\hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a3553118d800278eb9ab467c64de063a6}{key})
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8d4287979d92635c8bab8ee04c6d88d2}{Save\+Key} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&k, std\+::string $\ast$dst)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_abd0cb7bbcf8c9952c25e76b452d520d3}{Clear\+Saved\+Value} ()
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aa461f7beaa5242757ad71320bb31a2f7}{D\+B\+Iter} (const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter}{D\+B\+Iter} \&)
+\item 
+void \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a2202015b85f31a603f4b00ce2622d761}{operator=} (const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter}{D\+B\+Iter} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string $\ast$const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7246be546b528eac57ade0edec73da11}{dbname\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_env}{Env} $\ast$const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaa28248c085f5d542b30d44dfe96a606}{env\+\_\+}
+\item 
+const \hyperlink{structleveldb_1_1_comparator}{Comparator} $\ast$const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a235c988747c2c2259c9de66a9950496e}{user\+\_\+comparator\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_iterator}{Iterator} $\ast$const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aeed2814a4ed3b02242a24392cd876ddf}{iter\+\_\+}
+\item 
+\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number} const \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a2900557bd9fc15837767a12544adfaaf}{sequence\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a96aeebf50536a2cc97a5cae63256fdc0}{status\+\_\+}
+\item 
+std\+::string \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a6b0a51eb1b576f28b6eb20b21681dce5}{saved\+\_\+key\+\_\+}
+\item 
+std\+::string \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a4b03b30047cdc84ddc13fdf881b9d523}{saved\+\_\+value\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7}{Direction} \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_ab0d3488a45ba1d7332022dceb64471aa}{direction\+\_\+}
+\item 
+bool \hyperlink{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a647dfc231e50cc8d7b67e46ff66b47b1}{valid\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Direction@{Direction}}
+\index{Direction@{Direction}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::{\bf D\+B\+Iter\+::\+Direction}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Forward@{k\+Forward}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!k\+Forward@{k\+Forward}}\item[{\em 
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7a00e595847b7f445de598cfca013010b8}{}k\+Forward\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7a00e595847b7f445de598cfca013010b8}
+}]\index{k\+Reverse@{k\+Reverse}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!k\+Reverse@{k\+Reverse}}\item[{\em 
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7ae3d7d5f1515d5d6dfa768ad0438049dc}{}k\+Reverse\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8110fc354a165a0f317584cef2d903f7ae3d7d5f1515d5d6dfa768ad0438049dc}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a428dc7bcad22ac9a6e61855215a28e40}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!D\+B\+Iter@{D\+B\+Iter}}
+\index{D\+B\+Iter@{D\+B\+Iter}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{D\+B\+Iter}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+D\+B\+Iter (
+\begin{DoxyParamCaption}
+\item[{const std\+::string $\ast$}]{dbname, }
+\item[{{\bf Env} $\ast$}]{env, }
+\item[{const {\bf Comparator} $\ast$}]{cmp, }
+\item[{{\bf Iterator} $\ast$}]{iter, }
+\item[{{\bf Sequence\+Number}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a428dc7bcad22ac9a6e61855215a28e40}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a5c2dfcfef34b3d43a2329c4a0b224ff5}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!````~D\+B\+Iter@{$\sim$\+D\+B\+Iter}}
+\index{````~D\+B\+Iter@{$\sim$\+D\+B\+Iter}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{$\sim$\+D\+B\+Iter}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::$\sim$\+D\+B\+Iter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a5c2dfcfef34b3d43a2329c4a0b224ff5}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a5c2dfcfef34b3d43a2329c4a0b224ff5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aa461f7beaa5242757ad71320bb31a2f7}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!D\+B\+Iter@{D\+B\+Iter}}
+\index{D\+B\+Iter@{D\+B\+Iter}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{D\+B\+Iter}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+D\+B\+Iter (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\+B\+Iter} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aa461f7beaa5242757ad71320bb31a2f7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_abd0cb7bbcf8c9952c25e76b452d520d3}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Clear\+Saved\+Value@{Clear\+Saved\+Value}}
+\index{Clear\+Saved\+Value@{Clear\+Saved\+Value}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Clear\+Saved\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Clear\+Saved\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_abd0cb7bbcf8c9952c25e76b452d520d3}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9e2646a8b351b7138e76931b520980a1}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Find\+Next\+User\+Entry@{Find\+Next\+User\+Entry}}
+\index{Find\+Next\+User\+Entry@{Find\+Next\+User\+Entry}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Find\+Next\+User\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Find\+Next\+User\+Entry (
+\begin{DoxyParamCaption}
+\item[{bool}]{skipping, }
+\item[{std\+::string $\ast$}]{skip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9e2646a8b351b7138e76931b520980a1}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaeee72c9de1fd48a427a9172bc6ec02b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Find\+Prev\+User\+Entry@{Find\+Prev\+User\+Entry}}
+\index{Find\+Prev\+User\+Entry@{Find\+Prev\+User\+Entry}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Find\+Prev\+User\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Find\+Prev\+User\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaeee72c9de1fd48a427a9172bc6ec02b}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaeee72c9de1fd48a427a9172bc6ec02b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a3553118d800278eb9ab467c64de063a6}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!key@{key}}
+\index{key@{key}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Slice} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a3553118d800278eb9ab467c64de063a6}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_ad17feced6e24a1b21db5ae6940c1f220}{leveldb\+::\+Iterator}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a3553118d800278eb9ab467c64de063a6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af75033acd508d52aaf43987fa9ffe194}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Next@{Next}}
+\index{Next@{Next}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af75033acd508d52aaf43987fa9ffe194}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_aea54a5ca7eb942eb15770820529410e7}{leveldb\+::\+Iterator}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af75033acd508d52aaf43987fa9ffe194_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a2202015b85f31a603f4b00ce2622d761}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\+B\+Iter} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a2202015b85f31a603f4b00ce2622d761}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_acbf3dbf6311908fbee425b26a38985bb}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Parse\+Key@{Parse\+Key}}
+\index{Parse\+Key@{Parse\+Key}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Parse\+Key}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Parse\+Key (
+\begin{DoxyParamCaption}
+\item[{{\bf Parsed\+Internal\+Key} $\ast$}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_acbf3dbf6311908fbee425b26a38985bb}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_acbf3dbf6311908fbee425b26a38985bb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a57bffd756f2824a053e9c95d793e815e}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Prev@{Prev}}
+\index{Prev@{Prev}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Prev}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Prev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a57bffd756f2824a053e9c95d793e815e}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_a28798d802a203788587dc6adc5bc729e}{leveldb\+::\+Iterator}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a57bffd756f2824a053e9c95d793e815e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8d4287979d92635c8bab8ee04c6d88d2}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Save\+Key@{Save\+Key}}
+\index{Save\+Key@{Save\+Key}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Save\+Key}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Save\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{k, }
+\item[{std\+::string $\ast$}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8d4287979d92635c8bab8ee04c6d88d2}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a8d4287979d92635c8bab8ee04c6d88d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af213fc2538e3b6002704e465bf0b74a2}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Seek@{Seek}}
+\index{Seek@{Seek}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Seek}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Seek (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af213fc2538e3b6002704e465bf0b74a2}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_a97a556e97ded60c677fbf4de7321ec44}{leveldb\+::\+Iterator}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_af213fc2538e3b6002704e465bf0b74a2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7960f352be2648eb7822201b4594baf5}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Seek\+To\+First@{Seek\+To\+First}}
+\index{Seek\+To\+First@{Seek\+To\+First}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Seek\+To\+First}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Seek\+To\+First (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7960f352be2648eb7822201b4594baf5}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_a3594967cf26ddf1d37c7b886bb48627e}{leveldb\+::\+Iterator}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7960f352be2648eb7822201b4594baf5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9357ea6d3c8d3c12b11306a154fbf1bb}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Seek\+To\+Last@{Seek\+To\+Last}}
+\index{Seek\+To\+Last@{Seek\+To\+Last}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Seek\+To\+Last}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Seek\+To\+Last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9357ea6d3c8d3c12b11306a154fbf1bb}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_a8ad637f0a759e6d94cca6c5b4db440d3}{leveldb\+::\+Iterator}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a9357ea6d3c8d3c12b11306a154fbf1bb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaf4ed1cad19fb5fe6cc20ca80fbbced1}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!status@{status}}
+\index{status@{status}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Status} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaf4ed1cad19fb5fe6cc20ca80fbbced1}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_ac84f34623a031b7eeb23409320f76376}{leveldb\+::\+Iterator}.
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_afb59f11fbf9feb083f5144023e598991}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!Valid@{Valid}}
+\index{Valid@{Valid}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{Valid}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_afb59f11fbf9feb083f5144023e598991}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_a38614978bfa0586327b8e237bcb46012}{leveldb\+::\+Iterator}.
+
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a1ec1d37cc4efbfcd0ecc2dfd9d1881c4}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!value@{value}}
+\index{value@{value}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Slice} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a1ec1d37cc4efbfcd0ecc2dfd9d1881c4}
+
+
+Implements \hyperlink{classleveldb_1_1_iterator_a613ac2e965518aad7a064c64c72bcf7c}{leveldb\+::\+Iterator}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7246be546b528eac57ade0edec73da11}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!dbname\+\_\+@{dbname\+\_\+}}
+\index{dbname\+\_\+@{dbname\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{dbname\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string$\ast$ const leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::dbname\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a7246be546b528eac57ade0edec73da11}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_ab0d3488a45ba1d7332022dceb64471aa}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!direction\+\_\+@{direction\+\_\+}}
+\index{direction\+\_\+@{direction\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{direction\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::direction\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_ab0d3488a45ba1d7332022dceb64471aa}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaa28248c085f5d542b30d44dfe96a606}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!env\+\_\+@{env\+\_\+}}
+\index{env\+\_\+@{env\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{env\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Env}$\ast$ const leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::env\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aaa28248c085f5d542b30d44dfe96a606}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aeed2814a4ed3b02242a24392cd876ddf}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!iter\+\_\+@{iter\+\_\+}}
+\index{iter\+\_\+@{iter\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{iter\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator}$\ast$ const leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::iter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_aeed2814a4ed3b02242a24392cd876ddf}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a6b0a51eb1b576f28b6eb20b21681dce5}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!saved\+\_\+key\+\_\+@{saved\+\_\+key\+\_\+}}
+\index{saved\+\_\+key\+\_\+@{saved\+\_\+key\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{saved\+\_\+key\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::saved\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a6b0a51eb1b576f28b6eb20b21681dce5}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a4b03b30047cdc84ddc13fdf881b9d523}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!saved\+\_\+value\+\_\+@{saved\+\_\+value\+\_\+}}
+\index{saved\+\_\+value\+\_\+@{saved\+\_\+value\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{saved\+\_\+value\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::saved\+\_\+value\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a4b03b30047cdc84ddc13fdf881b9d523}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a2900557bd9fc15837767a12544adfaaf}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!sequence\+\_\+@{sequence\+\_\+}}
+\index{sequence\+\_\+@{sequence\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{sequence\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sequence\+Number} const leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::sequence\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a2900557bd9fc15837767a12544adfaaf}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a96aeebf50536a2cc97a5cae63256fdc0}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!status\+\_\+@{status\+\_\+}}
+\index{status\+\_\+@{status\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{status\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::status\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a96aeebf50536a2cc97a5cae63256fdc0}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a235c988747c2c2259c9de66a9950496e}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!user\+\_\+comparator\+\_\+@{user\+\_\+comparator\+\_\+}}
+\index{user\+\_\+comparator\+\_\+@{user\+\_\+comparator\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{user\+\_\+comparator\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Comparator}$\ast$ const leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::user\+\_\+comparator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a235c988747c2c2259c9de66a9950496e}
+\hypertarget{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a647dfc231e50cc8d7b67e46ff66b47b1}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}!valid\+\_\+@{valid\+\_\+}}
+\index{valid\+\_\+@{valid\+\_\+}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+iter.\+cc\rcurly{}\+::\+D\+B\+Iter}}
+\subsubsection[{valid\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{db\+\_\+iter.\+cc\}\+::D\+B\+Iter\+::valid\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1anonymous__namespace_02db__iter_8cc_03_1_1_d_b_iter_a647dfc231e50cc8d7b67e46ff66b47b1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\hyperlink{db__iter_8cc}{db\+\_\+iter.\+cc}\end{DoxyCompactItemize}

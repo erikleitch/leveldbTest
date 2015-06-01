@@ -1,0 +1,4 @@
+<map id="leveldb_iterator_t" name="leveldb_iterator_t">
+<area shape="rect" id="node2" href="$classleveldb_1_1_iterator.html" title="{leveldb::Iterator\n||+ Iterator()\l+ ~Iterator()\l+ Valid()\l+ SeekToFirst()\l+ SeekToLast()\l+ Seek()\l+ Next()\l+ Prev()\l+ key()\l+ value()\l+ status()\l+ RegisterCleanup()\l&#45; Iterator()\l&#45; operator=()\l}" alt="" coords="5,180,146,427"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1_iterator_1_1_cleanup.html" title="{leveldb::Iterator::\lCleanup\n|+ function\l+ arg1\l+ arg2\l|}" alt="" coords="16,5,136,119"/>
+</map>

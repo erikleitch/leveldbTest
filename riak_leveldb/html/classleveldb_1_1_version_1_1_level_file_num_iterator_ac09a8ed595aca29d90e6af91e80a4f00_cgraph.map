@@ -1,0 +1,5 @@
+<map id="leveldb::Version::LevelFileNumIterator::value" name="leveldb::Version::LevelFileNumIterator::value">
+<area shape="rect" id="node2" href="$classleveldb_1_1_version_1_1_level_file_num_iterator.html#afb097a457cd972895393b3fbde7e2ad2" title="leveldb::Version::LevelFile\lNumIterator::Valid" alt="" coords="230,5,406,44"/>
+<area shape="rect" id="node3" href="$namespaceleveldb.html#a725a2c0ebf763116b4ca3fb78564ff70" title="leveldb::EncodeFixed64" alt="" coords="236,68,400,93"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#a265d1eea2e5d8e42cf86372ed4904886" title="leveldb::EncodeFixed32" alt="" coords="236,117,400,143"/>
+</map>

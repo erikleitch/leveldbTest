@@ -1,0 +1,11 @@
+<map id="leveldb::VersionSet::MaxNextLevelOverlappingBytes" name="leveldb::VersionSet::MaxNextLevelOverlappingBytes">
+<area shape="rect" id="node2" href="$classleveldb_1_1_version.html#afd86dffba7ce5229778bddd546517392" title="leveldb::Version::GetOverlapping\lInputs" alt="" coords="272,119,488,157"/>
+<area shape="rect" id="node10" href="$namespaceleveldb.html#a8d7291b08be6643bcfb46c475f779f9e" title="ULL above needed to compile on OSX 10.7.3. " alt="" coords="307,181,453,207"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_internal_key.html#a8eeee76862e806006549784fe21fff61" title="leveldb::InternalKey\l::user_key" alt="" coords="571,24,710,63"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_internal_key_comparator.html#a86ca575a4560bb76e2bcebc0618abd31" title="leveldb::InternalKeyComparator\l::user_comparator" alt="" coords="536,87,745,125"/>
+<area shape="rect" id="node8" href="$structleveldb_1_1_comparator.html#a05dae6edcad3c7db23827c0233d74039" title="leveldb::Comparator\l::Compare" alt="" coords="570,149,711,188"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_slice.html#ab9b6e340e8a483a5cf713f6be17709e3" title="leveldb::Slice::clear" alt="" coords="572,212,709,237"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="793,31,957,56"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="1006,5,1137,31"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="1005,55,1138,80"/>
+</map>

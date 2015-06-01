@@ -1,0 +1,86 @@
+\hypertarget{throttle_8cc}{}\section{util/throttle.cc File Reference}
+\label{throttle_8cc}\index{util/throttle.\+cc@{util/throttle.\+cc}}
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}leveldb/perf\+\_\+count.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/cache2.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/db\+\_\+list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/flexcache.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/throttle.\+h\char`\"{}}\\*
+Include dependency graph for throttle.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{throttle_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structleveldb_1_1_throttle_data__t}{leveldb\+::\+Throttle\+Data\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{throttle_8cc_ac239c49c75fe1a70ecad64ef92f298ba}{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S}~60
+\item 
+\#define \hyperlink{throttle_8cc_a7f8d7237e0230131be5f9295964c573a}{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E}~\hyperlink{throttle_8cc_ac239c49c75fe1a70ecad64ef92f298ba}{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S}$\ast$1000000
+\item 
+\#define \hyperlink{throttle_8cc_aa89c0c721456e982b8c614fba8736ecb}{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G}~17
+\item 
+\#define \hyperlink{throttle_8cc_a00f144fa7b505729025966b0975db3c1}{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S}~63
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{namespaceleveldb_a4357314f0004317ee2a4567ba736d758}{leveldb\+::\+Throttle\+Thread} (void $\ast$arg)
+\item 
+void \hyperlink{namespaceleveldb_a1998d4a87d7a0b044e4df99dcd674b13}{leveldb\+::\+Throttle\+Init} ()
+\item 
+void \hyperlink{namespaceleveldb_ae56d2c32c5ea858a30293307819447e5}{leveldb\+::\+Set\+Throttle\+Write\+Rate} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} Micros, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} Keys, bool Is\+Level0, int Backlog)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{namespaceleveldb_a0350c0787b44096c0a5be7efb8db757b}{leveldb\+::\+Get\+Throttle\+Write\+Rate} ()
+\item 
+void \hyperlink{namespaceleveldb_af37c64d9a570244c29a0c11b51fb8968}{leveldb\+::\+Throttle\+Shutdown} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+rwlock\+\_\+t \hyperlink{namespaceleveldb_a2663d2a0f893e7b99a6a70d095c9c817}{leveldb\+::g\+Thread\+Lock0}
+\item 
+pthread\+\_\+rwlock\+\_\+t \hyperlink{namespaceleveldb_a05937ca7e46b15b3ffaa538731c504c7}{leveldb\+::g\+Thread\+Lock1}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{namespaceleveldb_ad319fe0238582e12b35184408caa8d84}{leveldb\+::g\+Throttle\+Mutex} = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R
+\item 
+pthread\+\_\+cond\+\_\+t \hyperlink{namespaceleveldb_a108ce3552e85648b1e14569098a4e10c}{leveldb\+::g\+Throttle\+Cond} = P\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+D\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R
+\item 
+Throttle\+Data\+\_\+t \hyperlink{namespaceleveldb_ae106f97bf9649a1107156a56a1abf45d}{leveldb\+::g\+Throttle\+Data} \mbox{[}\hyperlink{throttle_8cc_a00f144fa7b505729025966b0975db3c1}{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S}\mbox{]}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{namespaceleveldb_a70f24d9eb7f5dbcf2a645e9b0d107c57}{leveldb\+::g\+Throttle\+Rate}
+\item 
+static bool \hyperlink{namespaceleveldb_a12e60e75f801147cc1e1d3f1e507e5f8}{leveldb\+::g\+Throttle\+Running} =false
+\item 
+static pthread\+\_\+t \hyperlink{namespaceleveldb_a1babbd85d865b9a9b33e0a09163a0209}{leveldb\+::g\+Throttle\+Thread\+Id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{throttle_8cc_a00f144fa7b505729025966b0975db3c1}{}\index{throttle.\+cc@{throttle.\+cc}!T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S}}
+\index{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S}!throttle.\+cc@{throttle.\+cc}}
+\subsubsection[{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+S~63}\label{throttle_8cc_a00f144fa7b505729025966b0975db3c1}
+\hypertarget{throttle_8cc_aa89c0c721456e982b8c614fba8736ecb}{}\index{throttle.\+cc@{throttle.\+cc}!T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G}}
+\index{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G}!throttle.\+cc@{throttle.\+cc}}
+\subsubsection[{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G~17}\label{throttle_8cc_aa89c0c721456e982b8c614fba8736ecb}
+\hypertarget{throttle_8cc_ac239c49c75fe1a70ecad64ef92f298ba}{}\index{throttle.\+cc@{throttle.\+cc}!T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S}}
+\index{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S}!throttle.\+cc@{throttle.\+cc}}
+\subsubsection[{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S~60}\label{throttle_8cc_ac239c49c75fe1a70ecad64ef92f298ba}
+\hypertarget{throttle_8cc_a7f8d7237e0230131be5f9295964c573a}{}\index{throttle.\+cc@{throttle.\+cc}!T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E}}
+\index{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E@{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E}!throttle.\+cc@{throttle.\+cc}}
+\subsubsection[{T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+T\+I\+M\+E~{\bf T\+H\+R\+O\+T\+T\+L\+E\+\_\+\+S\+E\+C\+O\+N\+D\+S}$\ast$1000000}\label{throttle_8cc_a7f8d7237e0230131be5f9295964c573a}

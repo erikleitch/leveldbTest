@@ -1,0 +1,4 @@
+<map id="leveldb::InternalFilterPolicy2" name="leveldb::InternalFilterPolicy2">
+<area shape="rect" id="node2" href="$classleveldb_1_1_internal_filter_policy.html" title="{leveldb::InternalFilterPolicy\n||+ InternalFilterPolicy()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="9,220,190,333"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_filter_policy.html" title="{leveldb::FilterPolicy\n||+ FilterPolicy()\l+ ~FilterPolicy()\l+ GetNext()\l+ SetNext()\l+ Name()\l+ CreateFilter()\l+ KeyMayMatch()\l}" alt="" coords="31,5,167,159"/>
+</map>

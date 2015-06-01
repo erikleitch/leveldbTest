@@ -1,0 +1,5 @@
+<map id="leveldb::anonymous_namespace{version_set.cc}::Saver" name="leveldb::anonymous_namespace{version_set.cc}::Saver">
+<area shape="rect" id="node2" href="$structleveldb_1_1_comparator.html" title="{leveldb::Comparator\n||+ operator()()\l+ ~Comparator()\l+ Compare()\l+ Name()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l}" alt="" coords="5,59,181,199"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html" title="{leveldb::Slice\n|&#45; data_\l&#45; size_\l|+ Slice()\l+ Slice()\l+ Slice()\l+ Slice()\l+ data()\l+ size()\l+ empty()\l+ operator[]()\l+ clear()\l+ remove_prefix()\l+ ToString()\l+ compare()\l+ starts_with()\l}" alt="" coords="205,5,331,252"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_value.html" title="{leveldb::Value\n||+ assign()\l# ~Value()\l}" alt="" coords="355,85,459,172"/>
+</map>

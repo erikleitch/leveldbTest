@@ -1,0 +1,4 @@
+<map id="leveldb::WriteBatch::Handler" name="leveldb::WriteBatch::Handler">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02leveldb__main_8cc_03_1_1_write_batch_item_printer.html" title="{leveldb::anonymous\l_namespace\{leveldb_main.cc\}\l::WriteBatchItemPrinter\n|+ offset_\l+ sequence_\l|+ Put()\l+ Delete()\l}" alt="" coords="5,167,208,293"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1anonymous__namespace_02write__batch_8cc_03_1_1_mem_table_inserter.html" title="{leveldb::anonymous\l_namespace\{write_batch.cc\}\l::MemTableInserter\n|+ sequence_\l+ mem_\l|+ Put()\l+ Delete()\l}" alt="" coords="232,167,424,293"/>
+</map>

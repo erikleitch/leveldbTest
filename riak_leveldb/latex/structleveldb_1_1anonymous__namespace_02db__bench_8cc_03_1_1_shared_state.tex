@@ -1,0 +1,68 @@
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state}{}\section{leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+:\+:Shared\+State Struct Reference}
+\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+
+
+Collaboration diagram for leveldb\+:\+:anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+:\+:Shared\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_ac53cfd2acbef41301c4cf33182e0cf2b}{Shared\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_mutex}{port\+::\+Mutex} \hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_ada314e8ff48e6409acfcdd06ad7ae905}{mu}
+\item 
+\hyperlink{classleveldb_1_1port_1_1_cond_var}{port\+::\+Cond\+Var} \hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_afbb55e80ee993fa55e4f8b887bf14945}{cv}
+\item 
+int \hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a89bdd25e1515a59494cb1cc4b11283c0}{total}
+\item 
+int \hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a06982cd9f8ad39fceec4cce13c49ef78}{num\+\_\+initialized}
+\item 
+int \hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a9f161eefe9ee952e9fe6b183b53a317d}{num\+\_\+done}
+\item 
+bool \hyperlink{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a4524c3bfdfc8b94ddd4f66f3d60cc8c4}{start}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_ac53cfd2acbef41301c4cf33182e0cf2b}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!Shared\+State@{Shared\+State}}
+\index{Shared\+State@{Shared\+State}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{Shared\+State}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::\+Shared\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_ac53cfd2acbef41301c4cf33182e0cf2b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_afbb55e80ee993fa55e4f8b887bf14945}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!cv@{cv}}
+\index{cv@{cv}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{cv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Cond\+Var} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::cv}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_afbb55e80ee993fa55e4f8b887bf14945}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_ada314e8ff48e6409acfcdd06ad7ae905}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!mu@{mu}}
+\index{mu@{mu}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{mu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Mutex} leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::mu}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_ada314e8ff48e6409acfcdd06ad7ae905}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a9f161eefe9ee952e9fe6b183b53a317d}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!num\+\_\+done@{num\+\_\+done}}
+\index{num\+\_\+done@{num\+\_\+done}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{num\+\_\+done}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::num\+\_\+done}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a9f161eefe9ee952e9fe6b183b53a317d}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a06982cd9f8ad39fceec4cce13c49ef78}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!num\+\_\+initialized@{num\+\_\+initialized}}
+\index{num\+\_\+initialized@{num\+\_\+initialized}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{num\+\_\+initialized}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::num\+\_\+initialized}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a06982cd9f8ad39fceec4cce13c49ef78}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a4524c3bfdfc8b94ddd4f66f3d60cc8c4}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!start@{start}}
+\index{start@{start}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::start}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a4524c3bfdfc8b94ddd4f66f3d60cc8c4}
+\hypertarget{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a89bdd25e1515a59494cb1cc4b11283c0}{}\index{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}!total@{total}}
+\index{total@{total}!leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State@{leveldb\+::anonymous\+\_\+namespace\lcurly{}db\+\_\+bench.\+cc\rcurly{}\+::\+Shared\+State}}
+\subsubsection[{total}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::anonymous\+\_\+namespace\{db\+\_\+bench.\+cc\}\+::Shared\+State\+::total}\label{structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_shared_state_a89bdd25e1515a59494cb1cc4b11283c0}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\hyperlink{db__bench_8cc}{db\+\_\+bench.\+cc}\end{DoxyCompactItemize}

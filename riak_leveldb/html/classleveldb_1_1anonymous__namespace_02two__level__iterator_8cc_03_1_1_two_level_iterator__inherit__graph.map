@@ -1,0 +1,3 @@
+<map id="leveldb::anonymous_namespace{two_level_iterator.cc}::TwoLevelIterator" name="leveldb::anonymous_namespace{two_level_iterator.cc}::TwoLevelIterator">
+<area shape="rect" id="node2" href="$classleveldb_1_1_iterator.html" title="{leveldb::Iterator\n|&#45; cleanup_\l|+ Iterator()\l+ ~Iterator()\l+ Valid()\l+ SeekToFirst()\l+ SeekToLast()\l+ Seek()\l+ Next()\l+ Prev()\l+ key()\l+ value()\l+ status()\l+ RegisterCleanup()\l&#45; Iterator()\l&#45; operator=()\l}" alt="" coords="49,5,190,252"/>
+</map>

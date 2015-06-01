@@ -1,0 +1,7 @@
+<map id="ErrorCheck" name="ErrorCheck">
+<area shape="rect" id="node2" href="$classleveldb_1_1_benchmark.html#a32bd4ebe6df5e4f664a944d71b066bd5" title="leveldb::Benchmark\l::~Benchmark" alt="" coords="142,5,281,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_benchmark.html#a86876b2882d9015610330e69acfdff0d" title="leveldb::Benchmark\l::Write" alt="" coords="142,68,281,107"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_benchmark.html#afc9cf258a63488924e172fadc67c12f1" title="leveldb::Benchmark\l::Read" alt="" coords="142,131,281,169"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_benchmark.html#a301897d0609459c5e6072db05da6b737" title="leveldb::Benchmark\l::ReadSequential" alt="" coords="142,193,281,232"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="329,137,499,163"/>
+</map>

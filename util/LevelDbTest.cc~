@@ -1,0 +1,239 @@
+#include "gcp/util/Exception.h"
+#include "gcp/util/LevelDbTest.h"
+
+using namespace gcp::util;
+
+#include "leveldb/perf_count.h"
+
+/**.......................................................................
+ * Constructor.
+ */
+LevelDbTest::LevelDbTest() 
+{
+#ifdef RIAK
+  db_ = 0;
+  options_ = leveldb_options_create();
+  leveldb_options_set_create_if_missing(options_, 1);
+#else
+  db_ = 0;
+  options_.create_if_missing(true);
+#endif
+}
+
+/**.......................................................................
+ * Destructor.
+ */
+LevelDbTest::~LevelDbTest() 
+{
+  close();
+}
+
+void LevelDbTest::verify()
+{
+}
+
+void LevelDbTest::open()
+{
+  char* err = NULL;
+
+  std::string dbFile="/tmp/testdb";
+
+  db_ = leveldb_open(options_, dbFile.c_str(), &err);
+
+  processError(&err);
+}
+
+void LevelDbTest::close()
+{
+  if(db_) {
+    leveldb_close(db_);
+    db_ = 0;
+  }
+}
+
+void LevelDbTest::checkDb()
+{
+  if(db_ == 0)
+    ThrowSimpleColorError("No database has been opened", "red");
+}
+
+void LevelDbTest::checkStatus(std::string oper)
+{
+#ifndef RIAK
+  if(!status_.ok())
+    ThrowSimpleColorError(oper << "failed", "red");
+#endif
+}
+
+void LevelDbTest::get(std::string keyStr, std::string& valStr)
+{
+  checkDb();
+
+#ifdef RIAK
+  char* val = NULL;
+  char* err = NULL;
+
+  leveldb_readoptions_t* roptions = leveldb_readoptions_create();
+
+  size_t val_len = 0;
+  val = leveldb_get(db_, roptions, keyStr.c_str(), keyStr.size(), &val_len, &err);
+
+  processError(&err);
+
+  valStr = val;
+
+  free(&val);
+
+#else
+  leveldb::Slice key(keyStr);
+
+  status_ = db_->Get(leveldb::ReadOptions(), key, &valStr);
+  
+  checkStatus("Get");
+#endif
+}
+
+void LevelDbTest::testGet()
+{
+  leveldb_readoptions_t* roptions = leveldb_readoptions_create();
+  CheckGet(db_, roptions, "erik1");
+}
+
+void LevelDbTest::CheckGet(
+    leveldb_t* db,
+    const leveldb_readoptions_t* options,
+    const char* key) {
+  char* err = NULL;
+  size_t val_len;
+  char* val;
+  val = leveldb_get(db, options, key, strlen(key), &val_len, &err);
+}
+
+std::string LevelDbTest::get(std::string keyStr)
+{
+  checkDb();
+
+  std::string valStr;
+  leveldb::Slice key(keyStr);
+
+#if 0
+  status_ = db_->Get(leveldb::ReadOptions(), key, &valStr);
+#endif
+  
+  checkStatus("Get");
+
+  return valStr;
+}
+
+void LevelDbTest::put(std::string keyStr, std::string valStr)
+{
+  checkDb();
+
+#ifdef RIAK
+  char* err = NULL;
+
+  leveldb_writeoptions_t* woptions = leveldb_writeoptions_create();
+  leveldb_writeoptions_set_sync(woptions, false);
+  leveldb_put(db_, woptions, keyStr.c_str(), keyStr.size(), valStr.c_str(), valStr.size(), &err);
+  processError(&err);
+#else
+  leveldb::Slice key(keyStr);
+  leveldb::Slice val(valStr);
+
+#if 0
+  status_ = db_->Put(leveldb::WriteOptions(), key, val);
+#endif
+  
+  checkStatus("Put");
+#endif
+}
+
+void LevelDbTest::processError(char** err)
+{
+  std::ostringstream os;
+
+  if(*err != NULL) {
+    os << err;
+
+    free(err);
+
+    ThrowSimpleColorError(os.str(), "red");
+  }
+}
+
+void LevelDbTest::free(char** ptr)
+{
+  if(*ptr != NULL) {
+    ::free(*ptr);
+    *ptr = NULL;
+  }
+}
+
+void LevelDbTest::putSync(std::string keyStr, std::string valStr)
+{
+#ifdef RIAK
+  char* err = NULL;
+
+  leveldb_writeoptions_t* woptions = leveldb_writeoptions_create();
+  leveldb_writeoptions_set_sync(woptions, true);
+  leveldb_put(db_, woptions, keyStr.c_str(), keyStr.size(), valStr.c_str(), valStr.size(), &err);
+  processError(&err);
+#else
+
+  checkDb();
+
+  leveldb::Slice key(keyStr);
+  leveldb::Slice val(valStr);
+
+  leveldb::WriteOptions opts = leveldb::WriteOptions();
+  opts.sync = true;
+
+#if 0
+  status_ = db_->Put(opts, key, val);
+#endif
+
+  checkStatus("Put");
+#endif
+}
+
+void LevelDbTest::printAllKeys()
+{
+  checkDb();
+
+#ifdef RIAK
+  leveldb_readoptions_t* roptions = leveldb_readoptions_create();
+  leveldb_iterator_t* iter = leveldb_create_iterator(db_, roptions);
+
+  leveldb_iter_seek_to_first(iter);
+
+  COUT("Got an iter");
+  size_t keyLen=0;
+  const char*  keyVal=0;
+  while(leveldb_iter_valid(iter)) {
+    leveldb_iter_next(iter);
+
+    if(leveldb_iter_valid(iter)) {
+      keyVal=leveldb_iter_key(iter, &keyLen);
+      
+      std::string keyStr(keyVal, keyLen);
+      COUT(keyStr);
+    }
+  }
+
+  leveldb_iter_destroy(iter);
+
+#else
+  leveldb::Iterator* it = db_->NewIterator(leveldb::ReadOptions());
+
+  for (it->SeekToFirst(); it->Valid(); it->Next()) {
+    COUT(it->key().ToString() << ": "  << it->value().ToString());
+  }
+
+  delete it;
+#endif
+}
+
+void LevelDbTest::dumpPerfCount()
+{
+  gPerfCounters->Dump();
+}

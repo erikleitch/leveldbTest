@@ -1,0 +1,12 @@
+<map id="leveldb::anonymous_namespace{db_bench::cc}::Stats::Report" name="leveldb::anonymous_namespace{db_bench::cc}::Stats::Report">
+<area shape="rect" id="node2" href="$namespaceleveldb_1_1anonymous__namespace_02db__bench_8cc_03.html#adad447437f0b47a4f29b6f784422e1ec" title="leveldb::anonymous\l_namespace\{db_bench\l::cc\}::AppendWithSpace" alt="" coords="214,48,378,100"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a2cdd9fb649105033fde510afc9416732" title="leveldb::Slice::ToString" alt="" coords="218,136,374,161"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_histogram.html#a78fde129eef6d9072ff986afd18d1163" title="leveldb::Histogram\l::ToString" alt="" coords="230,209,362,248"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#a7d0b93d5801bff5656068647759dcb8f" title="leveldb::Slice::empty" alt="" coords="426,5,570,31"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="432,55,565,80"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="433,104,564,129"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_histogram.html#a72836120dc9000bd63048c2b53f21a64" title="leveldb::Histogram\l::Average" alt="" coords="432,153,564,192"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_histogram.html#a5eaea641e2c7c95364c98f5314e37d77" title="leveldb::Histogram\l::StandardDeviation" alt="" coords="429,216,567,255"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_histogram.html#acb3844fbaeeed8998843a4314904121a" title="leveldb::Histogram\l::Median" alt="" coords="432,279,564,317"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_histogram.html#a58aaefb11df105f26e9da73148b85a47" title="leveldb::Histogram\l::Percentile" alt="" coords="618,279,750,317"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="leveldb::BlockHandle::DecodeFrom" name="leveldb::BlockHandle::DecodeFrom">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#aeb35486038249293e9b823f97dd9df0c" title="leveldb::GetVarint64" alt="" coords="218,55,359,80"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_status.html#a8e3720d233281c874a53c17e081f51b3" title="leveldb::Status::OK" alt="" coords="221,104,356,129"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title="leveldb::Status::Corruption" alt="" coords="199,153,378,179"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="438,5,571,31"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="439,55,570,80"/>
+<area shape="rect" id="node5" href="$namespaceleveldb.html#ad4e90442ce919c86fb769bf138670d75" title="leveldb::GetVarint64Ptr" alt="" coords="426,104,584,129"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="428,153,582,179"/>
+</map>

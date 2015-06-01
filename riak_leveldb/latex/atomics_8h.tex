@@ -1,0 +1,54 @@
+\hypertarget{atomics_8h}{}\section{include/leveldb/atomics.h File Reference}
+\label{atomics_8h}\index{include/leveldb/atomics.\+h@{include/leveldb/atomics.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for atomics.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{atomics_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{atomics_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Ptr\+T , typename Value\+T $>$ }\\bool \hyperlink{namespaceleveldb_af5322e69459aac7a07f6a82d759e6c44}{leveldb\+::compare\+\_\+and\+\_\+swap} (volatile Ptr\+T $\ast$ptr, const Value\+T \&comp\+\_\+val, const Value\+T \&exchange\+\_\+val)
+\item 
+{\footnotesize template$<$$>$ }\\bool \hyperlink{namespaceleveldb_a73d05b39e210c5323659e9dd619dd312}{leveldb\+::compare\+\_\+and\+\_\+swap} (volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$ptr, const int \&comp\+\_\+val, const int \&exchange\+\_\+val)
+\item 
+{\footnotesize template$<$typename Value\+T $>$ }\\Value\+T \hyperlink{namespaceleveldb_a67927dd93f0898faf24c57287d80711d}{leveldb\+::inc\+\_\+and\+\_\+fetch} (volatile Value\+T $\ast$ptr)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{namespaceleveldb_a22ae82bd0b60b9b512a2d214b535aba9}{leveldb\+::inc\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$ptr)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{namespaceleveldb_a16e4f8442462f6e89593d482b09d6739}{leveldb\+::inc\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$ptr)
+\item 
+{\footnotesize template$<$typename Value\+T $>$ }\\Value\+T \hyperlink{namespaceleveldb_a437024ea38c14ba5841de02d0f38fbb5}{leveldb\+::dec\+\_\+and\+\_\+fetch} (volatile Value\+T $\ast$ptr)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{namespaceleveldb_af76014c7795484842e886b5fa79ceb4f}{leveldb\+::dec\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$ptr)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{namespaceleveldb_a248d8995cc0b4f3817cbfcc504e0f059}{leveldb\+::dec\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$ptr)
+\item 
+{\footnotesize template$<$typename Value\+T $>$ }\\Value\+T \hyperlink{namespaceleveldb_a4d4bc2d891ebb3c725cb8364baf6e2a6}{leveldb\+::add\+\_\+and\+\_\+fetch} (volatile Value\+T $\ast$ptr, Value\+T val)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{namespaceleveldb_a0975a76e5dd0dc8846e5048e7e2567f1}{leveldb\+::add\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$ptr, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} val)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{namespaceleveldb_a176cf157fd5368af50a2070377152fa8}{leveldb\+::add\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$ptr, \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} val)
+\item 
+{\footnotesize template$<$typename Value\+T $>$ }\\Value\+T \hyperlink{namespaceleveldb_ae691d90ebc34252c3f5be20f6d904c92}{leveldb\+::sub\+\_\+and\+\_\+fetch} (volatile Value\+T $\ast$ptr, Value\+T val)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{namespaceleveldb_a31c7f849de2ce850c86705e27c64046e}{leveldb\+::sub\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$ptr, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} val)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{namespaceleveldb_a2747d6b8f90127c39a7c5f534ac0abdd}{leveldb\+::sub\+\_\+and\+\_\+fetch} (volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$ptr, \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} val)
+\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="leveldb::anonymous_namespace{cache.cc}::LRUCache" name="leveldb::anonymous_namespace{cache.cc}::LRUCache">
+<area shape="rect" id="node2" href="$classleveldb_1_1_cache.html" title="{leveldb::Cache\n|&#45; rep_\l|+ Cache()\l+ ~Cache()\l+ Insert()\l+ Lookup()\l+ Release()\l+ Value()\l+ Erase()\l+ NewId()\l+ EntryOverheadSize()\l+ Addref()\l&#45; LRU_Remove()\l&#45; LRU_Append()\l&#45; Unref()\l&#45; Cache()\l&#45; operator=()\l}" alt="" coords="6,5,164,265"/>
+</map>

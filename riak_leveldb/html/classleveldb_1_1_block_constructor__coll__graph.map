@@ -1,0 +1,5 @@
+<map id="leveldb::BlockConstructor" name="leveldb::BlockConstructor">
+<area shape="rect" id="node2" href="$classleveldb_1_1_constructor.html" title="{leveldb::Constructor\n|&#45; data_\l|+ Constructor()\l+ ~Constructor()\l+ Add()\l+ Finish()\l+ FinishImpl()\l+ NewIterator()\l+ data()\l+ db()\l}" alt="" coords="5,19,145,185"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_block.html" title="{leveldb::Block\n|&#45; data_\l&#45; size_\l&#45; restart_offset_\l&#45; owned_\l|+ Block()\l+ ~Block()\l+ size()\l+ NewIterator()\l+ NumRestarts()\l&#45; Block()\l&#45; operator=()\l}" alt="" coords="169,5,288,199"/>
+<area shape="rect" id="node4" href="$structleveldb_1_1_comparator.html" title="{leveldb::Comparator\n||+ operator()()\l+ ~Comparator()\l+ Compare()\l+ Name()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l}" alt="" coords="313,32,489,172"/>
+</map>

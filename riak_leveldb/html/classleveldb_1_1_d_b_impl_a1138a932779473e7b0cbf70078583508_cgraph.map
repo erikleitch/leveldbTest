@@ -1,0 +1,4 @@
+<map id="leveldb::DBImpl::IsCompactionScheduled" name="leveldb::DBImpl::IsCompactionScheduled">
+<area shape="rect" id="node2" href="$classleveldb_1_1port_1_1_mutex.html#a9793393529f59bbb4adaf152bbbab42c" title="leveldb::port::Mutex\l::AssertHeld" alt="" coords="273,5,411,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_version_set.html#a8645a78e2a7cd20c6a1a09ccfec30561" title="leveldb::VersionSet\l::IsCompactionSubmitted" alt="" coords="257,68,427,107"/>
+</map>

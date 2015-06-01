@@ -1,0 +1,181 @@
+\hypertarget{classleveldb_1_1_thread_task}{}\section{leveldb\+:\+:Thread\+Task Class Reference}
+\label{classleveldb_1_1_thread_task}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+
+
+{\ttfamily \#include $<$thread\+\_\+tasks.\+h$>$}
+
+
+
+Inheritance diagram for leveldb\+:\+:Thread\+Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_thread_task__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:Thread\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classleveldb_1_1_thread_task__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_thread_task_a022062e8b04f38dc2422c3e6725bff8b}{Thread\+Task} ()
+\item 
+virtual \hyperlink{classleveldb_1_1_thread_task_a0ce1739c4b93a113659bfc013a95f54f}{$\sim$\+Thread\+Task} ()
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_thread_task_a9e990c2a42edda1628a44396b1255071}{Ref\+Inc} ()
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_thread_task_af2ab24134ff01ad440222c3109dc5db2}{Ref\+Dec} ()
+\item 
+virtual void \hyperlink{classleveldb_1_1_thread_task_a0d013b69001558efd2d32519ceecb51c}{operator()} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_thread_task_ad8bd1c18e4dca18b192dab8574b408c4}{m\+\_\+\+Queue\+Start}
+\begin{DoxyCompactList}\small\item\em Now\+Micros() time placed on work queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_thread_task_aa5ae24ffb26e826b411ef1f452004201}{m\+\_\+\+Ref\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_thread_task_a1b8e0b6a25c6bf7a7c32a4c77f80d802}{Thread\+Task} (const \hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} \&)
+\item 
+\hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} \& \hyperlink{classleveldb_1_1_thread_task_a06eee64da2f8bc92644c8b7550b8b6fc}{operator=} (const \hyperlink{classleveldb_1_1_thread_task}{Thread\+Task} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Virtual base class for leveldb background tasks 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_thread_task_a022062e8b04f38dc2422c3e6725bff8b}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!Thread\+Task@{Thread\+Task}}
+\index{Thread\+Task@{Thread\+Task}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{Thread\+Task}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Thread\+Task\+::\+Thread\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_thread_task_a022062e8b04f38dc2422c3e6725bff8b}
+\hypertarget{classleveldb_1_1_thread_task_a0ce1739c4b93a113659bfc013a95f54f}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!````~Thread\+Task@{$\sim$\+Thread\+Task}}
+\index{````~Thread\+Task@{$\sim$\+Thread\+Task}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{$\sim$\+Thread\+Task}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::\+Thread\+Task\+::$\sim$\+Thread\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_thread_task_a0ce1739c4b93a113659bfc013a95f54f}
+\hypertarget{classleveldb_1_1_thread_task_a1b8e0b6a25c6bf7a7c32a4c77f80d802}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!Thread\+Task@{Thread\+Task}}
+\index{Thread\+Task@{Thread\+Task}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{Thread\+Task}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Thread\+Task\+::\+Thread\+Task (
+\begin{DoxyParamCaption}
+\item[{const {\bf Thread\+Task} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_thread_task_a1b8e0b6a25c6bf7a7c32a4c77f80d802}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_thread_task_a0d013b69001558efd2d32519ceecb51c}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!operator()@{operator()}}
+\index{operator()@{operator()}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::\+Thread\+Task\+::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classleveldb_1_1_thread_task_a0d013b69001558efd2d32519ceecb51c}
+
+
+Implemented in \hyperlink{classleveldb_1_1_legacy_task_a82614478501d15d5efec0b35694a6aa8}{leveldb\+::\+Legacy\+Task}, \hyperlink{classleveldb_1_1_compaction_task_a289decac6d18732d37dfef0584ba4350}{leveldb\+::\+Compaction\+Task}, \hyperlink{classleveldb_1_1_imm_write_task_a7cec4d0a9c768feacded04d654723539}{leveldb\+::\+Imm\+Write\+Task}, and \hyperlink{classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_b_g_close_info_ac9267307a99c588777902ce3e7e28845}{leveldb\+::anonymous\+\_\+namespace\{env\+\_\+posix.\+cc\}\+::\+B\+G\+Close\+Info}.
+
+\hypertarget{classleveldb_1_1_thread_task_a06eee64da2f8bc92644c8b7550b8b6fc}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Thread\+Task}\& leveldb\+::\+Thread\+Task\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Thread\+Task} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_thread_task_a06eee64da2f8bc92644c8b7550b8b6fc}
+\hypertarget{classleveldb_1_1_thread_task_af2ab24134ff01ad440222c3109dc5db2}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!Ref\+Dec@{Ref\+Dec}}
+\index{Ref\+Dec@{Ref\+Dec}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{Ref\+Dec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Thread\+Task\+::\+Ref\+Dec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_thread_task_af2ab24134ff01ad440222c3109dc5db2}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classleveldb_1_1_thread_task_af2ab24134ff01ad440222c3109dc5db2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_thread_task_af2ab24134ff01ad440222c3109dc5db2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_thread_task_a9e990c2a42edda1628a44396b1255071}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!Ref\+Inc@{Ref\+Inc}}
+\index{Ref\+Inc@{Ref\+Inc}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{Ref\+Inc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Thread\+Task\+::\+Ref\+Inc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_thread_task_a9e990c2a42edda1628a44396b1255071}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classleveldb_1_1_thread_task_a9e990c2a42edda1628a44396b1255071_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_thread_task_a9e990c2a42edda1628a44396b1255071_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_thread_task_ad8bd1c18e4dca18b192dab8574b408c4}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!m\+\_\+\+Queue\+Start@{m\+\_\+\+Queue\+Start}}
+\index{m\+\_\+\+Queue\+Start@{m\+\_\+\+Queue\+Start}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{m\+\_\+\+Queue\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Thread\+Task\+::m\+\_\+\+Queue\+Start}\label{classleveldb_1_1_thread_task_ad8bd1c18e4dca18b192dab8574b408c4}
+
+
+Now\+Micros() time placed on work queue. 
+
+\hypertarget{classleveldb_1_1_thread_task_aa5ae24ffb26e826b411ef1f452004201}{}\index{leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}!m\+\_\+\+Ref\+Count@{m\+\_\+\+Ref\+Count}}
+\index{m\+\_\+\+Ref\+Count@{m\+\_\+\+Ref\+Count}!leveldb\+::\+Thread\+Task@{leveldb\+::\+Thread\+Task}}
+\subsubsection[{m\+\_\+\+Ref\+Count}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint32\+\_\+t} leveldb\+::\+Thread\+Task\+::m\+\_\+\+Ref\+Count\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_thread_task_aa5ae24ffb26e826b411ef1f452004201}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{thread__tasks_8h}{thread\+\_\+tasks.\+h}\end{DoxyCompactItemize}

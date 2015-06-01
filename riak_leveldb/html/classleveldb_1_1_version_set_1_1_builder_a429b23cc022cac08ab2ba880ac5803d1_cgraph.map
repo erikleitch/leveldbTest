@@ -1,0 +1,17 @@
+<map id="leveldb::VersionSet::Builder::SaveTo" name="leveldb::VersionSet::Builder::SaveTo">
+<area shape="rect" id="node2" href="$classleveldb_1_1_version_set_1_1_builder.html#aa90e0d9d0f8e05b8bcfa879d4f4a88c6" title="leveldb::VersionSet\l::Builder::MaybeAddFile" alt="" coords="189,194,352,233"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_internal_key_comparator.html#a6469a0d67a9025173d31ec6e1cd5f80e" title="leveldb::InternalKeyComparator\l::Compare" alt="" coords="400,194,609,233"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_internal_key.html#a737053e1b02c3eb8361e960f7fe5befb" title="leveldb::InternalKey\l::DebugString" alt="" coords="201,324,339,362"/>
+<area shape="rect" id="node4" href="$structleveldb_1_1_comparator.html#a05dae6edcad3c7db23827c0233d74039" title="leveldb::Comparator\l::Compare" alt="" coords="695,45,836,84"/>
+<area shape="rect" id="node5" href="$namespaceleveldb.html#a1c889869840312393b805ad91a41b94f" title="leveldb::ExtractUserKey" alt="" coords="684,108,847,133"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="939,310,1070,336"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="938,108,1071,133"/>
+<area shape="rect" id="node8" href="$namespaceleveldb.html#a239098b0291873752d0be16633652825" title="leveldb::DecodeFixed64" alt="" coords="683,260,848,285"/>
+<area shape="rect" id="node9" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="922,260,1087,285"/>
+<area shape="rect" id="node11" href="$namespaceleveldb.html#a5a173b622e86c7a2f9beae3ac8818ac3" title="leveldb::ParseInternalKey" alt="" coords="417,281,591,306"/>
+<area shape="rect" id="node12" href="$structleveldb_1_1_parsed_internal_key.html#abda4655ea6857f75dcb8f409873207d5" title="leveldb::ParsedInternalKey\l::DebugString" alt="" coords="414,404,594,442"/>
+<area shape="rect" id="node15" href="$namespaceleveldb.html#a6d50705a37d7459f152f8ad839513a73" title="leveldb::EscapeString" alt="" coords="429,342,579,368"/>
+<area shape="rect" id="node13" href="$namespaceleveldb.html#a7facfadd4abd4352097ff14d5ab83bb2" title="leveldb::HexString" alt="" coords="701,410,830,436"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_slice.html#a2cdd9fb649105033fde510afc9416732" title="leveldb::Slice::ToString" alt="" coords="687,460,844,485"/>
+<area shape="rect" id="node16" href="$namespaceleveldb.html#aa4dfa82a4c1a31fcb076f2ba59f13b19" title="leveldb::AppendEscapedStringTo" alt="" coords="657,361,874,386"/>
+</map>

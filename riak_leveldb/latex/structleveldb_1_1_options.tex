@@ -1,0 +1,207 @@
+\hypertarget{structleveldb_1_1_options}{}\section{leveldb\+:\+:Options Struct Reference}
+\label{structleveldb_1_1_options}\index{leveldb\+::\+Options@{leveldb\+::\+Options}}
+
+
+{\ttfamily \#include $<$options.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Options\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_options__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structleveldb_1_1_options_a52d77c894795ba83077045daeab3d581}{Options} ()
+\item 
+void \hyperlink{structleveldb_1_1_options_a026f9b0658bf83c358ea3c990073c00d}{Dump} (\hyperlink{classleveldb_1_1_logger}{Logger} $\ast$log) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structleveldb_1_1_comparator}{Comparator} $\ast$ \hyperlink{structleveldb_1_1_options_a7522fbf79de73c4f73ef8d9392e8c80b}{comparator}
+\item 
+bool \hyperlink{structleveldb_1_1_options_afe1b4e94164ff8f081b1c25bf1bcb62e}{create\+\_\+if\+\_\+missing}
+\item 
+bool \hyperlink{structleveldb_1_1_options_aff3b99b1b30a2dba9642adc6c912d5b7}{error\+\_\+if\+\_\+exists}
+\item 
+bool \hyperlink{structleveldb_1_1_options_a4263dcc655493100eecc9daf6737a10b}{paranoid\+\_\+checks}
+\item 
+bool \hyperlink{structleveldb_1_1_options_afce8ab26fcba29d761a587124034ae3c}{verify\+\_\+compactions}
+\item 
+\hyperlink{classleveldb_1_1_env}{Env} $\ast$ \hyperlink{structleveldb_1_1_options_aeb08bfe820e9c89f57446d6fbd2e6ea8}{env}
+\item 
+\hyperlink{classleveldb_1_1_logger}{Logger} $\ast$ \hyperlink{structleveldb_1_1_options_af5545cba00b0e9763ad0279a74acc429}{info\+\_\+log}
+\item 
+size\+\_\+t \hyperlink{structleveldb_1_1_options_a017f1f9558e6b3887434df29a16dac97}{write\+\_\+buffer\+\_\+size}
+\item 
+int \hyperlink{structleveldb_1_1_options_a25c6ea125fc63342d8fc25b2f7817be4}{max\+\_\+open\+\_\+files}
+\item 
+\hyperlink{classleveldb_1_1_cache}{Cache} $\ast$ \hyperlink{structleveldb_1_1_options_a4e87749ebac1ba28dff6bb63eb2059e5}{block\+\_\+cache}
+\item 
+size\+\_\+t \hyperlink{structleveldb_1_1_options_a715c7941b43db641e76e598aa9ab52a0}{block\+\_\+size}
+\item 
+int \hyperlink{structleveldb_1_1_options_a9917edbeb09e24c2fb3c0eec5f061178}{block\+\_\+size\+\_\+steps}
+\item 
+int \hyperlink{structleveldb_1_1_options_ac71d66ae44e481edc3922d3a139c30b4}{block\+\_\+restart\+\_\+interval}
+\item 
+\hyperlink{namespaceleveldb_a047a8e77a76becb82bab4720994f6f9b}{Compression\+Type} \hyperlink{structleveldb_1_1_options_abdaf09c8bb3a788636ffb86cb93b01ab}{compression}
+\item 
+const \hyperlink{classleveldb_1_1_filter_policy}{Filter\+Policy} $\ast$ \hyperlink{structleveldb_1_1_options_a24c88997a866d535e68de15b5c3cd02b}{filter\+\_\+policy}
+\item 
+bool \hyperlink{structleveldb_1_1_options_a8a5677213552c48bd10e9c487b4aeb66}{is\+\_\+repair}
+\item 
+bool \hyperlink{structleveldb_1_1_options_a2ad2e3e05e9fe7f687a7575449b04170}{is\+\_\+internal\+\_\+db}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_options_a348ac8689c6500cb51ed397906a35f0a}{total\+\_\+leveldb\+\_\+mem}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_options_aac08652c9783dee9b0b67c5a53721474}{block\+\_\+cache\+\_\+threshold}
+\item 
+bool \hyperlink{structleveldb_1_1_options_a3b2390e7bee2645730301f4d89b5915c}{limited\+\_\+developer\+\_\+mem}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_options_ad1c2c7c91d7356d91634902bfaf8c232}{mmap\+\_\+size}
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{structleveldb_1_1_options_acbf4ebba6f5ff369bcea327411185c4c}{delete\+\_\+threshold}
+\item 
+bool \hyperlink{structleveldb_1_1_options_ae998bf57c80ba45500dbb84576dd86fe}{fadvise\+\_\+willneed}
+\item 
+unsigned \hyperlink{structleveldb_1_1_options_a788ce6ae44d475dad52b510fdf23b70e}{tiered\+\_\+slow\+\_\+level}
+\item 
+std\+::string \hyperlink{structleveldb_1_1_options_aa3ab388db3e224cb44151764c2167756}{tiered\+\_\+fast\+\_\+prefix}
+\item 
+std\+::string \hyperlink{structleveldb_1_1_options_a56322d593e1f4b35b07b184ddfaad264}{tiered\+\_\+slow\+\_\+prefix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structleveldb_1_1_options_a52d77c894795ba83077045daeab3d581}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!Options@{Options}}
+\index{Options@{Options}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{Options}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Options\+::\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structleveldb_1_1_options_a52d77c894795ba83077045daeab3d581}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structleveldb_1_1_options_a026f9b0658bf83c358ea3c990073c00d}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!Dump@{Dump}}
+\index{Dump@{Dump}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{Dump}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Options\+::\+Dump (
+\begin{DoxyParamCaption}
+\item[{{\bf Logger} $\ast$}]{log}
+\end{DoxyParamCaption}
+) const}\label{structleveldb_1_1_options_a026f9b0658bf83c358ea3c990073c00d}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_options_a026f9b0658bf83c358ea3c990073c00d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_options_a026f9b0658bf83c358ea3c990073c00d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structleveldb_1_1_options_a4e87749ebac1ba28dff6bb63eb2059e5}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!block\+\_\+cache@{block\+\_\+cache}}
+\index{block\+\_\+cache@{block\+\_\+cache}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{block\+\_\+cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache}$\ast$ leveldb\+::\+Options\+::block\+\_\+cache}\label{structleveldb_1_1_options_a4e87749ebac1ba28dff6bb63eb2059e5}
+\hypertarget{structleveldb_1_1_options_aac08652c9783dee9b0b67c5a53721474}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!block\+\_\+cache\+\_\+threshold@{block\+\_\+cache\+\_\+threshold}}
+\index{block\+\_\+cache\+\_\+threshold@{block\+\_\+cache\+\_\+threshold}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{block\+\_\+cache\+\_\+threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Options\+::block\+\_\+cache\+\_\+threshold}\label{structleveldb_1_1_options_aac08652c9783dee9b0b67c5a53721474}
+\hypertarget{structleveldb_1_1_options_ac71d66ae44e481edc3922d3a139c30b4}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!block\+\_\+restart\+\_\+interval@{block\+\_\+restart\+\_\+interval}}
+\index{block\+\_\+restart\+\_\+interval@{block\+\_\+restart\+\_\+interval}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{block\+\_\+restart\+\_\+interval}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Options\+::block\+\_\+restart\+\_\+interval}\label{structleveldb_1_1_options_ac71d66ae44e481edc3922d3a139c30b4}
+\hypertarget{structleveldb_1_1_options_a715c7941b43db641e76e598aa9ab52a0}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!block\+\_\+size@{block\+\_\+size}}
+\index{block\+\_\+size@{block\+\_\+size}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{block\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Options\+::block\+\_\+size}\label{structleveldb_1_1_options_a715c7941b43db641e76e598aa9ab52a0}
+\hypertarget{structleveldb_1_1_options_a9917edbeb09e24c2fb3c0eec5f061178}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!block\+\_\+size\+\_\+steps@{block\+\_\+size\+\_\+steps}}
+\index{block\+\_\+size\+\_\+steps@{block\+\_\+size\+\_\+steps}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{block\+\_\+size\+\_\+steps}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Options\+::block\+\_\+size\+\_\+steps}\label{structleveldb_1_1_options_a9917edbeb09e24c2fb3c0eec5f061178}
+\hypertarget{structleveldb_1_1_options_a7522fbf79de73c4f73ef8d9392e8c80b}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!comparator@{comparator}}
+\index{comparator@{comparator}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{comparator}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Comparator}$\ast$ leveldb\+::\+Options\+::comparator}\label{structleveldb_1_1_options_a7522fbf79de73c4f73ef8d9392e8c80b}
+\hypertarget{structleveldb_1_1_options_abdaf09c8bb3a788636ffb86cb93b01ab}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!compression@{compression}}
+\index{compression@{compression}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{compression}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compression\+Type} leveldb\+::\+Options\+::compression}\label{structleveldb_1_1_options_abdaf09c8bb3a788636ffb86cb93b01ab}
+\hypertarget{structleveldb_1_1_options_afe1b4e94164ff8f081b1c25bf1bcb62e}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!create\+\_\+if\+\_\+missing@{create\+\_\+if\+\_\+missing}}
+\index{create\+\_\+if\+\_\+missing@{create\+\_\+if\+\_\+missing}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{create\+\_\+if\+\_\+missing}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::create\+\_\+if\+\_\+missing}\label{structleveldb_1_1_options_afe1b4e94164ff8f081b1c25bf1bcb62e}
+\hypertarget{structleveldb_1_1_options_acbf4ebba6f5ff369bcea327411185c4c}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!delete\+\_\+threshold@{delete\+\_\+threshold}}
+\index{delete\+\_\+threshold@{delete\+\_\+threshold}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{delete\+\_\+threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Options\+::delete\+\_\+threshold}\label{structleveldb_1_1_options_acbf4ebba6f5ff369bcea327411185c4c}
+\hypertarget{structleveldb_1_1_options_aeb08bfe820e9c89f57446d6fbd2e6ea8}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!env@{env}}
+\index{env@{env}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{env}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Env}$\ast$ leveldb\+::\+Options\+::env}\label{structleveldb_1_1_options_aeb08bfe820e9c89f57446d6fbd2e6ea8}
+\hypertarget{structleveldb_1_1_options_aff3b99b1b30a2dba9642adc6c912d5b7}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!error\+\_\+if\+\_\+exists@{error\+\_\+if\+\_\+exists}}
+\index{error\+\_\+if\+\_\+exists@{error\+\_\+if\+\_\+exists}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{error\+\_\+if\+\_\+exists}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::error\+\_\+if\+\_\+exists}\label{structleveldb_1_1_options_aff3b99b1b30a2dba9642adc6c912d5b7}
+\hypertarget{structleveldb_1_1_options_ae998bf57c80ba45500dbb84576dd86fe}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!fadvise\+\_\+willneed@{fadvise\+\_\+willneed}}
+\index{fadvise\+\_\+willneed@{fadvise\+\_\+willneed}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{fadvise\+\_\+willneed}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::fadvise\+\_\+willneed}\label{structleveldb_1_1_options_ae998bf57c80ba45500dbb84576dd86fe}
+\hypertarget{structleveldb_1_1_options_a24c88997a866d535e68de15b5c3cd02b}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!filter\+\_\+policy@{filter\+\_\+policy}}
+\index{filter\+\_\+policy@{filter\+\_\+policy}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{filter\+\_\+policy}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Filter\+Policy}$\ast$ leveldb\+::\+Options\+::filter\+\_\+policy}\label{structleveldb_1_1_options_a24c88997a866d535e68de15b5c3cd02b}
+\hypertarget{structleveldb_1_1_options_af5545cba00b0e9763ad0279a74acc429}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!info\+\_\+log@{info\+\_\+log}}
+\index{info\+\_\+log@{info\+\_\+log}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{info\+\_\+log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logger}$\ast$ leveldb\+::\+Options\+::info\+\_\+log}\label{structleveldb_1_1_options_af5545cba00b0e9763ad0279a74acc429}
+\hypertarget{structleveldb_1_1_options_a2ad2e3e05e9fe7f687a7575449b04170}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!is\+\_\+internal\+\_\+db@{is\+\_\+internal\+\_\+db}}
+\index{is\+\_\+internal\+\_\+db@{is\+\_\+internal\+\_\+db}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{is\+\_\+internal\+\_\+db}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::is\+\_\+internal\+\_\+db}\label{structleveldb_1_1_options_a2ad2e3e05e9fe7f687a7575449b04170}
+\hypertarget{structleveldb_1_1_options_a8a5677213552c48bd10e9c487b4aeb66}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!is\+\_\+repair@{is\+\_\+repair}}
+\index{is\+\_\+repair@{is\+\_\+repair}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{is\+\_\+repair}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::is\+\_\+repair}\label{structleveldb_1_1_options_a8a5677213552c48bd10e9c487b4aeb66}
+\hypertarget{structleveldb_1_1_options_a3b2390e7bee2645730301f4d89b5915c}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!limited\+\_\+developer\+\_\+mem@{limited\+\_\+developer\+\_\+mem}}
+\index{limited\+\_\+developer\+\_\+mem@{limited\+\_\+developer\+\_\+mem}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{limited\+\_\+developer\+\_\+mem}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::limited\+\_\+developer\+\_\+mem}\label{structleveldb_1_1_options_a3b2390e7bee2645730301f4d89b5915c}
+\hypertarget{structleveldb_1_1_options_a25c6ea125fc63342d8fc25b2f7817be4}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!max\+\_\+open\+\_\+files@{max\+\_\+open\+\_\+files}}
+\index{max\+\_\+open\+\_\+files@{max\+\_\+open\+\_\+files}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{max\+\_\+open\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}int leveldb\+::\+Options\+::max\+\_\+open\+\_\+files}\label{structleveldb_1_1_options_a25c6ea125fc63342d8fc25b2f7817be4}
+\hypertarget{structleveldb_1_1_options_ad1c2c7c91d7356d91634902bfaf8c232}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!mmap\+\_\+size@{mmap\+\_\+size}}
+\index{mmap\+\_\+size@{mmap\+\_\+size}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{mmap\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Options\+::mmap\+\_\+size}\label{structleveldb_1_1_options_ad1c2c7c91d7356d91634902bfaf8c232}
+\hypertarget{structleveldb_1_1_options_a4263dcc655493100eecc9daf6737a10b}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!paranoid\+\_\+checks@{paranoid\+\_\+checks}}
+\index{paranoid\+\_\+checks@{paranoid\+\_\+checks}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{paranoid\+\_\+checks}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::paranoid\+\_\+checks}\label{structleveldb_1_1_options_a4263dcc655493100eecc9daf6737a10b}
+\hypertarget{structleveldb_1_1_options_aa3ab388db3e224cb44151764c2167756}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!tiered\+\_\+fast\+\_\+prefix@{tiered\+\_\+fast\+\_\+prefix}}
+\index{tiered\+\_\+fast\+\_\+prefix@{tiered\+\_\+fast\+\_\+prefix}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{tiered\+\_\+fast\+\_\+prefix}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::\+Options\+::tiered\+\_\+fast\+\_\+prefix}\label{structleveldb_1_1_options_aa3ab388db3e224cb44151764c2167756}
+\hypertarget{structleveldb_1_1_options_a788ce6ae44d475dad52b510fdf23b70e}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!tiered\+\_\+slow\+\_\+level@{tiered\+\_\+slow\+\_\+level}}
+\index{tiered\+\_\+slow\+\_\+level@{tiered\+\_\+slow\+\_\+level}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{tiered\+\_\+slow\+\_\+level}]{\setlength{\rightskip}{0pt plus 5cm}unsigned leveldb\+::\+Options\+::tiered\+\_\+slow\+\_\+level}\label{structleveldb_1_1_options_a788ce6ae44d475dad52b510fdf23b70e}
+\hypertarget{structleveldb_1_1_options_a56322d593e1f4b35b07b184ddfaad264}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!tiered\+\_\+slow\+\_\+prefix@{tiered\+\_\+slow\+\_\+prefix}}
+\index{tiered\+\_\+slow\+\_\+prefix@{tiered\+\_\+slow\+\_\+prefix}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{tiered\+\_\+slow\+\_\+prefix}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::\+Options\+::tiered\+\_\+slow\+\_\+prefix}\label{structleveldb_1_1_options_a56322d593e1f4b35b07b184ddfaad264}
+\hypertarget{structleveldb_1_1_options_a348ac8689c6500cb51ed397906a35f0a}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!total\+\_\+leveldb\+\_\+mem@{total\+\_\+leveldb\+\_\+mem}}
+\index{total\+\_\+leveldb\+\_\+mem@{total\+\_\+leveldb\+\_\+mem}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{total\+\_\+leveldb\+\_\+mem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Options\+::total\+\_\+leveldb\+\_\+mem}\label{structleveldb_1_1_options_a348ac8689c6500cb51ed397906a35f0a}
+\hypertarget{structleveldb_1_1_options_afce8ab26fcba29d761a587124034ae3c}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!verify\+\_\+compactions@{verify\+\_\+compactions}}
+\index{verify\+\_\+compactions@{verify\+\_\+compactions}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{verify\+\_\+compactions}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Options\+::verify\+\_\+compactions}\label{structleveldb_1_1_options_afce8ab26fcba29d761a587124034ae3c}
+\hypertarget{structleveldb_1_1_options_a017f1f9558e6b3887434df29a16dac97}{}\index{leveldb\+::\+Options@{leveldb\+::\+Options}!write\+\_\+buffer\+\_\+size@{write\+\_\+buffer\+\_\+size}}
+\index{write\+\_\+buffer\+\_\+size@{write\+\_\+buffer\+\_\+size}!leveldb\+::\+Options@{leveldb\+::\+Options}}
+\subsubsection[{write\+\_\+buffer\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Options\+::write\+\_\+buffer\+\_\+size}\label{structleveldb_1_1_options_a017f1f9558e6b3887434df29a16dac97}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\hyperlink{options_8h}{options.\+h}\item 
+util/\hyperlink{options_8cc}{options.\+cc}\end{DoxyCompactItemize}

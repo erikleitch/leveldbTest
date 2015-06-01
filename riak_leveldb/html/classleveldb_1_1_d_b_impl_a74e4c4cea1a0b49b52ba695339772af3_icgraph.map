@@ -1,0 +1,4 @@
+<map id="leveldb::DBImpl::BackgroundCompaction" name="leveldb::DBImpl::BackgroundCompaction">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a8f2d02826606bb1753958fb51182c1ff" title="leveldb::DBImpl::Background\lCall2" alt="" coords="247,5,440,44"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_compaction_task.html#a289decac6d18732d37dfef0584ba4350" title="leveldb::CompactionTask\l::operator()" alt="" coords="488,5,657,44"/>
+</map>

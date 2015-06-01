@@ -1,0 +1,10 @@
+<map id="leveldb::DoubleCache::DoubleCache" name="leveldb::DoubleCache::DoubleCache">
+<area shape="rect" id="node2" href="$classleveldb_1_1_env.html#a207a55ea7a8107da72c4cd224e7fc94b" title="leveldb::Env::RecoveryMmapSize" alt="" coords="205,5,426,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_flex_cache.html#a093372082dcb96d2568fa9899cae92b1" title="leveldb::FlexCache\l::GetDBCacheCapacity" alt="" coords="236,55,395,93"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_double_cache.html#aff1207d4dc959ab2227f182105e248c0" title="leveldb::DoubleCache\l::Flush" alt="" coords="240,117,391,156"/>
+<area shape="rect" id="node4" href="$namespaceleveldb.html#a9519176c753c5356b4d10d73ee3a3e51" title="leveldb::DBList" alt="" coords="486,33,597,59"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_d_b_list_impl.html#a73dd5d51280abb800f1343e491c609b8" title="leveldb::DBListImpl\l::GetDBCount" alt="" coords="474,83,609,121"/>
+<area shape="rect" id="node5" href="$namespaceleveldb_1_1port.html#a1493e91d494e6f0ea086a743a562e983" title="leveldb::port::InitOnce" alt="" coords="657,9,808,35"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#ab67c3d9849bf8b0c50bce72dea7dc16b" title="leveldb::InitModule" alt="" coords="667,59,799,84"/>
+<area shape="rect" id="node6" href="$namespaceleveldb_1_1port.html#a614e0b6f0b21d697fe4001dbe3d8798b" title="leveldb::port::PthreadCall" alt="" coords="856,9,1027,35"/>
+</map>

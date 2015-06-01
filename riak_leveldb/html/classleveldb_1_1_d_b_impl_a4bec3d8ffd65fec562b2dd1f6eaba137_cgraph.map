@@ -1,0 +1,4 @@
+<map id="leveldb::DBImpl::GetSnapshot" name="leveldb::DBImpl::GetSnapshot">
+<area shape="rect" id="node2" href="$classleveldb_1_1_snapshot_list.html#adfd5d9c7cb888e711d83a48299141994" title="leveldb::SnapshotList::New" alt="" coords="253,5,435,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_version_set.html#acbbb32422426416b0d5e58d35b151526" title="leveldb::VersionSet\l::LastSequence" alt="" coords="277,55,412,93"/>
+</map>

@@ -1,0 +1,266 @@
+\hypertarget{classleveldb_1_1_sst_counters}{}\section{leveldb\+:\+:Sst\+Counters Class Reference}
+\label{classleveldb_1_1_sst_counters}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+
+
+{\ttfamily \#include $<$perf\+\_\+count.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Sst\+Counters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classleveldb_1_1_sst_counters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_sst_counters_a55ec06470930ecd9a5fc73889dff8a9c}{Sst\+Counters} ()
+\item 
+void \hyperlink{classleveldb_1_1_sst_counters_a6114ad2901eb963af1498057f7d85166}{Encode\+To} (std\+::string \&Dst) const 
+\item 
+\hyperlink{classleveldb_1_1_status}{Status} \hyperlink{classleveldb_1_1_sst_counters_a2e1ed4f36119a8040dc47b66d52900e3}{Decode\+From} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&src)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a5c25e14172d7733da280c01b90e21431}{Inc} (unsigned Index)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a615c96551f0b1f5cb8cc3e0dcbb8568e}{Add} (unsigned Index, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} Amount)
+\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a61f7aaec238086d81f0d121cc4517012}{Value} (unsigned Index) const 
+\item 
+void \hyperlink{classleveldb_1_1_sst_counters_a3a49aaddb7f816a18175d4a77273785e}{Set} (unsigned Index, \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t})
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a8ecd077f4b491eaf99afc7db31c655c8}{Size} () const 
+\item 
+void \hyperlink{classleveldb_1_1_sst_counters_ae7f2135760a886b0ae72d4ea90351f16}{Dump} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classleveldb_1_1_sst_counters_a55a5f34f48c135e51417840aa3d3e93d}{m\+\_\+\+Is\+Read\+Only}
+\begin{DoxyCompactList}\small\item\em set when data decoded from a file \end{DoxyCompactList}\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a30b74b17770fae764fd614ead8e0d33c}{m\+\_\+\+Version}
+\begin{DoxyCompactList}\small\item\em object revision identification \end{DoxyCompactList}\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a122c833bcbac6a9a8d252fc1815b13d4}{m\+\_\+\+Counter\+Size}
+\begin{DoxyCompactList}\small\item\em number of objects in m\+\_\+\+Counter \end{DoxyCompactList}\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sst_counters_a85a555b7050a12183185d7d50bf7b31c}{m\+\_\+\+Counter} \mbox{[}\hyperlink{namespaceleveldb_af4fd86a4dfe6dd8b3c82f4e533e83738a0478aca3a04e146013be758df2e87af4}{e\+Sst\+Count\+Enum\+Size}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_sst_counters_a55ec06470930ecd9a5fc73889dff8a9c}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Sst\+Counters@{Sst\+Counters}}
+\index{Sst\+Counters@{Sst\+Counters}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Sst\+Counters}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Sst\+Counters\+::\+Sst\+Counters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_sst_counters_a55ec06470930ecd9a5fc73889dff8a9c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_sst_counters_a615c96551f0b1f5cb8cc3e0dcbb8568e}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Add@{Add}}
+\index{Add@{Add}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Sst\+Counters\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index, }
+\item[{{\bf uint64\+\_\+t}}]{Amount}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_sst_counters_a615c96551f0b1f5cb8cc3e0dcbb8568e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a615c96551f0b1f5cb8cc3e0dcbb8568e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sst_counters_a2e1ed4f36119a8040dc47b66d52900e3}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Decode\+From@{Decode\+From}}
+\index{Decode\+From@{Decode\+From}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Decode\+From}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} leveldb\+::\+Sst\+Counters\+::\+Decode\+From (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{src}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_sst_counters_a2e1ed4f36119a8040dc47b66d52900e3}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a2e1ed4f36119a8040dc47b66d52900e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a2e1ed4f36119a8040dc47b66d52900e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sst_counters_ae7f2135760a886b0ae72d4ea90351f16}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Dump@{Dump}}
+\index{Dump@{Dump}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Dump}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Sst\+Counters\+::\+Dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classleveldb_1_1_sst_counters_ae7f2135760a886b0ae72d4ea90351f16}
+\hypertarget{classleveldb_1_1_sst_counters_a6114ad2901eb963af1498057f7d85166}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Encode\+To@{Encode\+To}}
+\index{Encode\+To@{Encode\+To}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Encode\+To}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Sst\+Counters\+::\+Encode\+To (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{Dst}
+\end{DoxyParamCaption}
+) const}\label{classleveldb_1_1_sst_counters_a6114ad2901eb963af1498057f7d85166}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a6114ad2901eb963af1498057f7d85166_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a6114ad2901eb963af1498057f7d85166_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sst_counters_a5c25e14172d7733da280c01b90e21431}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Inc@{Inc}}
+\index{Inc@{Inc}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Inc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Sst\+Counters\+::\+Inc (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_sst_counters_a5c25e14172d7733da280c01b90e21431}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a5c25e14172d7733da280c01b90e21431_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sst_counters_a3a49aaddb7f816a18175d4a77273785e}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Set@{Set}}
+\index{Set@{Set}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Sst\+Counters\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index, }
+\item[{{\bf uint64\+\_\+t}}]{Value}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_sst_counters_a3a49aaddb7f816a18175d4a77273785e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a3a49aaddb7f816a18175d4a77273785e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a3a49aaddb7f816a18175d4a77273785e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sst_counters_a8ecd077f4b491eaf99afc7db31c655c8}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Size@{Size}}
+\index{Size@{Size}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Sst\+Counters\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sst_counters_a8ecd077f4b491eaf99afc7db31c655c8}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classleveldb_1_1_sst_counters_a8ecd077f4b491eaf99afc7db31c655c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sst_counters_a61f7aaec238086d81f0d121cc4517012}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!Value@{Value}}
+\index{Value@{Value}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Sst\+Counters\+::\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Index}
+\end{DoxyParamCaption}
+) const}\label{classleveldb_1_1_sst_counters_a61f7aaec238086d81f0d121cc4517012}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sst_counters_a61f7aaec238086d81f0d121cc4517012_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_sst_counters_a85a555b7050a12183185d7d50bf7b31c}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{m\+\_\+\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Sst\+Counters\+::m\+\_\+\+Counter\mbox{[}{\bf e\+Sst\+Count\+Enum\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_sst_counters_a85a555b7050a12183185d7d50bf7b31c}
+\hypertarget{classleveldb_1_1_sst_counters_a122c833bcbac6a9a8d252fc1815b13d4}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!m\+\_\+\+Counter\+Size@{m\+\_\+\+Counter\+Size}}
+\index{m\+\_\+\+Counter\+Size@{m\+\_\+\+Counter\+Size}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{m\+\_\+\+Counter\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Sst\+Counters\+::m\+\_\+\+Counter\+Size\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_sst_counters_a122c833bcbac6a9a8d252fc1815b13d4}
+
+
+number of objects in m\+\_\+\+Counter 
+
+\hypertarget{classleveldb_1_1_sst_counters_a55a5f34f48c135e51417840aa3d3e93d}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!m\+\_\+\+Is\+Read\+Only@{m\+\_\+\+Is\+Read\+Only}}
+\index{m\+\_\+\+Is\+Read\+Only@{m\+\_\+\+Is\+Read\+Only}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{m\+\_\+\+Is\+Read\+Only}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Sst\+Counters\+::m\+\_\+\+Is\+Read\+Only\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_sst_counters_a55a5f34f48c135e51417840aa3d3e93d}
+
+
+set when data decoded from a file 
+
+\hypertarget{classleveldb_1_1_sst_counters_a30b74b17770fae764fd614ead8e0d33c}{}\index{leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}!m\+\_\+\+Version@{m\+\_\+\+Version}}
+\index{m\+\_\+\+Version@{m\+\_\+\+Version}!leveldb\+::\+Sst\+Counters@{leveldb\+::\+Sst\+Counters}}
+\subsubsection[{m\+\_\+\+Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\+\_\+t} leveldb\+::\+Sst\+Counters\+::m\+\_\+\+Version\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_sst_counters_a30b74b17770fae764fd614ead8e0d33c}
+
+
+object revision identification 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\hyperlink{perf__count_8h}{perf\+\_\+count.\+h}\item 
+util/\hyperlink{perf__count_8cc}{perf\+\_\+count.\+cc}\end{DoxyCompactItemize}

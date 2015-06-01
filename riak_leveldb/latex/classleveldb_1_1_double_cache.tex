@@ -1,0 +1,485 @@
+\hypertarget{classleveldb_1_1_double_cache}{}\section{leveldb\+:\+:Double\+Cache Class Reference}
+\label{classleveldb_1_1_double_cache}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+
+
+{\ttfamily \#include $<$cache2.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Double\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1_double_cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_double_cache_aa80459749d2af00553a595605ab74d35}{Double\+Cache} (const \hyperlink{structleveldb_1_1_options}{Options} \&options)
+\item 
+virtual \hyperlink{classleveldb_1_1_double_cache_a18dabb9c4af1f20f9814ac590ac923a7}{$\sim$\+Double\+Cache} ()
+\item 
+\hyperlink{classleveldb_1_1_cache}{Cache} $\ast$ \hyperlink{classleveldb_1_1_double_cache_a723f6ffc2d228ec2daf8702eb374c37e}{Get\+File\+Cache} ()
+\item 
+\hyperlink{classleveldb_1_1_cache}{Cache} $\ast$ \hyperlink{classleveldb_1_1_double_cache_a3dccddd49cdc0250202f97ac093f467b}{Get\+Block\+Cache} ()
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_a8ba97644659ef0058ab0a2a541044ee1}{Resize\+Caches} ()
+\item 
+size\+\_\+t \hyperlink{classleveldb_1_1_double_cache_a42b19bd43e44d932aed9daf7947c5d0f}{Get\+Capacity} (bool Is\+File\+Cache, bool Estimate\+Page\+Cache=true)
+\item 
+time\+\_\+t \hyperlink{classleveldb_1_1_double_cache_a68d772fd35a1cd23fbf195e8f08c6539}{Get\+File\+Timeout} ()
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_a5e687f62f87884202086ab890591068d}{Set\+File\+Timeout} (time\+\_\+t Timeout)
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_aff1207d4dc959ab2227f182105e248c0}{Flush} ()
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_a33df7beca9ec590b21700e6cf23039f1}{Set\+Plenty\+Space} (bool Plenty\+Space)
+\item 
+bool \hyperlink{classleveldb_1_1_double_cache_abc4f14335791748ac5c3b27460949624}{Get\+Plenty\+Space} () const 
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_a466d4143eb43c72c17480f33ee401056}{Purge\+Expired\+Files} ()
+\item 
+bool \hyperlink{classleveldb_1_1_double_cache_a3c4b605684af6aa851593e34cb7f64e1}{Is\+Internal\+D\+B} () const 
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_a46903228064dc108fb9b21d189337b1c}{Add\+File\+Size} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} file\+\_\+size)
+\item 
+void \hyperlink{classleveldb_1_1_double_cache_a21f96b1103106b8b94162088f0b784ab}{Sub\+File\+Size} (\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} file\+\_\+size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_sharded_l_r_u_cache2}{Sharded\+L\+R\+U\+Cache2} $\ast$ \hyperlink{classleveldb_1_1_double_cache_aae6771693bdd6eef7171b146af5744ff}{m\+\_\+\+File\+Cache}
+\begin{DoxyCompactList}\small\item\em file cache used by db/tablecache.\+cc \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1_sharded_l_r_u_cache2}{Sharded\+L\+R\+U\+Cache2} $\ast$ \hyperlink{classleveldb_1_1_double_cache_a67c996a093cd657bc69d4d08a95c984e}{m\+\_\+\+Block\+Cache}
+\begin{DoxyCompactList}\small\item\em used by \hyperlink{table_8cc}{table/table.\+cc} \end{DoxyCompactList}\item 
+bool \hyperlink{classleveldb_1_1_double_cache_aead367778b68bc2b42d00d20e5739944}{m\+\_\+\+Is\+Internal\+D\+B}
+\begin{DoxyCompactList}\small\item\em internal db gets smaller allocation from \hyperlink{classleveldb_1_1_flex_cache}{Flex\+Cache} \end{DoxyCompactList}\item 
+bool \hyperlink{classleveldb_1_1_double_cache_a560a908cafaf2dffae1d375c28ad719e}{m\+\_\+\+Plenty\+Space}
+\begin{DoxyCompactList}\small\item\em true when lots of spare space in file cache \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classleveldb_1_1_double_cache_a76eda02c403cf6bc7f225f612ce098ff}{m\+\_\+\+Overhead}
+\begin{DoxyCompactList}\small\item\em reduce from allocation to better estimate limits \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classleveldb_1_1_double_cache_a1e37f45144f9a47321def85cd7ceca0b}{m\+\_\+\+Total\+Allocation}
+\item 
+time\+\_\+t \hyperlink{classleveldb_1_1_double_cache_a1eb779a94cdb5df86333377f365df2b2}{m\+\_\+\+File\+Timeout}
+\begin{DoxyCompactList}\small\item\em seconds to allow file to stay cached. default 4 days. \end{DoxyCompactList}\item 
+\hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_double_cache_ae08930d00eff9d2423cbe49875fc2fff}{m\+\_\+\+Block\+Cache\+Threshold}
+\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_double_cache_ab1c67e0adcd9a23eb0bef43d32f24c98}{m\+\_\+\+Size\+Cached\+Files}
+\begin{DoxyCompactList}\small\item\em disk size of .sst files in file cache \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_double_cache_aa9f5530c03176ec151019219a72164d2}{Double\+Cache} ()
+\begin{DoxyCompactList}\small\item\em no default constructor \end{DoxyCompactList}\item 
+\hyperlink{classleveldb_1_1_double_cache_aa143a9b696035b71959918dc61a3335c}{Double\+Cache} (const \hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} \&)
+\begin{DoxyCompactList}\small\item\em no copy constructor \end{DoxyCompactList}\item 
+void \hyperlink{classleveldb_1_1_double_cache_a8528fb48c236f408dc65a1346e1f4cfd}{operator=} (const \hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} \&)
+\begin{DoxyCompactList}\small\item\em no assignment \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} holds the file cache and the block cache to easy interactive sizing 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_double_cache_aa80459749d2af00553a595605ab74d35}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Double\+Cache@{Double\+Cache}}
+\index{Double\+Cache@{Double\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Double\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Double\+Cache\+::\+Double\+Cache (
+\begin{DoxyParamCaption}
+\item[{const {\bf Options} \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classleveldb_1_1_double_cache_aa80459749d2af00553a595605ab74d35}
+Initialize cache pair based upon current conditions 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_aa80459749d2af00553a595605ab74d35_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a18dabb9c4af1f20f9814ac590ac923a7}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!````~Double\+Cache@{$\sim$\+Double\+Cache}}
+\index{````~Double\+Cache@{$\sim$\+Double\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{$\sim$\+Double\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Double\+Cache\+::$\sim$\+Double\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classleveldb_1_1_double_cache_a18dabb9c4af1f20f9814ac590ac923a7}
+\hypertarget{classleveldb_1_1_double_cache_aa9f5530c03176ec151019219a72164d2}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Double\+Cache@{Double\+Cache}}
+\index{Double\+Cache@{Double\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Double\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Double\+Cache\+::\+Double\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_double_cache_aa9f5530c03176ec151019219a72164d2}
+
+
+no default constructor 
+
+\hypertarget{classleveldb_1_1_double_cache_aa143a9b696035b71959918dc61a3335c}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Double\+Cache@{Double\+Cache}}
+\index{Double\+Cache@{Double\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Double\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Double\+Cache\+::\+Double\+Cache (
+\begin{DoxyParamCaption}
+\item[{const {\bf Double\+Cache} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_double_cache_aa143a9b696035b71959918dc61a3335c}
+
+
+no copy constructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_double_cache_a46903228064dc108fb9b21d189337b1c}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Add\+File\+Size@{Add\+File\+Size}}
+\index{Add\+File\+Size@{Add\+File\+Size}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Add\+File\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Add\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{file\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a46903228064dc108fb9b21d189337b1c}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classleveldb_1_1_double_cache_a46903228064dc108fb9b21d189337b1c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a46903228064dc108fb9b21d189337b1c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_aff1207d4dc959ab2227f182105e248c0}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Flush@{Flush}}
+\index{Flush@{Flush}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Flush}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_double_cache_aff1207d4dc959ab2227f182105e248c0}
+Wipe out existing caches (if any), create two new ones W\+A\+R\+N\+I\+N\+G\+: this is really for U\+N\+I\+T T\+E\+S\+T\+S. \hyperlink{classleveldb_1_1_d_b_impl}{D\+B\+Impl} and \hyperlink{classleveldb_1_1_table_cache}{Table\+Cache} save a copy of the pointers below and will not know of a change. The old pointer technology is holdover from original implementation. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classleveldb_1_1_double_cache_aff1207d4dc959ab2227f182105e248c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a3dccddd49cdc0250202f97ac093f467b}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Get\+Block\+Cache@{Get\+Block\+Cache}}
+\index{Get\+Block\+Cache@{Get\+Block\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Get\+Block\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache}$\ast$ leveldb\+::\+Double\+Cache\+::\+Get\+Block\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a3dccddd49cdc0250202f97ac093f467b}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classleveldb_1_1_double_cache_a3dccddd49cdc0250202f97ac093f467b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a42b19bd43e44d932aed9daf7947c5d0f}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Get\+Capacity@{Get\+Capacity}}
+\index{Get\+Capacity@{Get\+Capacity}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Get\+Capacity}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Double\+Cache\+::\+Get\+Capacity (
+\begin{DoxyParamCaption}
+\item[{bool}]{Is\+File\+Cache, }
+\item[{bool}]{Estimate\+Page\+Cache = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_double_cache_a42b19bd43e44d932aed9daf7947c5d0f}
+Calculate limit to file or block cache based upon global conditions 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a42b19bd43e44d932aed9daf7947c5d0f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a42b19bd43e44d932aed9daf7947c5d0f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a723f6ffc2d228ec2daf8702eb374c37e}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Get\+File\+Cache@{Get\+File\+Cache}}
+\index{Get\+File\+Cache@{Get\+File\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Get\+File\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache}$\ast$ leveldb\+::\+Double\+Cache\+::\+Get\+File\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a723f6ffc2d228ec2daf8702eb374c37e}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a723f6ffc2d228ec2daf8702eb374c37e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a68d772fd35a1cd23fbf195e8f08c6539}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Get\+File\+Timeout@{Get\+File\+Timeout}}
+\index{Get\+File\+Timeout@{Get\+File\+Timeout}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Get\+File\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t leveldb\+::\+Double\+Cache\+::\+Get\+File\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a68d772fd35a1cd23fbf195e8f08c6539}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a68d772fd35a1cd23fbf195e8f08c6539_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_abc4f14335791748ac5c3b27460949624}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Get\+Plenty\+Space@{Get\+Plenty\+Space}}
+\index{Get\+Plenty\+Space@{Get\+Plenty\+Space}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Get\+Plenty\+Space}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Double\+Cache\+::\+Get\+Plenty\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_abc4f14335791748ac5c3b27460949624}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_abc4f14335791748ac5c3b27460949624_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a3c4b605684af6aa851593e34cb7f64e1}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Is\+Internal\+D\+B@{Is\+Internal\+D\+B}}
+\index{Is\+Internal\+D\+B@{Is\+Internal\+D\+B}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Is\+Internal\+D\+B}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Double\+Cache\+::\+Is\+Internal\+D\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a3c4b605684af6aa851593e34cb7f64e1}
+\hypertarget{classleveldb_1_1_double_cache_a8528fb48c236f408dc65a1346e1f4cfd}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Double\+Cache} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_double_cache_a8528fb48c236f408dc65a1346e1f4cfd}
+
+
+no assignment 
+
+\hypertarget{classleveldb_1_1_double_cache_a466d4143eb43c72c17480f33ee401056}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Purge\+Expired\+Files@{Purge\+Expired\+Files}}
+\index{Purge\+Expired\+Files@{Purge\+Expired\+Files}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Purge\+Expired\+Files}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Purge\+Expired\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_double_cache_a466d4143eb43c72c17480f33ee401056}
+Make room in block cache by killing off file cache entries that have been unused for a while 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a466d4143eb43c72c17480f33ee401056_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a466d4143eb43c72c17480f33ee401056_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a8ba97644659ef0058ab0a2a541044ee1}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Resize\+Caches@{Resize\+Caches}}
+\index{Resize\+Caches@{Resize\+Caches}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Resize\+Caches}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Resize\+Caches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_double_cache_a8ba97644659ef0058ab0a2a541044ee1}
+Resize each of the caches based upon new global conditions 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a8ba97644659ef0058ab0a2a541044ee1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a8ba97644659ef0058ab0a2a541044ee1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a5e687f62f87884202086ab890591068d}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Set\+File\+Timeout@{Set\+File\+Timeout}}
+\index{Set\+File\+Timeout@{Set\+File\+Timeout}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Set\+File\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Set\+File\+Timeout (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{Timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a5e687f62f87884202086ab890591068d}
+\hypertarget{classleveldb_1_1_double_cache_a33df7beca9ec590b21700e6cf23039f1}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Set\+Plenty\+Space@{Set\+Plenty\+Space}}
+\index{Set\+Plenty\+Space@{Set\+Plenty\+Space}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Set\+Plenty\+Space}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Set\+Plenty\+Space (
+\begin{DoxyParamCaption}
+\item[{bool}]{Plenty\+Space}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a33df7beca9ec590b21700e6cf23039f1}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a33df7beca9ec590b21700e6cf23039f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_double_cache_a21f96b1103106b8b94162088f0b784ab}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!Sub\+File\+Size@{Sub\+File\+Size}}
+\index{Sub\+File\+Size@{Sub\+File\+Size}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{Sub\+File\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Double\+Cache\+::\+Sub\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf uint64\+\_\+t}}]{file\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_double_cache_a21f96b1103106b8b94162088f0b784ab}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classleveldb_1_1_double_cache_a21f96b1103106b8b94162088f0b784ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_double_cache_a21f96b1103106b8b94162088f0b784ab_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_double_cache_a67c996a093cd657bc69d4d08a95c984e}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Block\+Cache@{m\+\_\+\+Block\+Cache}}
+\index{m\+\_\+\+Block\+Cache@{m\+\_\+\+Block\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Block\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sharded\+L\+R\+U\+Cache2}$\ast$ leveldb\+::\+Double\+Cache\+::m\+\_\+\+Block\+Cache\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_a67c996a093cd657bc69d4d08a95c984e}
+
+
+used by \hyperlink{table_8cc}{table/table.\+cc} 
+
+\hypertarget{classleveldb_1_1_double_cache_ae08930d00eff9d2423cbe49875fc2fff}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Block\+Cache\+Threshold@{m\+\_\+\+Block\+Cache\+Threshold}}
+\index{m\+\_\+\+Block\+Cache\+Threshold@{m\+\_\+\+Block\+Cache\+Threshold}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Block\+Cache\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint64\+\_\+t} leveldb\+::\+Double\+Cache\+::m\+\_\+\+Block\+Cache\+Threshold\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_ae08930d00eff9d2423cbe49875fc2fff}
+from \hyperlink{structleveldb_1_1_options}{Options}, point where block cache can\+N\+O\+T be sacrificed for page cache \hypertarget{classleveldb_1_1_double_cache_aae6771693bdd6eef7171b146af5744ff}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+File\+Cache@{m\+\_\+\+File\+Cache}}
+\index{m\+\_\+\+File\+Cache@{m\+\_\+\+File\+Cache}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+File\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sharded\+L\+R\+U\+Cache2}$\ast$ leveldb\+::\+Double\+Cache\+::m\+\_\+\+File\+Cache\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_aae6771693bdd6eef7171b146af5744ff}
+
+
+file cache used by db/tablecache.\+cc 
+
+\hypertarget{classleveldb_1_1_double_cache_a1eb779a94cdb5df86333377f365df2b2}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+File\+Timeout@{m\+\_\+\+File\+Timeout}}
+\index{m\+\_\+\+File\+Timeout@{m\+\_\+\+File\+Timeout}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+File\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t leveldb\+::\+Double\+Cache\+::m\+\_\+\+File\+Timeout\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_a1eb779a94cdb5df86333377f365df2b2}
+
+
+seconds to allow file to stay cached. default 4 days. 
+
+\hypertarget{classleveldb_1_1_double_cache_aead367778b68bc2b42d00d20e5739944}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Is\+Internal\+D\+B@{m\+\_\+\+Is\+Internal\+D\+B}}
+\index{m\+\_\+\+Is\+Internal\+D\+B@{m\+\_\+\+Is\+Internal\+D\+B}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Is\+Internal\+D\+B}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Double\+Cache\+::m\+\_\+\+Is\+Internal\+D\+B\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_aead367778b68bc2b42d00d20e5739944}
+
+
+internal db gets smaller allocation from \hyperlink{classleveldb_1_1_flex_cache}{Flex\+Cache} 
+
+\hypertarget{classleveldb_1_1_double_cache_a76eda02c403cf6bc7f225f612ce098ff}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Overhead@{m\+\_\+\+Overhead}}
+\index{m\+\_\+\+Overhead@{m\+\_\+\+Overhead}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Overhead}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Double\+Cache\+::m\+\_\+\+Overhead\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_a76eda02c403cf6bc7f225f612ce098ff}
+
+
+reduce from allocation to better estimate limits 
+
+\hypertarget{classleveldb_1_1_double_cache_a560a908cafaf2dffae1d375c28ad719e}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Plenty\+Space@{m\+\_\+\+Plenty\+Space}}
+\index{m\+\_\+\+Plenty\+Space@{m\+\_\+\+Plenty\+Space}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Plenty\+Space}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Double\+Cache\+::m\+\_\+\+Plenty\+Space\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_a560a908cafaf2dffae1d375c28ad719e}
+
+
+true when lots of spare space in file cache 
+
+\hypertarget{classleveldb_1_1_double_cache_ab1c67e0adcd9a23eb0bef43d32f24c98}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Size\+Cached\+Files@{m\+\_\+\+Size\+Cached\+Files}}
+\index{m\+\_\+\+Size\+Cached\+Files@{m\+\_\+\+Size\+Cached\+Files}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Size\+Cached\+Files}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Double\+Cache\+::m\+\_\+\+Size\+Cached\+Files\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_ab1c67e0adcd9a23eb0bef43d32f24c98}
+
+
+disk size of .sst files in file cache 
+
+\hypertarget{classleveldb_1_1_double_cache_a1e37f45144f9a47321def85cd7ceca0b}{}\index{leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}!m\+\_\+\+Total\+Allocation@{m\+\_\+\+Total\+Allocation}}
+\index{m\+\_\+\+Total\+Allocation@{m\+\_\+\+Total\+Allocation}!leveldb\+::\+Double\+Cache@{leveldb\+::\+Double\+Cache}}
+\subsubsection[{m\+\_\+\+Total\+Allocation}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Double\+Cache\+::m\+\_\+\+Total\+Allocation\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_double_cache_a1e37f45144f9a47321def85cd7ceca0b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{cache2_8h}{cache2.\+h}\item 
+util/\hyperlink{cache2_8cc}{cache2.\+cc}\end{DoxyCompactItemize}

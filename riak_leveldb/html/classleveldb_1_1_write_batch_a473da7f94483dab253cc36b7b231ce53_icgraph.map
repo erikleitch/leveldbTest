@@ -1,0 +1,16 @@
+<map id="leveldb::WriteBatch::Delete" name="leveldb::WriteBatch::Delete">
+<area shape="rect" id="node2" href="$c_8h.html#a593cea62db6cf16cbcdfc3668493d277" title="leveldb_writebatch\l_delete" alt="" coords="193,149,324,188"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_benchmark.html#a987ec13830ab5ac11f152b23c6bddc95" title="leveldb::Benchmark\l::DoDelete" alt="" coords="189,68,328,107"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_d_b.html#aff7577239799cd059464701c548090b9" title="leveldb::DB::Delete" alt="" coords="191,232,326,257"/>
+<area shape="rect" id="node15" href="$namespaceleveldb.html#a028ed215c12e1998d7073b18fce4c24c" title="leveldb::TEST" alt="" coords="814,331,919,356"/>
+<area shape="rect" id="node3" href="$c__test_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="656,157,706,183"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_benchmark.html#a56edb0a3157cbc6c4d53b7c2bba7500d" title="leveldb::Benchmark\l::DeleteSeq" alt="" coords="392,5,531,44"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_benchmark.html#a3c8a9018862c652e48830cdb38269060" title="leveldb::Benchmark\l::DeleteRandom" alt="" coords="392,68,531,107"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="596,44,766,69"/>
+<area shape="rect" id="node7" href="$db__bench_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="841,44,891,69"/>
+<area shape="rect" id="node10" href="$c_8h.html#a3878ffaf68a4addb31266ac81ce8c36f" title="leveldb_delete" alt="" coords="408,183,515,208"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_d_b_impl.html#af050f77e8c22bd6638fed5a46a59399d" title="leveldb::DBImpl::Delete" alt="" coords="381,232,542,257"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_d_b_test.html#a25716ec93d525adbeea8ff71e8f3a9f4" title="leveldb::DBTest::Delete" alt="" coords="382,281,542,307"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_model_d_b.html#a2c2690e07a206fd2197f592dd4478ff6" title="leveldb::ModelDB::Delete" alt="" coords="376,331,548,356"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_model_d_b.html#ae3a20d2fc971376349b142b9c2d159be" title="leveldb::ModelDB::Write" alt="" coords="599,280,763,305"/>
+</map>

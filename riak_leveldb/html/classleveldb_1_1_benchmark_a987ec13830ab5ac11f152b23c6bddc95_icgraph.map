@@ -1,0 +1,6 @@
+<map id="leveldb::Benchmark::DoDelete" name="leveldb::Benchmark::DoDelete">
+<area shape="rect" id="node2" href="$classleveldb_1_1_benchmark.html#a56edb0a3157cbc6c4d53b7c2bba7500d" title="leveldb::Benchmark\l::DeleteSeq" alt="" coords="192,5,330,44"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_benchmark.html#a3c8a9018862c652e48830cdb38269060" title="leveldb::Benchmark\l::DeleteRandom" alt="" coords="192,68,330,107"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="378,44,548,69"/>
+<area shape="rect" id="node4" href="$db__bench_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="596,44,647,69"/>
+</map>

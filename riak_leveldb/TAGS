@@ -1,0 +1,948 @@
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/builder.h,44
+#define STORAGE_LEVELDB_DB_BUILDER_H_6,255
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/c_test.c,691
+const char* phase 14,367
+static char dbname[dbname15,391
+static void StartPhase(17,417
+static const char* GetTempDir(22,521
+#define CheckNoError(29,684
+#define CheckCondition(35,987
+static void CheckEqual(41,1290
+static void Free(57,1729
+static void CheckGet(64,1814
+static void CheckIter(78,2141
+static void CheckPut(89,2465
+static void CheckDel(108,2923
+static void CmpDestroy(115,3090
+static int CmpCompare(117,3129
+static const char* CmpName(128,3406
+static unsigned char fake_filter_result 133,3489
+static void FilterDestroy(134,3534
+static const char* FilterName(135,3575
+static char* FilterCreate(138,3643
+unsigned char FilterKeyMatch(148,3896
+int main(157,4145
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/db_impl.h,658
+#define STORAGE_LEVELDB_DB_DB_IMPL_H_6,255
+class DBImpl 26,609
+  void ResizeCaches(66,2349
+  size_t GetCacheCapacity(67,2403
+  void PurgeExpiredFileCache(68,2474
+  uint32_t RunningCompactionCount(73,2656
+  void MaybeIgnoreError(95,3369
+  struct ManualCompaction DBImpl::ManualCompaction173,6210
+  struct CompactionStats DBImpl::CompactionStats189,6773
+    CompactionStats(DBImpl::CompactionStats::CompactionStats194,6872
+    void Add(DBImpl::CompactionStats::Add196,6944
+  Cache * block_cache(DBImpl::block_cache214,7610
+  Cache * file_cache(DBImpl::file_cache215,7675
+  const Comparator* user_comparator(DBImpl::user_comparator221,7822
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/db_iter.h,44
+#define STORAGE_LEVELDB_DB_DB_ITER_H_6,255
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/dbformat.h,2008
+#define STORAGE_LEVELDB_DB_FORMAT_H_6,254
+enum ValueType 56,1938
+  kTypeDeletion ValueType::kTypeDeletion57,1955
+  kTypeDeletion = 0x0,ValueType::x057,1955
+  kTypeValue ValueType::kTypeValue58,1978
+  kTypeValue = 0x1ValueType::x158,1978
+static const ValueType kValueTypeForSeek 66,2375
+typedef uint64_t SequenceNumber;68,2431
+static const SequenceNumber kMaxSequenceNumber 72,2572
+struct ParsedInternalKey 75,2648
+  ParsedInternalKey(ParsedInternalKey::ParsedInternalKey80,2739
+  ParsedInternalKey(ParsedInternalKey::ParsedInternalKey81,2814
+inline size_t InternalKeyEncodingLength(88,3062
+inline Slice ExtractUserKey(104,3698
+inline ValueType ExtractValueType(109,3856
+class InternalKeyComparator 119,4269
+  explicit InternalKeyComparator(InternalKeyComparator::InternalKeyComparator123,4376
+  const Comparator* user_comparator(InternalKeyComparator::user_comparator131,4710
+class InternalFilterPolicy 137,4924
+  explicit InternalFilterPolicy(InternalFilterPolicy::InternalFilterPolicy141,5038
+class InternalFilterPolicy2 147,5307
+  explicit InternalFilterPolicy2(InternalFilterPolicy2::InternalFilterPolicy2149,5376
+  virtual ~InternalFilterPolicy2(InternalFilterPolicy2::~InternalFilterPolicy2150,5462
+class InternalKey 156,5736
+  InternalKey(InternalKey::InternalKey160,5795
+  InternalKey(InternalKey::InternalKey161,5866
+  void DecodeFrom(InternalKey::DecodeFrom165,6006
+  Slice Encode(InternalKey::Encode166,6077
+  Slice user_key(InternalKey::user_key171,6151
+  void SetFrom(InternalKey::SetFrom173,6210
+  void Clear(InternalKey::Clear178,6311
+inline int InternalKeyComparator::Compare(183,6384
+inline bool ParseInternalKey(188,6528
+class LookupKey 201,7035
+  Slice memtable_key(LookupKey::memtable_key210,7295
+  Slice internal_key(LookupKey::internal_key213,7441
+  Slice user_key(LookupKey::user_key216,7539
+inline LookupKey::~LookupKey(236,8177
+class KeyRetirement243,8419
+    virtual ~KeyRetirement(KeyRetirement::~KeyRetirement262,8928
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/filename.h,221
+#define STORAGE_LEVELDB_DB_FILENAME_H_8,289
+enum FileType 22,523
+  kLogFile,23,539
+  kDBLockFile,24,551
+  kTableFile,25,566
+  kDescriptorFile,26,580
+  kCurrentFile,27,599
+  kTempFile,28,615
+  kInfoLogFile 29,628
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/log_format.h,287
+#define STORAGE_LEVELDB_DB_LOG_FORMAT_H_9,362
+enum RecordType 14,441
+  kZeroType 16,504
+  kFullType 18,522
+  kFirstType 21,559
+  kMiddleType 22,577
+  kLastType 23,596
+static const int kMaxRecordType 25,615
+static const int kBlockSize 27,661
+static const int kHeaderSize 30,765
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/log_reader.h,211
+#define STORAGE_LEVELDB_DB_LOG_READER_H_6,258
+class Reader 20,465
+  class Reporter 23,526
+    kEof 78,2481
+    kEof = kMaxRecordType 78,2481
+    kBadRecord 84,2858
+    kBadRecord = kMaxRecordType 84,2858
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/log_writer.h,89
+#define STORAGE_LEVELDB_DB_LOG_WRITER_H_6,258
+class Writer 18,466
+  void Close(28,736
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/memtable.h,264
+#define STORAGE_LEVELDB_DB_MEMTABLE_H_6,256
+class MemTable 20,501
+  void Ref(27,747
+  void Unref(30,847
+  struct KeyComparator 69,2176
+    explicit KeyComparator(71,2245
+    int operator(72,2324
+  typedef SkipList<const char*, KeyComparator> Table;77,2460
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/skiplist.h,2145
+class SkipList 38,1211
+  bool Contains(53,1748
+  class Iterator 56,1836
+    bool Valid(63,2078
+  enum { kMaxHeight 95,2829
+  inline int GetMaxHeight(SkipList::GetMaxHeight107,3163
+  bool Equal(SkipList::Equal117,3419
+template<typename Key,143,4280
+struct SkipList<Key,Comparator>::Node Node144,4321
+template<typename Key,179,5393
+SkipList<Key,Comparator>::NewNode(NewNode181,5475
+template<typename Key,187,5677
+inline SkipList<Key,Comparator>::Iterator::Iterator(Iterator::Iterator188,5718
+template<typename Key,193,5829
+inline bool SkipList<Key,Comparator>::Iterator::Valid(Iterator::Valid194,5870
+template<typename Key,198,5961
+inline const Key& SkipList<Key,Comparator>::Iterator::key(Iterator::key199,6002
+template<typename Key,204,6113
+inline void SkipList<Key,Comparator>::Iterator::Next(Iterator::Next205,6154
+template<typename Key,210,6259
+inline void SkipList<Key,Comparator>::Iterator::Prev(Iterator::Prev211,6300
+template<typename Key,221,6581
+inline void SkipList<Key,Comparator>::Iterator::Seek(Iterator::Seek222,6622
+template<typename Key,226,6750
+inline void SkipList<Key,Comparator>::Iterator::SeekToFirst(Iterator::SeekToFirst227,6791
+template<typename Key,231,6891
+inline void SkipList<Key,Comparator>::Iterator::SeekToLast(Iterator::SeekToLast232,6932
+template<typename Key,239,7080
+int SkipList<Key,Comparator>::RandomHeight(RandomHeight240,7121
+template<typename Key,252,7445
+bool SkipList<Key,Comparator>::KeyIsAfterNode(KeyIsAfterNode253,7486
+template<typename Key,258,7656
+typename SkipList<Key,Comparator>::Node* SkipList<Key,Comparator>::FindGreaterOrEqual(FindGreaterOrEqual259,7697
+template<typename Key,280,8200
+SkipList<Key,Comparator>::FindLessThan(FindLessThan282,8282
+template<typename Key,301,8713
+typename SkipList<Key,Comparator>::Node* SkipList<Key,Comparator>::FindLast(FindLast302,8754
+template<typename Key,321,9126
+SkipList<Key,Comparator>::SkipList(SkipList322,9167
+template<typename Key,333,9482
+void SkipList<Key,Comparator>::Insert(Insert334,9523
+template<typename Key,369,10911
+bool SkipList<Key,Comparator>::Contains(Contains370,10952
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/snapshot.h,392
+#define STORAGE_LEVELDB_DB_SNAPSHOT_H_6,256
+class SnapshotImpl 16,486
+class SnapshotList 30,801
+  SnapshotList(SnapshotList::SnapshotList32,831
+  bool empty(SnapshotList::empty37,907
+  SnapshotImpl* oldest(SnapshotList::oldest38,962
+  SnapshotImpl* newest(SnapshotList::newest39,1035
+  const SnapshotImpl* New(SnapshotList::New41,1109
+  void Delete(SnapshotList::Delete52,1360
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/table_cache.h,251
+#define STORAGE_LEVELDB_DB_TABLE_CACHE_H_8,313
+class TableCache 22,555
+  Status TEST_FindTable(59,2118
+  Cache* TEST_GetInternalCache(62,2284
+  void Release(64,2337
+struct TableAndFile 77,2660
+   TableAndFile(TableAndFile::TableAndFile82,2754
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/version_edit.h,875
+#define STORAGE_LEVELDB_DB_VERSION_EDIT_H_6,260
+struct FileMetaData 17,422
+  FileMetaData(27,841
+class FileMetaDataPtrCompare34,956
+    explicit FileMetaDataPtrCompare(FileMetaDataPtrCompare::FileMetaDataPtrCompare40,1043
+    bool operator() FileMetaDataPtrCompare::operator()43,1145
+class VersionEdit 49,1375
+  VersionEdit(VersionEdit::VersionEdit51,1404
+  ~VersionEdit(VersionEdit::~VersionEdit52,1433
+  void SetComparatorName(VersionEdit::SetComparatorName56,1472
+  void SetLogNumber(VersionEdit::SetLogNumber60,1585
+  void SetPrevLogNumber(VersionEdit::SetPrevLogNumber64,1676
+  void SetNextFile(VersionEdit::SetNextFile68,1781
+  void SetLastSequence(VersionEdit::SetLastSequence72,1883
+  void SetCompactPointer(VersionEdit::SetCompactPointer76,1989
+  void AddFile(VersionEdit::AddFile83,2320
+  void DeleteFile(VersionEdit::DeleteFile97,2746
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/version_set.h,2279
+#define STORAGE_LEVELDB_DB_VERSION_SET_H_16,690
+class Version 61,2033
+  struct GetStats Version::GetStats71,2473
+  size_t NumFiles(Version::NumFiles107,3902
+  typedef std::vector<FileMetaData*> FileMetaDataVector_t;Version::FileMetaDataVector_t109,3971
+  const std::vector<FileMetaData*> & GetFileList(Version::GetFileList111,4031
+  volatile int WritePenalty(Version::WritePenalty113,4123
+  explicit Version(Version::Version148,5385
+class VersionSet 165,5748
+  Version* current(VersionSet::current184,6441
+  uint64_t ManifestFileNumber(VersionSet::ManifestFileNumber187,6535
+  uint64_t NewFileNumber(VersionSet::NewFileNumber192,6796
+  void ReuseFileNumber(VersionSet::ReuseFileNumber198,7127
+  uint64_t LastSequence(VersionSet::LastSequence216,7690
+  void SetLastSequence(VersionSet::SetLastSequence219,7790
+  uint64_t LogNumber(VersionSet::LogNumber228,8020
+  uint64_t PrevLogNumber(VersionSet::PrevLogNumber232,8201
+  int WriteThrottleUsec(VersionSet::WriteThrottleUsec234,8264
+  bool NeedsCompaction(VersionSet::NeedsCompaction279,9732
+  struct LevelSummaryStorage VersionSet::LevelSummaryStorage294,10311
+  TableCache* GetTableCache(VersionSet::GetTableCache300,10503
+  bool IsCompactionSubmitted(VersionSet::IsCompactionSubmitted302,10559
+  void SetCompactionSubmitted(VersionSet::SetCompactionSubmitted305,10651
+  void SetCompactionRunning(VersionSet::SetCompactionRunning308,10741
+  void SetCompactionDone(VersionSet::SetCompactionDone311,10827
+  struct CompactionStatus_sVersionSet::CompactionStatus_s366,12599
+      CompactionStatus_s(VersionSet::CompactionStatus_s::CompactionStatus_s371,12768
+class Compaction 383,13055
+  int level(Compaction::level389,13240
+  VersionEdit* edit(Compaction::edit393,13372
+  int num_input_files(Compaction::num_input_files396,13449
+  FileMetaData* input(Compaction::input399,13599
+  uint64_t MaxOutputFileSize(Compaction::MaxOutputFileSize402,13736
+  size_t TotalUserDataSize(Compaction::TotalUserDataSize426,14735
+  size_t TotalIndexKeys(Compaction::TotalIndexKeys427,14797
+  size_t AverageValueSize(Compaction::AverageValueSize428,14860
+  size_t AverageKeySize(Compaction::AverageKeySize429,14923
+  size_t AverageBlockSize(Compaction::AverageBlockSize430,14984
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//db/write_batch_internal.h,157
+#define STORAGE_LEVELDB_DB_WRITE_BATCH_INTERNAL_H_6,268
+class WriteBatchInternal 16,526
+  static Slice Contents(31,1043
+  static size_t ByteSize(35,1130
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//helpers/memenv/memenv.h,55
+#define STORAGE_LEVELDB_HELPERS_MEMENV_MEMENV_H_6,266
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/atomics.h,647
+ #define LEVELDB_ATOMIC_H 26,999
+ #define LEVELDB_IS_SOLARIS 33,1212
+ #undef LEVELDB_IS_SOLARIS35,1248
+template <typename PtrT,66,1931
+inline bool compare_and_swap(67,1973
+inline uint64_t inc_and_fetch(85,2374
+inline uint32_t inc_and_fetch(95,2556
+inline size_t inc_and_fetch(106,2831
+inline uint64_t dec_and_fetch(121,3055
+inline uint32_t dec_and_fetch(131,3237
+inline size_t dec_and_fetch(142,3512
+inline uint64_t add_and_fetch(158,3743
+inline uint32_t add_and_fetch(168,3946
+inline size_t add_and_fetch(179,4242
+inline uint64_t sub_and_fetch(194,4491
+inline uint32_t sub_and_fetch(205,4764
+inline size_t sub_and_fetch(217,5130
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/c.h,1191
+#define STORAGE_LEVELDB_INCLUDE_C_H_41,1543
+typedef struct leveldb_t               leveldb_t;53,1704
+typedef struct leveldb_cache_t         leveldb_cache_t;54,1754
+typedef struct leveldb_comparator_t    leveldb_comparator_t;55,1810
+typedef struct leveldb_env_t           leveldb_env_t;56,1871
+typedef struct leveldb_filelock_t      leveldb_filelock_t;57,1925
+typedef struct leveldb_filterpolicy_t  leveldb_filterpolicy_t;58,1984
+typedef struct leveldb_iterator_t      leveldb_iterator_t;59,2047
+typedef struct leveldb_logger_t        leveldb_logger_t;60,2106
+typedef struct leveldb_options_t       leveldb_options_t;61,2163
+typedef struct leveldb_randomfile_t    leveldb_randomfile_t;62,2221
+typedef struct leveldb_readoptions_t   leveldb_readoptions_t;63,2282
+typedef struct leveldb_seqfile_t       leveldb_seqfile_t;64,2344
+typedef struct leveldb_snapshot_t      leveldb_snapshot_t;65,2402
+typedef struct leveldb_writablefile_t  leveldb_writablefile_t;66,2461
+typedef struct leveldb_writebatch_t    leveldb_writebatch_t;67,2524
+typedef struct leveldb_writeoptions_t  leveldb_writeoptions_t;68,2585
+  leveldb_no_compression 207,7362
+  leveldb_snappy_compression 208,7392
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/cache.h,155
+#define STORAGE_LEVELDB_INCLUDE_CACHE_H_19,950
+class Cache 37,1416
+  Cache(39,1439
+  struct Handle 46,1637
+  virtual size_t EntryOverheadSize(91,3576
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/comparator.h,107
+#define STORAGE_LEVELDB_INCLUDE_COMPARATOR_H_6,263
+class Comparator 18,606
+  virtual int Compare(26,782
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/db.h,180
+#define STORAGE_LEVELDB_INCLUDE_DB_H_6,255
+class Snapshot 27,787
+struct Range 33,862
+  Range(37,980
+  Range(38,994
+class Value 44,1213
+class DB 55,1491
+  DB(DB::DB66,1907
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/env.h,2311
+#define STORAGE_LEVELDB_INCLUDE_ENV_H_14,662
+class Env 34,1006
+  Env(36,1027
+  virtual Status NewWriteOnlyFile(99,3900
+  virtual int GetBackgroundBacklog(181,7444
+  virtual PerformanceCounters * GetPerformanceCounters(184,7577
+  virtual size_t RecoveryMmapSize(188,7817
+class SequentialFile 197,8056
+  SequentialFile(SequentialFile::SequentialFile199,8088
+class RandomAccessFile 223,9029
+  RandomAccessFile(RandomAccessFile::RandomAccessFile225,9063
+  virtual void SetForCompaction(RandomAccessFile::SetForCompaction241,9761
+  virtual size_t ObjectSize(RandomAccessFile::ObjectSize244,9871
+class WritableFile 250,10101
+  WritableFile(WritableFile::WritableFile252,10131
+  virtual void SetMetadataOffset(WritableFile::SetMetadataOffset263,10431
+class AppendableFile:AppendableFile272,10663
+  AppendableFile(AppendableFile::AppendableFile274,10716
+class Logger 284,10931
+  Logger(Logger::Logger286,10955
+class FileLock 300,11239
+  FileLock(FileLock::FileLock302,11265
+class EnvWrapper 328,12167
+  explicit EnvWrapper(EnvWrapper::EnvWrapper331,12269
+  Env* target(EnvWrapper::target335,12402
+  Status NewSequentialFile(EnvWrapper::NewSequentialFile338,12522
+  Status NewRandomAccessFile(EnvWrapper::NewRandomAccessFile341,12642
+  Status NewWritableFile(EnvWrapper::NewWritableFile344,12768
+  Status NewAppendableFile(EnvWrapper::NewAppendableFile347,12897
+  Status NewWriteOnlyFile(EnvWrapper::NewWriteOnlyFile350,13032
+  bool FileExists(EnvWrapper::FileExists353,13163
+  Status GetChildren(EnvWrapper::GetChildren354,13238
+  Status DeleteFile(EnvWrapper::DeleteFile357,13359
+  Status CreateDir(EnvWrapper::CreateDir358,13436
+  Status DeleteDir(EnvWrapper::DeleteDir359,13511
+  Status GetFileSize(EnvWrapper::GetFileSize360,13586
+  Status RenameFile(EnvWrapper::RenameFile363,13687
+  Status LockFile(EnvWrapper::LockFile366,13795
+  Status UnlockFile(EnvWrapper::UnlockFile369,13891
+  void Schedule(EnvWrapper::Schedule370,13959
+  pthread_t StartThread(EnvWrapper::StartThread373,14046
+  virtual Status GetTestDirectory(EnvWrapper::GetTestDirectory376,14142
+  virtual Status NewLogger(EnvWrapper::NewLogger379,14245
+  uint64_t NowMicros(EnvWrapper::NowMicros382,14367
+  void SleepForMicroseconds(EnvWrapper::SleepForMicroseconds385,14429
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/filter_policy.h,321
+#define STORAGE_LEVELDB_INCLUDE_FILTER_POLICY_H_17,796
+class FilterPolicy 25,900
+  FilterPolicy(30,1012
+  const FilterPolicy * GetNext(37,1113
+  void SetNext(38,1171
+  virtual const char* Name(45,1481
+class FilterInventory83,3219
+    static void AddFilterToInventory(FilterInventory::AddFilterToInventory92,3528
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/iterator.h,188
+#define STORAGE_LEVELDB_INCLUDE_ITERATOR_H_16,757
+class Iterator 23,879
+  virtual bool Valid(30,1074
+  typedef void (*CleanupFunction)CleanupFunction75,2871
+  struct Cleanup 79,3015
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/options.h,615
+#define STORAGE_LEVELDB_INCLUDE_OPTIONS_H_6,260
+enum CompressionType 29,789
+  kNoCompression 32,926
+  kNoCompression     = 0x0,x032,926
+  kSnappyCompression 33,954
+  kSnappyCompression = 0x1x133,954
+struct Options 37,1055
+struct ReadOptions 230,8443
+  ReadOptions(ReadOptions::ReadOptions255,9386
+  bool IsCompaction(ReadOptions::IsCompaction268,9618
+  Logger * GetInfoLog(ReadOptions::GetInfoLog270,9673
+  const std::string & GetDBName(ReadOptions::GetDBName272,9725
+  Env * GetEnv(ReadOptions::GetEnv274,9785
+struct WriteOptions 297,10403
+  WriteOptions(WriteOptions::WriteOptions316,11148
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/perf_count.h,7911
+#define STORAGE_LEVELDB_INCLUDE_PERF_COUNT_H_24,902
+enum SstCountEnum32,1037
+    eSstCountKeys=37,1103
+    eSstCountBlocks=38,1165
+    eSstCountCompressAborted=39,1229
+    eSstCountKeySize=40,1319
+    eSstCountValueSize=41,1378
+    eSstCountBlockSize=42,1439
+    eSstCountBlockWriteSize=43,1518
+    eSstCountIndexKeys=44,1608
+    eSstCountKeyLargest=45,1677
+    eSstCountKeySmallest=46,1732
+    eSstCountValueLargest=47,1788
+    eSstCountValueSmallest=48,1845
+    eSstCountDeleteKey=49,1903
+    eSstCountBlockSizeUsed=50,1955
+    eSstCountUserDataSize=51,2031
+    eSstCountEnumSize,54,2202
+    eSstCountVersion=56,2287
+class SstCounters61,2338
+    uint32_t Size(SstCounters::Size93,3168
+enum PerformanceCountersEnum104,3350
+    ePerfROFileOpen=PerformanceCountersEnum::ePerfROFileOpen110,3502
+    ePerfROFileClose=PerformanceCountersEnum::ePerfROFileClose111,3562
+    ePerfROFileUnmap=PerformanceCountersEnum::ePerfROFileUnmap112,3603
+    ePerfRWFileOpen=PerformanceCountersEnum::ePerfRWFileOpen114,3658
+    ePerfRWFileClose=PerformanceCountersEnum::ePerfRWFileClose115,3710
+    ePerfRWFileUnmap=PerformanceCountersEnum::ePerfRWFileUnmap116,3751
+    ePerfApiOpen=PerformanceCountersEnum::ePerfApiOpen118,3806
+    ePerfApiGet=PerformanceCountersEnum::ePerfApiGet119,3869
+    ePerfApiWrite=PerformanceCountersEnum::ePerfApiWrite120,3935
+    ePerfWriteSleep=PerformanceCountersEnum::ePerfWriteSleep122,4002
+    ePerfWriteWaitImm=PerformanceCountersEnum::ePerfWriteWaitImm123,4073
+    ePerfWriteWaitLevel0=PerformanceCountersEnum::ePerfWriteWaitLevel0124,4158
+    ePerfWriteNewMem=PerformanceCountersEnum::ePerfWriteNewMem125,4246
+    ePerfWriteError=PerformanceCountersEnum::ePerfWriteError126,4327
+    ePerfWriteNoWait=PerformanceCountersEnum::ePerfWriteNoWait127,4399
+    ePerfGetMem=PerformanceCountersEnum::ePerfGetMem129,4473
+    ePerfGetImm=PerformanceCountersEnum::ePerfGetImm130,4539
+    ePerfGetVersion=PerformanceCountersEnum::ePerfGetVersion131,4614
+    ePerfSearchLevel0=PerformanceCountersEnum::ePerfSearchLevel0135,4784
+    ePerfSearchLevel1=PerformanceCountersEnum::ePerfSearchLevel1136,4867
+    ePerfSearchLevel2=PerformanceCountersEnum::ePerfSearchLevel2137,4950
+    ePerfSearchLevel3=PerformanceCountersEnum::ePerfSearchLevel3138,5033
+    ePerfSearchLevel4=PerformanceCountersEnum::ePerfSearchLevel4139,5116
+    ePerfSearchLevel5=PerformanceCountersEnum::ePerfSearchLevel5140,5199
+    ePerfSearchLevel6=PerformanceCountersEnum::ePerfSearchLevel6141,5282
+    ePerfTableCached=PerformanceCountersEnum::ePerfTableCached143,5366
+    ePerfTableOpened=PerformanceCountersEnum::ePerfTableOpened144,5442
+    ePerfTableGet=PerformanceCountersEnum::ePerfTableGet145,5520
+    ePerfBGCloseUnmap=PerformanceCountersEnum::ePerfBGCloseUnmap147,5593
+    ePerfBGCompactImm=PerformanceCountersEnum::ePerfBGCompactImm148,5670
+    ePerfBGNormal=PerformanceCountersEnum::ePerfBGNormal149,5749
+    ePerfBGCompactLevel0=PerformanceCountersEnum::ePerfBGCompactLevel0150,5832
+    ePerfBlockFiltered=PerformanceCountersEnum::ePerfBlockFiltered152,5915
+    ePerfBlockFilterFalse=PerformanceCountersEnum::ePerfBlockFilterFalse153,5996
+    ePerfBlockCached=PerformanceCountersEnum::ePerfBlockCached154,6081
+    ePerfBlockRead=PerformanceCountersEnum::ePerfBlockRead155,6154
+    ePerfBlockFilterRead=PerformanceCountersEnum::ePerfBlockFilterRead156,6227
+    ePerfBlockValidGet=PerformanceCountersEnum::ePerfBlockValidGet157,6300
+    ePerfDebug0=PerformanceCountersEnum::ePerfDebug0159,6372
+    ePerfDebug1=PerformanceCountersEnum::ePerfDebug1160,6440
+    ePerfDebug2=PerformanceCountersEnum::ePerfDebug2161,6508
+    ePerfDebug3=PerformanceCountersEnum::ePerfDebug3162,6576
+    ePerfDebug4=PerformanceCountersEnum::ePerfDebug4163,6644
+    ePerfReadBlockError=PerformanceCountersEnum::ePerfReadBlockError165,6713
+    ePerfIterNew=PerformanceCountersEnum::ePerfIterNew167,6797
+    ePerfIterNext=PerformanceCountersEnum::ePerfIterNext168,6867
+    ePerfIterPrev=PerformanceCountersEnum::ePerfIterPrev169,6928
+    ePerfIterSeek=PerformanceCountersEnum::ePerfIterSeek170,6989
+    ePerfIterSeekFirst=PerformanceCountersEnum::ePerfIterSeekFirst171,7050
+    ePerfIterSeekLast=PerformanceCountersEnum::ePerfIterSeekLast172,7116
+    ePerfIterDelete=PerformanceCountersEnum::ePerfIterDelete173,7181
+    ePerfElevelDirect=PerformanceCountersEnum::ePerfElevelDirect175,7240
+    ePerfElevelQueued=PerformanceCountersEnum::ePerfElevelQueued176,7324
+    ePerfElevelDequeued=PerformanceCountersEnum::ePerfElevelDequeued177,7403
+    ePerfElevelRefCreate=PerformanceCountersEnum::ePerfElevelRefCreate179,7484
+    ePerfElevelRefDelete=PerformanceCountersEnum::ePerfElevelRefDelete180,7548
+    ePerfThrottleGauge=PerformanceCountersEnum::ePerfThrottleGauge182,7612
+    ePerfThrottleCounter=PerformanceCountersEnum::ePerfThrottleCounter183,7668
+    ePerfThrottleMicros0=PerformanceCountersEnum::ePerfThrottleMicros0185,7730
+    ePerfThrottleKeys0=PerformanceCountersEnum::ePerfThrottleKeys0186,7795
+    ePerfThrottleBacklog0=PerformanceCountersEnum::ePerfThrottleBacklog0187,7851
+    ePerfThrottleCompacts0=PerformanceCountersEnum::ePerfThrottleCompacts0188,7921
+    ePerfThrottleMicros1=PerformanceCountersEnum::ePerfThrottleMicros1190,7987
+    ePerfThrottleKeys1=PerformanceCountersEnum::ePerfThrottleKeys1191,8053
+    ePerfThrottleBacklog1=PerformanceCountersEnum::ePerfThrottleBacklog1192,8110
+    ePerfThrottleCompacts1=PerformanceCountersEnum::ePerfThrottleCompacts1193,8181
+    ePerfBGWriteError=PerformanceCountersEnum::ePerfBGWriteError195,8248
+    ePerfThrottleWait=PerformanceCountersEnum::ePerfThrottleWait197,8315
+    ePerfThreadError=PerformanceCountersEnum::ePerfThreadError198,8378
+    ePerfBGImmDirect=PerformanceCountersEnum::ePerfBGImmDirect200,8463
+    ePerfBGImmQueued=PerformanceCountersEnum::ePerfBGImmQueued201,8536
+    ePerfBGImmDequeued=PerformanceCountersEnum::ePerfBGImmDequeued202,8607
+    ePerfBGImmWeighted=PerformanceCountersEnum::ePerfBGImmWeighted203,8681
+    ePerfBGUnmapDirect=PerformanceCountersEnum::ePerfBGUnmapDirect205,8754
+    ePerfBGUnmapQueued=PerformanceCountersEnum::ePerfBGUnmapQueued206,8828
+    ePerfBGUnmapDequeued=PerformanceCountersEnum::ePerfBGUnmapDequeued207,8900
+    ePerfBGUnmapWeighted=PerformanceCountersEnum::ePerfBGUnmapWeighted208,8975
+    ePerfBGLevel0Direct=PerformanceCountersEnum::ePerfBGLevel0Direct210,9048
+    ePerfBGLevel0Queued=PerformanceCountersEnum::ePerfBGLevel0Queued211,9125
+    ePerfBGLevel0Dequeued=PerformanceCountersEnum::ePerfBGLevel0Dequeued212,9200
+    ePerfBGLevel0Weighted=PerformanceCountersEnum::ePerfBGLevel0Weighted213,9278
+    ePerfBGCompactDirect=PerformanceCountersEnum::ePerfBGCompactDirect215,9352
+    ePerfBGCompactQueued=PerformanceCountersEnum::ePerfBGCompactQueued216,9431
+    ePerfBGCompactDequeued=PerformanceCountersEnum::ePerfBGCompactDequeued217,9508
+    ePerfBGCompactWeighted=PerformanceCountersEnum::ePerfBGCompactWeighted218,9588
+    ePerfFileCacheInsert=PerformanceCountersEnum::ePerfFileCacheInsert220,9663
+    ePerfFileCacheRemove=PerformanceCountersEnum::ePerfFileCacheRemove221,9735
+    ePerfBlockCacheInsert=PerformanceCountersEnum::ePerfBlockCacheInsert223,9807
+    ePerfBlockCacheRemove=PerformanceCountersEnum::ePerfBlockCacheRemove224,9880
+    ePerfApiDelete=PerformanceCountersEnum::ePerfApiDelete226,9953
+    ePerfCountEnumSize,PerformanceCountersEnum::ePerfCountEnumSize230,10120
+    ePerfVersion=PerformanceCountersEnum::ePerfVersion232,10201
+    ePerfKey=PerformanceCountersEnum::ePerfKey233,10255
+struct PerformanceCounters240,10490
+    bool VersionTest(PerformanceCounters::VersionTest260,11074
+    void SetVersion(PerformanceCounters::SetVersion264,11218
+    uint32_t Size(PerformanceCounters::Size291,11938
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/slice.h,509
+#define STORAGE_LEVELDB_INCLUDE_SLICE_H_16,713
+class Slice 25,855
+  Slice(28,906
+  Slice(31,988
+  Slice(34,1102
+  Slice(37,1224
+  const char* data(40,1343
+  size_t size(43,1446
+  bool empty(46,1550
+  char operator[operator50,1670
+  void clear(56,1806
+  void remove_prefix(59,1896
+  std::string ToString(Slice::ToString66,2059
+  bool starts_with(Slice::starts_with75,2353
+inline bool operator==(operator==87,2568
+inline bool operator!=(operator!=92,2720
+inline int Slice::compare(96,2800
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/status.h,865
+#define STORAGE_LEVELDB_INCLUDE_STATUS_H_14,637
+class Status 21,747
+  Status(24,801
+  ~Status(25,831
+  static Status OK(32,990
+  static Status NotFound(35,1082
+  static Status Corruption(38,1201
+  static Status NotSupported(41,1324
+  static Status InvalidArgument(44,1451
+  static Status IOError(47,1584
+  bool ok(52,1754
+  bool IsNotFound(55,1863
+  bool IsCorruption(58,1985
+  bool IsIOError(61,2103
+  enum Code Status::Code75,2543
+    kOk Status::Code::kOk76,2557
+    kNotFound Status::Code::kNotFound77,2570
+    kCorruption Status::Code::kCorruption78,2589
+    kNotSupported Status::Code::kNotSupported79,2610
+    kInvalidArgument Status::Code::kInvalidArgument80,2633
+    kIOError Status::Code::kIOError81,2659
+  Code code(Status::code84,2682
+inline Status::Status(92,2884
+inline void Status::operator=(Status::operator=95,2987
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/table.h,171
+#define STORAGE_LEVELDB_INCLUDE_TABLE_H_6,258
+class Table 25,713
+  Iterator* NewIterator(49,1750
+  static Iterator* TEST_BlockReader(73,2719
+  explicit Table(80,2916
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/table_builder.h,108
+#define STORAGE_LEVELDB_INCLUDE_TABLE_BUILDER_H_14,627
+class TableBuilder 26,836
+  Status status(56,2202
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//include/leveldb/write_batch.h,131
+#define STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_22,875
+class WriteBatch 31,1005
+  class Handler 46,1405
+  Status Iterate(52,1574
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/atomic_pointer.h,1573
+#define PORT_ATOMIC_POINTER_H_20,1084
+#define ARCH_CPU_X86_FAMILY 34,1339
+#define ARCH_CPU_X86_FAMILY 36,1432
+#define ARCH_CPU_ARM_FAMILY 38,1487
+#define LEVELDB_HAVE_MEMORY_BARRIER49,1822
+namespace leveldb LEVELDB_HAVE_MEMORY_BARRIER41,1525
+#define LEVELDB_HAVE_MEMORY_BARRIER58,2153
+inline void MemoryBarrier(62,2263
+#define LEVELDB_HAVE_MEMORY_BARRIER67,2479
+inline void MemoryBarrier(71,2551
+#define LEVELDB_HAVE_MEMORY_BARRIER74,2604
+typedef void (*LinuxKernelMemoryBarrierFunc)LinuxKernelMemoryBarrierFunc78,2711
+inline void MemoryBarrier(89,3247
+#define LEVELDB_HAVE_MEMORY_BARRIER92,3328
+class AtomicPointer 98,3477
+  AtomicPointer(AtomicPointer::AtomicPointer102,3532
+  explicit AtomicPointer(AtomicPointer::AtomicPointer103,3554
+  inline void* NoBarrier_Load(AtomicPointer::NoBarrier_Load104,3601
+  inline void NoBarrier_Store(AtomicPointer::NoBarrier_Store105,3656
+  inline void* Acquire_Load(AtomicPointer::Acquire_Load106,3709
+  inline void Release_Store(AtomicPointer::Release_Store111,3816
+class AtomicPointer 119,3979
+  AtomicPointer(AtomicPointer::AtomicPointer123,4047
+  explicit AtomicPointer(AtomicPointer::AtomicPointer124,4069
+  inline void* Acquire_Load(AtomicPointer::Acquire_Load125,4117
+  inline void Release_Store(AtomicPointer::Release_Store128,4208
+  inline void* NoBarrier_Load(AtomicPointer::NoBarrier_Load131,4297
+  inline void NoBarrier_Store(AtomicPointer::NoBarrier_Store134,4390
+#undef LEVELDB_HAVE_MEMORY_BARRIER145,4610
+#undef ARCH_CPU_X86_FAMILY146,4645
+#undef ARCH_CPU_ARM_FAMILY147,4672
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/port.h,43
+#define STORAGE_LEVELDB_PORT_PORT_H_6,254
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/port_android.h,1007
+#define STORAGE_LEVELDB_PORT_PORT_ANDROID_H_8,340
+#define ARMV6_OR_7 28,955
+class Mutex 45,1313
+  void AssertHeld(52,1392
+class CondVar 65,1597
+typedef void (*LinuxKernelMemoryBarrierFunc)LinuxKernelMemoryBarrierFunc80,1906
+LinuxKernelMemoryBarrierFunc pLinuxKernelMemoryBarrier ATTRIBUTE_WEAK 84,2184
+class AtomicPointer 89,2346
+  inline void MemoryBarrier(AtomicPointer::MemoryBarrier93,2393
+  AtomicPointer(AtomicPointer::AtomicPointer103,2627
+  explicit AtomicPointer(AtomicPointer::AtomicPointer104,2649
+  inline void* Acquire_Load(AtomicPointer::Acquire_Load105,2697
+  inline void Release_Store(AtomicPointer::Release_Store110,2794
+  inline void* NoBarrier_Load(AtomicPointer::NoBarrier_Load114,2872
+  inline void NoBarrier_Store(AtomicPointer::NoBarrier_Store118,2950
+inline bool Snappy_Compress(124,3048
+inline bool Snappy_GetUncompressedLength(132,3208
+inline bool Snappy_Uncompress(138,3398
+inline uint64_t ThreadIdentifier(145,3521
+inline bool GetHeapProfile(152,3696
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/port_example.h,258
+#define STORAGE_LEVELDB_PORT_PORT_EXAMPLE_H_11,521
+class Mutex 26,1027
+class CondVar 45,1526
+typedef intptr_t OnceType;69,2204
+#define LEVELDB_ONCE_INIT 70,2231
+class AtomicPointer 75,2425
+  explicit AtomicPointer(AtomicPointer::AtomicPointer83,2564
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/port_posix.h,1151
+#define STORAGE_LEVELDB_PORT_PORT_POSIX_H_8,338
+#undef PLATFORM_IS_LITTLE_ENDIAN14,472
+    #define PLATFORM_IS_LITTLE_ENDIAN 18,628
+    #define PLATFORM_IS_LITTLE_ENDIAN 24,811
+    #define PLATFORM_IS_LITTLE_ENDIAN 26,862
+    #define PLATFORM_IS_LITTLE_ENDIAN 34,1162
+#define PLATFORM_IS_LITTLE_ENDIAN 48,1444
+#define fread_unlocked 55,1762
+#define fwrite_unlocked 56,1791
+#define fflush_unlocked 57,1822
+#define fdatasync 63,2011
+#define USED_BY_NESTED_FRIEND(70,2312
+#define USED_BY_NESTED_FRIEND2(71,2365
+#define USED_BY_NESTED_FRIEND(73,2429
+#define USED_BY_NESTED_FRIEND2(74,2465
+#define fdatasync 80,2671
+#undef PLATFORM_IS_LITTLE_ENDIAN87,2802
+class Mutex 91,2852
+  void AssertHeld(98,2931
+class Spin 111,3182
+  void AssertHeld(Spin::AssertHeld118,3258
+typedef Mutex Spin;129,3458
+class CondVar 133,3487
+typedef pthread_once_t OnceType;145,3659
+#define LEVELDB_ONCE_INIT 146,3692
+class RWMutex 150,3799
+  void AssertHeld(RWMutex::AssertHeld158,3908
+inline bool Snappy_Compress(170,4051
+inline bool Snappy_GetUncompressedLength(183,4382
+inline bool Snappy_Uncompress(192,4625
+inline bool GetHeapProfile(201,4836
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/thread_annotations.h,431
+#define EXCLUSIVE_LOCKS_REQUIRED(12,467
+#define SHARED_LOCKS_REQUIRED(16,543
+#define LOCKS_EXCLUDED(20,609
+#define LOCK_RETURNED(24,667
+#define LOCKABLE28,717
+#define SCOPED_LOCKABLE32,766
+#define EXCLUSIVE_LOCK_FUNCTION(36,830
+#define SHARED_LOCK_FUNCTION(40,904
+#define EXCLUSIVE_TRYLOCK_FUNCTION(44,981
+#define SHARED_TRYLOCK_FUNCTION(48,1061
+#define UNLOCK_FUNCTION(52,1130
+#define NO_THREAD_SAFETY_ANALYSIS56,1201
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//port/win/stdint.h,419
+#define STORAGE_LEVELDB_PORT_WIN_STDINT_H_8,320
+typedef signed char           int8_t;15,494
+typedef signed short          int16_t;16,532
+typedef signed int            int32_t;17,571
+typedef signed long long      int64_t;18,610
+typedef unsigned char         uint8_t;19,649
+typedef unsigned short        uint16_t;20,688
+typedef unsigned int          uint32_t;21,728
+typedef unsigned long long    uint64_t;22,768
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/block.h,118
+#define STORAGE_LEVELDB_TABLE_BLOCK_H_6,256
+class Block 17,429
+  size_t size(24,570
+  uint32_t NumRestarts(27,666
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/block_builder.h,118
+#define STORAGE_LEVELDB_TABLE_BLOCK_BUILDER_H_6,264
+class BlockBuilder 17,417
+  size_t CurrentSizeEstimate(35,1078
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/filter_block.h,119
+#define STORAGE_LEVELDB_TABLE_FILTER_BLOCK_H_10,443
+class FilterBlockBuilder 29,942
+class FilterBlockReader 57,1740
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/format.h,868
+#define STORAGE_LEVELDB_TABLE_FORMAT_H_6,257
+class BlockHandle 22,603
+  uint64_t offset(27,692
+  void set_offset(28,738
+  uint64_t size(31,830
+  void set_size(32,872
+  void EncodeTo(34,922
+  enum { kMaxEncodedLength 38,1045
+class Footer 47,1230
+  Footer(Footer::Footer49,1254
+  const BlockHandle& metaindex_handle(Footer::metaindex_handle52,1329
+  void set_metaindex_handle(Footer::set_metaindex_handle53,1405
+  const BlockHandle& index_handle(Footer::index_handle56,1538
+  void set_index_handle(Footer::set_index_handle59,1612
+    kEncodedLength Footer::kEncodedLength70,1956
+    kEncodedLength = 2*BlockHandle::kMaxEncodedLength Footer::BlockHandle::kMaxEncodedLength70,1956
+static const uint64_t kTableMagicNumber 81,2229
+static const size_t kBlockTrailerSize 84,2323
+struct BlockContents 86,2367
+inline BlockHandle::BlockHandle(101,2954
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/iterator_wrapper.h,450
+#define STORAGE_LEVELDB_TABLE_ITERATOR_WRAPPER_H_6,267
+class IteratorWrapper 14,565
+  IteratorWrapper(16,598
+  explicit IteratorWrapper(17,650
+  ~IteratorWrapper(20,727
+  Iterator* iter(21,766
+  void Set(25,913
+  bool Valid(37,1098
+  Slice key(38,1145
+  Slice value(39,1207
+  Status status(41,1321
+  void Next(42,1392
+  void Prev(43,1471
+  void Seek(44,1550
+  void SeekToFirst(45,1629
+  void SeekToLast(46,1708
+  void Update(49,1798
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/merger.h,46
+#define STORAGE_LEVELDB_TABLE_MERGER_H_6,257
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//table/two_level_iterator.h,58
+#define STORAGE_LEVELDB_TABLE_TWO_LEVEL_ITERATOR_H_6,269
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/arena.h,131
+#define STORAGE_LEVELDB_UTIL_ARENA_H_6,255
+class Arena 15,393
+  size_t MemoryUsage(29,823
+inline char* Arena::Allocate(52,1328
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/cache2.h,370
+#define STORAGE_LEVELDB_INCLUDE_CACHE2_H_24,1050
+class DoubleCache42,1396
+    Cache * GetFileCache(48,1504
+    Cache * GetBlockCache(49,1564
+    time_t GetFileTimeout(53,1723
+    void SetFileTimeout(54,1777
+    void SetPlentySpace(57,1862
+    bool GetPlentySpace(58,1934
+    bool IsInternalDB(61,2023
+    void AddFileSize(63,2081
+    void SubFileSize(64,2171
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/coding.h,128
+#define STORAGE_LEVELDB_UTIL_CODING_H_11,488
+inline uint64_t DecodeFixed64(72,3012
+inline const char* GetVarint32Ptr(89,3604
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/crc32c.h,148
+#define STORAGE_LEVELDB_UTIL_CRC32C_H_6,256
+static const uint32_t kMaskDelta 28,859
+inline uint32_t Mask(35,1159
+inline uint32_t Unmask(41,1360
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/db_list.h,149
+class DBListImpl34,987
+   typedef std::set<DBImpl *> db_set_t;DBListImpl::db_set_t37,1017
+   virtual ~DBListImpl(DBListImpl::~DBListImpl48,1431
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/flexcache.h,214
+#define STORAGE_LEVELDB_INCLUDE_FLEXCACHE_H_26,895
+class FlexCache48,1471
+    void RecalculateAllocations(FlexCache::RecalculateAllocations57,1610
+    uint64_t GetTotalMemory(FlexCache::GetTotalMemory59,1667
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/hash.h,43
+#define STORAGE_LEVELDB_UTIL_HASH_H_8,315
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/histogram.h,165
+#define STORAGE_LEVELDB_UTIL_HISTOGRAM_H_6,259
+class Histogram 12,342
+  Histogram(14,369
+  ~Histogram(15,387
+  enum { kNumBuckets Histogram::kNumBuckets30,615
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/hot_threads.h,871
+#define STORAGE_LEVELDB_INCLUDE_HOT_THREADS_H_30,1206
+struct HotThread50,1538
+    HotThread(HotThread::HotThread63,2040
+    virtual ~HotThread(HotThread::~HotThread68,2191
+struct QueueThread81,2485
+class HotThreadPool109,3292
+    typedef std::deque<ThreadTask*> WorkQueue_t;HotThreadPool::WorkQueue_t113,3404
+    typedef std::vector<HotThread *>   ThreadPool_t;HotThreadPool::ThreadPool_t114,3453
+    size_t work_queue_size(HotThreadPool::work_queue_size145,4664
+    bool shutdown_pending(HotThreadPool::shutdown_pending146,4729
+    leveldb::PerformanceCounters * perf(HotThreadPool::perf147,4787
+    void IncWorkDirect(HotThreadPool::IncWorkDirect149,4871
+    void IncWorkQueued(HotThreadPool::IncWorkQueued150,4945
+    void IncWorkDequeued(HotThreadPool::IncWorkDequeued151,5019
+    void IncWorkWeighted(HotThreadPool::IncWorkWeighted152,5097
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/logging.h,46
+#define STORAGE_LEVELDB_UTIL_LOGGING_H_9,351
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/murmurhash.h,302
+#define MURMURHASH_H8,194
+#define MURMUR_HASH 13,261
+#define MurmurHash 15,368
+typedef uint64_t murmur_t;16,401
+#define MURMUR_HASH 19,453
+#define MurmurHash 21,560
+typedef unsigned int murmur_t;22,591
+#define MURMUR_HASH 25,629
+#define MurmurHash 27,750
+typedef unsigned int murmur_t;28,788
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/mutexlock.h,466
+#define STORAGE_LEVELDB_UTIL_MUTEXLOCK_H_6,259
+class MutexLock 22,676
+  explicit MutexLock(24,703
+  ~MutexLock(27,780
+class SpinLock 37,953
+  explicit SpinLock(SpinLock::SpinLock39,979
+  ~SpinLock(SpinLock::~SpinLock42,1054
+class ReadLock 52,1222
+  explicit ReadLock(ReadLock::ReadLock54,1248
+  ~ReadLock(ReadLock::~ReadLock57,1330
+class WriteLock 67,1501
+  explicit WriteLock(WriteLock::WriteLock69,1528
+  ~WriteLock(WriteLock::~WriteLock72,1612
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/posix_logger.h,158
+#define STORAGE_LEVELDB_UTIL_POSIX_LOGGER_H_9,379
+class PosixLogger 20,580
+  PosixLogger(26,724
+  virtual ~PosixLogger(27,801
+  virtual void Logv(30,851
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/random.h,193
+#define STORAGE_LEVELDB_UTIL_RANDOM_H_6,256
+class Random 15,487
+  explicit Random(19,539
+  uint32_t Next(20,598
+  uint32_t Uniform(43,1522
+  bool OneIn(47,1661
+  uint32_t Skewed(52,1924
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/testharness.h,689
+#define STORAGE_LEVELDB_UTIL_TESTHARNESS_H_6,261
+class Tester 42,1444
+  Tester(Tester::Tester50,1551
+  ~Tester(Tester::~Tester54,1628
+  Tester& Is(Tester::Is61,1755
+  Tester& IsOk(Tester::IsOk69,1900
+  Tester& IsNotOk(Tester::IsNotOk77,2035
+#define BINARY_OP(85,2175
+#undef BINARY_OP101,2774
+  Tester& operator<<(Tester::operator<<105,2891
+#define ASSERT_TRUE(113,3005
+#define ASSERT_OK(114,3084
+#define ASSERT_NOTOK(115,3159
+#define ASSERT_EQ(116,3240
+#define ASSERT_NE(117,3321
+#define ASSERT_GE(118,3402
+#define ASSERT_GT(119,3483
+#define ASSERT_LE(120,3564
+#define ASSERT_LT(121,3645
+#define TCONCAT(123,3727
+#define TCONCAT1(124,3762
+#define TEST(126,3790
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/testutil.h,178
+#define STORAGE_LEVELDB_UTIL_TESTUTIL_H_6,258
+class ErrorEnv 30,1096
+  ErrorEnv(ErrorEnv::ErrorEnv35,1205
+  virtual Status NewWritableFile(ErrorEnv::NewWritableFile39,1341
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/thread_tasks.h,831
+#define STORAGE_LEVELDB_INCLUDE_THREAD_TASKS_H_29,1064
+class ThreadTask43,1297
+    ThreadTask(52,1457
+    virtual ~ThreadTask(55,1520
+    uint32_t RefInc(57,1551
+    uint32_t RefDec(59,1613
+class ImmWriteTask 85,2106
+    explicit ImmWriteTask(ImmWriteTask::ImmWriteTask91,2190
+    virtual ~ImmWriteTask(ImmWriteTask::~ImmWriteTask94,2257
+    virtual void operator()(ImmWriteTask::operator()96,2290
+class CompactionTask 110,2547
+    CompactionTask(CompactionTask::CompactionTask117,2664
+    virtual ~CompactionTask(CompactionTask::~CompactionTask120,2769
+    virtual void operator()(CompactionTask::operator()122,2824
+class LegacyTask 140,3146
+    LegacyTask(LegacyTask::LegacyTask147,3254
+    virtual ~LegacyTask(LegacyTask::~LegacyTask150,3354
+    virtual void operator()(LegacyTask::operator()152,3385
+
+/Users/eml/projects/riak/eleveldb/c_src/leveldb//util/throttle.h,0

@@ -1,0 +1,7 @@
+<map id="leveldb::DoubleCache::ResizeCaches" name="leveldb::DoubleCache::ResizeCaches">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a8c55d841907600de2c6fd42dd610aeef" title="leveldb::DBImpl::ResizeCaches" alt="" coords="205,33,413,59"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_flex_cache.html#a4863498e73e13779c6dc5fadb519b067" title="leveldb::FlexCache\l::SetTotalMemory" alt="" coords="461,27,596,65"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_d_b_impl.html#a269b55605b27271d6ca5fee68af0d8f3" title="leveldb::DBImpl::DBImpl" alt="" coords="644,5,810,31"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_flex_cache.html#ab867dd878b70d9e9694eb57ddd137327" title="leveldb::FlexCache\l::RecalculateAllocations" alt="" coords="645,55,808,93"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_d_b_impl.html#a07a233a94a2531aed9d3718c9b9ed40d" title="leveldb::DBImpl::~DBImpl" alt="" coords="858,61,1031,87"/>
+</map>

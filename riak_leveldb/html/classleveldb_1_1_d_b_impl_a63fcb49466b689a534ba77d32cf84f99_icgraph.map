@@ -1,0 +1,5 @@
+<map id="leveldb::DBImpl::TEST_CompactRange" name="leveldb::DBImpl::TEST_CompactRange">
+<area shape="rect" id="node2" href="$namespaceleveldb.html#a1da99cee14629599882010198aabfa2a" title="leveldb::TEST" alt="" coords="254,5,359,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_d_b_impl.html#aa6df0739fc0b49380c284347e411b8ed" title="leveldb::DBImpl::Compact\lRange" alt="" coords="219,55,394,93"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_d_b_impl.html#abde8252536a8f48c36d1dc9a9738a508" title="leveldb::DBImpl::VerifyLevels" alt="" coords="210,117,404,143"/>
+</map>

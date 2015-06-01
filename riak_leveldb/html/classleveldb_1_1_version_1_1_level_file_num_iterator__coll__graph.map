@@ -1,0 +1,6 @@
+<map id="leveldb::Version::LevelFileNumIterator" name="leveldb::Version::LevelFileNumIterator">
+<area shape="rect" id="node2" href="$classleveldb_1_1_iterator.html" title="{leveldb::Iterator\n||+ Iterator()\l+ ~Iterator()\l+ Valid()\l+ SeekToFirst()\l+ SeekToLast()\l+ Seek()\l+ Next()\l+ Prev()\l+ key()\l+ value()\l+ status()\l+ RegisterCleanup()\l&#45; Iterator()\l&#45; operator=()\l}" alt="" coords="5,207,146,453"/>
+<area shape="rect" id="node3" href="$structleveldb_1_1_iterator_1_1_cleanup.html" title="{leveldb::Iterator::\lCleanup\n|+ function\l+ arg1\l+ arg2\l|}" alt="" coords="16,19,136,132"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_internal_key_comparator.html" title="{leveldb::InternalKeyComparator\n||+ InternalKeyComparator()\l+ Name()\l+ Compare()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l+ user_comparator()\l+ Compare()\l}" alt="" coords="170,253,379,407"/>
+<area shape="rect" id="node5" href="$structleveldb_1_1_comparator.html" title="{leveldb::Comparator\n||+ operator()()\l+ ~Comparator()\l+ Compare()\l+ Name()\l+ FindShortestSeparator()\l+ FindShortSuccessor()\l}" alt="" coords="225,5,401,145"/>
+</map>

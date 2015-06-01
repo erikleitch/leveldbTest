@@ -1,0 +1,10 @@
+<map id="db/write_batch_internal.h" name="db/write_batch_internal.h">
+<area shape="rect" id="node2" href="$db__impl_8cc.html" title="db/db_impl.cc" alt="" coords="5,79,109,104"/>
+<area shape="rect" id="node3" href="$db__test_8cc.html" title="db/db_test.cc" alt="" coords="133,79,234,104"/>
+<area shape="rect" id="node4" href="$emltest_8cc.html" title="db/emltest.cc" alt="" coords="258,79,358,104"/>
+<area shape="rect" id="node5" href="$repair_8cc.html" title="db/repair.cc" alt="" coords="381,79,472,104"/>
+<area shape="rect" id="node6" href="$write__batch_8cc.html" title="db/write_batch.cc" alt="" coords="496,79,621,104"/>
+<area shape="rect" id="node7" href="$write__batch__test_8cc.html" title="db/write_batch_test.cc" alt="" coords="645,79,799,104"/>
+<area shape="rect" id="node8" href="$table__test_8cc.html" title="table/table_test.cc" alt="" coords="823,79,952,104"/>
+<area shape="rect" id="node9" href="$leveldb__main_8cc.html" title="tools/leveldb_main.cc" alt="" coords="976,79,1125,104"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="leveldb::ThreadTask" name="leveldb::ThreadTask">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_b_g_close_info.html" title="{leveldb::anonymous\l_namespace\{env_posix.cc\}\l::BGCloseInfo\n|+ fd_\l+ base_\l+ offset_\l+ length_\l+ ref_count_\l+ metadata_\l|+ BGCloseInfo()\l+ ~BGCloseInfo()\l+ operator()()\l&#45; BGCloseInfo()\l&#45; BGCloseInfo()\l&#45; operator=()\l}" alt="" coords="5,220,189,453"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_compaction_task.html" title="{leveldb::CompactionTask\n|# m_DBImpl\l# m_Compaction\l|+ CompactionTask()\l+ ~CompactionTask()\l+ operator()()\l&#45; CompactionTask()\l&#45; CompactionTask()\l&#45; operator=()\l}" alt="" coords="212,260,382,413"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_imm_write_task.html" title="{leveldb::ImmWriteTask\n|# m_DBImpl\l|+ ImmWriteTask()\l+ ~ImmWriteTask()\l+ operator()()\l&#45; ImmWriteTask()\l&#45; ImmWriteTask()\l&#45; operator=()\l}" alt="" coords="406,267,561,407"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_legacy_task.html" title="{leveldb::LegacyTask\n|# m_Function\l# m_Arg\l|+ LegacyTask()\l+ ~LegacyTask()\l+ operator()()\l&#45; LegacyTask()\l&#45; LegacyTask()\l&#45; operator=()\l}" alt="" coords="585,260,727,413"/>
+</map>

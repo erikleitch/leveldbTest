@@ -1,0 +1,21 @@
+<map id="leveldb::Env::SleepForMicroseconds" name="leveldb::Env::SleepForMicroseconds">
+<area shape="rect" id="node2" href="$classleveldb_1_1_d_b_impl.html#a8f2d02826606bb1753958fb51182c1ff" title="leveldb::DBImpl::Background\lCall2" alt="" coords="291,5,484,44"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_d_b_impl.html#ade59d90db532404c3d0e1b2be91dd407" title="leveldb::DBImpl::Background\lImmCompactCall" alt="" coords="291,68,484,107"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_d_b_impl.html#ac0d0b472717099d6a02ad9dace4e8ef4" title="leveldb::DBImpl::Write" alt="" coords="554,161,707,187"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_d_b_impl.html#af0d16a6725c9509a39b20671783b3590" title="leveldb::DBImpl::MakeRoom\lForWrite" alt="" coords="293,183,483,221"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_special_env.html#afcceb315ff4d8a96805b71a41502da94" title="leveldb::SpecialEnv\l::SleepForMicroseconds" alt="" coords="305,245,470,284"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_env_wrapper.html#a6e05455e32edd8cd4657fc22f4e422e9" title="leveldb::EnvWrapper\l::SleepForMicroseconds" alt="" coords="305,308,470,347"/>
+<area shape="rect" id="node16" href="$namespaceleveldb.html#a18eea1a513eac17b6436e30d1a534203" title="leveldb::TEST" alt="" coords="335,371,440,396"/>
+<area shape="rect" id="node17" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_mmap_file.html#ad895d58f023a345e10fa4c7c3018af35" title="leveldb::anonymous\l_namespace\{env_posix\l::cc\}::PosixMmapFile\l::Close" alt="" coords="307,420,469,485"/>
+<area shape="rect" id="node18" href="$namespaceleveldb_1_1anonymous__namespace_02env__posix_8cc_03.html#a66f25b0d92f8d29676cd1b8e412237ec" title="leveldb::anonymous\l_namespace\{env_posix\l::cc\}::BGFileUnmapper2" alt="" coords="306,509,470,561"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_compaction_task.html#a289decac6d18732d37dfef0584ba4350" title="leveldb::CompactionTask\l::operator()" alt="" coords="545,5,715,44"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_imm_write_task.html#a7cec4d0a9c768feacded04d654723539" title="leveldb::ImmWriteTask\l::operator()" alt="" coords="552,68,708,107"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_d_b_impl.html#a8642703fd1398cd8e3f5f24ee0b9da23" title="leveldb::DBImpl::TEST\l_CompactMemTable" alt="" coords="776,155,932,193"/>
+<area shape="rect" id="node8" href="$namespaceleveldb.html#a1da99cee14629599882010198aabfa2a" title="leveldb::TEST" alt="" coords="1024,105,1129,131"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_d_b_impl.html#aa6df0739fc0b49380c284347e411b8ed" title="leveldb::DBImpl::Compact\lRange" alt="" coords="989,155,1164,193"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_d_b_test.html#ace931478fa5ad2c48a8aa95a344e19fd" title="leveldb::DBTest::MakeTables" alt="" coords="980,217,1173,243"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_d_b_test.html#ac291d06db907f5fee7caf04f44f65493" title="leveldb::DBTest::FillLevels" alt="" coords="1221,217,1397,243"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_special_env.html#aa7bdbcf4af2ba94330ada903179692f1" title="leveldb::SpecialEnv\l::NewWritableFile" alt="" coords="561,245,699,284"/>
+<area shape="rect" id="node19" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_b_g_close_info.html#ac9267307a99c588777902ce3e7e28845" title="leveldb::anonymous\l_namespace\{env_posix\l::cc\}::BGCloseInfo::operator()" alt="" coords="532,468,728,520"/>
+<area shape="rect" id="node20" href="$classleveldb_1_1anonymous__namespace_02env__posix_8cc_03_1_1_posix_mmap_file.html#aff7b7326c7b7ddb10ad327eb4c943ccd" title="leveldb::anonymous\l_namespace\{env_posix\l::cc\}::PosixMmapFile\l::UnmapCurrentRegion" alt="" coords="549,544,711,609"/>
+</map>

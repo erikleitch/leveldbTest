@@ -1,0 +1,502 @@
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2}{}\section{leveldb\+:\+:Sharded\+L\+R\+U\+Cache2 Class Reference}
+\label{classleveldb_1_1_sharded_l_r_u_cache2}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+
+
+Inheritance diagram for leveldb\+:\+:Sharded\+L\+R\+U\+Cache2\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classleveldb_1_1_sharded_l_r_u_cache2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+:\+:Sharded\+L\+R\+U\+Cache2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_ae2296aa2f9168ac5eda0cb66a6282e5a}{Sharded\+L\+R\+U\+Cache2} (class \hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} \&Parent, bool Is\+File\+Cache)
+\item 
+virtual \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_ab20d0cf97c378f44f5a51d3b15fd1521}{$\sim$\+Sharded\+L\+R\+U\+Cache2} ()
+\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_ad6d0402690ab2d747bcd4e75ecdb44a7}{Get\+Usage} () const 
+\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} $\ast$ \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a25378f0266db5f8d12089b7526a45bd9}{Get\+Usage\+Ptr} ()
+\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a45a0a546a2c2f39ca631feb3d33c8a83}{Get\+Capacity} ()
+\item 
+time\+\_\+t \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a917e57c7970d9efaefb8a56c9d687591}{Get\+File\+Timeout} ()
+\item 
+virtual \hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle} $\ast$ \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_af038d5d9763066a12ac3b9f50ba366a8}{Insert} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, void $\ast$value, size\+\_\+t charge, void($\ast$deleter)(const \hyperlink{classleveldb_1_1_slice}{Slice} \&key, void $\ast$value))
+\item 
+virtual \hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle} $\ast$ \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_aa4a52c77ea98f905a675ef8ef09814ab}{Lookup} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key)
+\item 
+virtual void \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a53f8f6583caf78942bd00d0a5133b4c1}{Addref} (\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle} $\ast$handle)
+\item 
+virtual void \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_ae8813201027d831d0593d95643272646}{Release} (\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle} $\ast$handle)
+\item 
+virtual void \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a296f73883592ca73156c67356051e8b7}{Erase} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&key)
+\item 
+virtual void $\ast$ \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a911338e85f8988883b22ffd7adcc0cdf}{Value} (\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle} $\ast$handle)
+\item 
+virtual \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_af0a4d0043984b459037b63a95f6a95ac}{New\+Id} ()
+\item 
+virtual size\+\_\+t \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a56dd32c4edfa6e27859eb1d7c256f296}{Entry\+Overhead\+Size} ()
+\item 
+void \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a11bb95b7b34980262cb8956e7d360c0d}{Resize} ()
+\item 
+void \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a9d9b475614c017e719cded9479340a80}{Set\+Free\+Space\+Warning} (size\+\_\+t File\+Meta\+Size)
+\item 
+void \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_aa9abb8ef9e3ee75e2ab18714713ca974}{Purge\+Expired\+Files} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a4a5ba487471eb7b7bfbd875281dfe4fe}{usage\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_aac3ba88e4695496f88e9310efea3eb96}{Hash\+Slice} (const \hyperlink{classleveldb_1_1_slice}{Slice} \&s)
+\item 
+static \hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a3d305c213012d5efe0cf0c95f5b73544}{Shard} (\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} hash)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_l_r_u_cache2}{L\+R\+U\+Cache2} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a770c106ef4f55703604f3dcfbbeceec0}{shard\+\_\+} \mbox{[}\hyperlink{namespaceleveldb_aba1a810d4663b150df2768b04205f5ed}{k\+Num\+Shards}\mbox{]}
+\item 
+\hyperlink{namespaceleveldb_1_1port_a3017c82209c2da44f142ef633e012149}{port\+::\+Spin} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a1cda8b660b973dcd570a4d51fa5a04d2}{id\+\_\+spin\+\_\+}
+\item 
+\hyperlink{classleveldb_1_1_double_cache}{Double\+Cache} \& \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_aa20d77831df6a23e8cc597533c743008}{parent\+\_\+}
+\item 
+bool \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_a21a668d61f5c9c64711998134fd66391}{is\+\_\+file\+\_\+cache\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_af342fd258135d53b5cd65ea0319d2c9f}{next\+\_\+shard\+\_\+}
+\item 
+volatile \hyperlink{stdint_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t} \hyperlink{classleveldb_1_1_sharded_l_r_u_cache2_af8a20f91eb26d0a12073e9cd56d668c8}{last\+\_\+id\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_ae2296aa2f9168ac5eda0cb66a6282e5a}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Sharded\+L\+R\+U\+Cache2@{Sharded\+L\+R\+U\+Cache2}}
+\index{Sharded\+L\+R\+U\+Cache2@{Sharded\+L\+R\+U\+Cache2}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Sharded\+L\+R\+U\+Cache2}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Sharded\+L\+R\+U\+Cache2 (
+\begin{DoxyParamCaption}
+\item[{class {\bf Double\+Cache} \&}]{Parent, }
+\item[{bool}]{Is\+File\+Cache}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_ae2296aa2f9168ac5eda0cb66a6282e5a}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_ae2296aa2f9168ac5eda0cb66a6282e5a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_ab20d0cf97c378f44f5a51d3b15fd1521}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!````~Sharded\+L\+R\+U\+Cache2@{$\sim$\+Sharded\+L\+R\+U\+Cache2}}
+\index{````~Sharded\+L\+R\+U\+Cache2@{$\sim$\+Sharded\+L\+R\+U\+Cache2}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{$\sim$\+Sharded\+L\+R\+U\+Cache2}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::$\sim$\+Sharded\+L\+R\+U\+Cache2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_ab20d0cf97c378f44f5a51d3b15fd1521}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a53f8f6583caf78942bd00d0a5133b4c1}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Addref@{Addref}}
+\index{Addref@{Addref}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Addref}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Addref (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a53f8f6583caf78942bd00d0a5133b4c1}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_ae1c46291f5e7259d36ed6676d57cc610}{leveldb\+::\+Cache}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a53f8f6583caf78942bd00d0a5133b4c1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a56dd32c4edfa6e27859eb1d7c256f296}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Entry\+Overhead\+Size@{Entry\+Overhead\+Size}}
+\index{Entry\+Overhead\+Size@{Entry\+Overhead\+Size}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Entry\+Overhead\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Entry\+Overhead\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a56dd32c4edfa6e27859eb1d7c256f296}
+
+
+Reimplemented from \hyperlink{classleveldb_1_1_cache_acdda83b8d887f453dcab37344d5f9e02}{leveldb\+::\+Cache}.
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a296f73883592ca73156c67356051e8b7}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Erase@{Erase}}
+\index{Erase@{Erase}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Erase}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Erase (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a296f73883592ca73156c67356051e8b7}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_af833a38763598253338de37aba079db6}{leveldb\+::\+Cache}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a296f73883592ca73156c67356051e8b7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a45a0a546a2c2f39ca631feb3d33c8a83}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Get\+Capacity@{Get\+Capacity}}
+\index{Get\+Capacity@{Get\+Capacity}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Get\+Capacity}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Get\+Capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a45a0a546a2c2f39ca631feb3d33c8a83}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a45a0a546a2c2f39ca631feb3d33c8a83_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a45a0a546a2c2f39ca631feb3d33c8a83_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a917e57c7970d9efaefb8a56c9d687591}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Get\+File\+Timeout@{Get\+File\+Timeout}}
+\index{Get\+File\+Timeout@{Get\+File\+Timeout}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Get\+File\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Get\+File\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a917e57c7970d9efaefb8a56c9d687591}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a917e57c7970d9efaefb8a56c9d687591_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_ad6d0402690ab2d747bcd4e75ecdb44a7}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Get\+Usage@{Get\+Usage}}
+\index{Get\+Usage@{Get\+Usage}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Get\+Usage}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Get\+Usage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_ad6d0402690ab2d747bcd4e75ecdb44a7}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_ad6d0402690ab2d747bcd4e75ecdb44a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a25378f0266db5f8d12089b7526a45bd9}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Get\+Usage\+Ptr@{Get\+Usage\+Ptr}}
+\index{Get\+Usage\+Ptr@{Get\+Usage\+Ptr}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Get\+Usage\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t}$\ast$ leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Get\+Usage\+Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a25378f0266db5f8d12089b7526a45bd9}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_aac3ba88e4695496f88e9310efea3eb96}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Hash\+Slice@{Hash\+Slice}}
+\index{Hash\+Slice@{Hash\+Slice}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Hash\+Slice}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf uint32\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Hash\+Slice (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_aac3ba88e4695496f88e9310efea3eb96}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_aac3ba88e4695496f88e9310efea3eb96_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_aac3ba88e4695496f88e9310efea3eb96_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_af038d5d9763066a12ac3b9f50ba366a8}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$\ast$ leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Insert (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key, }
+\item[{void $\ast$}]{value, }
+\item[{size\+\_\+t}]{charge, }
+\item[{void($\ast$)(const {\bf Slice} \&key, void $\ast$value)}]{deleter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_af038d5d9763066a12ac3b9f50ba366a8}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_af0b55b7fa0e64184fa62e0dbe9ba9eae}{leveldb\+::\+Cache}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_af038d5d9763066a12ac3b9f50ba366a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_aa4a52c77ea98f905a675ef8ef09814ab}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Lookup}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$\ast$ leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Lookup (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slice} \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_aa4a52c77ea98f905a675ef8ef09814ab}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_af90785205182a25cf741dc13a48d76cb}{leveldb\+::\+Cache}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_aa4a52c77ea98f905a675ef8ef09814ab_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_af0a4d0043984b459037b63a95f6a95ac}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!New\+Id@{New\+Id}}
+\index{New\+Id@{New\+Id}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{New\+Id}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf uint64\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+New\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_af0a4d0043984b459037b63a95f6a95ac}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_ae2d79bfe747fc6c165c77398cc31e125}{leveldb\+::\+Cache}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_af0a4d0043984b459037b63a95f6a95ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_aa9abb8ef9e3ee75e2ab18714713ca974}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Purge\+Expired\+Files@{Purge\+Expired\+Files}}
+\index{Purge\+Expired\+Files@{Purge\+Expired\+Files}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Purge\+Expired\+Files}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Purge\+Expired\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_aa9abb8ef9e3ee75e2ab18714713ca974}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_aa9abb8ef9e3ee75e2ab18714713ca974_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_aa9abb8ef9e3ee75e2ab18714713ca974_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_ae8813201027d831d0593d95643272646}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Release@{Release}}
+\index{Release@{Release}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual void leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_ae8813201027d831d0593d95643272646}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_a712618c8bf3bfa48b7bab1fbc23c3002}{leveldb\+::\+Cache}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_ae8813201027d831d0593d95643272646_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a11bb95b7b34980262cb8956e7d360c0d}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Resize@{Resize}}
+\index{Resize@{Resize}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Resize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a11bb95b7b34980262cb8956e7d360c0d}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a11bb95b7b34980262cb8956e7d360c0d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a11bb95b7b34980262cb8956e7d360c0d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a9d9b475614c017e719cded9479340a80}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Set\+Free\+Space\+Warning@{Set\+Free\+Space\+Warning}}
+\index{Set\+Free\+Space\+Warning@{Set\+Free\+Space\+Warning}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Set\+Free\+Space\+Warning}]{\setlength{\rightskip}{0pt plus 5cm}void leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Set\+Free\+Space\+Warning (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{File\+Meta\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a9d9b475614c017e719cded9479340a80}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a9d9b475614c017e719cded9479340a80_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a3d305c213012d5efe0cf0c95f5b73544}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Shard@{Shard}}
+\index{Shard@{Shard}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Shard}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf uint32\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Shard (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32\+\_\+t}}]{hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a3d305c213012d5efe0cf0c95f5b73544}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_sharded_l_r_u_cache2_a3d305c213012d5efe0cf0c95f5b73544_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a911338e85f8988883b22ffd7adcc0cdf}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!Value@{Value}}
+\index{Value@{Value}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a911338e85f8988883b22ffd7adcc0cdf}
+
+
+Implements \hyperlink{classleveldb_1_1_cache_a454920df8e68917adcf011dfb3538661}{leveldb\+::\+Cache}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a1cda8b660b973dcd570a4d51fa5a04d2}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!id\+\_\+spin\+\_\+@{id\+\_\+spin\+\_\+}}
+\index{id\+\_\+spin\+\_\+@{id\+\_\+spin\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{id\+\_\+spin\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+::\+Spin} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::id\+\_\+spin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a1cda8b660b973dcd570a4d51fa5a04d2}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a21a668d61f5c9c64711998134fd66391}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!is\+\_\+file\+\_\+cache\+\_\+@{is\+\_\+file\+\_\+cache\+\_\+}}
+\index{is\+\_\+file\+\_\+cache\+\_\+@{is\+\_\+file\+\_\+cache\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{is\+\_\+file\+\_\+cache\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::is\+\_\+file\+\_\+cache\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a21a668d61f5c9c64711998134fd66391}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_af8a20f91eb26d0a12073e9cd56d668c8}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!last\+\_\+id\+\_\+@{last\+\_\+id\+\_\+}}
+\index{last\+\_\+id\+\_\+@{last\+\_\+id\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{last\+\_\+id\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::last\+\_\+id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_af8a20f91eb26d0a12073e9cd56d668c8}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_af342fd258135d53b5cd65ea0319d2c9f}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!next\+\_\+shard\+\_\+@{next\+\_\+shard\+\_\+}}
+\index{next\+\_\+shard\+\_\+@{next\+\_\+shard\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{next\+\_\+shard\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::next\+\_\+shard\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_af342fd258135d53b5cd65ea0319d2c9f}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_aa20d77831df6a23e8cc597533c743008}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!parent\+\_\+@{parent\+\_\+}}
+\index{parent\+\_\+@{parent\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{parent\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Double\+Cache}\& leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::parent\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_aa20d77831df6a23e8cc597533c743008}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a770c106ef4f55703604f3dcfbbeceec0}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!shard\+\_\+@{shard\+\_\+}}
+\index{shard\+\_\+@{shard\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{shard\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+R\+U\+Cache2} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::shard\+\_\+\mbox{[}{\bf k\+Num\+Shards}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_sharded_l_r_u_cache2_a770c106ef4f55703604f3dcfbbeceec0}
+\hypertarget{classleveldb_1_1_sharded_l_r_u_cache2_a4a5ba487471eb7b7bfbd875281dfe4fe}{}\index{leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}!usage\+\_\+@{usage\+\_\+}}
+\index{usage\+\_\+@{usage\+\_\+}!leveldb\+::\+Sharded\+L\+R\+U\+Cache2@{leveldb\+::\+Sharded\+L\+R\+U\+Cache2}}
+\subsubsection[{usage\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint64\+\_\+t} leveldb\+::\+Sharded\+L\+R\+U\+Cache2\+::usage\+\_\+}\label{classleveldb_1_1_sharded_l_r_u_cache2_a4a5ba487471eb7b7bfbd875281dfe4fe}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/\hyperlink{cache2_8cc}{cache2.\+cc}\end{DoxyCompactItemize}

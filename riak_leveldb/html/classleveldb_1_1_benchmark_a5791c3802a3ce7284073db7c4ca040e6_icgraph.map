@@ -1,0 +1,6 @@
+<map id="leveldb::Benchmark::DoWrite" name="leveldb::Benchmark::DoWrite">
+<area shape="rect" id="node2" href="$classleveldb_1_1_benchmark.html#ad0ec88def6560d587b42466f7cfef39c" title="leveldb::Benchmark\l::WriteSeq" alt="" coords="192,5,330,44"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_benchmark.html#a578f83feb70b8f5530557fd64da62e0c" title="leveldb::Benchmark\l::WriteRandom" alt="" coords="192,68,330,107"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="378,44,548,69"/>
+<area shape="rect" id="node4" href="$db__bench_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="596,44,647,69"/>
+</map>

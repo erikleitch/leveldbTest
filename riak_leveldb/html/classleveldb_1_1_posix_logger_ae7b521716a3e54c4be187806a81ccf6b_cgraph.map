@@ -1,0 +1,7 @@
+<map id="leveldb::PosixLogger::Logv" name="leveldb::PosixLogger::Logv">
+<area shape="rect" id="node2" href="$classleveldb_1_1_timer.html#a3a8b5272198d029779dc9302a54305a8" title="leveldb::Timer::start" alt="" coords="202,5,340,31"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_timer.html#a63f0eb44b27402196590a03781515dba" title="leveldb::Timer::stop" alt="" coords="202,55,340,80"/>
+<area shape="rect" id="node5" href="$structleveldb_1_1_posix_logger_1_1_stats.html#aa6d955c21fe636108dd79675a0ff5051" title="leveldb::PosixLogger\l::Stats::wrote" alt="" coords="198,104,344,143"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_timer.html#a6abd6fd3e6cd611e6f48ad3a65fba417" title="leveldb::Timer::currentMs" alt="" coords="393,31,564,56"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_timer.html#ac08eb913bfbb1742508e8f4cab06d072" title="leveldb::Timer::deltaMicro\lSeconds" alt="" coords="392,104,565,143"/>
+</map>

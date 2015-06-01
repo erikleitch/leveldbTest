@@ -1,0 +1,142 @@
+\hypertarget{classleveldb_1_1_key_retirement}{}\section{leveldb\+:\+:Key\+Retirement Class Reference}
+\label{classleveldb_1_1_key_retirement}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+
+
+{\ttfamily \#include $<$dbformat.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+:\+:Key\+Retirement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_key_retirement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_key_retirement_a2797c52c20659b94d0a68aaa0ef2d0cb}{Key\+Retirement} (const \hyperlink{structleveldb_1_1_comparator}{Comparator} $\ast$User\+Comparator, \hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number} Smallest\+Snapshot, \hyperlink{classleveldb_1_1_compaction}{Compaction} $\ast$const \hyperlink{classleveldb_1_1_compaction}{Compaction}=N\+U\+L\+L)
+\item 
+virtual \hyperlink{classleveldb_1_1_key_retirement_a13dbc1c6ac0bd9a167b4322665b62d72}{$\sim$\+Key\+Retirement} ()
+\item 
+bool \hyperlink{classleveldb_1_1_key_retirement_acfe7bf9d6623067c42fc414480ac27e1}{operator()} (\hyperlink{classleveldb_1_1_slice}{Slice} \&key)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classleveldb_1_1_key_retirement_a08d9c4469154d978fcc0d3ebfb48b2ee}{current\+\_\+user\+\_\+key}
+\item 
+bool \hyperlink{classleveldb_1_1_key_retirement_acd5b7004a8c904344af8c4db2f0ae289}{has\+\_\+current\+\_\+user\+\_\+key}
+\item 
+\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number} \hyperlink{classleveldb_1_1_key_retirement_a00dd96ba9da12755dc773fa04a365e10}{last\+\_\+sequence\+\_\+for\+\_\+key}
+\item 
+const \hyperlink{structleveldb_1_1_comparator}{Comparator} $\ast$ \hyperlink{classleveldb_1_1_key_retirement_adde66b0f56eef7cf588736c061b98599}{user\+\_\+comparator}
+\item 
+\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number} \hyperlink{classleveldb_1_1_key_retirement_adf0abff6ce4abf9edb64880141df43be}{smallest\+\_\+snapshot}
+\item 
+\hyperlink{classleveldb_1_1_compaction}{Compaction} $\ast$const \hyperlink{classleveldb_1_1_key_retirement_a7562cd33899a4911d6706a2b803c96ad}{compaction}
+\item 
+bool \hyperlink{classleveldb_1_1_key_retirement_a0d0ec2056ba235eb23f44b9ac1ebdec9}{valid}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveldb_1_1_key_retirement_a1c9584bfd5df7244866effcde405606c}{Key\+Retirement} ()
+\item 
+\hyperlink{classleveldb_1_1_key_retirement_ad5e0a9cf0a906ebcc03906c14b90a4d8}{Key\+Retirement} (const \hyperlink{classleveldb_1_1_key_retirement}{Key\+Retirement} \&)
+\item 
+const \hyperlink{classleveldb_1_1_key_retirement}{Key\+Retirement} \& \hyperlink{classleveldb_1_1_key_retirement_a8659188a0bac96580d54a0dcd54b1e5c}{operator=} (const \hyperlink{classleveldb_1_1_key_retirement}{Key\+Retirement} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classleveldb_1_1_key_retirement_a2797c52c20659b94d0a68aaa0ef2d0cb}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!Key\+Retirement@{Key\+Retirement}}
+\index{Key\+Retirement@{Key\+Retirement}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{Key\+Retirement}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Key\+Retirement\+::\+Key\+Retirement (
+\begin{DoxyParamCaption}
+\item[{const {\bf Comparator} $\ast$}]{User\+Comparator, }
+\item[{{\bf Sequence\+Number}}]{Smallest\+Snapshot, }
+\item[{{\bf Compaction} $\ast$const}]{Compaction = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_key_retirement_a2797c52c20659b94d0a68aaa0ef2d0cb}
+\hypertarget{classleveldb_1_1_key_retirement_a13dbc1c6ac0bd9a167b4322665b62d72}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!````~Key\+Retirement@{$\sim$\+Key\+Retirement}}
+\index{````~Key\+Retirement@{$\sim$\+Key\+Retirement}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{$\sim$\+Key\+Retirement}]{\setlength{\rightskip}{0pt plus 5cm}virtual leveldb\+::\+Key\+Retirement\+::$\sim$\+Key\+Retirement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classleveldb_1_1_key_retirement_a13dbc1c6ac0bd9a167b4322665b62d72}
+\hypertarget{classleveldb_1_1_key_retirement_a1c9584bfd5df7244866effcde405606c}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!Key\+Retirement@{Key\+Retirement}}
+\index{Key\+Retirement@{Key\+Retirement}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{Key\+Retirement}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Key\+Retirement\+::\+Key\+Retirement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_key_retirement_a1c9584bfd5df7244866effcde405606c}
+\hypertarget{classleveldb_1_1_key_retirement_ad5e0a9cf0a906ebcc03906c14b90a4d8}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!Key\+Retirement@{Key\+Retirement}}
+\index{Key\+Retirement@{Key\+Retirement}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{Key\+Retirement}]{\setlength{\rightskip}{0pt plus 5cm}leveldb\+::\+Key\+Retirement\+::\+Key\+Retirement (
+\begin{DoxyParamCaption}
+\item[{const {\bf Key\+Retirement} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_key_retirement_ad5e0a9cf0a906ebcc03906c14b90a4d8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classleveldb_1_1_key_retirement_acfe7bf9d6623067c42fc414480ac27e1}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!operator()@{operator()}}
+\index{operator()@{operator()}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Key\+Retirement\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Slice} \&}]{key}
+\end{DoxyParamCaption}
+)}\label{classleveldb_1_1_key_retirement_acfe7bf9d6623067c42fc414480ac27e1}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_key_retirement_acfe7bf9d6623067c42fc414480ac27e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classleveldb_1_1_key_retirement_a8659188a0bac96580d54a0dcd54b1e5c}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Key\+Retirement}\& leveldb\+::\+Key\+Retirement\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Key\+Retirement} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classleveldb_1_1_key_retirement_a8659188a0bac96580d54a0dcd54b1e5c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classleveldb_1_1_key_retirement_a7562cd33899a4911d6706a2b803c96ad}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!compaction@{compaction}}
+\index{compaction@{compaction}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{compaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compaction}$\ast$ const leveldb\+::\+Key\+Retirement\+::compaction\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_a7562cd33899a4911d6706a2b803c96ad}
+\hypertarget{classleveldb_1_1_key_retirement_a08d9c4469154d978fcc0d3ebfb48b2ee}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!current\+\_\+user\+\_\+key@{current\+\_\+user\+\_\+key}}
+\index{current\+\_\+user\+\_\+key@{current\+\_\+user\+\_\+key}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{current\+\_\+user\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string leveldb\+::\+Key\+Retirement\+::current\+\_\+user\+\_\+key\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_a08d9c4469154d978fcc0d3ebfb48b2ee}
+\hypertarget{classleveldb_1_1_key_retirement_acd5b7004a8c904344af8c4db2f0ae289}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!has\+\_\+current\+\_\+user\+\_\+key@{has\+\_\+current\+\_\+user\+\_\+key}}
+\index{has\+\_\+current\+\_\+user\+\_\+key@{has\+\_\+current\+\_\+user\+\_\+key}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{has\+\_\+current\+\_\+user\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Key\+Retirement\+::has\+\_\+current\+\_\+user\+\_\+key\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_acd5b7004a8c904344af8c4db2f0ae289}
+\hypertarget{classleveldb_1_1_key_retirement_a00dd96ba9da12755dc773fa04a365e10}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!last\+\_\+sequence\+\_\+for\+\_\+key@{last\+\_\+sequence\+\_\+for\+\_\+key}}
+\index{last\+\_\+sequence\+\_\+for\+\_\+key@{last\+\_\+sequence\+\_\+for\+\_\+key}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{last\+\_\+sequence\+\_\+for\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sequence\+Number} leveldb\+::\+Key\+Retirement\+::last\+\_\+sequence\+\_\+for\+\_\+key\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_a00dd96ba9da12755dc773fa04a365e10}
+\hypertarget{classleveldb_1_1_key_retirement_adf0abff6ce4abf9edb64880141df43be}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!smallest\+\_\+snapshot@{smallest\+\_\+snapshot}}
+\index{smallest\+\_\+snapshot@{smallest\+\_\+snapshot}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{smallest\+\_\+snapshot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sequence\+Number} leveldb\+::\+Key\+Retirement\+::smallest\+\_\+snapshot\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_adf0abff6ce4abf9edb64880141df43be}
+\hypertarget{classleveldb_1_1_key_retirement_adde66b0f56eef7cf588736c061b98599}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!user\+\_\+comparator@{user\+\_\+comparator}}
+\index{user\+\_\+comparator@{user\+\_\+comparator}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{user\+\_\+comparator}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Comparator}$\ast$ leveldb\+::\+Key\+Retirement\+::user\+\_\+comparator\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_adde66b0f56eef7cf588736c061b98599}
+\hypertarget{classleveldb_1_1_key_retirement_a0d0ec2056ba235eb23f44b9ac1ebdec9}{}\index{leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}!valid@{valid}}
+\index{valid@{valid}!leveldb\+::\+Key\+Retirement@{leveldb\+::\+Key\+Retirement}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool leveldb\+::\+Key\+Retirement\+::valid\hspace{0.3cm}{\ttfamily [protected]}}\label{classleveldb_1_1_key_retirement_a0d0ec2056ba235eb23f44b9ac1ebdec9}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\hyperlink{dbformat_8h}{dbformat.\+h}\item 
+db/\hyperlink{dbformat_8cc}{dbformat.\+cc}\end{DoxyCompactItemize}

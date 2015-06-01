@@ -1,0 +1,16 @@
+<map id="leveldb::Block::Iter::Next" name="leveldb::Block::Iter::Next">
+<area shape="rect" id="node2" href="$classleveldb_1_1_block_1_1_iter.html#ac4be155bfc93e1d2b90cfd670f22c1ba" title="leveldb::Block::Iter\l::Valid" alt="" coords="184,67,314,105"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_block_1_1_iter.html#abb8c89f7256e79148d942ddbc4351775" title="leveldb::Block::Iter\l::ParseNextKey" alt="" coords="184,129,314,168"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_block_1_1_iter.html#a31bd42263cb99405a0d8fe7cc317fe16" title="leveldb::Block::Iter\l::NextEntryOffset" alt="" coords="371,45,501,84"/>
+<area shape="rect" id="node7" href="$namespaceleveldb.html#a924f4e20853c0748f98e8f93f6a93ab9" title="leveldb::DecodeEntry" alt="" coords="362,108,510,133"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_block_1_1_iter.html#ad8eff43010a2d3e0f30945ede9286521" title="leveldb::Block::Iter\l::CorruptionError" alt="" coords="371,157,501,196"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_block_1_1_iter.html#a80e1396336c859c53790cad6c3cdd543" title="leveldb::Block::Iter\l::GetRestartPoint" alt="" coords="371,231,501,269"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="581,5,714,31"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="582,55,713,80"/>
+<area shape="rect" id="node8" href="$namespaceleveldb.html#addd01473dddfbc70ba64956fe6fac20c" title="leveldb::GetVarint32Ptr" alt="" coords="568,105,726,131"/>
+<area shape="rect" id="node9" href="$namespaceleveldb.html#abc68f00e57333a27e9ee4fb8d5033905" title="leveldb::GetVarint32PtrFallback" alt="" coords="784,105,992,131"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title="leveldb::Status::Corruption" alt="" coords="558,155,736,180"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_slice.html#ab9b6e340e8a483a5cf713f6be17709e3" title="leveldb::Slice::clear" alt="" coords="579,204,715,229"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_status.html#a941ec793179e81df3032a612cfe5039f" title="leveldb::Status::Status" alt="" coords="811,155,965,180"/>
+<area shape="rect" id="node15" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="565,253,729,279"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="leveldb::Histogram::Add" name="leveldb::Histogram::Add">
+<area shape="rect" id="node2" href="$classleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1_stats.html#a46ebdd6415bc2274ca01939f6665228b" title="leveldb::anonymous\l_namespace\{db_bench\l::cc\}::Stats::FinishedSingleOp" alt="" coords="216,21,413,73"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_benchmark.html#acca3e72cfbf640d11acae8d58344ee48" title="leveldb::Benchmark\l::FinishedSingleOp" alt="" coords="245,97,384,136"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_benchmark.html#a86876b2882d9015610330e69acfdff0d" title="leveldb::Benchmark\l::Write" alt="" coords="648,5,786,44"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_benchmark.html#afc9cf258a63488924e172fadc67c12f1" title="leveldb::Benchmark\l::Read" alt="" coords="648,68,786,107"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_benchmark.html#a301897d0609459c5e6072db05da6b737" title="leveldb::Benchmark\l::ReadSequential" alt="" coords="461,125,600,164"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_benchmark.html#ac822394de61c12dd6a8a0e0c64760da5" title="leveldb::Benchmark\l::ReadRandom" alt="" coords="461,188,600,227"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_benchmark.html#a2f262afa0c7d10fcf531fe9657fba490" title="leveldb::Benchmark::Run" alt="" coords="834,132,1004,157"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_benchmark.html#a8373efcda4c0e141343b5ee9182df17e" title="leveldb::Benchmark\l::ReadWhileWriting" alt="" coords="648,233,786,272"/>
+</map>

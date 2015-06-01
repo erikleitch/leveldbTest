@@ -1,0 +1,47 @@
+\hypertarget{db__list_8cc}{}\section{util/db\+\_\+list.cc File Reference}
+\label{db__list_8cc}\index{util/db\+\_\+list.\+cc@{util/db\+\_\+list.\+cc}}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$syslog.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}util/db\+\_\+list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+Include dependency graph for db\+\_\+list.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db__list_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceleveldb}{leveldb}
+\begin{DoxyCompactList}\small\item\em Copied from basho/eleveldb/c\+\_\+src/detail.\+hpp September 8, 2013. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{db__list_8cc_aacbb9e1f38be71e22df1584a37c56693}{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{namespaceleveldb_ab67c3d9849bf8b0c50bce72dea7dc16b}{leveldb\+::\+Init\+Module} ()
+\item 
+D\+B\+List\+Impl $\ast$ \hyperlink{namespaceleveldb_a9519176c753c5356b4d10d73ee3a3e51}{leveldb\+::\+D\+B\+List} ()
+\item 
+void \hyperlink{namespaceleveldb_a89fbf93a824aba139ae235a4c63227cc}{leveldb\+::\+D\+B\+List\+Shutdown} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static port\+::\+Once\+Type \hyperlink{namespaceleveldb_aaca89bbfe8c9115ec6faaf59a77ca965}{leveldb\+::once} = \hyperlink{port__posix_8h_aa0f16c685b4ebb93ccc49f5ae36e1c9d}{L\+E\+V\+E\+L\+D\+B\+\_\+\+O\+N\+C\+E\+\_\+\+I\+N\+I\+T}
+\item 
+static D\+B\+List\+Impl $\ast$ \hyperlink{namespaceleveldb_a104dd68e027e61627f258f17081d6f38}{leveldb\+::dblist} =N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{db__list_8cc_aacbb9e1f38be71e22df1584a37c56693}{}\index{db\+\_\+list.\+cc@{db\+\_\+list.\+cc}!\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S@{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}}
+\index{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S@{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}!db\+\_\+list.\+cc@{db\+\_\+list.\+cc}}
+\subsubsection[{\+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+A\+C\+R\+O\+S}\label{db__list_8cc_aacbb9e1f38be71e22df1584a37c56693}

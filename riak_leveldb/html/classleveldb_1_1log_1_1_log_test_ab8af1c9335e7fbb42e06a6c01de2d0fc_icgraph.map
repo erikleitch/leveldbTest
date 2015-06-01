@@ -1,0 +1,5 @@
+<map id="leveldb::log::LogTest::Write" name="leveldb::log::LogTest::Write">
+<area shape="rect" id="node2" href="$classleveldb_1_1log_1_1_log_test.html#af0053e30c5ccaa5e2e10d595a4f48565" title="leveldb::log::LogTest\l::WriteInitialOffsetLog" alt="" coords="196,47,345,85"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1log_1_1_log_test.html#a2bf9cdf3b3f722c300f65a7752c0e101" title="leveldb::log::LogTest\l::CheckOffsetPastEndReturns\lNoRecords" alt="" coords="393,5,592,57"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1log_1_1_log_test.html#ab9ca8c2014e78611d66d884f7b46e4ff" title="leveldb::log::LogTest\l::CheckInitialOffsetRecord" alt="" coords="404,81,580,120"/>
+</map>

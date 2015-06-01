@@ -1,0 +1,18 @@
+<map id="leveldb::Benchmark::WriteRandom" name="leveldb::Benchmark::WriteRandom">
+<area shape="rect" id="node2" href="$classleveldb_1_1_benchmark.html#a5791c3802a3ce7284073db7c4ca040e6" title="leveldb::Benchmark\l::DoWrite" alt="" coords="192,117,330,156"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_write_batch.html#afd5058344dc9be113919a5110129006f" title="leveldb::WriteBatch\l::Clear" alt="" coords="393,12,529,51"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_write_batch.html#a30770379143a7ccb4ede18ddf0e45bf3" title="leveldb::WriteBatch::Put" alt="" coords="379,75,542,100"/>
+<area shape="rect" id="node14" href="$classleveldb_1_1_d_b.html#ae0b6ded8c8e0b88ff70190bf7a0c086c" title="leveldb::DB::Write" alt="" coords="397,124,525,149"/>
+<area shape="rect" id="node15" href="$classleveldb_1_1_status.html#ab31e89a858c766716e3dc952be857c65" title="leveldb::Status::ok" alt="" coords="396,173,526,199"/>
+<area shape="rect" id="node16" href="$classleveldb_1_1_status.html#aa8b56d8fe2cd1873778de5d1e5407866" title="leveldb::Status::ToString" alt="" coords="378,223,543,248"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_write_batch_internal.html#ae03d20619da53aae175dd28d61c90bd9" title="leveldb::WriteBatchInternal\l::SetCount" alt="" coords="591,5,772,44"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_write_batch_internal.html#a5270ca4567dbae1524005ad14e0698e3" title="leveldb::WriteBatchInternal\l::Count" alt="" coords="591,68,772,107"/>
+<area shape="rect" id="node9" href="$namespaceleveldb.html#a98eaeea7300aa4f9b56303ffa27581af" title="leveldb::PutLengthPrefixed\lSlice" alt="" coords="591,149,772,188"/>
+<area shape="rect" id="node6" href="$namespaceleveldb.html#a265d1eea2e5d8e42cf86372ed4904886" title="leveldb::EncodeFixed32" alt="" coords="820,12,984,37"/>
+<area shape="rect" id="node8" href="$namespaceleveldb.html#adae574304f9d1ed3e95742167cd449a9" title="leveldb::DecodeFixed32" alt="" coords="820,68,984,93"/>
+<area shape="rect" id="node10" href="$namespaceleveldb.html#ab00e282f3fd7058b8a41afcf4b56e685" title="leveldb::PutVarint32" alt="" coords="832,117,972,143"/>
+<area shape="rect" id="node12" href="$classleveldb_1_1_slice.html#a947d3173f04f8a30553e89046daf91d5" title="leveldb::Slice::size" alt="" coords="837,167,968,192"/>
+<area shape="rect" id="node13" href="$classleveldb_1_1_slice.html#aa64861043d9deee6889461bf0593cf73" title="leveldb::Slice::data" alt="" coords="836,216,969,241"/>
+<area shape="rect" id="node11" href="$namespaceleveldb.html#ac5e7a0e0356b856317349a870e3bfb41" title="leveldb::EncodeVarint32" alt="" coords="1032,117,1197,143"/>
+<area shape="rect" id="node17" href="$classleveldb_1_1_status.html#a7e1c5239636c9e0ffff6df6144f32af3" title="leveldb::Status::code" alt="" coords="609,223,754,248"/>
+</map>
